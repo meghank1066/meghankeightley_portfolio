@@ -1,79 +1,61 @@
-![thumbnail](https://user-images.githubusercontent.com/16558205/180779213-ea740975-3df1-460a-a964-0a623ee25872.png)
+# 🌸 Meghan Keightley Portfolio
 
-### Live - https://react-portfolio-template.netlify.app
-### Demo Video - https://www.youtube.com/watch?v=62_HLbx2zLQ&t=9s
-### Open Source UI Components - https://ui.chetanverma.com/
+A personal portfolio website built with Next.js, Tailwind CSS and Three.js.
 
-### Tutorials
+This portfolio showcases my software engineering projects, UX interests, creative work and educational journey.
 
-Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
+## ✨ Features
 
-Blog - https://www.chetanverma.com/blog/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
+* Interactive 3D Sakura Tree Scene
+* Animated Unlock Portfolio Experience
+* Responsive Design
+* Dark Theme Aesthetic
+* Project Showcase
+* Education & Experience Timeline
+* Custom Typography & Visual Design
+* Built with Next.js & Tailwind CSS
 
-### Features - 
+## 🛠️ Tech Stack
 
-- Modern Stack (Next.js + TailwindCSS)
-- Minimal Design
-- Easy To Browse
-- Easy To Customize your details With GUI
-- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
-- Dark Mode
+* Next.js
+* React
+* Tailwind CSS
+* Three.js
+* JavaScript
+* HTML & CSS
 
+## 🎓 About Me
 
-### Sections
+I'm Meghan Keightley, a Software Engineering graduate from Dundalk Institute of Technology with a passion for frontend development, UX design, emerging technologies, and creative digital experiences.
 
-- Header
-- Work
-- Services
-- About
-- Contact
-- Markdown Blog
+My interests include:
 
+* User Experience Design
+* Frontend Development
+* Virtual Reality
+* Haptic Technology
+* Fashion & Creative Direction
+* Interactive Web Experiences
 
-### How To Use
+## 🚀 Running Locally
 
-- Clone this repo
-- run `yarn`
-- `yarn dev`
+```bash
+npm install
+npm run dev
+```
 
+Open:
 
-### How To Deploy - 
+```bash
+http://localhost:3000
+```
 
-- There are many ways to Deploy this repo.
-- here we are gonna use netlify
-- Login into netlify with github
-- after login select the forked repo or the repo you want to deploy
-- after selecting netlify will automatially deploy your website.
+## 📫 Contact
 
-Quickes way to deploy this repo - 
+* GitHub: https://github.com/meghank1066
+* LinkedIn: [www.linkedin.com/in/meghank1066](http://www.linkedin.com/in/meghank1066)
+* Email: [megankeightley5@gmail.com](mailto:megankeightley5@gmail.com)
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/react-portfolio-template)
+---
 
-
-### How To Contribute - 
-
-I would be very happy to review your PRs and all the awesome things that you can improve on this portfolio.
-
-
-### Tech Stack Used - 
-- Next.js
-- TailwindCSS
-
-
-### Thanks
-
-If you liked this portfolio template, don't forget to give it a ⭐.
-
-## Awesome Contributors
-[@Aryan3212](https://github.com/Aryan3212) [@achu-krishna](https://github.com/achu-krishna)
-
-## Supporting
-Many hours of hard work have gone into this project. Your support will be very appreciated!
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
-
-
-
-
-
-
+🌸 Designed and developed by Meghan Keightley.
