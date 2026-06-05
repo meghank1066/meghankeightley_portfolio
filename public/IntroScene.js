@@ -1,0 +1,386 @@
+import * as THREE from 'three';
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/loaders/GLTFLoader.js';
+
+const scene = new THREE.Scene();
+// scene.background = new THREE.Color(0x151515);
+
+const camera = new THREE.PerspectiveCamera(
+    50,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+);
+ 
+camera.position.set(0, 1, 10);
+
+const renderer = new THREE.WebGLRenderer({
+    antialias: true,
+    alpha: true
+});
+
+renderer.setSize(
+    window.innerWidth,
+    window.innerHeight
+);
+
+renderer.setPixelRatio(
+    Math.min(window.devicePixelRatio, 2)
+);
+
+renderer.outputColorSpace =
+    THREE.SRGBColorSpace;
+
+document.body.appendChild(
+    renderer.domElement
+);
+
+// ---------- Lighting ----------
+
+const ambientLight =
+    new THREE.AmbientLight(
+        0xffffff,
+        2.5
+    );
+
+scene.add(ambientLight);
+
+const keyLight =
+    new THREE.DirectionalLight(
+        0xffffff,
+        4
+    );
+
+keyLight.position.set(
+    8,
+    10,
+    10
+);
+
+scene.add(keyLight);
+
+const fillLight =
+    new THREE.DirectionalLight(
+        0xffe8ef,
+        2
+    );
+
+fillLight.position.set(
+        -8,
+        4,
+        6
+);
+
+scene.add(fillLight);
+
+
+
+// ---------- Petals ----------
+
+
+const petals = [];
+
+const texture =
+    new THREE.TextureLoader().load(
+        './models/sakura_petal.png'
+    );
+
+const petalMaterial =
+    new THREE.MeshBasicMaterial({
+        map: texture,
+        transparent: true,
+        depthWrite: false
+    });
+
+const petalGeometry =
+    new THREE.PlaneGeometry(
+        0.08,
+        0.08
+    );
+
+
+for (let i = 0; i < 40; i++) {
+
+    const petal =
+        new THREE.Mesh(
+            petalGeometry,
+            petalMaterial
+        );
+
+    petal.position.set(
+        (Math.random() - 0.5) * 20,
+        Math.random() * 15,
+        (Math.random() - 0.5) * 10
+    );
+
+    petal.userData.speed =
+        0.005 + Math.random() * 0.01;
+
+    petal.userData.offset =
+        Math.random() * Math.PI * 2;
+
+    petals.push(
+        petal
+    );
+
+    scene.add(
+        petal
+    );
+}
+
+// ---------- Model ----------
+
+const loader = new GLTFLoader();
+
+let sakuraModel = null;
+const finalX = 6;
+const finalY = -4;
+const finalScale = 25;
+let mouseX = 0;
+let mouseY = 0;
+
+let introProgress = 0;
+let introComplete = false;
+
+loader.load(
+    './models/sakura_tree.glb',
+
+    (gltf) => {
+
+        sakuraModel = gltf.scene;
+
+
+
+sakuraModel.scale.set(
+    25,
+    25,
+    25
+);
+
+sakuraModel.position.set(
+    6,
+    -3.5,
+    0
+);
+
+        scene.add(
+            sakuraModel
+        );
+
+    camera.position.set(
+    5,
+    16,
+    0.5
+);
+
+        console.log(
+            'Tree loaded'
+        );
+
+    },
+
+    undefined,
+
+    (error) => {
+
+        console.error(
+            error
+        );
+
+    }
+);
+
+// ---------- Mouse ----------
+
+window.addEventListener(
+    'mousemove',
+    (event) => {
+
+        mouseX =
+            (event.clientX /
+             window.innerWidth) * 2 - 1;
+
+        mouseY =
+            (event.clientY /
+             window.innerHeight) * 2 - 1;
+
+    }
+);
+
+window.addEventListener(
+    'resize',
+    () => {
+
+        camera.aspect =
+            window.innerWidth /
+            window.innerHeight;
+
+        camera.updateProjectionMatrix();
+
+        renderer.setSize(
+            window.innerWidth,
+            window.innerHeight
+        );
+
+    }
+);
+
+function animate() {
+
+    requestAnimationFrame(
+        animate
+    );
+
+    if (sakuraModel) {
+
+
+    if (!introComplete) {
+
+    introProgress += 0.015;
+
+    if (introProgress >= 1) {
+
+        introProgress = 1;
+        introComplete = true;
+
+    }
+
+    const eased =
+        1 -
+        Math.pow(
+            1 - introProgress,
+            3
+        );
+ 
+
+    sakuraModel.position.x = 6;
+    sakuraModel.position.y = -4;
+ 
+
+    const scale =
+        22 +
+        (25 - 22) * eased;
+
+    sakuraModel.scale.set(
+        scale,
+        scale,
+        scale
+    );
+ 
+
+    sakuraModel.rotation.y =
+        0.25 * (1 - eased);
+
+    // stable camera
+
+    camera.position.set(
+        0,
+        2,
+        9
+    );
+ 
+
+    petalMaterial.opacity =
+        0.8 * eased;
+}
+        else {
+
+            const targetRotationY =
+                mouseX * 0.8;
+
+            sakuraModel.rotation.y +=
+                (targetRotationY -
+                 sakuraModel.rotation.y) * 0.12;
+
+            const targetRotationX =
+                mouseY * 0.15;
+
+            sakuraModel.rotation.x +=
+                (targetRotationX -
+                 sakuraModel.rotation.x) * 0.12;
+
+            camera.position.x +=
+                (((mouseX * 0.5)) -
+                 camera.position.x) * 0.03;
+
+            camera.position.y +=
+                (((-mouseY * 0.2) + 2) -
+                 camera.position.y) * 0.03;
+
+        }
+
+        sakuraModel.position.y =
+            -4 +
+            Math.sin(
+                performance.now() * 0.001
+            ) * 0.08;
+    }
+
+    for (const petal of petals) {
+
+    petal.position.y -=
+        petal.userData.speed;
+
+    petal.position.x +=
+        Math.sin(
+            performance.now() * 0.001 +
+            petal.userData.offset
+        ) * 0.002;
+
+    petal.rotation.z +=
+        0.01;
+
+    if (petal.position.y < -5) {
+
+        petal.position.y = 12;
+
+        petal.position.x =
+            (Math.random() - 0.5) * 20;
+
+    }
+
+}
+
+    renderer.render(
+        scene,
+        camera
+    );
+}
+
+animate();
+
+
+// about me scroll reveal //
+
+const aboutCard =
+    document.querySelector(
+        ".about-card"
+    );
+
+const observer =
+    new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach(
+                (entry) => {
+
+                    if (
+                        entry.isIntersecting
+                    ) {
+
+                        aboutCard.classList.add(
+                            "visible"
+                        );
+                    }
+                }
+            );
+        },
+
+        {
+            threshold: 0.3
+        }
+    );
+
+observer.observe(
+    aboutCard
+);

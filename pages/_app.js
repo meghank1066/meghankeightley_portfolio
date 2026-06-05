@@ -1,11 +1,17 @@
 import "../styles/globals.css";
+import "../styles/style.css";
+import "../styles/markdown.css";
 import { ThemeProvider } from "next-themes";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider>
-      <Component {...pageProps} />
-    </ThemeProvider>
+  <ThemeProvider
+  attribute="class"
+  defaultTheme="dark"
+  enableSystem={false}
+>
+  <Component {...pageProps} />
+</ThemeProvider>
   );
 };
 

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
@@ -9,10 +9,13 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 import Cursor from "../components/Cursor";
-
+import SakuraScene from "../components/SakuraScene";
+import UnlockPortfolio from "../components/UnlockPortfolio";
 // Local Data
 import data from "../data/portfolio.json";
+
 
 export default function Home() {
   // Ref
@@ -22,6 +25,13 @@ export default function Home() {
   const textTwo = useRef();
   const textThree = useRef();
   const textFour = useRef();
+  const [mounted, setMounted] = useState(false);
+  const { theme } = useTheme();
+
+useEffect(() => {
+  setMounted(true);
+}, []);
+
 
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -48,95 +58,188 @@ export default function Home() {
     );
   }, []);
 
-  return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
+  
+    return (
+  <div className={`relative ${data.showCursor && "cursor-none"}`}>
+    <UnlockPortfolio />
+    <SakuraScene />
+
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
       </Head>
-
-      <div className="gradient-circle"></div>
-      <div className="gradient-circle-bottom"></div>
-
-      <div className="container mx-auto mb-10">
+<div>
         <Header
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
         />
-        <div className="laptop:mt-20 mt-10">
-          <div className="mt-5">
-            <h1
-              ref={textOne}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
-            >
-              {data.headerTaglineOne}
-            </h1>
-            <h1
-              ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineTwo}
-            </h1>
-            <h1
-              ref={textThree}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineThree}
-            </h1>
-            <h1
-              ref={textFour}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
-            >
-              {data.headerTaglineFour}
-            </h1>
-          </div>
+        <section className="hero-section">
+  <div className="hero-text">
+    <h1>
+      Meghan
+      <br />
+      Keightley
+    </h1>
 
-          <Socials className="mt-2 laptop:mt-5" />
-        </div>
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+    <p>
+      Software Engineer
+    </p>
+  </div>
+</section>
+<div className="ticker">
+  <div className="ticker-track">
+    <span>
+      MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦
+    </span>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {data.projects.map((project) => (
-              <WorkCard
-                key={project.id}
-                img={project.imageSrc}
-                name={project.title}
-                description={project.description}
-                onClick={() => window.open(project.url)}
-              />
-            ))}
-          </div>
-        </div>
+    <span>
+      MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦
+    </span>
+  </div>
+</div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
-          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
-            {data.services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                name={service.title}
-                description={service.description}
-              />
-            ))}
-          </div>
-        </div>
-        {/* This button should not go into production */}
-        {process.env.NODE_ENV === "development" && (
-          <div className="fixed bottom-5 right-5">
-            <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
-            </Link>
-          </div>
-        )}
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
-        </div>
-        <Footer />
-      </div>
+<section className="about-section">
+
+  <div className="about-grid">
+
+    <div className="about-content">
+
+      <span className="section-tag">
+        About
+      </span>
+
+      <h1 className="about-content">
+        I'm Meghan. 
+        <br></br>
+        I'm a 22-year-old aspiring graduate software engineer
+      </h1>
+
+      <p>
+        I studied Software Engineering at Dundalk Institute of Technology and
+        hope to pursue a master's degree to further specialise in the areas I'm most passionate about.
+        During my studies, I spent six months in Antwerp on Erasmus,
+        where I explored user experience design within virtual reality environments.
+        That experience sparked a particular interest in emerging technologies, especially haptic technology
+        and how users interact with digital worlds.
+      </p>
+
+      <p>
+        Beyond technology, I'm a strong design enthusiast with interests that extend far beyond software.
+        I founded my college's first Fashion Society, combining my love for creativity, community building and design.
+        Alongside my studies, I worked as a Sales Assistant in Primark for three years,
+        where I developed strong communication and teamwork skills in a fast-paced environment.
+      </p>
+
+      <p>
+        In my free time, I enjoy cycling, travelling, content creation, video editing, reading, cooking and staying active.
+        I love learning new things and I'm always looking for opportunities to combine creativity, design and technology in meaningful ways.
+      </p>
+
     </div>
+
+    <div className="about-side">
+
+      <div className="photo-wrapper">
+
+        <img
+          src="/models/megan_pic.png"
+          alt="Meghan"
+          className="about-photo"
+        />
+
+      </div>
+
+      <div className="education-card">
+
+        <div className="education-header">
+
+          {/* <span className="education-icon">🎓</span> */}
+
+          <svg
+            viewBox="0 0 24 24"
+            className="education-icon"
+            aria-hidden="true"
+          >
+            <path d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z" />
+
+            <path d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5" />
+          </svg>
+
+          <h2>work &amp; education</h2>
+
+        </div>
+
+        <div className="education-item">
+
+          <div className="education-logo">
+
+            <img
+              src="/models/dkit.jpg"
+              alt="DKIT Logo"
+              className="education-logo-img"
+            />
+
+          </div>
+
+          <div className="education-details">
+
+            <h3>Dundalk Institute of Technology</h3>
+
+            <p>
+              BSc (Hons) in Computing in Software Development
+            </p>
+
+          </div>
+
+          <span className="education-date">
+            2022 — 2026
+          </span>
+
+        </div>
+
+        <div className="education-item">
+
+          <div className="education-logo">
+
+            <img
+              src="/models/aphogeschool.png"
+              alt="AP Logo"
+              className="education-logo-img"
+            />
+
+          </div>
+
+          <div className="education-details">
+
+            <h3>AP University Antwerp</h3>
+
+            <p>
+              Erasmus Exchange Programme
+            </p>
+
+          </div>
+
+          <span className="education-date">
+            2025
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<h1 ref={textOne} className="hidden"></h1>
+  <div>
+</div>
+<Footer />
+</div> 
+</div>
+    
   );
+  
 }

@@ -8,11 +8,11 @@
   font-family: "Hind";
 }
 
-body {
+/* body {
   @apply dark:bg-black dark:text-white;
-}
+} */
 
-.gradient-circle {
+/* .gradient-circle {
   position: absolute;
   pointer-events: none;
   z-index: 100;
@@ -26,8 +26,8 @@ body {
     rgba(248, 107, 223, 1) 0%,
     rgba(107, 107, 248, 0.8) 100%
   );
-}
-.gradient-circle-bottom {
+} */
+/* .gradient-circle-bottom {
   position: absolute;
   pointer-events: none;
   z-index: 100;
@@ -41,8 +41,8 @@ body {
     rgba(248, 107, 223, 1) 0%,
     rgba(107, 107, 248, 0.8) 100%
   );
-}
-
+} */
+/* 
 .gradient-shadow:hover::before {
   content: "";
   z-index: -1;
@@ -57,14 +57,14 @@ body {
   opacity: var(0.7);
   transition: opacity 0.3s;
   border-radius: inherit;
-}
+} */
 
 /* 
 * Prevents issues when the parent creates a 
 * stacking context. (For example, using the transform
 * property )
 */
-.gradient-shadow:hover::after {
+/* .gradient-shadow:hover::after {
   content: "";
   z-index: -1;
   position: absolute;
@@ -74,4 +74,41 @@ body {
   left: 0;
   background: inherit;
   border-radius: inherit;
-}
+} */
+
+/* .navbar {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 40px;
+
+  padding: 18px 40px;
+
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.04);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.25);
+
+  box-shadow:
+    0 0 0 2px rgba(255,200,220,0.25),
+    0 0 40px rgba(255,200,220,0.08);
+
+  z-index: 999;
+} */
+/* 
+.navbar a {
+  color: white;
+  text-decoration: none;
+} */
+/* 
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+} */
