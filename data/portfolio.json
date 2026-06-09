@@ -1,0 +1,129 @@
+{
+  "headerData": {
+    "name": "Meghan",
+    "logoLight": "images/portfoliologorm.png",
+    "logoDark": "images/portfoliologodm.png",
+    "fullname": "Meghan Keightley",
+    "headerTaglineOne": "Hello 👋",
+    "headerTaglineTwo": "I'm Meghan Keightley",
+    "headerTaglineThree": "Software Engineer.",
+    "headerTaglineFour": "Based in Bettystown.",
+    "showCursor": true,
+    "showBlog": true,
+    "darkMode": true,
+    "showResume": true
+  },
+"socials": [
+  {
+    "id": "1",
+    "title": "Github",
+    "link": "https://github.com/meghank1066",
+    "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    "dmgitlogo": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"
+  
+  },
+  {
+    "id": "2",
+    "title": "LinkedIn",
+    "link": "https://www.linkedin.com/in/meghan-k-01265a2b9",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png"
+  },
+  {
+    "id": "3",
+    "title": "Email",
+    "link": "mailto:megankeightley5@gmail.com",
+    "logo": "https://www.svgrepo.com/show/381000/new-logo-gmail.svg"
+  }
+],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Project One Test",
+      "description": "Web Design",
+      "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+      "url": "#"
+    },
+    {
+      "id": "2",
+      "title": "Project Two",
+      "description": "Web Development",
+      "imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+      "url": "#"
+    },
+    {
+      "id": "3",
+      "title": "Project Three",
+      "description": "Design",
+      "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+      "url": "#"
+    },
+    {
+      "id": "4",
+      "title": "Project Four",
+      "description": "Marketing",
+      "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+      "url": "#"
+    },
+    {
+      "id": "5",
+      "title": "Project Five",
+      "description": "Development",
+      "imageSrc": "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+      "url": "#"
+    },
+    {
+      "id": "6",
+      "title": "Project Six",
+      "description": "Design & Development",
+      "imageSrc": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+      "url": "#"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Art Direction",
+      "description": "We help with the creation and development of online advertising ideas, focusing on visual appearance."
+    },
+    {
+      "id": "2",
+      "title": "Branding",
+      "description": "We design key brand elements like logos, colors, typography to make your brand stand out."
+    },
+    {
+      "id": "3",
+      "title": "Web Design",
+      "description": "We build and optimize your online presence. Your website is the digital entry point to your business."
+    }
+  ],
+  "aboutPara": "Final-year Computing in Software Engineering student with a strong interest in frontend development, user experience design and digital product creation. I enjoy combining technical problem-solving with design thinking to build intuitive, accessible, and user-centred applications.",
+
+"tagline": "Frontend Developer | BSc in Computing in Software Engineering @ DKIT (2022–2026)",
+
+"description": "Exploring UX Design, Product Design, and Frontend Development. Passionate about creating intuitive digital experiences through user-centred design, accessibility, and modern web technologies. I enjoy transforming ideas into engaging products that balance functionality, usability, and visual design.",
+   "experiences": [
+      {
+        "id": "1",
+        "dates": "March 2022 - Present",
+        "type": "Full Time",
+        "position": "Frontend Engineer at X",
+        "bullets": "Bullet One, Bullet Two"
+      },
+      {
+        "id": "2",
+        "dates": "July 2020 - March 2022",
+        "type": "Full Time",
+        "position": "Frontend Engineer at X",
+        "bullets": "Worked on the frontend of a React application"
+      }
+    ],
+    "education": {
+      "universityName": "University X",
+      "universityDate": "2016-2020",
+      "universityPara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    "languages": ["Javascript", "HTML5", "CSS", "Python", "Go"],
+    "frameworks": ["React", "Typescript", "NodeJs"],
+    "others": ["Figma", "AdobeXD", "AWS"]
+  }
+
