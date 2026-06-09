@@ -481,6 +481,8 @@ canvas {
     z-index: -1;
 }
 
+
+
 .hero-text h1 {
 
     margin: 0;
@@ -1275,6 +1277,7 @@ canvas {
 
 
 
+
 .about-side{
     display:flex;
     flex-direction:column;
@@ -1498,4 +1501,138 @@ canvas {
     color:#9ca3af;
     white-space:nowrap;
     font-size:.9rem;
+}
+
+/* skills section */
+
+
+.skillsButtonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.skillsButtonsContainer button {
+  padding: 8px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.skillsIconsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  min-width: 140px;
+}
+
+.skillIcon:hover {
+  transform: translateY(-3px);
+  transition: 0.25s ease;
+}
+
+.skillIcon i {
+  font-size: 22px;
+}
+
+.headingText {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    
+    max-width: 40ch;
+
+    letter-spacing: -0.05em;
+
+    margin-bottom: 2rem;
+}
+
+.skillsButtonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.skillsButtonsContainer button {
+  background: transparent;
+  color: rgba(255,255,255,0.65);
+
+  border: none;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.skillsButtonsContainer button:hover {
+  color: white;
+}
+
+.skillsButtonsContainer button.selected {
+  color: white;
+  position: relative;
+}
+
+.skillsButtonsContainer button.selected::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 100%;
+  height: 3px;
+
+  border-radius: 999px;
+
+  background: #ff9bd6;
+}
+
+
+.buttonsContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.buttonsContainer a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttonsContainer button {
+  font-size: 18px;
+  background-color: rgba(155, 155, 155, 0.2);
+  padding: 5px 14px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+}
+
+.buttonsContainer img {
+  height: 30px;
+  margin-right: 5px;
+  margin-left: -8px;
 }

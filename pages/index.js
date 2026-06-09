@@ -12,9 +12,11 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import Cursor from "../components/Cursor";
 import SakuraScene from "../components/SakuraScene";
+import BridgeScene from "../components/BridgeScene";
 import UnlockPortfolio from "../components/UnlockPortfolio";
 // Local Data
 import data from "../data/portfolio.json";
+import skillsData from "../data/skills.json";
 
 
 export default function Home() {
@@ -27,11 +29,17 @@ export default function Home() {
   const textFour = useRef();
   const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
+  const [selectedButton, setSelectedButton] = useState("All");
 
 useEffect(() => {
   setMounted(true);
 }, []);
 
+ // Handle Button Click
+const buttonNames = ["All", "Front-End", "Back-End", "Tools", "Design", "Testing"];
+const handleButtonClick = (buttonName) => {
+  setSelectedButton(buttonName);
+};
 
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -50,6 +58,24 @@ useEffect(() => {
     });
   };
 
+const renderSkillIcons = (skills) => {
+  return skills.map((skill) => (
+    <div key={skill.name} className="skillIcon">
+      <i className={skill.icon}></i>
+      {skill.name}
+    </div>
+  ));
+};
+const renderAllSkills = () => {
+  const allSkills = [
+    ...skillsData.frontend,
+    ...skillsData.backend,
+    ...skillsData.tools,
+  ];
+
+  return renderSkillIcons(allSkills);
+};
+
   useIsomorphicLayoutEffect(() => {
     stagger(
       [textOne.current, textTwo.current, textThree.current, textFour.current],
@@ -67,6 +93,9 @@ useEffect(() => {
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
+        <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
       </Head>
 <div>
         <Header
@@ -84,6 +113,12 @@ useEffect(() => {
     <p>
       Software Engineer
     </p>
+     <div className="buttonsContainer">
+                    <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/regular-document.png" alt="resume icon" />My CV</button>
+                    <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/github.png" alt="github icon" /><a href="https://github.com/milamurphy" target="_blank">GitHub</a></button>
+                    <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/linkedin.png" alt="linkedin icon" /><a href="https://www.linkedin.com/in/milamurphy/" target="_blank">LinkedIn</a></button>
+                    <button><img src="https://img.icons8.com/fluency-systems-filled/48/99ffb5/new-post.png" alt="email icon" />Email</button>
+                </div>
   </div>
 </section>
 <div className="ticker">
@@ -104,9 +139,9 @@ useEffect(() => {
 
     <div className="about-content">
 
-      <span className="section-tag">
+      {/* <span className="section-tag">
         About
-      </span>
+      </span> */}
 
       <h1 className="about-content">
         I'm Meghan. 
@@ -231,6 +266,191 @@ useEffect(() => {
 
   </div>
 
+  <div className="skillsColumn">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                 <BridgeScene />   
+                 <h1 className="headingText">Skills</h1>
+                 </div>
+                 <div className="skillsContent">
+                <div className="skillsButtonsContainer">
+                    {buttonNames.map(buttonName => (
+                        <button
+                            key={buttonName}
+                            className={`${theme === 'light' ? 'light' : 'dark'} ${selectedButton === buttonName ? 'selected' : ''}`}
+                            onClick={() => handleButtonClick(buttonName)}
+                        >
+                            {buttonName}
+                        </button>
+                    ))}
+                </div>
+                <div className="skillsIconsContainer">
+                    {selectedButton === 'All' && renderAllSkills()}
+                    {selectedButton === 'Frontend' && renderSkillIcons(skillsData.frontend)}
+                    {selectedButton === 'Backend' && renderSkillIcons(skillsData.backend)}
+                    {selectedButton === 'Tools' && renderSkillIcons(skillsData.tools)}
+                    {selectedButton === 'Testing' && renderSkillIcons(skillsData.testing)}
+                    {selectedButton === 'Design' && renderSkillIcons(skillsData.design)}
+                </div>
+            </div>
 </section>
 
 <h1 ref={textOne} className="hidden"></h1>

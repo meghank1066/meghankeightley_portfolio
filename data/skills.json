@@ -1,0 +1,139 @@
+{
+  "frontend": [
+    {
+      "name": "HTML",
+      "icon": "devicon-html5-plain colored"
+    },
+    {
+      "name": "CSS",
+      "icon": "devicon-css3-plain colored"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "devicon-javascript-plain colored"
+    },
+    {
+      "name": "React",
+      "icon": "devicon-react-plain colored"
+    },
+    {
+      "name": "Kotlin",
+      "icon": "devicon-kotlin-plain colored"
+    },
+    {
+      "name": "Swift",
+      "icon": "devicon-swift-plain colored"
+    },
+    {
+      "name": "Tailwind",
+      "icon": "devicon-tailwindcss-plain colored"
+    },
+    {
+      "name": "SCSS",
+      "icon": "devicon-sass-plain colored"
+    }
+  ],
+  "backend": [
+    {
+      "name": "Java",
+      "icon": "devicon-java-plain colored"
+    },
+    {
+      "name": "C++",
+      "icon": "devicon-cplusplus-plain colored"
+    },
+    {
+      "name": "C#",
+      "icon": "devicon-csharp-plain colored"
+    },
+    {
+      "name": "Python",
+      "icon": "devicon-python-plain colored"
+    },
+    {
+      "name": "MySql",
+      "icon": "devicon-mysql-plain colored"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "devicon-mongodb-plain colored"
+    },
+    {
+      "name": "Firebase",
+      "icon": "devicon-firebase-plain colored"
+    }
+  ],
+
+  "testing": [
+    {
+      "name": "Postman",
+      "icon": "devicon-postman-plain colored"
+    },
+    {
+      "name": "JUnit",
+      "icon": "devicon-java-plain colored"
+    },
+    {
+      "name": "Manual Testing",
+      "icon": ""
+    },
+    {
+      "name": "Integration Testing",
+      "icon": ""
+    },
+    {
+      "name": "Unit Testing",
+      "icon": ""
+    }
+  ],
+
+
+  "design": [
+   {
+  "name": "Figma",
+  "icon": "devicon-figma-plain colored"
+},
+    {
+  "name": "Canva",
+  "icon": ""
+},
+    {
+      "name": "Adobe After Effects",
+      "icon": "adobe-aftereffects-original colored"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "icon": "adobe-illustrator-original colored"
+    },
+    {
+      "name": "Blender",
+      "icon": "blender-original colored"
+    },
+     {
+  "name": "Prototyping",
+  "icon": ""
+},
+  {
+  "name": "Wireframing",
+  "icon": ""
+}
+  ],
+  "tools": [
+    {
+      "name": "GitHub",
+      "icon": "devicon-github-plain colored"
+    },
+    {
+      "name": "VS Code",
+      "icon": "devicon-vscode-plain colored"
+    },
+    {
+      "name": "Unity",
+      "icon": "devicon-unity-original"
+    },
+    {
+      "name": "VMware",
+      "icon": "devicon-vmware-plain colored"
+    }
+  ]
+}
