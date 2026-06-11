@@ -6,15 +6,41 @@ export default function BridgeScene() {
 
   useEffect(() => {
 
+    const mouse = {
+    x: 0,
+    y: 0
+  };
+
+  const handleMouseMove = (e) => {
+    mouse.x =
+      (e.clientX / window.innerWidth - 0.5) * 2;
+
+    mouse.y =
+      (e.clientY / window.innerHeight - 0.5) * 2;
+  };
+
+  window.addEventListener(
+    "mousemove",
+    handleMouseMove
+  );
+
     const scene = new THREE.Scene();
 
-    const camera =
-      new THREE.PerspectiveCamera(
-        45,
-        window.innerWidth / window.innerHeight,
-        0.1,
-        1000
-      );
+const container =
+  document.getElementById(
+    "bridge-container"
+  );
+
+if (!container) return;
+
+  const camera =
+  new THREE.PerspectiveCamera(
+    45,
+    container.clientWidth /
+      container.clientHeight,
+    0.1,
+    1000
+  );
 
     // camera.position.set(
     //   0,
@@ -23,8 +49,14 @@ export default function BridgeScene() {
     // );
 camera.position.set(
   0,
-  1,
-  25
+  4,
+  30
+);
+
+camera.lookAt(
+  0,
+  0,
+  0
 );
 
     const renderer =
@@ -33,10 +65,10 @@ camera.position.set(
         antialias: true
       });
 
-    renderer.setSize(
-      window.innerWidth,
-      window.innerHeight
-    );
+renderer.setSize(
+  container.clientWidth,
+  container.clientHeight
+);
 
     renderer.setPixelRatio(
       Math.min(window.devicePixelRatio, 2)
@@ -51,9 +83,9 @@ camera.position.set(
     renderer.domElement.style.pointerEvents =
       "none";
 
-    document
-      .getElementById("bridge-container")
-      .appendChild(renderer.domElement);
+container.appendChild(
+  renderer.domElement
+);
 
     const ambient =
       new THREE.AmbientLight(
@@ -88,15 +120,15 @@ loader.load(
 
     bridge = gltf.scene;
 
- bridge.scale.set(
+bridge.scale.set(
   6,
-  6,
+  4,
   6
 );
 
- bridge.position.set(
-  -4,
-  1.5,
+bridge.position.set(
+  0,
+  -5,
   0
 );
 
@@ -106,36 +138,43 @@ loader.load(
   }
 );
 
-    function animate() {
+ function animate() {
 
-      requestAnimationFrame(
-        animate
-      );
+  requestAnimationFrame(animate);
 
-      if (bridge) {
+  if (bridge) {
 
-       bridge.rotation.y = 0;
+  bridge.rotation.z = mouse.x * 0.03;
+bridge.rotation.x = mouse.y * 0.02;
+bridge
+  }
 
-        bridge.position.y =
-          -1 +
-          Math.sin(
-            performance.now() * 0.001
-          ) * 0.05;
-      }
-
-      renderer.render(
-        scene,
-        camera
-      );
-    }
+  renderer.render(
+    scene,
+    camera
+  );
+}
 
     animate();
 
     return () => {
 
-      renderer.dispose();
+  window.removeEventListener(
+    "mousemove",
+    handleMouseMove
+  );
 
-    };
+  if (
+    container &&
+    renderer.domElement.parentNode
+  ) {
+    container.removeChild(
+      renderer.domElement
+    );
+  }
+
+  renderer.dispose();
+};
 
   }, []);
 

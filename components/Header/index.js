@@ -20,42 +20,24 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
       {/* mobile menu later */}
 
       <nav className="navbar">
-        <a href="#">Home</a>
+       <a href="#home">
+  Home
+</a>
+       <a href="#about">
+  About
+</a>
 
-        <a
-          href="#about"
-          onClick={(e) => {
-            e.preventDefault();
-            handleAboutScroll?.();
-          }}
-        >
-          About
-        </a>
+        <a href="#projects">
+  Projects
+</a>
 
-        <a
-          href="#projects"
-          onClick={(e) => {
-            e.preventDefault();
-            handleWorkScroll?.();
-          }}
-        >
-          Projects
-        </a>
+       <a href="#case-studies">
+  Case Studies
+</a>
 
-        <a href="#case-studies">
-          Case Studies
-        </a>
-
-        <a
-          href="#contact"
-          onClick={() =>
-            window.open(
-              "mailto:megankeightley5@gmail.com"
-            )
-          }
-        >
-          Contact
-        </a>
+       <a href="#contact">
+  Contact
+</a>
 
    
       </nav>
