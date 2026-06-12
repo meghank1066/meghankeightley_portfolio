@@ -307,11 +307,12 @@ export default function Home() {
               </div>
             </div>
           </div>
- </section>
-          <div className="skillsColumn">
-            <h1 className="headingText">Technical skills</h1>
+ </section> 
+          <div className="skillsColumn"> <h3 className="headingText">Technical skills</h3>
             <BridgeScene />
           </div>
+         
+           
              <section className="about-section">
           <div className="skillsContent">
             <div className="skillsButtonsContainer">
@@ -340,38 +341,6 @@ export default function Home() {
             
           </div>
 
-          
-  {/* <div className="projectsGrid">
-
-    {projects.map((project) => (
-
-      <Link
-        key={project.slug}
-        href={`/projects/${project.slug}`}
-      >
-
-        <a className="projectCard">
-
-          <img
-            src={project.image}
-            alt={project.title}
-          />
-
-          <div className="projectInfo">
-
-            <h3>{project.title}</h3>
-
-            <p>{project.description}</p>
-
-          </div>
-
-        </a>
-
-      </Link>
-
-    ))}
-
-  </div> */}
 
           </section>
 <section id="projects" className="projectsSection">
@@ -442,7 +411,7 @@ export default function Home() {
 </section>
 
 
-<section className="contactSection">
+<section id="contact" className="contactSection">
   <div className="contactContent">
     <h2 className="contactHeading">
       Let's Work Together
@@ -453,8 +422,14 @@ export default function Home() {
       or frontend development? 
       I'd love to hear from you.
     </p>
+    <a
+  href="mailto:megankeightley5@gmail.com"
+  className="contactButton"
+>
+  Contact me  
+</a>
   </div>
-
+{/* ✦ */}
   <div className="moonWrapper">
     <MoonScene />
   </div>
