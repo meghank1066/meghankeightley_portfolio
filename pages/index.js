@@ -450,7 +450,8 @@ export default function Home() {
 
     <p className="contactText">
       Interested in product design, UX research,
-      or frontend development? I'd love to hear from you.
+      or frontend development? 
+      I'd love to hear from you.
     </p>
   </div>
 
@@ -460,7 +461,6 @@ export default function Home() {
 </section>
 
         <h1 ref={textOne} className="hidden"></h1>
-        <div></div>
         <Footer />
       </div>
     </div>

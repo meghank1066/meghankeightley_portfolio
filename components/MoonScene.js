@@ -118,7 +118,9 @@ function handleResize() {
      (gltf) => {
   moon = gltf.scene;
 
-moon.scale.set(4, 4, 4);
+moon.scale.set(1.2, 1.2, 1.2);
+
+camera.position.set(0, 0, 140);
 
 moon.position.set(
   0,
@@ -126,11 +128,23 @@ moon.position.set(
   0
 );
 
-camera.position.set(
-  0,
-  0,
-  180
-);
+// moon.position.set(
+//   0,
+//   0,
+//   0
+// );
+
+// moon.position.set(
+//   0, // X
+//   -10, // Y
+//   0 // Z
+// );
+
+// camera.position.set(
+//   0,
+//   0,
+//   180
+// );
 
   const box =
     new THREE.Box3().setFromObject(moon);
@@ -228,7 +242,7 @@ camera.position.set(
     0.05;
 
   const targetScale =
-    isHovering ? 5.15 : 4;
+  isHovering ? 5.5 : 4.5;
 
   moon.scale.lerp(
     new THREE.Vector3(
