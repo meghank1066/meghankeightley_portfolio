@@ -15,9 +15,10 @@ import SakuraScene from "../components/SakuraScene";
 import BridgeScene from "../components/BridgeScene";
 import UnlockPortfolio from "../components/UnlockPortfolio";
 import PetalScene from "../components/PetalScene";
+import MoonScene from "../components/MoonScene";
 // Local Data
 import data from "../data/portfolio.json";
-import projects from "../data/projects";
+import { projects, casestudies } from "../data/projects";
 import skillsData from "../data/skills.json";
 
 export default function Home() {
@@ -245,7 +246,7 @@ export default function Home() {
             <div className="about-side">
               <div className="photo-wrapper">
                 <img
-                  src="/models/megan_pic.png"
+                  src="/images/headshot1.webp"
                   alt="Meghan"
                   className="about-photo"
                 />
@@ -373,56 +374,90 @@ export default function Home() {
   </div> */}
 
           </section>
-  <section
-  id="projects"
-  className="projectsSection"
->
-
+<section id="projects" className="projectsSection">
   <h1 className="projectsHeading">
     Featured Projects
   </h1>
 
-  <div className="projectTicker">
+  <div className="projectsList">
+    {projects.map((project) => (
+      <Link
+        key={project.slug}
+        href={`/projects/${project.slug}`}
+      >
+        <a className="projectRow">
 
-    <div className="projectTrack">
+          <div className="projectInfo">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+          </div>
 
-      {[...projects, ...projects].map(
-        (project, index) => (
+          <span className="projectArrow">
+            →
+          </span>
 
-          <Link
-            key={index}
-            href={`/projects/${project.slug}`}
-          >
+        </a>
+      </Link>
+    ))}
+  </div>
+</section>
 
-            <a className="projectCard">
+<section
+  id="case-studies"
+  className="caseStudiesSection"
+>
+  <h2 className="caseStudiesHeading">
+    Case Studies
+  </h2>
 
-              <img
-                src={project.image}
-                alt={project.title}
-              />
+  <div className="caseStudiesGrid">
+    {casestudies.map((study) => (
+      <Link
+        key={study.slug}
+        href={`/case-studies/${study.slug}`}
+      >
+        <div className="caseStudyCard">
+          <img
+            src={study.image}
+            alt={study.title}
+            className="caseStudyImage"
+          />
 
-              <h3>
-                {project.title}
-              </h3>
+          <h3>{study.title}</h3>
 
-            </a>
+          <p>{study.description}</p>
 
-          </Link>
+          <span className="caseStudyTag">
+            {study.category}
+          </span>
 
-        )
-      )}
+          <div className="caseStudyLink">
+            View case study ↗
+          </div>
 
-    </div>
+        </div>
+      </Link>
+    ))}
+  </div>
+</section>
 
+
+<section className="contactSection">
+  <div className="contactContent">
+    <h2 className="contactHeading">
+      Let's Work Together
+    </h2>
+
+    <p className="contactText">
+      Interested in product design, UX research,
+      or frontend development? I'd love to hear from you.
+    </p>
   </div>
 
+  <div className="moonWrapper">
+    <MoonScene />
+  </div>
 </section>
-<section
-  id="contact"
-></section>
-<section
-  id="contact"
-></section>
 
         <h1 ref={textOne} className="hidden"></h1>
         <div></div>

@@ -63,206 +63,80 @@
 }
 
 /* projects section css */
-/* 
-.projectsSection {
 
-  margin-top: 120px;
-  padding: 0 10vw;
+.projectsSection {
+  padding: 8rem 10%;
+   color: white;
 }
 
 .projectsHeading {
-
-  font-size: 4rem;
+  font-size: clamp(3rem, 7vw, 6rem);
+  margin-bottom: 4rem;
   color: white;
-
-  margin-bottom: 50px;
-
-  letter-spacing: -0.05em;
+    z-index: 10;
+    font-size: 4rem;
+    letter-spacing: -0.05em;
+    color: white;
+    text-shadow:
+        0 0 20px rgba(255,255,255,0.15),
+        0 0 40px rgba(255,220,235,0.08);
+        justify-content: center;
+        display: flex;
 }
 
-.projectsGrid {
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(auto-fit, minmax(350px, 1fr));
-
-  gap: 30px;
+.projectsList {
+  width: 100%;
+   color: white;
 }
 
-.projectCard {
+.projectRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ color: white;
+  padding: 3rem 0;
 
-  display: block;
-
-  overflow: hidden;
-
-  border-radius: 30px;
-
-  background:
-    rgba(255,255,255,0.03);
-
-  backdrop-filter:
-    blur(20px);
-
-  border:
-    1px solid rgba(255,255,255,.08);
+  border-top: 1px solid rgba(255,255,255,.15);
 
   text-decoration: none;
+  color: inherit;
 
-  transition: .35s ease;
+  transition: all .35s ease;
 }
 
-.projectCard:hover {
-
-  transform:
-    translateY(-10px);
-
-  border-color:
-    rgba(255,220,235,.25);
-
-  box-shadow:
-    0 0 40px rgba(
-      255,
-      200,
-      220,
-      .08
-    );
+.projectRow:last-child {
+  border-bottom: 1px solid rgba(255,255,255,.15);
+   color: white;
 }
 
-.projectCard img {
-
-  width: 100%;
-  height: 220px;
-
-  object-fit: cover;
-}
-
-.projectInfo {
-
-  padding: 24px;
+.projectRow:hover {
+  padding-left: 1rem;
+   color: white;
 }
 
 .projectInfo h3 {
-
-  color: white;
-  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: .5rem;
+  font-weight: 500;
+   color: white;
 }
 
 .projectInfo p {
-
-  color:
-    rgba(255,255,255,.65);
-
-  margin-top: 10px;
-}
- */
-
- .projectsSection {
-
-  margin-top: 120px;
-
-  overflow: hidden;
+  opacity: .65;
+  max-width: 500px;
+  line-height: 1.6;
+   color: white;
 }
 
-.projectsHeading {
-
-  color: white;
-
-  font-size: 4rem;
-
-  margin-bottom: 40px;
-
-  padding-left: 10vw;
+.projectArrow {
+  font-size: 2rem;
+  transition: transform .35s ease;
+   color: white;
 }
 
-.projectTicker {
-
-  overflow: hidden;
-
-  width: 100%;
+.projectRow:hover .projectArrow {
+  transform: translateX(10px);
 }
-
-.projectTrack {
-
-  display: flex;
-
-  gap: 24px;
-
-  width: max-content;
-
-  animation:
-    projectScroll 30s linear infinite;
-}
-
-.projectCard {
-
-  flex-shrink: 0;
-
-  width: 420px;
-
-  text-decoration: none;
-
-  border-radius: 28px;
-
-  overflow: hidden;
-
-  background:
-    rgba(255,255,255,.04);
-
-  backdrop-filter:
-    blur(20px);
-
-  border:
-    1px solid rgba(
-      255,
-      255,
-      255,
-      .1
-    );
-
-  transition: .3s ease;
-}
-
-.projectCard:hover {
-
-  transform:
-    translateY(-8px);
-
-  border-color:
-    rgba(
-      255,
-      220,
-      235,
-      .25
-    );
-
-  box-shadow:
-    0 0 40px rgba(
-      255,
-      200,
-      220,
-      .08
-    );
-}
-
-.projectCard img {
-
-  width: 550px;
-
-  height: 450px;
-
-  object-fit: cover;
-}
-
-.projectCard h3 {
-
-  padding: 20px;
-
-  color: white;
-
-  font-size: 1.3rem;
-}
-
 @keyframes projectScroll {
 
   from {
@@ -286,3 +160,184 @@ html {
 #contact {
   scroll-margin-top: 120px;
 }
+
+/* contact section */
+
+.contactSection {
+  min-height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10rem;
+
+  max-width: 1600px;
+  margin: 0 auto;
+
+  padding: 0 8rem;
+
+  transform: translateX(-180px);
+}
+
+.contactContent {
+  max-width: 550px;
+  z-index: 10;
+  color: #ffffff;
+}
+
+.contactHeading {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.contactText {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+ .moonWrapper::before {
+  content: "";
+
+  position: absolute;
+  inset: 20%;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.08);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+.moonWrapper {
+  width: 1100px;
+  height: 1100px;
+
+  position: absolute;
+
+  right: -22%;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+.contactContent {
+  position: relative;
+  z-index: 5;
+  color: #ffffff;
+  max-width: 650px; 
+}
+
+/* case studies css section */
+
+.caseStudiesSection {
+  padding: 8rem 10%;
+}
+
+.caseStudiesHeading {
+  font-size: 4rem;
+  color: white;
+
+  margin-bottom: 4rem;
+
+  letter-spacing: -0.05em;
+}
+
+.caseStudiesGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 6rem 4rem;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+.caseStudyCard {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  transition: .3s ease;
+}
+
+.caseStudyCard:hover {
+  transform: translateY(-8px);
+}
+.caseStudyImage {
+  width: 100%;
+
+  height: 230px;
+
+  object-fit: cover;
+
+  border-radius: 24px;
+
+  display: block;
+}
+
+.caseStudyCard h3 {
+  font-size: 2rem;
+
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+.caseStudyCard p {
+  font-size: 1.05rem;
+
+  line-height: 1.8;
+
+  color:
+    rgba(255,255,255,.7);
+
+  margin-bottom: 1.5rem;
+}
+
+.caseStudyTag {
+  padding:
+    .6rem
+    1rem;
+
+  font-size: .9rem;
+
+  border-radius: 999px;
+
+  border:
+    1px solid
+    rgba(255,220,235,.25);
+
+  color:
+    rgb(225,190,255);
+
+  background:
+    rgba(255,220,235,.03);
+}
+
+.caseStudyLink {
+  margin-top: 1.5rem;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  color: white;
+}
+
+
