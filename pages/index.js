@@ -191,13 +191,9 @@ export default function Home() {
         <div className="ticker">
           <div className="ticker-track">
             <span>
-              MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX
-              DESIGN ✦
-            </span>
-
-            <span>
-              MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX
-              DESIGN ✦
+             MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦
+MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦
+MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING
             </span>
           </div>
         </div>

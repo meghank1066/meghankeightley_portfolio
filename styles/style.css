@@ -916,15 +916,10 @@ z-index: 99999;
 }
 
 .ticker-track {
-
     display: flex;
-
     width: max-content;
-
-    animation:
-        tickerMove 14s linear infinite;
+    animation: tickerMove 16s linear infinite;
 }
-
 .ticker span {
 
     white-space: nowrap;
