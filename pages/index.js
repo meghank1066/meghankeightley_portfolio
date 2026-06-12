@@ -339,10 +339,16 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
 
 
           </section>
+
+
 <section id="projects" className="projectsSection">
   <h1 className="projectsHeading">
-    Featured Projects
+   Featured Projects
   </h1>
+{/* <h2 class="sectionTitle">My Projects</h2> */}
+<p class="sectionDesc">
+    These projects represent both my academic journey and personal curiosity. Whether building apps, designing interfaces, or developing websites, I enjoy bringing ideas to life through technology and creating experiences that are both functional and engaging.
+</p>
 
   <div className="projectsList">
     {projects.map((project) => (
