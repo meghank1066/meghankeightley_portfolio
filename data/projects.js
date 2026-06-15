@@ -78,27 +78,27 @@ const casestudies = [
 //   "category": "UX/UI Design",
 //   "image": "/images/doc-martens-cover.png"
 // },
-{
-  "slug": "costa-coffee-app",
-  "title": "Costa Coffee Rewards",
-  "description": "Enhancing loyalty experiences, mobile ordering, and personalised customer journeys.",
-  "category": "Mobile UX",
-  "image": "/images/costa-cover.png"
-},
-  {
-    "slug": "cerave-redesign",
-    "title": "CeraVe Digital Experience",
-    "description": "Enhancing skincare education and product selection through user-centred design.",
-    "category": "UX Research",
-    "image": "/images/cerave-cover.png"
-  },
-  {
-    "slug": "onitsuka-redesign",
-    "title": "Onitsuka Tiger E-Commerce",
-    "description": "Exploring navigation, product filtering, and conversion improvements for fashion retail.",
-    "category": "Brand & UX",
-    "image": "/images/onitsuka-cover.png"
-  }
+// {
+//   "slug": "costa-coffee-app",
+//   "title": "Costa Coffee Rewards",
+//   "description": "Enhancing loyalty experiences, mobile ordering, and personalised customer journeys.",
+//   "category": "Mobile UX",
+//   "image": "/images/costa-cover.png"
+// },
+//   {
+//     "slug": "cerave-redesign",
+//     "title": "CeraVe Digital Experience",
+//     "description": "Enhancing skincare education and product selection through user-centred design.",
+//     "category": "UX Research",
+//     "image": "/images/cerave-cover.png"
+//   },
+//   {
+//     "slug": "onitsuka-redesign",
+//     "title": "Onitsuka Tiger E-Commerce",
+//     "description": "Exploring navigation, product filtering, and conversion improvements for fashion retail.",
+//     "category": "Brand & UX",
+//     "image": "/images/onitsuka-cover.png"
+//   }
 ]
 
 // case studies

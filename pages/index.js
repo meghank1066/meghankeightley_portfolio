@@ -414,18 +414,7 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
 >
   Contact me  
 </a>
-{isMobile && (
-  <div
-    style={{
-      background: "red",
-      color: "white",
-      padding: "40px",
-      marginTop: "40px"
-    }}
-  >
-    FOOTER TEST
-  </div>
-)}
+
   </div>
   
 {/* ✦ */}
