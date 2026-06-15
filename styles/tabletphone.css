@@ -292,7 +292,7 @@
 
   .projectsHeading
   {
-    font-size: clamp(2.8rem, 5vw, 4rem);
+     font-size: 2.2rem !important;
   color: white;
   /* margin-bottom: 3.5rem; */
   letter-spacing: -0.04em;
@@ -315,7 +315,10 @@
   }
 
   .projectInfo p {
-    max-width: 100%;
+    max-width: 100%; 
+    font-size: 0.95rem;
+    line-height: 1.6;
+
   }
 
   /* case studies */
@@ -329,7 +332,9 @@
     gap: 2rem;
   }
 
-  .caseStudyCard p {
+ .caseStudyCard p {
+    font-size: 0.9rem;
+    line-height: 1.6;
     max-width: 100%;
   }
 
@@ -347,7 +352,7 @@
   }
 
   .contactHeading {
-    font-size: 2.8rem;
+    font-size: 2.4rem !important;
   }
 
   .contactContent {
@@ -602,4 +607,70 @@ body {
   .mobileFooterGithub:hover {
     opacity: .7;
   }
+}
+
+@media (max-width: 768px) {
+
+  /* Featured Projects heading */
+  .projectsHeading {
+    font-size: 2.2rem !important;
+  }
+
+  /* Intro text under Featured Projects */
+  .sectionDesc {
+    font-size: 0.95rem !important;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  /* Project titles */
+  .projectInfo h3 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Project descriptions */
+  .projectInfo p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Case Studies heading */
+  .caseStudiesHeading {
+    font-size: 2.2rem !important;
+  }
+
+  /* Case study titles */
+  .caseStudyCard h3 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Case study descriptions */
+  .caseStudyCard p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Case study tag pill */
+  .caseStudyTag {
+    font-size: 0.75rem;
+  }
+
+
+  /* Contact heading
+  .contactHeading {
+    font-size: 2.4rem !important;
+  } */
+
+  /* Contact paragraph */
+  .contactText {
+    font-size: 1rem !important;
+    line-height: 1.7;
+  }
+
+  /* Contact button */
+  .contactButton {
+    font-size: 0.9rem;
+    padding: 0.9rem 1.3rem;
+  }
+
 }
