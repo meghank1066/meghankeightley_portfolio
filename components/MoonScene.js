@@ -6,81 +6,75 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 export default function MoonScene() {
   useEffect(() => {
+    const container =
+      document.getElementById("moon-container");
+
+    if (!container) return;
 
     const scene = new THREE.Scene();
 
- const container = document.getElementById("moon-container");
- 
- const camera = new THREE.PerspectiveCamera(
-  60,
-  container.clientWidth /
-    container.clientHeight,
-  0.1,
-  1000
-);
+    const camera = new THREE.PerspectiveCamera(
+      60,
+      container.clientWidth /
+        container.clientHeight,
+      0.1,
+      1000
+    );
 
-let isHovering = false;
+    camera.position.set(0, 0, 140);
+    camera.lookAt(0, 0, 0);
 
- camera.position.set(
-  0,
-  0,
-  90
-);
-
-camera.lookAt(0, 0, 0);
- 
-
-    const renderer = new THREE.WebGLRenderer({
-      alpha: true,
-      antialias: true,
-    });
+    const renderer =
+      new THREE.WebGLRenderer({
+        alpha: true,
+        antialias: true,
+      });
 
     renderer.setClearColor(0x000000, 0);
-
-
-
-renderer.setSize(
-  container.clientWidth,
-  container.clientHeight
-);
-
-renderer.domElement.addEventListener(
-  "mouseenter",
-  () => {
-    isHovering = true;
-  }
-);
-
-renderer.domElement.addEventListener(
-  "mouseleave",
-  () => {
-    isHovering = false;
-  }
-);
-
-function handleResize() {
-  const container =
-    document.getElementById("moon-container");
-
-  camera.aspect =
-  container.clientWidth /
-  container.clientHeight;
-
-  camera.updateProjectionMatrix();
-
-  renderer.setSize(
-    container.clientWidth,
-    container.clientHeight
-  );
-}
 
     renderer.setPixelRatio(
       window.devicePixelRatio
     );
 
-    document
-      .getElementById("moon-container")
-      .appendChild(renderer.domElement);
+    renderer.setSize(
+      container.clientWidth,
+      container.clientHeight
+    );
+
+    // Prevent duplicate canvases
+    container.innerHTML = "";
+    container.appendChild(
+      renderer.domElement
+    );
+
+    let isHovering = false;
+
+    renderer.domElement.addEventListener(
+      "mouseenter",
+      () => {
+        isHovering = true;
+      }
+    );
+
+    renderer.domElement.addEventListener(
+      "mouseleave",
+      () => {
+        isHovering = false;
+      }
+    );
+
+    function handleResize() {
+      camera.aspect =
+        container.clientWidth /
+        container.clientHeight;
+
+      camera.updateProjectionMatrix();
+
+      renderer.setSize(
+        container.clientWidth,
+        container.clientHeight
+      );
+    }
 
     /* ---------- Lights ---------- */
 
@@ -113,55 +107,31 @@ function handleResize() {
     const loader = new GLTFLoader();
 
     loader.load(
-      "./models/nasa_moon.glb",
+      "/models/nasa_moon.glb",
 
-     (gltf) => {
-  moon = gltf.scene;
+      (gltf) => {
+        moon = gltf.scene;
 
-moon.scale.set(1.2, 1.2, 1.2);
+        moon.position.set(
+          0,
+          0,
+          0
+        );
 
-camera.position.set(0, 0, 140);
+        moon.scale.set(
+          4.5,
+          4.5,
+          4.5
+        );
 
-moon.position.set(
-  0,
-  0,
-  0
-);
+        console.log(
+          "Moon loaded"
+        );
 
-// moon.position.set(
-//   0,
-//   0,
-//   0
-// );
-
-// moon.position.set(
-//   0, // X
-//   -10, // Y
-//   0 // Z
-// );
-
-// camera.position.set(
-//   0,
-//   0,
-//   180
-// );
-
-  const box =
-    new THREE.Box3().setFromObject(moon);
-
-  console.log(
-    "Moon size:",
-    box.getSize(
-      new THREE.Vector3()
-    )
-  );
-
-  scene.add(moon);
-},
+        scene.add(moon);
+      },
 
       undefined,
-
-      
 
       (error) => {
         console.error(
@@ -169,11 +139,9 @@ moon.position.set(
           error
         );
       }
-
-      
     );
 
-    /* ---------- Drag Rotation ---------- */
+    /* ---------- Drag ---------- */
 
     let isDragging = false;
     let previousMouseX = 0;
@@ -201,13 +169,16 @@ moon.position.set(
     window.addEventListener(
       "mousemove",
       (e) => {
-        if (!isDragging || !moon) return;
+        if (!isDragging || !moon)
+          return;
 
         const deltaX =
-          e.clientX - previousMouseX;
+          e.clientX -
+          previousMouseX;
 
         const deltaY =
-          e.clientY - previousMouseY;
+          e.clientY -
+          previousMouseY;
 
         targetRotationY +=
           deltaX * 0.01;
@@ -215,76 +186,93 @@ moon.position.set(
         targetRotationX +=
           deltaY * 0.005;
 
-        previousMouseX = e.clientX;
-        previousMouseY = e.clientY;
+        previousMouseX =
+          e.clientX;
+
+        previousMouseY =
+          e.clientY;
       }
     );
 
     /* ---------- Animation ---------- */
 
     function animate() {
-  requestAnimationFrame(animate);
+      requestAnimationFrame(
+        animate
+      );
 
-  if (moon) {
+      if (moon) {
+        moon.rotation.y +=
+          0.002;
 
-  moon.rotation.y += 0.002;
+        if (isHovering) {
+          moon.rotation.y +=
+            0.01;
+        }
 
-  if (isHovering) {
-    moon.rotation.y += 0.01;
-  }
+        moon.rotation.y +=
+          (targetRotationY -
+            moon.rotation.y) *
+          0.05;
 
-  moon.rotation.y +=
-    (targetRotationY - moon.rotation.y) *
-    0.05;
+        moon.rotation.x +=
+          (targetRotationX -
+            moon.rotation.x) *
+          0.05;
 
-  moon.rotation.x +=
-    (targetRotationX - moon.rotation.x) *
-    0.05;
+        const targetScale =
+          isHovering
+            ? 5.5
+            : 4.5;
 
-  const targetScale =
-  isHovering ? 5.5 : 4.5;
+        moon.scale.lerp(
+          new THREE.Vector3(
+            targetScale,
+            targetScale,
+            targetScale
+          ),
+          0.08
+        );
+      }
 
-  moon.scale.lerp(
-    new THREE.Vector3(
-      targetScale,
-      targetScale,
-      targetScale
-    ),
-    0.08
+      renderer.render(
+        scene,
+        camera
+      );
+    }
+
+    animate();
+
+    window.addEventListener(
+      "resize",
+      handleResize
+    );
+
+    return () => {
+      window.removeEventListener(
+        "resize",
+        handleResize
+      );
+
+      renderer.dispose();
+
+      if (
+        renderer.domElement.parentNode
+      ) {
+        renderer.domElement.parentNode.removeChild(
+          renderer.domElement
+        );
+      }
+    };
+  }, []);
+
+  return (
+    <div
+      id="moon-container"
+      style={{
+        width: "100%",
+        height: "100%",
+      }}
+    />
   );
-}
-
-  renderer.render(
-    scene,
-    camera
-  );
-}
-
- animate();
-
-window.addEventListener(
-  "resize",
-  handleResize
-);
-
-return () => {
-  window.removeEventListener(
-    "resize",
-    handleResize
-  );
-
-  renderer.dispose();
-};
-
-}, []);
-
-return (
-<div
-  id="moon-container"
-  style={{
-    width: "100%",
-    height: "100%"
-  }}
-/>
-);
 }

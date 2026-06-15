@@ -546,3 +546,4 @@ import {
 import {
   MdEmail
 } from "react-icons/md";
+// check if mobile device

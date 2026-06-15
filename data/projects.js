@@ -1,46 +1,49 @@
 import Link from "next/link";
 
+
+// College Projects
 const projects = [
   {
-    slug: "SPOREX",
-    title: "SPOREX - Mould Identification App",
+    slug: "sporex-mould-identification",
+    title: "SPOREX – Mould Identification App",
     description:
-      "Mould Identification Application for the Asthma Society of Ireland.",
-      image: "/projects/sporex.png",
+      "A web application developed for the Asthma Society of Ireland to help users identify mould types, understand associated health risks, and access guidance on prevention and treatment.",
+    image: "/projects/sporex.png",
     github: "https://github.com/...",
-    tech: [
-      "React",
-      "Node",
-      "MongoDB"
-    ]
+    tech: ["React", "Node.js", "MongoDB"]
   },
 
   {
-    slug: "bike-dublin",
-    title: "Velora - Dublin Bike App",
+    slug: "velora-dublin-bike-app",
+    title: "Velora – Dublin Bike App",
     description:
-      "Swift cycling application for Dublin city.",
-     image: "/projects/velora.png",
-    github: "https://github.com/..."
+      "A mobile cycling application designed to help Dublin commuters locate bike stations, plan routes, and access real-time cycling information.",
+    image: "/projects/velora.png",
+    github: "https://github.com/...",
+    tech: ["Swift", "MapKit", "Firebase"]
   },
 
   {
-    slug: "weather-api",
-    title: "Style Forecast - Weather-Based Outfit API",
+    slug: "style-forecast-weather-api",
+    title: "Style Forecast – Weather-Based Outfit Recommender",
     description:
-      "API that recommends outfits based on weather.",
-     image: "/projects/styleforecast.png",
-    github: "https://github.com/..."
+      "A weather-powered application that integrates external APIs to provide personalised outfit recommendations based on local conditions and forecasts.",
+    image: "/projects/styleforecast.png",
+    github: "https://github.com/...",
+    tech: ["React", "Weather API", "JavaScript"]
   },
 
   {
-    slug: "figma-school",
-    title: "Little Star Academy - School App Design",
+    slug: "little-star-academy-app",
+    title: "Little Star Academy – Childcare Management App",
     description:
-      "User-centred design project for school students created in Figma.",
-   image: "/projects/littlestaracademy.png",
+      "A user-centred UX/UI design project created in Figma, focused on improving communication, scheduling, and daily activity tracking for parents and childcare providers.",
+    image: "/projects/littlestaracademy.png",
+    github: "",
+    tech: ["Figma", "UX Research", "Prototyping"]
   }
 ];
+// case studies
 const casestudies = [
   {
     slug: "nintendo-switch-ui",
@@ -96,6 +99,18 @@ const casestudies = [
     "category": "Brand & UX",
     "image": "/images/onitsuka-cover.png"
   }
+]
+
+// case studies
+const graphicdesign = [
+  {
+    slug: "nintendo-switch-ui",
+    title: "Nintendo Switch Experience",
+    description:
+      "Reimagining navigation, discoverability, and accessibility across Nintendo's gaming ecosystem.",
+    category: "Product Design",
+    image: "/images/nintendo-cover.jpg"
+  },
 ]
 
 

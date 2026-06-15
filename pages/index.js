@@ -16,13 +16,17 @@ import BridgeScene from "../components/BridgeScene";
 import UnlockPortfolio from "../components/UnlockPortfolio";
 import PetalScene from "../components/PetalScene";
 import MoonScene from "../components/MoonScene";
+import useMobileDevice from "../hooks/useMobileDevice";
 // Local Data
 import data from "../data/portfolio.json";
 import { projects, casestudies } from "../data/projects";
 import skillsData from "../data/skills.json";
 
 export default function Home() {
+
+  
   // Ref
+ const isMobile = useMobileDevice();
   const workRef = useRef();
   const aboutRef = useRef();
   const textOne = useRef();
@@ -36,6 +40,8 @@ export default function Home() {
   useEffect(() => {
     setMounted(true);
   }, []);
+
+
 
   // Handle Button Click
   const buttonNames = [
@@ -85,6 +91,8 @@ export default function Home() {
     return renderSkillIcons(allSkills);
   };
 
+  console.log("isMobile:", isMobile);
+
   useIsomorphicLayoutEffect(() => {
     stagger(
       [textOne.current, textTwo.current, textThree.current, textFour.current],
@@ -93,11 +101,15 @@ export default function Home() {
     );
   }, []);
 
+  
+
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
-      <UnlockPortfolio />
-      <SakuraScene />
-      <PetalScene />
+    
+    <div className={`relative ${data.showCursor ? "cursor-none" : ""}`}>
+    {/* <div className={`relative ${data.showCursor && "cursor-none"}`}> */}
+{/* {isMobile === false && <UnlockPortfolio />} */}
+{isMobile === false && <SakuraScene />}
+{isMobile === false && <PetalScene />}
 
       {data.showCursor && <Cursor />}
       <Head>
@@ -140,55 +152,24 @@ export default function Home() {
   </a>
 
 </div>
-            {/* <div className="buttonsContainer">
-              <button>
-              <a
-  href="/cv/MeghanKeightley_CV.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="contactBtn"
->
-  <img
-    src="https://img.icons8.com/ios-filled/50/ffffff/resume.png"
-    alt="resume icon"
-  />
-  My CV
-</a>
-              </button>
-              <button>
-                <img
-                  src="https://img.icons8.com/ios-filled/50/000000/github.png"
-                  alt="github icon"
-                />
-                <a href="https://github.com/meghank1066" target="_blank">
-                  GitHub
-                </a>
-              </button>
-              <button>
-                <img
-                  src="https://img.icons8.com/ios-filled/50/0A66C2/linkedin.png"
-                  alt="linkedin icon"
-                />
-                <a
-                  href="https://www.linkedin.com/in/meghan-k-01265a2b9/"
-                  target="_blank"
-                >
-                  LinkedIn
-                </a>
-              </button>
-              <button>
-                <img
-                  src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png"
-                  alt="email icon"
-                />
-                 <a href="mailto:megankeightley5@gmail.com" target="_blank">
-                  Email
-                </a>
-              </button>
-            </div> */}
           </div>
-        </section>
-        <div className="ticker">
+        {/* </section> */}
+        </section> {/* hero */}
+
+{isMobile && (
+  <div className="mobile-photo-section">
+    <div className="photo-wrapper">
+      <img
+        src="/images/headshot1.webp"
+        alt="Meghan"
+        className="about-photo"
+      />
+    </div>
+  </div>
+)}
+
+
+      {isMobile === false &&  <div className="ticker">
           <div className="ticker-track">
             <span>
              MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦
@@ -197,7 +178,7 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
             </span>
           </div>
         </div>
-
+}
         <section id="about"className="about-section">
           <div className="about-grid">
             <div className="about-content">
@@ -239,6 +220,7 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
               </p>
             </div>
 
+{isMobile === false && (
             <div className="about-side">
               <div className="photo-wrapper">
                 <img
@@ -301,11 +283,13 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
                   <span className="education-date">2025</span>
                 </div>
               </div>
-            </div>
+             </div>
+)}
+            
           </div>
  </section> 
           <div className="skillsColumn"> <h3 className="headingText">Technical skills</h3>
-            <BridgeScene />
+         {isMobile === false &&  <BridgeScene />}
           </div>
          
            
@@ -430,13 +414,27 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
 >
   Contact me  
 </a>
+{isMobile && (
+  <div
+    style={{
+      background: "red",
+      color: "white",
+      padding: "40px",
+      marginTop: "40px"
+    }}
+  >
+    FOOTER TEST
   </div>
+)}
+  </div>
+  
 {/* ✦ */}
+{isMobile === false && (
   <div className="moonWrapper">
-    <MoonScene />
+{isMobile === false && <MoonScene />}
   </div>
+)}
 </section>
-
         <h1 ref={textOne} className="hidden"></h1>
         <Footer />
       </div>

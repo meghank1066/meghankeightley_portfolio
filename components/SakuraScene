@@ -38,6 +38,11 @@ document.body.appendChild(
     renderer.domElement
 );
 
+renderer.domElement.style.position = "absolute";
+renderer.domElement.style.inset = "0";
+renderer.domElement.style.pointerEvents = "none";
+renderer.domElement.style.zIndex = "-1";
+
 // ---------- Lighting ----------
 
 const ambientLight =
@@ -228,6 +233,25 @@ window.addEventListener(
     }
 );
 
+function handleResize() {
+
+    camera.aspect =
+        window.innerWidth /
+        window.innerHeight;
+
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(
+        window.innerWidth,
+        window.innerHeight
+    );
+}
+
+window.addEventListener(
+    "resize",
+    handleResize
+);
+
 function animate() {
 
     requestAnimationFrame(
@@ -352,44 +376,17 @@ function animate() {
 
 animate();
 
+  return () => {
 
-// about me scroll reveal //
+    renderer.dispose();
 
-// const aboutCard =
-//     document.querySelector(
-//         ".about-card"
-//     );
+    if (renderer.domElement.parentNode) {
+      renderer.domElement.parentNode.removeChild(
+        renderer.domElement
+      );
+    }
 
-// const observer =
-//     new IntersectionObserver(
+  };
 
-//         (entries) => {
-
-//             entries.forEach(
-//                 (entry) => {
-
-//                     if (
-//                         entry.isIntersecting
-//                     ) {
-
-//                         aboutCard.classList.add(
-//                             "visible"
-//                         );
-//                     }
-//                 }
-//             );
-//         },
-
-//         {
-//             threshold: 0.3
-//         }
-//     );
-
-// if (aboutCard) {
-//     observer.observe(aboutCard);
-// }
-
- }, []);
-
-  return null;
+}, []);
 }
