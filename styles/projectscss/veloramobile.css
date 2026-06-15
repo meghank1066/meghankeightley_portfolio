@@ -1,0 +1,70 @@
+
+/* tablet */
+
+@media (max-width: 1024px) {
+
+  .veloraprojectPage {
+    padding: 7rem 6vw;
+  }
+
+  .veloraprojectHero {
+    flex-direction: column;
+  }
+
+  .veloraheroRight {
+    min-width: auto;
+  }
+
+  .veloraplaceholderImage {
+    height: 500px;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+
+  .veloraprojectPage {
+    padding: 6rem 5vw;
+  }
+
+  .veloraprojectHero {
+    padding: 2rem;
+
+    gap: 2rem;
+  }
+
+  .veloraprojectTitle {
+    font-size: 3.5rem;
+  }
+
+  .veloraprojectDescription {
+    font-size: 1rem;
+  }
+
+  .veloraheroRight {
+    padding: 1.5rem;
+  }
+
+  .veloraplaceholderImage {
+    height: 300px;
+  }
+}
+
+/* small phones */
+
+@media (max-width: 480px) {
+
+  .veloraprojectTitle {
+    font-size: 2.8rem;
+  }
+
+  .veloraprojectHero {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .veloraplaceholderImage {
+    height: 220px;
+  }
+}

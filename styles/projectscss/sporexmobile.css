@@ -1,0 +1,174 @@
+/* ==================================
+   TABLET
+================================== */
+
+@media (max-width: 1024px) {
+
+  .sporexprojectPage {
+    padding: 7rem 6vw;
+  }
+
+  .sporexprojectHero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .sporexheroLeft,
+  .sporexheroRight {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .sporexprojectTitle {
+    font-size: 4.5rem;
+  }
+
+  .sporexOverviewSection {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 8rem;
+  }
+
+  .sporexOverviewTitle {
+    font-size: 3rem;
+  }
+
+  .sporexOverviewImage {
+    height: 420px;
+  }
+
+  .sporexplaceholderImage {
+    height: 420px;
+  }
+}
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+  .sporexprojectPage {
+    padding: 6rem 5vw;
+  }
+
+  .sporexprojectHero {
+    padding: 2rem;
+    border-radius: 28px;
+    gap: 2rem;
+  }
+
+  .sporexprojectTag {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .sporexprojectTitle {
+    font-size: clamp(3rem, 14vw, 4.5rem);
+    margin: 1rem 0;
+  }
+
+  .sporexprojectDescription {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .sporexheroRight {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .sporexheroRight h4 {
+    font-size: 0.8rem;
+  }
+
+  .sporexheroRight p {
+    font-size: 0.95rem;
+  }
+
+  .teamList {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .sporexOverviewSection {
+    margin-top: 6rem;
+    gap: 2rem;
+  }
+
+  .sporexOverviewLabel h3 {
+    font-size: 1.75rem;
+  }
+
+  .sporexOverviewTitle {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sporexOverviewText {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .sporexOverviewImage,
+  .sporexplaceholderImage {
+    height: 280px;
+    margin-top: 2rem;
+  }
+
+  .sporexbackgroundWord {
+    display: none;
+  }
+
+  .sporexprojectHero::before {
+    width: 400px;
+    height: 400px;
+    left: -100px;
+  }
+}
+
+/* ==================================
+   SMALL MOBILE
+================================== */
+
+@media (max-width: 480px) {
+
+  .sporexprojectPage {
+    padding: 5rem 1.25rem;
+  }
+
+  .sporexprojectHero {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .sporexprojectTitle {
+    font-size: 2.75rem;
+  }
+
+  .sporexprojectDescription {
+    font-size: 0.95rem;
+  }
+
+  .sporexheroRight {
+    padding: 1.5rem;
+  }
+
+  .sporexheroRight p {
+    font-size: 0.9rem;
+  }
+
+  .sporexOverviewTitle {
+    font-size: 2rem;
+  }
+
+  .sporexOverviewText {
+    font-size: 0.95rem;
+  }
+
+  .sporexOverviewImage,
+  .sporexplaceholderImage {
+    height: 220px;
+  }
+}
