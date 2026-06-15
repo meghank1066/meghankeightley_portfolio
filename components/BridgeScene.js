@@ -128,7 +128,7 @@ bridge.scale.set(
 
 bridge.position.set(
   0,
-  -5,
+  1,
   0
 );
 

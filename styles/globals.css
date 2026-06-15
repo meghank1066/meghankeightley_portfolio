@@ -32,6 +32,10 @@
   position: relative;
   height: 500px;
 }
+
+.skillsColumn .bridge-container {
+  transform: translateY(120px);
+}
 .skillsColumn::after {
   content: "";
   position: absolute;
