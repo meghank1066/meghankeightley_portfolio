@@ -102,6 +102,7 @@
   .hero-section {
     height: auto !important;
     min-height: auto !important;
+   max-height: 350px;
     padding: 100px 24px 0;
   }
 
@@ -118,7 +119,7 @@
     display: flex;
     justify-content: center;
 
-     margin-top: 16px;
+     /* margin-top: 16px; */
     margin-bottom: 0;
 
     padding: 0 24px;
@@ -547,16 +548,46 @@ footer {
 /* nav new */
 
 @media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+     width: fit-content;
+  min-width: 90vw;
+  max-width: 90vw;
+    padding: 0 24px;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+
+    border-radius: 999px;
+
+    background: rgba(10,10,20,.85);
+    backdrop-filter: blur(20px);
+
+    z-index: 9999;
+  }
+/* 
+@media (max-width: 768px) {
 
   .navbar {
     position: fixed;
-    top: 16px;
-    left: 16px;
-    right: 16px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
 
-    width: auto;
-    height: 64px;
+    transform: translateX(-50%);
 
+
+    width: fit-content;
+  min-height: 52px;
+  padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -567,7 +598,17 @@ footer {
     backdrop-filter: blur(20px);
 
     z-index: 9999;
-  }
+
+    
+  } */
+
+  .navbar a {
+  font-size: 0.9rem;
+}
+
+.hero-text {
+  margin-top: 40px;
+}
 
   .headerLinks {
     display: flex;
