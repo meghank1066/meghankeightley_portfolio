@@ -56,22 +56,29 @@ export default function Home() {
     setSelectedButton(buttonName);
   };
 
-  // Handling Scroll
-  const handleWorkScroll = () => {
-    window.scrollTo({
-      top: workRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  // // Handling Scroll
+  // const handleWorkScroll = () => {
+  //   window.scrollTo({
+  //     top: workRef.current.offsetTop,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
-  const handleAboutScroll = () => {
-    window.scrollTo({
-      top: aboutRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  // const handleAboutScroll = () => {
+  //   window.scrollTo({
+  //     top: aboutRef.current.offsetTop,
+  //     left: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
+
+  const scrollToSection = (id) => {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
 
   const renderSkillIcons = (skills) => {
     return skills.map((skill) => (
@@ -121,8 +128,9 @@ export default function Home() {
       </Head>
       <div>
         <Header
-          handleWorkScroll={handleWorkScroll}
-          handleAboutScroll={handleAboutScroll}
+          // handleWorkScroll={handleWorkScroll}
+          // handleAboutScroll={handleAboutScroll}
+  scrollToSection={scrollToSection}
         />
         <section  id="home" className="hero-section">
           <div className="hero-text">
