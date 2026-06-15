@@ -6,7 +6,9 @@ import Footer from "../../components/Footer";
 export default function SporexPage() {
   return (
     <>
-      <Header />
+    <div className="sporexWrapper">
+<Header className="sporexNav" />
+  </div>
 
       <main className="sporexprojectPage">
 {/* 
