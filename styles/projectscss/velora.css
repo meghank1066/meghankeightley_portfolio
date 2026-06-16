@@ -302,3 +302,20 @@ color: var(--velora-white);
 .veloraprojectPage {
   background: none;
 }
+
+.veloraNodes {
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  opacity: 0.9;
+}
+
+.veloraNodes canvas {
+  width: 100%;
+  height: 100%;
+}

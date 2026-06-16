@@ -1,9 +1,17 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import VeloraNodes from "../../components/VeloraNodes";
+import useMobileDevice from "../../hooks/useMobileDevice";
+
 
 export default function VeloraPage() {
+
+ const isMobile = useMobileDevice();
+
   return (
     <>
+  {isMobile === false && <VeloraNodes />}
+
       <div className="veloraPageShell">
       <div className="veloraWrapper">
         <Header className="veloraNav" />

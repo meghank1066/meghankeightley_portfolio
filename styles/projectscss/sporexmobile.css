@@ -151,3 +151,52 @@
     height: 240px;
   }
 }
+
+@media (max-width: 768px) {
+
+  .sporexNav {
+    border: 1px solid rgba(
+      255,
+      255,
+      255,
+      0.15
+    );
+
+    color: white;
+
+    box-shadow:
+      0 0 0 1px rgba(
+        0,
+        200,
+        83,
+        0.15
+      ),
+      0 0 25px rgba(
+        0,
+        200,
+        83,
+        0.05
+      );
+  }
+
+  .sporexNav a {
+    color: #ffffff !important;
+  }
+
+  .sporexNav {
+  background: rgba(8, 27, 45, 0.35);
+
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.25
+    );
+  
+box-shadow:
+  0 0 0 2px rgba(0,200,83,0.20),
+  0 0 30px rgba(0,200,83,0.08);
+}
+}
