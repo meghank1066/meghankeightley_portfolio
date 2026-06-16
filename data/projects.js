@@ -34,8 +34,8 @@ const projects = [
   },
 
   {
-    slug: "little-star-academy-app",
-    title: "Little Star Academy – Childcare Management App",
+    slug: "little-star-app",
+    title: "Little Star – Education App Design",
     description:
       "A user-centred UX/UI design project created in Figma, focused on improving communication, scheduling, and daily activity tracking for parents and childcare providers.",
     image: "/projects/littlestaracademy.png",

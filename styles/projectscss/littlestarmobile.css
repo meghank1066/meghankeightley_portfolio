@@ -1,0 +1,148 @@
+/* ==================================
+   TABLET
+================================== */
+
+@media (max-width: 1024px) {
+
+  .littleStarProjectPage {
+    padding: 7rem 6vw;
+  }
+
+  .littleStarProjectHero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .littleStarHeroLeft {
+    max-width: 100%;
+  }
+
+  .littleStarHeroRight {
+    min-width: 100%;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .littleStarPlaceholderImage {
+    height: 500px;
+  }
+}
+
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+  .littleStarProjectPage {
+    padding: 6rem 5vw;
+  }
+
+  .littleStarProjectHero {
+    padding: 2rem;
+    gap: 2rem;
+
+    border-radius: 28px;
+  }
+
+  .littleStarProjectTag {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+  }
+
+  .littleStarProjectTitle {
+    font-size: clamp(3rem, 12vw, 4.5rem);
+    margin: 1rem 0;
+  }
+
+  .littleStarProjectDescription {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .littleStarHeroRight {
+    gap: 1.25rem;
+  }
+
+  .littleStarHeroRight h4 {
+    font-size: 0.8rem;
+  }
+
+  .littleStarHeroRight p {
+    font-size: 0.95rem;
+  }
+
+  .littleStarPlaceholderImage {
+    height: 350px;
+    font-size: 1.4rem;
+    border-radius: 28px;
+  }
+}
+
+
+/* ==================================
+   SMALL PHONES
+================================== */
+
+@media (max-width: 480px) {
+
+  .littleStarProjectPage {
+    padding: 5rem 1.25rem;
+  }
+
+  .littleStarProjectHero {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .littleStarProjectTag {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+
+  .littleStarProjectTitle {
+    font-size: clamp(2.4rem, 13vw, 3.2rem);
+    line-height: 0.95;
+  }
+
+  .littleStarProjectDescription {
+    font-size: 0.95rem;
+  }
+
+  .littleStarHeroRight h4 {
+    font-size: 0.75rem;
+  }
+
+  .littleStarHeroRight p {
+    font-size: 0.95rem;
+  }
+
+  .littleStarPlaceholderImage {
+    height: 240px;
+    font-size: 1.1rem;
+    border-radius: 24px;
+  }
+}
+
+
+/* ==================================
+   HIDE NODES ON MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+  .littleStarNodes {
+    display: none;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .littleStarProjectTitle {
+    max-width: 8ch;
+  }
+
+}
