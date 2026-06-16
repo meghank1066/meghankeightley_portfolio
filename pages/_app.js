@@ -10,6 +10,8 @@ import "../styles/case-studies-css/nintendo.css";
 import "../styles/case-studies-css/nintendo-mobile.css";
 import "../styles/case-studies-css/evelynn.css";
 import "../styles/case-studies-css/evelynn-mobile.css";
+import "../styles/case-studies-css/penneys.css";
+import "../styles/case-studies-css/penneys-mobile.css";
 import { ThemeProvider } from "next-themes";  
 
 

@@ -55,7 +55,7 @@ const casestudies = [
   },
 
   {
-    slug: "primark-redesign",
+    slug: "penneys-primark-redesign",
     title: "Primark App Redesign",
     description:
       "Improving product discovery, store navigation, and shopping journeys for mobile users.",
