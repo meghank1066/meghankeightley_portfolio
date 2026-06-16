@@ -3,11 +3,16 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import AirParticles from "../../components/AirParticles";
+import useMobileDevice from "../../hooks/useMobileDevice";
 
 export default function SporexPage() {
+
+   const isMobile = useMobileDevice();
+
   return (
+    
     <>
-      <AirParticles />
+     {isMobile === false &&  <AirParticles /> }
     <div className="sporexWrapper">
 <Header className="sporexNav" />
   </div>

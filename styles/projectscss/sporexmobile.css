@@ -14,32 +14,26 @@
     padding: 3rem;
   }
 
-  .sporexheroLeft,
-  .sporexheroRight {
-    max-width: 100%;
+  .sporexheroLeft {
     width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .sporexheroRight {
+    width: 100%;
+    min-width: unset;
+    max-width: 100%;
+
+    padding: 2.5rem;
   }
 
   .sporexprojectTitle {
     font-size: 4.5rem;
   }
 
-  .sporexOverviewSection {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    margin-top: 8rem;
-  }
-
-  .sporexOverviewTitle {
-    font-size: 3rem;
-  }
-
-  .sporexOverviewImage {
-    height: 420px;
-  }
-
   .sporexplaceholderImage {
-    height: 420px;
+    height: 450px;
   }
 }
 
@@ -50,13 +44,25 @@
 @media (max-width: 768px) {
 
   .sporexprojectPage {
-    padding: 6rem 5vw;
+    padding: 5rem 5vw;
   }
+
+  .sporexheroRight {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+
+  box-sizing: border-box;
+}
+
+.sporexprojectHero {
+  overflow: hidden;
+}
 
   .sporexprojectHero {
     padding: 2rem;
-    border-radius: 28px;
     gap: 2rem;
+    border-radius: 28px;
   }
 
   .sporexprojectTag {
@@ -65,8 +71,13 @@
   }
 
   .sporexprojectTitle {
-    font-size: clamp(3rem, 14vw, 4.5rem);
-    margin: 1rem 0;
+    font-size: clamp(
+      3rem,
+      12vw,
+      4rem
+    );
+
+    line-height: 0.95;
   }
 
   .sporexprojectDescription {
@@ -75,8 +86,11 @@
   }
 
   .sporexheroRight {
+    width: 100%;
+    min-width: unset;
+
     padding: 2rem;
-    gap: 1.5rem;
+    border-radius: 24px;
   }
 
   .sporexheroRight h4 {
@@ -85,46 +99,11 @@
 
   .sporexheroRight p {
     font-size: 0.95rem;
+    line-height: 1.7;
   }
 
-  .teamList {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
-
-  .sporexOverviewSection {
-    margin-top: 6rem;
-    gap: 2rem;
-  }
-
-  .sporexOverviewLabel h3 {
-    font-size: 1.75rem;
-  }
-
-  .sporexOverviewTitle {
-    font-size: 2.25rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .sporexOverviewText {
-    font-size: 1rem;
-    line-height: 1.8;
-  }
-
-  .sporexOverviewImage,
   .sporexplaceholderImage {
-    height: 280px;
-    margin-top: 2rem;
-  }
-
-  .sporexbackgroundWord {
-    display: none;
-  }
-
-  .sporexprojectHero::before {
-    width: 400px;
-    height: 400px;
-    left: -100px;
+    height: 320px;
   }
 }
 
@@ -135,7 +114,7 @@
 @media (max-width: 480px) {
 
   .sporexprojectPage {
-    padding: 5rem 1.25rem;
+    padding: 4rem 1.25rem;
   }
 
   .sporexprojectHero {
@@ -144,7 +123,7 @@
   }
 
   .sporexprojectTitle {
-    font-size: 2.75rem;
+    font-size: 2.8rem;
   }
 
   .sporexprojectDescription {
@@ -155,20 +134,15 @@
     padding: 1.5rem;
   }
 
+  .sporexheroRight h4 {
+    font-size: 0.75rem;
+  }
+
   .sporexheroRight p {
     font-size: 0.9rem;
   }
 
-  .sporexOverviewTitle {
-    font-size: 2rem;
-  }
-
-  .sporexOverviewText {
-    font-size: 0.95rem;
-  }
-
-  .sporexOverviewImage,
   .sporexplaceholderImage {
-    height: 220px;
+    height: 240px;
   }
 }

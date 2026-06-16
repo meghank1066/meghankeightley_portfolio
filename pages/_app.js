@@ -6,7 +6,8 @@ import "../styles/projectscss/sporex.css";
 import "../styles/projectscss/sporexmobile.css";
 import "../styles/projectscss/velora.css";
 import "../styles/projectscss/veloramobile.css";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "next-themes";  
+
 
 const App = ({ Component, pageProps }) => {
   return (

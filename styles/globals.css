@@ -549,3 +549,27 @@ footer {
 .footerGithub:hover {
   opacity: .7;
 }
+
+.themeToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+}
+
+.themeToggle img {
+  width: 20px;
+  height: 20px;
+
+  transition: transform .25s ease;
+}
+
+.themeToggle:hover img {
+  transform: rotate(15deg) scale(1.1);
+}

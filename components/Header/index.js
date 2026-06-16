@@ -2,12 +2,16 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import { useTheme } from "next-themes";
+import useMobileDevice from "../../hooks/useMobileDevice";
 
 const Header = ({ className = "" }) => {
   const [mounted, setMounted] = useState(false);
-
+   const isMobile = useMobileDevice();
   const router = useRouter();
   const isHome = router.pathname === "/";
+
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -18,8 +22,14 @@ const Header = ({ className = "" }) => {
   return (
     <nav className={`navbar ${className}`}>
       <a href={isHome ? "#home" : "/#home"}>Home</a>
-      <a href={isHome ? "#about" : "/#about"}>About</a>
-      <a href={isHome ? "#projects" : "/#projects"}>Projects</a>
+
+      <a href={isHome ? "#about" : "/#about"}>
+        About
+      </a>
+
+      <a href={isHome ? "#projects" : "/#projects"}>
+        Projects
+      </a>
 
       <a
         href={isHome ? "#case-studies" : "/#case-studies"}
@@ -31,6 +41,28 @@ const Header = ({ className = "" }) => {
       <a href={isHome ? "#contact" : "/#contact"}>
         Contact
       </a>
+
+ {/* {mounted && isMobile === false && (
+  <button
+    className="themeToggle"
+    onClick={() =>
+      setTheme(
+        theme === "dark"
+          ? "light"
+          : "dark"
+      )
+    }
+  >
+    <img
+      src={
+        theme === "dark"
+          ? "/images/sun.svg"
+          : "/images/moon.svg"
+      }
+      alt="Toggle Theme"
+    />
+  </button>
+)} */}
     </nav>
   );
 };
