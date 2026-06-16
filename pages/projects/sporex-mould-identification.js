@@ -13,6 +13,7 @@ export default function SporexPage() {
     
     <>
      {isMobile === false &&  <AirParticles /> }
+      <div className="sporexPageShell">
     <div className="sporexWrapper">
 <Header className="sporexNav" />
   </div>
@@ -105,8 +106,10 @@ export default function SporexPage() {
       </section>
 
       </main>
-
-      <Footer />
+      <div className="sporexWrapper2">
+ <Footer className="sporexFooter" />
+  </div>
+  </div>
     </>
   );
 }
