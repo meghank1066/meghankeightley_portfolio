@@ -51,7 +51,7 @@ export default function SporexPage() {
 
           <div>
   <h4>PROJECT TYPE</h4>
-  <p>Final Year Capstone Project</p>
+  <p>Final Year Project</p>
 </div>
 
 <div>
