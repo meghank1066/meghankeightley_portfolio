@@ -1,9 +1,10 @@
 :root {
-  --velora-mint: #c9f1ed;
-  --velora-teal: #2c8f87;
-  --velora-dark: #25404a;
-  --velora-white: #fdfdfd;
+  --velora-mint: #bfe8e3;
+  --velora-teal: #79d8ce;
+  --velora-dark: #081827;
+  --velora-white: #ffffff;
 }
+
 
 .veloraprojectPage {
   min-height: 100vh;
@@ -11,7 +12,36 @@
   position: relative;
   overflow: hidden;
 
-  background: var(--velora-mint);
+ background:
+
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(191, 232, 227, 0.12),
+      transparent 40%
+    ),
+
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(120, 220, 210, 0.08),
+      transparent 35%
+    ),
+
+    radial-gradient(
+      circle at 50% 75%,
+      rgba(80, 180, 170, 0.10),
+      transparent 45%
+    ),
+
+    linear-gradient(
+      180deg,
+      #071223 0%,
+      #081b2d 40%,
+      #0b2431 75%,
+      #081827 100%
+    );
+
+    background-repeat: no-repeat;
+    background-size: cover;
   color: var(--velora-dark);
 }
 
@@ -45,21 +75,15 @@
 .veloraprojectHero {
   position: relative;
   z-index: 2;
-
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-
   padding: 4rem;
-
-  background: rgba(255,255,255,0.55);
-
-  backdrop-filter: blur(20px);
+   background: rgba(15, 24, 34, 0.55);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(191,232,227,.08);
 
   border-radius: 40px;
-
-  border: 1px solid rgba(255,255,255,0.8);
-
   box-shadow:
     0 25px 50px rgba(37,64,74,0.08);
 }
@@ -68,9 +92,8 @@
   max-width: 650px;
 }
 
-.veloraprojectTag {
-  color: var(--velora-teal);
-
+.veloraprojectTag { 
+  color: #79d8ce;
   letter-spacing: 4px;
 
   font-size: 0.8rem;
@@ -90,6 +113,10 @@
   color: var(--velora-dark);
 
   letter-spacing: -0.05em;
+  color: var(--velora-teal);
+  text-shadow:
+    0 0 20px rgba(191,232,227,.12);
+  letter-spacing: -0.05em;
 }
 
 .veloraprojectDescription {
@@ -99,30 +126,26 @@
 
   max-width: 550px;
 
-  color: rgba(37,64,74,0.8);
+  color: var(--velora-white);
 }
 
 .veloraheroRight {
   min-width: 320px;
-
   display: flex;
   flex-direction: column;
-
   gap: 2rem;
-
-  padding: 2rem;
-
-  background: rgba(255,255,255,0.6);
-
   border-radius: 28px;
-
-  border: 1px solid rgba(44,143,135,0.1);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  color: var(--velora-white);
 }
 
 .veloraheroRight h4 {
   margin-bottom: 0.5rem;
 
-  color: var(--velora-teal);
+  color: #79d8ce;
 
   letter-spacing: 2px;
 
@@ -130,16 +153,15 @@
 }
 
 .veloraheroRight p {
-  color: rgba(37,64,74,0.85);
-
+color: var(--velora-white);
   line-height: 1.6;
+
 }
 
-.veloraLink {
-  color: var(--velora-teal);
-
+.veloraLink a {
+  color: var(--velora-white);
   text-decoration: none;
-
+  list-style-type: none;
   font-weight: 600;
 }
 
@@ -160,13 +182,15 @@
 .veloraplaceholderImage {
   height: 650px;
 
+ background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+
+  border: 1px solid rgba(191,232,227,.08);
+ 
+
   border-radius: 40px;
-
-  background: rgba(255,255,255,0.55);
-
-  backdrop-filter: blur(20px);
-
-  border: 1px solid rgba(255,255,255,0.8);
+ 
 
   box-shadow:
     0 25px 50px rgba(37,64,74,0.08);
@@ -177,24 +201,45 @@
 
   justify-content: center;
 
-  color: rgba(37,64,74,0.5);
+  color: #bfe8e3;
 
   font-size: 2rem;
 }
 
 /* navbar */
-
 .veloraNav {
-  border: 1px solid rgba(44,143,135,0.15);
+  backdrop-filter: blur(24px);
+
+  color: #ffffff;
+
+  border: 1px solid rgba(
+    255,
+    255,
+    255,
+    0.25
+  );
 
   box-shadow:
-    0 0 0 1px rgba(44,143,135,0.08);
+    0 0 0 2px rgba(
+      121,
+      216,
+      206,
+      0.25
+    ),
+    0 0 40px rgba(
+      121,
+      216,
+      206,
+      0.08
+    );
+}
+
+.veloraNav a {
+  color: #ffffff;
 }
 
 .veloraNav a:hover {
-  color: var(--velora-dark);
-
-  text-shadow: none;
+  color: var(--velora-teal);
 }
 
 .veloraNav a::after {
