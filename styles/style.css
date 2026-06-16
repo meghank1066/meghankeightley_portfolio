@@ -398,10 +398,12 @@ body {
 }
 
 
+
 canvas {
     position: absolute;
     inset: 0;
-    z-index: 1;
+    z-index: -1;
+    pointer-events: none;
 }
 
 .hero-text {
@@ -1189,7 +1191,7 @@ canvas {
     }
 }
 /* photo me */
-.photo-wrapper {
+/* .photo-wrapper {
 
     position: relative;
 
@@ -1249,6 +1251,52 @@ canvas {
         rotateY(-6deg)
         rotateX(3deg)
         translateY(-10px);
+} */
+
+.photo-wrapper {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.15s ease-out;
+  cursor: pointer;
+    perspective: 1400px;
+}
+
+.about-photo {
+   transform: translateZ(60px);
+   display: block;
+
+    width: 100%;
+
+    max-width: 380px;
+
+    border-radius: 28px;
+
+    z-index: 99999;
+
+    object-fit: cover;
+}
+.photo-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  border-radius: 40px;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(191,232,227,.25),
+    transparent 70%
+  );
+
+  filter: blur(40px);
+
+  opacity: 0;
+  transition: opacity .3s ease;
+
+  z-index: -1;
+}
+
+.photo-wrapper:hover::before {
+  opacity: 1;
 }
 /* about me section */
 .hero-section {

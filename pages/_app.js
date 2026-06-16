@@ -6,6 +6,10 @@ import "../styles/projectscss/sporex.css";
 import "../styles/projectscss/sporexmobile.css";
 import "../styles/projectscss/velora.css";
 import "../styles/projectscss/veloramobile.css";
+import "../styles/case-studies-css/nintendo.css";
+import "../styles/case-studies-css/nintendo-mobile.css";
+import "../styles/case-studies-css/evelynn.css";
+import "../styles/case-studies-css/evelynn-mobile.css";
 import { ThemeProvider } from "next-themes";  
 
 

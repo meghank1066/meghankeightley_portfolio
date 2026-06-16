@@ -1,0 +1,151 @@
+/* ==================================
+   TABLET
+================================== */
+
+@media (max-width: 1024px) {
+
+  .evelynnprojectPage {
+    padding: 7rem 6vw;
+  }
+
+  .evelynnprojectHero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .evelynnheroLeft,
+  .evelynnheroRight {
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  .evelynnprojectTitle {
+    font-size: clamp(3rem, 8vw, 5rem);
+  }
+
+  .evelynnprojectDescription {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .evelynnheroRight {
+    gap: 1.5rem;
+  }
+
+  .evelynnplaceholderImage {
+    height: 500px;
+    font-size: 1.5rem;
+  }
+
+}
+
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+  .evelynnprojectPage {
+    padding: 6rem 5vw;
+  }
+
+  .evelynnprojectHero {
+    padding: 2rem;
+    border-radius: 28px;
+    gap: 2.5rem;
+  }
+
+  .evelynnprojectTag {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+
+  .evelynnprojectTitle {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    margin: 1rem 0;
+  }
+
+  .evelynnprojectDescription {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .evelynnheroRight {
+    gap: 1.25rem;
+  }
+
+  .evelynnheroRight h4 {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .evelynnheroRight p {
+    font-size: 0.95rem;
+  }
+
+  .evelynnheroMockup {
+    margin-top: 3rem;
+  }
+
+  .evelynnplaceholderImage {
+    height: 350px;
+    border-radius: 28px;
+
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+
+    padding: 1.5rem;
+  }
+
+}
+
+
+/* ==================================
+   SMALL MOBILE
+================================== */
+
+@media (max-width: 480px) {
+
+  .evelynnprojectPage {
+    padding: 5rem 1.25rem;
+  }
+
+  .evelynnprojectHero {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .evelynnprojectTitle {
+    font-size: 2.3rem;
+    line-height: 0.95;
+  }
+
+  .evelynnprojectDescription {
+    font-size: 0.95rem;
+  }
+
+  .evelynnheroRight {
+    gap: 1rem;
+  }
+
+  .evelynnheroRight h4 {
+    font-size: 0.72rem;
+  }
+
+  .evelynnheroRight p {
+    font-size: 0.9rem;
+  }
+
+  .evelynnplaceholderImage {
+    height: 280px;
+
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+
+    border-radius: 24px;
+  }
+
+}

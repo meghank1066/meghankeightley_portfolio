@@ -55,7 +55,7 @@ export default function PetalScene() {
       "none";
 
     renderer.domElement.style.zIndex =
-      "0";
+      "-10";
 
     document.body.appendChild(
       renderer.domElement

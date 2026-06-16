@@ -1,0 +1,151 @@
+/* ==================================
+   TABLET
+================================== */
+
+@media (max-width: 1024px) {
+
+  .nintendoprojectPage {
+    padding: 7rem 6vw;
+  }
+
+  .nintendoprojectHero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .nintendoheroLeft,
+  .nintendoheroRight {
+    max-width: 100%;
+    min-width: unset;
+  }
+
+  .nintendoprojectTitle {
+    font-size: clamp(3rem, 8vw, 5rem);
+  }
+
+  .nintendoprojectDescription {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .nintendoheroRight {
+    gap: 1.5rem;
+  }
+
+  .nintendoplaceholderImage {
+    height: 500px;
+    font-size: 1.5rem;
+  }
+
+}
+
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+  .nintendoprojectPage {
+    padding: 6rem 5vw;
+  }
+
+  .nintendoprojectHero {
+    padding: 2rem;
+    border-radius: 28px;
+    gap: 2.5rem;
+  }
+
+  .nintendoprojectTag {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+
+  .nintendoprojectTitle {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    margin: 1rem 0;
+  }
+
+  .nintendoprojectDescription {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .nintendoheroRight {
+    gap: 1.25rem;
+  }
+
+  .nintendoheroRight h4 {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .nintendoheroRight p {
+    font-size: 0.95rem;
+  }
+
+  .nintendoheroMockup {
+    margin-top: 3rem;
+  }
+
+  .nintendoplaceholderImage {
+    height: 350px;
+    border-radius: 28px;
+
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+
+    padding: 1.5rem;
+  }
+
+}
+
+
+/* ==================================
+   SMALL MOBILE
+================================== */
+
+@media (max-width: 480px) {
+
+  .nintendoprojectPage {
+    padding: 5rem 1.25rem;
+  }
+
+  .nintendoprojectHero {
+    padding: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .nintendoprojectTitle {
+    font-size: 2.3rem;
+    line-height: 0.95;
+  }
+
+  .nintendoprojectDescription {
+    font-size: 0.95rem;
+  }
+
+  .nintendoheroRight {
+    gap: 1rem;
+  }
+
+  .nintendoheroRight h4 {
+    font-size: 0.72rem;
+  }
+
+  .nintendoheroRight p {
+    font-size: 0.9rem;
+  }
+
+  .nintendoplaceholderImage {
+    height: 280px;
+
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+
+    border-radius: 24px;
+  }
+
+}

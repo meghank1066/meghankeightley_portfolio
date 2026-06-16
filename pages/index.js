@@ -56,22 +56,6 @@ export default function Home() {
     setSelectedButton(buttonName);
   };
 
-  // // Handling Scroll
-  // const handleWorkScroll = () => {
-  //   window.scrollTo({
-  //     top: workRef.current.offsetTop,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
-
-  // const handleAboutScroll = () => {
-  //   window.scrollTo({
-  //     top: aboutRef.current.offsetTop,
-  //     left: 0,
-  //     behavior: "smooth",
-  //   });
-  // };
 
   const scrollToSection = (id) => {
   document.getElementById(id)?.scrollIntoView({
@@ -80,6 +64,35 @@ export default function Home() {
   });
 };
 
+const handleMouseMove = (e) => {
+  const card = e.currentTarget;
+  const rect = card.getBoundingClientRect();
+
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
+
+  const rotateY = ((x - centerX) / centerX) * 12;
+  const rotateX = -((y - centerY) / centerY) * 12;
+
+  card.style.transform = `
+    perspective(1400px)
+    rotateX(${rotateX}deg)
+    rotateY(${rotateY}deg)
+    scale3d(1.03,1.03,1.03)
+  `;
+};
+
+const handleMouseLeave = (e) => {
+  e.currentTarget.style.transform = `
+    perspective(1400px)
+    rotateX(0deg)
+    rotateY(0deg)
+    scale3d(1,1,1)
+  `;
+};
   const renderSkillIcons = (skills) => {
     return skills.map((skill) => (
       <div key={skill.name} className="skillIcon">
@@ -166,7 +179,7 @@ export default function Home() {
 
 {isMobile && (
   <div className="mobile-photo-section">
-    <div className="photo-wrapper">
+    <div  className="photo-wrapper">
       <img
         src="/images/headshot1.webp"
         alt="Meghan"
@@ -230,7 +243,8 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
 
 {isMobile === false && (
             <div className="about-side">
-              <div className="photo-wrapper">
+              <div className="photo-wrapper" onMouseMove={handleMouseMove}
+  onMouseLeave={handleMouseLeave}>
                 <img
                   src="/images/headshot1.webp"
                   alt="Meghan"
