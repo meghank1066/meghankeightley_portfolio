@@ -66,8 +66,13 @@
   }
 
   .sporexprojectTag {
-    font-size: 0.75rem;
-    letter-spacing: 2px;
+   letter-spacing: 4px;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
   }
 
   .sporexprojectTitle {
