@@ -50,10 +50,15 @@ export default function SporexPage() {
         <div className="sporexheroRight">
 
           <div>
-            <h4>TIMELINE</h4>
-            <p>Year-long project </p>
-            <p>2025 – 2026</p>
-          </div>
+  <h4>PROJECT TYPE</h4>
+  <p>Final Year Capstone Project</p>
+</div>
+
+<div>
+  <h4>TIMELINE</h4>
+  <p>12 Months</p>
+  <p>2025–2026</p>
+</div>
 
           <div>
             <h4 className="teamsporex">TEAM</h4>

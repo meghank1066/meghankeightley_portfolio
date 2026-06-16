@@ -245,3 +245,60 @@ color: var(--velora-white);
 .veloraNav a::after {
   background: var(--velora-teal);
 }
+
+.veloraWrapper2 {
+  position: relative;
+  z-index: 100;
+
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    #081827 40%,
+    #081827 100%
+  );
+}
+
+.veloraFooter {
+  position: relative;
+  z-index: 101;
+}
+
+.veloraParticle {
+  z-index: 1;
+}
+
+.veloraPageShell {
+  min-height: 100vh;
+
+  background:
+
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(191,232,227,.12),
+      transparent 40%
+    ),
+
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(121,216,206,.08),
+      transparent 35%
+    ),
+
+    radial-gradient(
+      circle at 50% 75%,
+      rgba(121,216,206,.10),
+      transparent 45%
+    ),
+
+    linear-gradient(
+      180deg,
+      #071223 0%,
+      #081b2d 40%,
+      #0b2431 75%,
+      #081827 100%
+    );
+}
+
+.veloraprojectPage {
+  background: none;
+}

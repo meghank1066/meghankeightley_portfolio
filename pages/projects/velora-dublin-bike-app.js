@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 export default function VeloraPage() {
   return (
     <>
+      <div className="veloraPageShell">
       <div className="veloraWrapper">
         <Header className="veloraNav" />
       </div>
@@ -33,12 +34,16 @@ export default function VeloraPage() {
 
           <div className="veloraheroRight">
 
-            <div>
-              <h4>TIMELINE</h4>
-              <p>1 Month</p>
-              <p>2025</p>
-            </div>
+           <div>
+  <h4>PROJECT TYPE</h4>
+  <p>Individual Mobile App Project</p>
+</div>
 
+<div>
+  <h4>TIMELINE</h4>
+  <p>4 Weeks</p>
+  <p>2025</p>
+</div>
             <div>
               <h4>ROLE</h4>
               <p>
@@ -50,13 +55,6 @@ export default function VeloraPage() {
               <h4>TOOLS</h4>
               <p>
                 Swift · Xcode · Figma
-              </p>
-            </div>
-
-            <div>
-              <h4>PROJECT TYPE</h4>
-              <p>
-                Solo University Project
               </p>
             </div>
 
@@ -89,7 +87,10 @@ export default function VeloraPage() {
 
       </main>
 
-      <Footer />
+      <div className="veloraWrapper2">
+     <Footer className="veloraFooter" />
+      </div>
+      </div>
     </>
   );
 }
