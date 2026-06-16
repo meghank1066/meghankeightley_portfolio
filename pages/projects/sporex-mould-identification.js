@@ -2,10 +2,12 @@
 //import css 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import AirParticles from "../../components/AirParticles";
 
 export default function SporexPage() {
   return (
     <>
+      <AirParticles />
     <div className="sporexWrapper">
 <Header className="sporexNav" />
   </div>
