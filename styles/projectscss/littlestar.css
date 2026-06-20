@@ -352,7 +352,7 @@
 /* =========================
    SECTION SYSTEM (GRID)
 ========================= */
-
+/* 
 .littleStarOverviewSection,
 .littleStarFeaturesSection,
 .littleStarOutcomeSection,
@@ -373,7 +373,7 @@
 
   position: relative;
   z-index: 2;
-}
+} */
 
 /* left label column */
 .littleStarSectionLabel {
@@ -627,3 +627,147 @@
   position: relative;
   z-index: 1;
 }
+
+/* =========================
+   LITTLE STAR SECTION BACKGROUND
+========================= */
+
+.littleStarSectionBackground {
+
+  position:relative;
+  z-index:5;
+
+  width:100%;
+
+  background:rgba(8,24,39,0.55);
+
+  backdrop-filter:blur(40px);
+  -webkit-backdrop-filter:blur(40px);
+
+  border-radius:40px;
+
+  border:1px solid rgba(255,216,77,0.12);
+
+  padding:4rem;
+
+  box-sizing:border-box;
+
+
+  display:grid;
+
+  grid-template-columns:180px 1fr;
+
+  gap:4rem;
+
+  align-items:start;
+
+
+  box-shadow:
+  0 25px 60px rgba(0,0,0,0.25);
+}
+
+
+
+/* =========================
+   LITTLE STAR SECTIONS
+========================= */
+
+
+.littleStarOverviewSection,
+.littleStarDesignSection,
+.littleStarInsightSection,
+.littleStarFeaturesSection,
+.littleStarOutcomeSection,
+.littleStarContributionSection {
+
+  position:relative;
+
+  z-index:2;
+
+  margin-top:2rem;
+
+  padding-top:4rem;
+
+}
+
+
+
+/* =========================
+   LABEL
+========================= */
+
+.littleStarSectionLabel {
+
+  color:rgba(255,216,77,0.65);
+
+  font-size:0.85rem;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+}
+
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.littleStarSectionContent {
+
+  min-width:0;
+
+}
+
+
+.littleStarSectionContent h2 {
+
+  color:#ffd84d;
+
+}
+
+
+.littleStarSectionContent p {
+
+  color:rgba(255,255,255,0.8);
+
+}
+
+
+
+/* =========================
+   QUOTE BLOCK
+========================= */
+
+.littleStarQuoteBlock {
+
+  margin-top:2rem;
+
+  padding:2rem;
+
+
+  border-left:2px solid #ffd84d;
+
+
+  background:rgba(255,255,255,0.06);
+
+
+  backdrop-filter:blur(20px);
+
+
+  color:white;
+
+  font-style:italic;
+
+}
+
+.littleStarSectionContent {
+  width:100%;
+}
+
+
+.littleStarSectionLabel {
+  width:100%;
+}
+

@@ -108,7 +108,7 @@ export default function LittleStarPage() {
           </section>
 
           <section className="littleStarOverviewSection">
-
+ <div className="littleStarSectionBackground"> 
   <div className="littleStarSectionLabel">
     01 · PROJECT OVERVIEW
   </div>
@@ -130,14 +130,14 @@ export default function LittleStarPage() {
       The project was designed entirely in Figma, focusing on user flows, interaction states,
       and a child-friendly visual system that balances clarity with playfulness.
     </p>
-
+</div>
   </div>
 
 </section>
 
 
 <section className="littleStarInsightSection">
-
+ <div className="littleStarSectionBackground"> 
   <div className="littleStarSectionLabel">
     02 · DESIGN INSIGHT
   </div>
@@ -164,14 +164,14 @@ export default function LittleStarPage() {
         “Learning becomes meaningful when it feels like play, not obligation.”
       </p>
     </div>
-
+</div>
   </div>
 
 </section>
 
 
 <section className="littleStarDesignSection">
-
+ <div className="littleStarSectionBackground"> 
   <div className="littleStarSectionLabel">
     03 · DESIGN APPROACH
   </div>
@@ -195,12 +195,12 @@ export default function LittleStarPage() {
     </ul>
 
   </div>
-
+</div>
 </section>
 
 
 <section className="littleStarFeaturesSection">
-
+ <div className="littleStarSectionBackground"> 
   <div className="littleStarSectionLabel">
     04 · KEY FEATURES
   </div>
@@ -220,14 +220,14 @@ export default function LittleStarPage() {
       <img src="/images/littlestar-home.png" alt="Home Screen" />
       <img src="/images/littlestar-learning.png" alt="Learning Module" />
     </div>
-
+</div>
   </div>
 
 </section>
 
 
 <section className="littleStarDesignSection">
-
+ <div className="littleStarSectionBackground"> 
   <div className="littleStarSectionLabel">
     05 · PROTOTYPE DESIGN
   </div>
@@ -245,12 +245,12 @@ export default function LittleStarPage() {
     </p>
 
   </div>
-
+</div>
 </section>
 
 
 <section className="littleStarOutcomeSection">
-
+ <div className="littleStarSectionBackground">
   <div className="littleStarSectionLabel">
     06 · OUTCOME
   </div>
@@ -268,12 +268,12 @@ export default function LittleStarPage() {
     </p>
 
   </div>
-
+</div>
 </section>
 
 
 <section className="littleStarContributionSection">
-
+ <div className="littleStarSectionBackground"> 
   <div className="littleStarSectionLabel">
     07 · MY CONTRIBUTION
   </div>
@@ -296,7 +296,7 @@ export default function LittleStarPage() {
     </p>
 
   </div>
-
+</div>
 </section>
 
         </main>
