@@ -324,26 +324,6 @@ color: var(--velora-white);
    SECTION SYSTEM (VELORA)
 ========================= */
 
-.veloraOverviewSection,
-.veloraFeaturesSection,
-.veloraDevelopmentSection,
-.veloraOutcomeSection,
-.veloraInsightSection,
-.veloraDesignSection,
-.veloraContributionSection {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 4rem;
-
-  margin-top: 10rem;
-  padding-top: 4rem;
-
-  border-top: 1px solid rgba(191, 232, 227, 0.10);
-
-  position: relative;
-  z-index: 2;
-}
-
 /* left label column */
 .veloraSectionLabel {
   color: rgba(191, 232, 227, 0.55);
@@ -495,4 +475,344 @@ color: var(--velora-white);
 
 .veloraplaceholderImage:hover {
   transform: translateY(-6px);
+}
+
+.veloraSectionBackground {
+  position: relative;
+  z-index: 5;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+
+  /* Updated from green to your new teal accent */
+  border: 1px solid rgba(121, 216, 206, 0.08); 
+
+  padding: 4rem;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 4rem;
+}
+
+.veloraOverviewSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.veloraDesignSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.veloraProblemSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.veloraInsightSection {
+  margin-top: 2rem;
+  z-index: 1;
+  padding-top: 4rem;
+}
+
+.veloraFeaturesSection {
+  margin-top: 2rem;
+  z-index: 1;
+  padding-top: 4rem;
+}
+
+.veloraDevelopmentSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+}
+
+.veloraPartnershipSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.veloraContributionSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.veloraOutcomeSection {
+  margin-top: 2rem;
+  backdrop-filter: blur(40px);
+  padding-top: 4rem;
+  z-index: 1;
+}
+
+.veloraOverviewSection,
+.veloraDesignSection,
+.veloraProblemSection,
+.veloraInsightSection,
+.veloraFeaturesSection,
+.veloraDevelopmentSection,
+.veloraPartnershipSection,
+.veloraContributionSection,
+.veloraOutcomeSection,
+.veloraFooter {
+  position: relative; /* Makes z-index valid */
+  z-index: 2;        /* Forces sections above the nodes/particles layer */
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.veloraSectionBackground,
+.VeloraSectionBackground {
+  position: relative;
+  z-index: 5;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+
+  /* Updated from green to your new theme's teal accent (#79d8ce) at 8% opacity */
+  border: 1px solid rgba(121, 216, 206, 0.08);
+
+  padding: 4rem;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 4rem;
+}
+
+.veloraOverviewSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.veloraDesignSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.veloraProblemSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.veloraInsightSection {
+  margin-top: 2rem;
+  z-index: 1;
+  padding-top: 4rem;
+}
+
+.veloraFeaturesSection {
+  margin-top: 2rem;
+  z-index: 1;
+  padding-top: 4rem;
+}
+
+.veloraDevelopmentSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+}
+
+.veloraPartnershipSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.veloraContributionSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.veloraOutcomeSection {
+  margin-top: 2rem;
+  backdrop-filter: blur(40px);
+  padding-top: 4rem;
+  z-index: 1;
+}
+
+/* =========================
+   SECTION SYSTEM (VELORA)
+========================= */
+
+.veloraOverviewSection,
+.veloraFeaturesSection,
+.veloraDevelopmentSection,
+.veloraOutcomeSection,
+.veloraInsightSection,
+.veloraDesignSection,
+.veloraContributionSection,
+.VeloraOverviewSection,
+.VeloraFeaturesSection,
+.VeloraDevelopmentSection,
+.VeloraOutcomeSection,
+.VeloraInsightSection,
+.VeloraDesignSection,
+.VeloraContributionSection {
+  /* Grid properties removed here so .veloraSectionBackground handles the layout */
+  margin-top: 10rem;
+  padding-top: 4rem;
+
+  border-top: 1px solid rgba(191, 232, 227, 0.10);
+
+  position: relative;
+  z-index: 2;
+}
+
+/* The actual layout master box */
+.veloraSectionBackground,
+.VeloraSectionBackground {
+  position: relative;
+  z-index: 5;
+
+  background: rgba(15, 24, 34, 0.55);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+  border: 1px solid rgba(121, 216, 206, 0.08);
+
+  padding: 4rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+
+  /* This single layer seamlessly sets up your columns */
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 4rem;
+}
+
+
+/* PAGE WIDTH FIX */
+.veloraprojectPage {
+  min-height: 100vh;
+  padding: 8rem 18%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* SECTION WRAPPERS */
+.veloraOverviewSection,
+.veloraFeaturesSection,
+.veloraDevelopmentSection,
+.veloraOutcomeSection,
+.veloraInsightSection,
+.veloraDesignSection,
+.veloraContributionSection {
+
+  width: 100%;
+
+  margin-top: 10rem;
+  padding-top: 4rem;
+
+  border-top: 1px solid rgba(191, 232, 227, 0.10);
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* GLASS BACKGROUND FULL WIDTH */
+.veloraSectionBackground {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+
+  border: 1px solid rgba(121,216,206,0.08);
+
+  padding: 4rem;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+
+  display:grid;
+
+  grid-template-columns: 180px minmax(0,1fr);
+
+  gap:4rem;
+}
+
+
+.veloraWrapper2 {
+  position: relative;
+  z-index: 100;
+
+
+  background-color: #081827 !important;
+}
+
+
+.veloraFooter {
+  position: relative;
+  z-index: 101;
+
+  background-color: #081827 !important;
+
+  border-top: 1px solid rgba(121,216,206,0.12) !important;
+
+  padding: 4rem 2rem;
+}
+
+
+/* footer text */
+.veloraFooter,
+.veloraFooter p,
+.veloraFooter span,
+.veloraFooter h1,
+.veloraFooter h2,
+.veloraFooter h3,
+.veloraFooter h4 {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+
+.veloraFooter a {
+  color: rgba(255,255,255,0.65) !important;
+}
+
+
+.veloraFooter a:hover {
+  color: #79d8ce !important;
+}
+
+/* FORCE ALL FOOTER CHILDREN NAVY */
+.veloraWrapper2,
+.veloraWrapper2 *,
+.veloraFooter,
+.veloraFooter * {
+  background-color: #0D2431 !important;
+}
+
+
+.veloraFooter {
+  min-height: 300px;
+  width: 100%;
 }

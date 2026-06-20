@@ -572,6 +572,10 @@
 .littleStarDesignSection,
 .littleStarContributionSection {
   position: relative;
+    margin-top: 2rem;
+  backdrop-filter: blur(40px);
+  padding-top: 4rem;
+    z-index: 1;
 }
 
 /* inner content sits above glass layer */
