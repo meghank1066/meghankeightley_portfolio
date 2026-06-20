@@ -8,6 +8,8 @@ import "../styles/projectscss/velora.css";
 import "../styles/projectscss/veloramobile.css";
 import "../styles/projectscss/littlestar.css";
 import "../styles/projectscss/littlestarmobile.css";
+import "../styles/projectscss/styleforecast.css";
+import "../styles/projectscss/styleforecast-mobile.css";
 import "../styles/case-studies-css/nintendo.css";
 import "../styles/case-studies-css/nintendo-mobile.css";
 import "../styles/case-studies-css/evelynn.css";

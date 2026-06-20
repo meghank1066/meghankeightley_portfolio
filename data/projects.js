@@ -15,7 +15,7 @@ const projects = [
 
   {
     slug: "velora-dublin-bike-app",
-    title: "Velora – Dublin Bike App",
+    title: "Velora – Dublin Bike Mobile App",
     description:
       "A mobile cycling application designed to help Dublin commuters locate bike stations, plan routes, and access real-time cycling information.",
     image: "/projects/velora.png",
@@ -25,7 +25,7 @@ const projects = [
 
   {
     slug: "style-forecast-weather-api",
-    title: "Style Forecast – Weather-Based Outfit Recommender",
+    title: "Style Forecast – API",
     description:
       "A weather-powered application that integrates external APIs to provide personalised outfit recommendations based on local conditions and forecasts.",
     image: "/projects/styleforecast.png",

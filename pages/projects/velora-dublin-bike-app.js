@@ -38,7 +38,28 @@ export default function VeloraPage() {
               mobile experience.
             </p>
 
+                      <div className="velora-hero-links">
+  <a
+    className="velora-hero-link"
+    href="YOUR_LIVE_SITE_URL"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Visit Live Site
+  </a>
+
+  <a
+    className="velora-hero-link"
+    href="YOUR_GITHUB_URL"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View My Code
+  </a>
+</div>
           </div>
+
+
 
           <div className="veloraheroRight">
 
@@ -92,6 +113,170 @@ export default function VeloraPage() {
           </div>
 
         </section>
+
+         <section className="veloraInsightSection">
+
+            <div className="veloraSectionLabel">
+              02 · DESIGN INSIGHT
+            </div>
+
+            <div className="veloraSectionContent">
+
+              <h2>
+                Navigation should feel instinctive, not computational.
+              </h2>
+
+              <p>
+                Most transport apps overload users with raw map data, turning
+                simple decisions into cognitive tasks. The insight behind Velora
+                was that cyclists don’t want “information” — they want certainty.
+              </p>
+
+              <p>
+                This led to a design direction focused on progressive disclosure:
+                showing only what’s needed at the exact moment it’s needed.
+              </p>
+
+              <div className="veloraQuoteBlock">
+                <p>
+                  “Good navigation disappears — it leaves only direction.”
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+          {/* DESIGN APPROACH */}
+          <section className="veloraDesignSection">
+
+            <div className="veloraSectionLabel">
+              03 · DESIGN APPROACH
+            </div>
+
+            <div className="veloraSectionContent">
+
+              <h2>
+                Minimal interface, maximal clarity.
+              </h2>
+
+              <p>
+                The UI was intentionally reduced to essential interaction points,
+                prioritising readability and speed over visual density.
+              </p>
+
+              <ul>
+                <li>Map-first layout with reduced UI interference</li>
+                <li>Station availability shown through simple visual states</li>
+                <li>One-tap journey planning flow</li>
+              </ul>
+
+            </div>
+
+          </section>
+
+          {/* FEATURES */}
+          <section className="veloraFeaturesSection">
+
+            <div className="veloraSectionLabel">
+              04 · KEY FEATURES
+            </div>
+
+            <div className="veloraSectionContent">
+
+              <h2>
+                Designed for real-time movement.
+              </h2>
+
+              <p>
+                Velora enables users to locate nearby stations, check bike
+                availability, and plan routes in real time with minimal friction.
+              </p>
+
+              <div className="veloraImageGrid">
+                <div className="veloraImagePlaceholder">MAP VIEW</div>
+                <div className="veloraImagePlaceholder">STATION DETAILS</div>
+              </div>
+
+            </div>
+
+          </section>
+
+          {/* DEVELOPMENT */}
+          <section className="veloraDevelopmentSection">
+
+            <div className="veloraSectionLabel">
+              05 · DESIGN & DEVELOPMENT
+            </div>
+
+            <div className="veloraSectionContent">
+
+              <h2>
+                Built natively for performance and responsiveness.
+              </h2>
+
+              <p>
+                The application was developed in Swift using Xcode, with Figma
+                used for interface prototyping and interaction mapping. The focus
+                was on maintaining smooth performance during map interactions and
+                real-time updates.
+              </p>
+
+            </div>
+
+          </section>
+
+          {/* OUTCOME */}
+          <section className="veloraOutcomeSection">
+
+            <div className="veloraSectionLabel">
+              06 · OUTCOME
+            </div>
+
+            <div className="veloraSectionContent">
+
+              <h2>
+                A streamlined cycling companion for urban mobility.
+              </h2>
+
+              <p>
+                The final application provides users with a lightweight, focused
+                experience for navigating Dublin’s bike-sharing system, reducing
+                decision time and improving journey confidence.
+              </p>
+
+            </div>
+
+          </section>
+
+          {/* CONTRIBUTION */}
+          <section className="veloraContributionSection">
+
+            <div className="veloraSectionLabel">
+              07 · MY CONTRIBUTION
+            </div>
+
+            <div className="veloraSectionContent">
+
+              <h2>
+                End-to-end ownership from concept to implementation.
+              </h2>
+
+              <p>
+                I led the UX research, interface design, and full Swift
+                implementation of the application. This included structuring
+                navigation logic, designing mobile-first interaction flows, and
+                integrating real-time data into a usable interface.
+              </p>
+
+              <p>
+                A key challenge was balancing map complexity with usability while
+                maintaining fast, responsive interactions on mobile devices.
+              </p>
+
+            </div>
+
+          </section>
 
       </main>
 

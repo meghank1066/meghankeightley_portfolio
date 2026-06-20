@@ -23,10 +23,8 @@ import { projects, casestudies } from "../data/projects";
 import skillsData from "../data/skills.json";
 
 export default function Home() {
-
-  
   // Ref
- const isMobile = useMobileDevice();
+  const isMobile = useMobileDevice();
   const workRef = useRef();
   const aboutRef = useRef();
   const textOne = useRef();
@@ -41,8 +39,6 @@ export default function Home() {
     setMounted(true);
   }, []);
 
-
-
   // Handle Button Click
   const buttonNames = [
     "All",
@@ -56,43 +52,42 @@ export default function Home() {
     setSelectedButton(buttonName);
   };
 
-
   const scrollToSection = (id) => {
-  document.getElementById(id)?.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
-};
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
-const handleMouseMove = (e) => {
-  const card = e.currentTarget;
-  const rect = card.getBoundingClientRect();
+  const handleMouseMove = (e) => {
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
 
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
-  const centerX = rect.width / 2;
-  const centerY = rect.height / 2;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
 
-  const rotateY = ((x - centerX) / centerX) * 12;
-  const rotateX = -((y - centerY) / centerY) * 12;
+    const rotateY = ((x - centerX) / centerX) * 12;
+    const rotateX = -((y - centerY) / centerY) * 12;
 
-  card.style.transform = `
+    card.style.transform = `
     perspective(1400px)
     rotateX(${rotateX}deg)
     rotateY(${rotateY}deg)
     scale3d(1.03,1.03,1.03)
   `;
-};
+  };
 
-const handleMouseLeave = (e) => {
-  e.currentTarget.style.transform = `
+  const handleMouseLeave = (e) => {
+    e.currentTarget.style.transform = `
     perspective(1400px)
     rotateX(0deg)
     rotateY(0deg)
     scale3d(1,1,1)
   `;
-};
+  };
   const renderSkillIcons = (skills) => {
     return skills.map((skill) => (
       <div key={skill.name} className="skillIcon">
@@ -121,15 +116,12 @@ const handleMouseLeave = (e) => {
     );
   }, []);
 
-  
-
   return (
-    
     <div className={`relative ${data.showCursor ? "cursor-none" : ""}`}>
-    {/* <div className={`relative ${data.showCursor && "cursor-none"}`}> */}
-{/* {isMobile === false && <UnlockPortfolio />} */}
-{isMobile === false && <SakuraScene />}
-{isMobile === false && <PetalScene />}
+      {/* <div className={`relative ${data.showCursor && "cursor-none"}`}> */}
+      {/* {isMobile === false && <UnlockPortfolio />} */}
+      {isMobile === false && <SakuraScene />}
+      {isMobile === false && <PetalScene />}
 
       {data.showCursor && <Cursor />}
       <Head>
@@ -143,9 +135,9 @@ const handleMouseLeave = (e) => {
         <Header
           // handleWorkScroll={handleWorkScroll}
           // handleAboutScroll={handleAboutScroll}
-  scrollToSection={scrollToSection}
+          scrollToSection={scrollToSection}
         />
-        <section  id="home" className="hero-section">
+        <section id="home" className="hero-section">
           <div className="hero-text">
             <h1>
               Meghan
@@ -155,52 +147,99 @@ const handleMouseLeave = (e) => {
 
             <p>Software Engineer</p>
             <div className="socialButtons">
+              <a href="/cv/MeghanKeightley_CV.pdf" target="_blank">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/3589/3589055.png"
+                  alt="CV"
+                />
+              </a>
 
-  <a href="/cv/MeghanKeightley_CV.pdf" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/3589/3589055.png" alt="CV" />
-  </a>
+              <a href="https://github.com/meghank1066" target="_blank">
+                <img
+                  src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"
+                  alt="GitHub"
+                />
+              </a>
 
-  <a href="https://github.com/meghank1066" target="_blank">
-    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" alt="GitHub" />
-  </a>
+              <a
+                href="https://www.linkedin.com/in/meghan-k-01265a2b9/"
+                target="_blank"
+              >
+                <img
+                  src="https://img.icons8.com/color/48/linkedin.png"
+                  alt="LinkedIn"
+                />
+              </a>
 
-  <a href="https://www.linkedin.com/in/meghan-k-01265a2b9/" target="_blank">
-    <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
-  </a>
-
-  <a href="mailto:megankeightley5@gmail.com">
-    <img src="https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png" alt="Email" />
-  </a>
-
-</div>
+              <a href="mailto:megankeightley5@gmail.com">
+                <img
+                  src="https://images.icon-icons.com/2642/PNG/512/google_mail_gmail_logo_icon_159346.png"
+                  alt="Email"
+                />
+              </a>
+            </div>
           </div>
-        {/* </section> */}
-        </section> {/* hero */}
-
-{isMobile && (
-  <div className="mobile-photo-section">
-    <div  className="photo-wrapper">
-      <img
-        src="/images/headshot1.webp"
-        alt="Meghan"
-        className="about-photo"
-      />
-    </div>
-  </div>
-)}
-
-
-      {isMobile === false &&  <div className="ticker">
-          <div className="ticker-track">
-            <span>
-             MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦
-MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦
-MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING
-            </span>
+          {/* </section> */}
+        </section>{" "}
+        {/* hero */}
+        {isMobile && (
+          <div className="mobile-photo-section">
+            <div className="photo-wrapper">
+              <img
+                src="/images/headshot1.webp"
+                alt="Meghan"
+                className="about-photo"
+              />
+            </div>
           </div>
-        </div>
-}
-        <section id="about"className="about-section">
+        )}
+        {isMobile === false && (
+          <div className="ticker">
+            <div className="ticker-track">
+              <span>
+                MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦
+                UX DESIGN ✦ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND
+                DEVELOPER ✦ UX DESIGN ✦ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING
+                ✦ FRONTEND DEVELOPER ✦ UX DESIGN ✦ MEGHAN KEIGHTLEY ✦ SOFTWARE
+                ENGINEERING
+              </span>
+            </div>
+          </div>
+        )}{" "}
+        <section className="philosophySection">
+          <div className="philosophyContent">
+            <h2 className="philosophyTitle">
+              If you want a sense of self, make something. I make digital spaces where ideas take shape and are understood.
+            </h2>
+            <p className="philosophySubtitle">
+              Identity is not something that is simply found, but something
+              continuously constructed through creation, decision and the quiet
+              repetition of making. Each act of design or development becomes a
+              trace of thought made visible translating what is internal into
+              something tangible, tested and real.
+            </p>
+            <br />
+            <p>
+              This idea is grounded in existentialist philosophy, most notably
+              in the work of Jean-Paul Sartre, who argued that “existence
+              precedes essence” suggesting that identity is not pre-determined,
+              but formed through action. For me, this is not abstract theory but
+              direction.
+            </p>
+            <br />
+            <p>
+              It is the reason I build, the reason I design and the reason I
+              return repeatedly to the act of making. I want to become a
+              designer in order to fully realise this way of thinking in
+              practice. Creating apps, interfaces and digital experiences
+              becomes a method of translating thought into form and in doing so,
+              a way of refining understanding of self. Because making is not
+              separate from becoming. I believe it is the process through which
+              identity takes shape.
+            </p>
+          </div>
+        </section>
+        <section id="about" className="about-section">
           <div className="about-grid">
             <div className="about-content">
               {/* <span className="section-tag">
@@ -241,81 +280,83 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
               </p>
             </div>
 
-{isMobile === false && (
-            <div className="about-side">
-              <div className="photo-wrapper" onMouseMove={handleMouseMove}
-  onMouseLeave={handleMouseLeave}>
-                <img
-                  src="/images/headshot1.webp"
-                  alt="Meghan"
-                  className="about-photo"
-                />
+            {isMobile === false && (
+              <div className="about-side">
+                <div
+                  className="photo-wrapper"
+                  onMouseMove={handleMouseMove}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <img
+                    src="/images/headshot1.webp"
+                    alt="Meghan"
+                    className="about-photo"
+                  />
+                </div>
+
+                <div className="education-card">
+                  <div className="education-header">
+                    {/* <span className="education-icon">🎓</span> */}
+
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="education-icon"
+                      aria-hidden="true"
+                    >
+                      <path d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z" />
+
+                      <path d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5" />
+                    </svg>
+
+                    <h2>work &amp; education</h2>
+                  </div>
+
+                  <div className="education-item">
+                    <div className="education-logo">
+                      <img
+                        src="/models/dkit.jpg"
+                        alt="DKIT Logo"
+                        className="education-logo-img"
+                      />
+                    </div>
+
+                    <div className="education-details">
+                      <h3>Dundalk Institute of Technology</h3>
+
+                      <p>BSc (Hons) in Computing in Software Development</p>
+                    </div>
+
+                    <span className="education-date">2022 — 2026</span>
+                  </div>
+
+                  <div className="education-item">
+                    <div className="education-logo">
+                      <img
+                        src="/models/aphogeschool.png"
+                        alt="AP Logo"
+                        className="education-logo-img"
+                      />
+                    </div>
+
+                    <div className="education-details">
+                      <h3>AP University Antwerp</h3>
+
+                      <p>Erasmus Exchange Programme</p>
+                    </div>
+
+                    <span className="education-date">2025</span>
+                  </div>
+                </div>
               </div>
-
-              <div className="education-card">
-                <div className="education-header">
-                  {/* <span className="education-icon">🎓</span> */}
-
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="education-icon"
-                    aria-hidden="true"
-                  >
-                    <path d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z" />
-
-                    <path d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5" />
-                  </svg>
-
-                  <h2>work &amp; education</h2>
-                </div>
-
-                <div className="education-item">
-                  <div className="education-logo">
-                    <img
-                      src="/models/dkit.jpg"
-                      alt="DKIT Logo"
-                      className="education-logo-img"
-                    />
-                  </div>
-
-                  <div className="education-details">
-                    <h3>Dundalk Institute of Technology</h3>
-
-                    <p>BSc (Hons) in Computing in Software Development</p>
-                  </div>
-
-                  <span className="education-date">2022 — 2026</span>
-                </div>
-
-                <div className="education-item">
-                  <div className="education-logo">
-                    <img
-                      src="/models/aphogeschool.png"
-                      alt="AP Logo"
-                      className="education-logo-img"
-                    />
-                  </div>
-
-                  <div className="education-details">
-                    <h3>AP University Antwerp</h3>
-
-                    <p>Erasmus Exchange Programme</p>
-                  </div>
-
-                  <span className="education-date">2025</span>
-                </div>
-              </div>
-             </div>
-)}
-            
+            )}
           </div>
- </section> 
-          <div className="skillsColumn"> <h3 className="headingText">Technical skills</h3>
-         {isMobile === false &&  <BridgeScene />}
-          </div>
-         
-           
-             <section className="about-section">
+        </section>
+        <div className="skillsColumn">
+          {" "}
+          <h3 className="headingText">Technical skills</h3>
+          {isMobile === false && <BridgeScene />}
+        </div>
+        <section className="about-section">
           <div className="skillsContent">
             <div className="skillsButtonsContainer">
               {buttonNames.map((buttonName) => (
@@ -340,134 +381,104 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
               {selectedButton === "Design" &&
                 renderSkillIcons(skillsData.design)}
             </div>
-            
+          </div>
+        </section>
+        <section id="projects" className="projectsSection">
+          <h1 className="projectsHeading">Featured Projects</h1>
+          {/* <h2 class="sectionTitle">My Projects</h2> */}
+          <p class="sectionDesc">
+            These projects represent both my academic journey and personal
+            curiosity. Whether building apps, designing interfaces, or
+            developing websites, I enjoy bringing ideas to life through
+            technology and creating experiences that are both functional and
+            engaging.
+          </p>
+
+          <div className="projectsList">
+            {projects.map((project) => (
+              <Link key={project.slug} href={`/projects/${project.slug}`}>
+                <a className="projectRow">
+                  <div className="projectInfo">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                  </div>
+
+                  <span className="projectArrow">→</span>
+                </a>
+              </Link>
+            ))}
+          </div>
+        </section>
+        <section id="case-studies" className="caseStudiesSection">
+          <h2 className="caseStudiesHeading">Case Studies</h2>
+
+          <div className="caseStudiesGrid">
+            {casestudies.map((study) => (
+              <Link key={study.slug} href={`/case-studies/${study.slug}`}>
+                <div className="caseStudyCard">
+                  <img
+                    src={study.image}
+                    alt={study.title}
+                    className="caseStudyImage"
+                  />
+
+                  <h3>{study.title}</h3>
+
+                  <p>{study.description}</p>
+
+                  <span className="caseStudyTag">{study.category}</span>
+
+                  <div className="caseStudyLink">View case study ↗</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+        <section id="contact" className="contactSection">
+          <div className="contactContent">
+            <h2 className="contactHeading">Let's Work Together</h2>
+
+            <p className="contactText">
+              Interested in product design, UX research, or frontend
+              development? I'd love to hear from you.
+            </p>
+            <a
+              href="mailto:megankeightley5@gmail.com"
+              className="contactButton"
+            >
+              Contact me
+            </a>
           </div>
 
+          {/* ✦ */}
+          {isMobile === false && (
+            <div className="moonWrapper">
+              {isMobile === false && <MoonScene />}
+            </div>
+          )}
+        </section>
+        {isMobile && (
+          <footer className="mobileFooter">
+            <div className="mobileFooterContent">
+              <p className="mobileFooterText">
+                © Meghan Keightley, {new Date().getFullYear()}
+              </p>
 
-          </section>
-
-
-<section id="projects" className="projectsSection">
-  <h1 className="projectsHeading">
-   Featured Projects
-  </h1>
-{/* <h2 class="sectionTitle">My Projects</h2> */}
-<p class="sectionDesc">
-    These projects represent both my academic journey and personal curiosity. Whether building apps, designing interfaces, or developing websites, I enjoy bringing ideas to life through technology and creating experiences that are both functional and engaging.
-</p>
-
-  <div className="projectsList">
-    {projects.map((project) => (
-      <Link
-        key={project.slug}
-        href={`/projects/${project.slug}`}
-      >
-        <a className="projectRow">
-
-          <div className="projectInfo">
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </div>
-
-          <span className="projectArrow">
-            →
-          </span>
-
-        </a>
-      </Link>
-    ))}
-  </div>
-</section>
-
-<section
-  id="case-studies"
-  className="caseStudiesSection"
->
-  <h2 className="caseStudiesHeading">
-    Case Studies
-  </h2>
-
-  <div className="caseStudiesGrid">
-    {casestudies.map((study) => (
-      <Link
-        key={study.slug}
-        href={`/case-studies/${study.slug}`}
-      >
-        <div className="caseStudyCard">
-          <img
-            src={study.image}
-            alt={study.title}
-            className="caseStudyImage"
-          />
-
-          <h3>{study.title}</h3>
-
-          <p>{study.description}</p>
-
-          <span className="caseStudyTag">
-            {study.category}
-          </span>
-
-          <div className="caseStudyLink">
-            View case study ↗
-          </div>
-
-        </div>
-      </Link>
-    ))}
-  </div>
-</section>
-
-
-<section id="contact" className="contactSection">
-  <div className="contactContent">
-    <h2 className="contactHeading">
-      Let's Work Together
-    </h2>
-
-    <p className="contactText">
-      Interested in product design, UX research,
-      or frontend development? 
-      I'd love to hear from you.
-    </p>
-    <a
-  href="mailto:megankeightley5@gmail.com"
-  className="contactButton"
->
-  Contact me  
-</a>
-
-  </div>
-  
-{/* ✦ */}
-{isMobile === false && (
-  <div className="moonWrapper">
-{isMobile === false && <MoonScene />}
-  </div>
-)}
-</section>
-{isMobile && (
-  <footer className="mobileFooter">
-    <div className="mobileFooterContent">
-      <p className="mobileFooterText">
-        © Meghan Keightley, {new Date().getFullYear()}
-      </p>
-
-      <a
-        href="https://github.com/meghank1066"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mobileFooterGithub"
-      >
-        <svg
-          width="26"
-          height="26"
-          viewBox="0 0 128 128"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="currentColor"
-            d="M64 5.1C30.7 5.1 3.6 32.1 3.6 65.5c0 26.7 17.3 49.3 41.3 57.3
+              <a
+                href="https://github.com/meghank1066"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mobileFooterGithub"
+              >
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 128 128"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M64 5.1C30.7 5.1 3.6 32.1 3.6 65.5c0 26.7 17.3 49.3 41.3 57.3
             3 .6 4.1-1.3 4.1-2.9 0-1.4-.1-6.2-.1-11.2-16.8
             3.7-20.3-7.1-20.3-7.1-2.7-7-6.7-8.8-6.7-8.8-5.5-3.7.4-3.7.4-3.7
             6.1.4 9.3 6.2 9.3 6.2 5.4 9.2 14.1 6.6 17.6 5
@@ -480,12 +491,12 @@ MEGHAN KEIGHTLEY ✦ SOFTWARE ENGINEERING ✦ FRONTEND DEVELOPER ✦ UX DESIGN �
             11.2 0 8.1-.1 14.6-.1 16.6 0 1.6 1.1 3.5 4.1
             2.9 24-8 41.3-30.6 41.3-57.3C124.4 32.1 97.3
             5.1 64 5.1z"
-          />
-        </svg>
-      </a>
-    </div>
-  </footer>
-)}
+                  />
+                </svg>
+              </a>
+            </div>
+          </footer>
+        )}
         <h1 ref={textOne} className="hidden"></h1>
         <Footer />
       </div>
