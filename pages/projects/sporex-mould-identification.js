@@ -12,7 +12,7 @@ export default function SporexPage() {
   return (
     
     <>
-     {/* {isMobile === false &&  <AirParticles /> } */}
+     {isMobile === false &&  <AirParticles /> }
       <div className="sporexPageShell">
     <div className="sporexWrapper">
 <Header className="sporexNav" />
@@ -137,97 +137,131 @@ export default function SporexPage() {
 
       <section className="sporexOverviewSection">
 
-  <div className="sporexSectionLabel">
-    01 · PROJECT OVERVIEW
-  </div>
+  <div className="sporexSectionBackground">
 
-  <div className="sporexSectionContent">
-
-    <h2>
-      Making invisible indoor health risks visible.
-    </h2>
-
-    <p>
-      Sporex is a mobile application designed to help users identify mould types,
-      understand potential health risks, and access clear prevention guidance.
-      The system translates environmental health data into an accessible, user-friendly experience.
-    </p>
-
-    <p>
-      Developed as a 12-month final year group project, the platform combines UX research,
-      mobile UI design, and Android development to address a real-world public health problem.
-    </p>
-
-  </div>
-
-</section>
-
-<section className="sporexProblemSection">
-  <div className="sporexSectionLabel">02 · PROBLEM SPACE</div>
-  <div className="sporexSectionContent">
-
-    <h2>
-      Turning weather data into something people can actually use.
-    </h2>
-
-    <p>
-      Many users rely on weather apps that provide accurate data but fail to translate that information into real-world decisions like outfit planning.
-    </p>
-
-    <p>
-      This creates a gap between raw environmental data and everyday lifestyle interpretation.
-    </p>
-
-  </div>
-
-</section>
-
-<section className="sporexInsightSection">
-  <div className="sporexSectionLabel">03 · DESIGN INSIGHT</div>
-  <div className="sporexSectionContent">
+    <div className="sporexSectionLabel">
+      01 · PROJECT OVERVIEW
+    </div>
 
 
-    <h2>
-      Weather is not data — it’s decision context.
-    </h2>
+    <div className="sporexSectionContent">
 
-    <p>
-      The core insight came from observing how people don’t interpret temperature numerically — they interpret it emotionally and behaviorally.
-    </p>
+      <h2>
+        Making invisible indoor health risks visible.
+      </h2>
 
-    <p>
-      Phrases like “it feels cold” or “I’ll need layers” reflect a translation layer between data and action that most apps ignore.
-    </p>
-
-    <div className="styleForecastQuoteBlock">
       <p>
-        “The opportunity wasn’t to show weather — it was to translate it into decisions.”
+        Sporex is a mobile application designed to help users identify mould types,
+        understand potential health risks, and access clear prevention guidance.
+        The system translates environmental health data into an accessible, user-friendly experience.
       </p>
+
+      <p>
+        Developed as a 12-month final year group project, the platform combines UX research,
+        mobile UI design, and Android development to address a real-world public health problem.
+      </p>
+
     </div>
 
   </div>
 
 </section>
 
+<section className="sporexProblemSection">
+
+  <div className="sporexSectionBackground">
+
+    <div className="sporexSectionLabel">
+      02 · PROBLEM SPACE
+    </div>
+
+
+    <div className="sporexSectionContent">
+
+      <h2>
+        Turning weather data into something people can actually use.
+      </h2>
+
+      <p>
+        Many users rely on weather apps that provide accurate data but fail to translate that information into real-world decisions like outfit planning.
+      </p>
+
+      <p>
+        This creates a gap between raw environmental data and everyday lifestyle interpretation.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="sporexInsightSection">
+
+  <div className="sporexSectionBackground">
+
+    <div className="sporexSectionLabel">
+      03 · DESIGN INSIGHT
+    </div>
+
+
+    <div className="sporexSectionContent">
+
+      <h2>
+        Weather is not data — it’s decision context.
+      </h2>
+
+      <p>
+        The core insight came from observing how people don’t interpret temperature numerically — they interpret it emotionally and behaviorally.
+      </p>
+
+      <p>
+        Phrases like “it feels cold” or “I’ll need layers” reflect a translation layer between data and action that most apps ignore.
+      </p>
+
+
+      <div className="styleForecastQuoteBlock">
+        <p>
+          “The opportunity wasn’t to show weather — it was to translate it into decisions.”
+        </p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
 
 <section className="sporexDesignSection">
-  <div className="sporexSectionLabel">04 · DESIGN APPROACH</div>
-  <div className="sporexSectionContent">
 
-    <h2>
-      Clarity under pressure: designing for health interpretation.
-    </h2>
+  <div className="sporexSectionBackground">
 
-    <p>
-      The interface prioritises fast comprehension of risk levels and clear action pathways,
-      reducing cognitive load in potentially stressful contexts.
-    </p>
+    <div className="sporexSectionLabel">
+      04 · DESIGN APPROACH
+    </div>
 
-    <ul>
-      <li>Risk-first hierarchy (severity before detail)</li>
-      <li>Simple iconography for mould classification</li>
-      <li>Progressive disclosure for medical guidance</li>
-    </ul>
+
+    <div className="sporexSectionContent">
+
+      <h2>
+        Clarity under pressure: designing for health interpretation.
+      </h2>
+
+      <p>
+        The interface prioritises fast comprehension of risk levels and clear action pathways,
+        reducing cognitive load in potentially stressful contexts.
+      </p>
+
+
+      <ul>
+        <li>Risk-first hierarchy (severity before detail)</li>
+        <li>Simple iconography for mould classification</li>
+        <li>Progressive disclosure for medical guidance</li>
+      </ul>
+
+
+    </div>
 
   </div>
 
@@ -235,22 +269,29 @@ export default function SporexPage() {
 
 <section className="sporexFeaturesSection">
 
-  <div className="sporexSectionLabel">
-    05 · KEY FEATURES
-  </div>
+  <div className="sporexSectionBackground">
 
-  <div className="sporexSectionContent">
+    <div className="sporexSectionLabel">
+      05 · KEY FEATURES
+    </div>
 
-    <h2>
-      From identification to prevention in one flow.
-    </h2>
 
-    <ul>
-      <li>Mould identification system with visual classification support</li>
-      <li>Health risk explanations tailored for non-expert users</li>
-      <li>Prevention and treatment guidance module</li>
-      <li>Mobile-first interaction designed in Jetpack Compose</li>
-    </ul>
+    <div className="sporexSectionContent">
+
+      <h2>
+        From identification to prevention in one flow.
+      </h2>
+
+
+      <ul>
+        <li>Mould identification system with visual classification support</li>
+        <li>Health risk explanations tailored for non-expert users</li>
+        <li>Prevention and treatment guidance module</li>
+        <li>Mobile-first interaction designed in Jetpack Compose</li>
+      </ul>
+
+
+    </div>
 
   </div>
 
@@ -258,36 +299,53 @@ export default function SporexPage() {
 
 <section className="sporexDevSection">
 
-  <div className="sporexSectionLabel">
-    06 · DESIGN & DEVELOPMENT
-  </div>
+  <div className="sporexSectionBackground">
 
-  <div className="sporexSectionContent">
+    <div className="sporexSectionLabel">
+      06 · DESIGN & DEVELOPMENT
+    </div>
 
-    <h2>
-      Built as a full-stack mobile experience.
-    </h2>
 
-    <p>
-      The application was developed using Android Studio and Jetpack Compose,
-      with MongoDB supporting data storage and structured mould classification content.
-    </p>
+    <div className="sporexSectionContent">
 
-    <p>
-      UX design was translated directly into mobile components, ensuring consistency between
-      research insights and implementation.
-    </p>
+      <h2>
+        Built as a full-stack mobile experience.
+      </h2>
 
-    {/* 🖼 IMAGE GRID */}
-    <div className="sporexImageGrid">
 
-      <div className="sporexImagePlaceholder">Android Studio Build</div>
+      <p>
+        The application was developed using Android Studio and Jetpack Compose,
+        with MongoDB supporting data storage and structured mould classification content.
+      </p>
 
-      <div className="sporexImagePlaceholder">Jetpack Compose UI</div>
 
-      <div className="sporexImagePlaceholder">MongoDB Schema / Data Flow</div>
+      <p>
+        UX design was translated directly into mobile components, ensuring consistency between
+        research insights and implementation.
+      </p>
 
-      <div className="sporexImagePlaceholder">App Prototype Screens</div>
+
+      {/* 🖼 IMAGE GRID */}
+      <div className="sporexImageGrid">
+
+        <div className="sporexImagePlaceholder">
+          Android Studio Build
+        </div>
+
+        <div className="sporexImagePlaceholder">
+          Jetpack Compose UI
+        </div>
+
+        <div className="sporexImagePlaceholder">
+          MongoDB Schema / Data Flow
+        </div>
+
+        <div className="sporexImagePlaceholder">
+          App Prototype Screens
+        </div>
+
+      </div>
+
 
     </div>
 
@@ -297,37 +355,47 @@ export default function SporexPage() {
 
 <section className="sporexPartnershipSection">
 
-  <div className="sporexSectionLabel">
-    07 · PARTNERSHIP CONTEXT
-  </div>
+  <div className="sporexSectionBackground">
 
-  <div className="sporexSectionContent">
+    <div className="sporexSectionLabel">
+      07 · PARTNERSHIP CONTEXT
+    </div>
 
-    <h2>
-      Grounded in real-world health awareness.
-    </h2>
 
-    <p>
-      The project was developed in collaboration with The Asthma Society of Ireland,
-      ensuring alignment with real respiratory health concerns and public education goals.
-    </p>
+    <div className="sporexSectionContent">
 
-    <p>
-      This influenced both the tone of the interface and the prioritisation of accessible language.
-    </p>
+      <h2>
+        Grounded in real-world health awareness.
+      </h2>
 
-    <a
-      href="https://www.asthma.ie"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="partnerLink"
-    >
-      The Asthma Society of Ireland ↗
-    </a>
 
-    {/* 🖼 SINGLE FEATURE IMAGE */}
-    <div className="sporexPlaceholderImage">
-      Partnership / Research Collaboration Visual
+      <p>
+        The project was developed in collaboration with The Asthma Society of Ireland,
+        ensuring alignment with real respiratory health concerns and public education goals.
+      </p>
+
+
+      <p>
+        This influenced both the tone of the interface and the prioritisation of accessible language.
+      </p>
+
+
+      <a
+        href="https://www.asthma.ie"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="partnerLink"
+      >
+        The Asthma Society of Ireland ↗
+      </a>
+
+
+      {/* 🖼 SINGLE FEATURE IMAGE */}
+      <div className="sporexPlaceholderImage">
+        Partnership / Research Collaboration Visual
+      </div>
+
+
     </div>
 
   </div>
@@ -335,7 +403,7 @@ export default function SporexPage() {
 </section>
 
 <section className="sporexOutcomeSection">
-
+  <div className="sporexSectionBackground">
   <div className="sporexSectionLabel">
     08 · OUTCOME
   </div>
@@ -357,11 +425,11 @@ export default function SporexPage() {
     </p>
 
   </div>
-
+</div>
 </section>
 
 <section className="sporexContributionSection">
-
+  <div className="sporexSectionBackground">
   <div className="sporexSectionLabel">
     09 · MY CONTRIBUTION
   </div>
@@ -383,7 +451,7 @@ export default function SporexPage() {
     </p>
 
   </div>
-
+</div>
 </section>
 
       </main>

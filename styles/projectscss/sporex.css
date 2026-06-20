@@ -286,6 +286,8 @@
 .sporexParticle {
   position: absolute;
 
+  z-index: 0;
+
   border-radius: 50%;
 
   background:
@@ -312,7 +314,6 @@
 
 .sporexprojectHero,
 .sporexheroMockup,
-.sporexOverviewSection,
 .sporexplaceholderImage {
   position: relative;
   z-index: 5;
@@ -320,14 +321,8 @@
 
 .sporexWrapper2 {
   position: relative;
-  z-index: 100;
-
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    #03160d 40%,
-    #03160d 100%
-  );
+  z-index: 10;
+  background: transparent;
 }
 
 .sporexFooter {
@@ -335,9 +330,9 @@
   z-index: 101;
 }
 
-.sporexParticle {
+/* .sporexParticle {
   z-index: 1;
-}
+} */
 
 .sporexPageShell {
   min-height: 100vh;
@@ -370,34 +365,13 @@
     );
 }
 
-.sporexprojectPage {
+/* .sporexprojectPage {
   background: none;
-}
+} */
 
 
 
-
-.sporexOverviewSection,
-.sporexFeaturesSection,
-.sporexDevelopmentSection,
-.sporexPartnershipSection,
-.sporexOutcomeSection {
-
-  display: grid;
-
-  grid-template-columns: 180px minmax(0, 1fr);
-
-  gap: 4rem;
-
-  margin-top: 10rem;
-
-  padding-top: 4rem;
-
-  border-top: 1px solid rgba(0, 200, 83, 0.12);
-}
-
-.sporexProblemSection,
-.sporexResearchSection,
+/* .sporexResearchSection,
 .sporexDesignSection,
 .sporexContributionSection,
 .sporexInsightSection {
@@ -413,7 +387,7 @@
   padding-top: 4rem;
 
   border-top: 1px solid rgba(0, 200, 83, 0.12);
-}
+} */
 
 .sporexSectionLabel {
   color: rgba(0, 200, 83, 0.6);
@@ -603,4 +577,97 @@
 .sporex-hero-link:hover {
   color: #00c853;
   border-bottom-color: #00c853;
+}
+
+.sporexSectionBackground {
+
+  position: relative;
+  z-index: 5;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+
+  border: 1px solid rgba(0, 255, 120, 0.08);
+
+  padding: 4rem;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+  display: grid;
+
+  grid-template-columns: 180px minmax(0,1fr);
+
+  gap: 4rem;
+}
+.sporexOverviewSection {
+
+  margin-top: 2rem;
+
+  padding-top: 4rem;
+
+}
+.sporexDesignSection {
+
+  margin-top: 2rem;
+
+  padding-top: 4rem;
+
+}
+.sporexProblemSection {
+
+  margin-top: 2rem;
+
+  padding-top: 4rem;
+
+}
+
+.sporexInsightSection {
+
+  margin-top: 2rem;
+
+  padding-top: 4rem;
+
+}
+
+.sporexFeaturesSection {
+
+  margin-top: 2rem;
+
+  padding-top: 4rem;
+
+}
+
+.sporexDevSection {
+
+  margin-top: 2rem;
+
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+}
+
+.sporexPartnershipSection {
+
+  margin-top: 2rem;
+
+  padding-top: 4rem;
+    backdrop-filter: blur(40px);
+
+}
+
+.sporexContributionSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+    backdrop-filter: blur(40px);
+}
+
+.sporexOutcomeSection
+{
+  margin-top: 2rem;
+  backdrop-filter: blur(40px);
+  padding-top: 4rem;
 }
