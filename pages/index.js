@@ -219,26 +219,15 @@ export default function Home() {
               something tangible, tested and real.
             </p>
             <br />
-            <p>
-              This idea is grounded in existentialist philosophy, most notably
-              in the work of Jean-Paul Sartre, who argued that “existence
-              precedes essence” suggesting that identity is not pre-determined,
-              but formed through action. For me, this is not abstract theory but
-              direction.
-            </p>
-            <br />
-            <p>
-              It is the reason I build, the reason I design and the reason I
-              return repeatedly to the act of making. I want to become a
-              designer in order to fully realise this way of thinking in
-              practice. Creating apps, interfaces and digital experiences
-              becomes a method of translating thought into form and in doing so,
-              a way of refining understanding of self. Because making is not
-              separate from becoming. I believe it is the process through which
-              identity takes shape.
-            </p>
+           <p>
+Grounded in existentialist thinking, especially Sartre’s idea that “existence precedes essence,” I see identity as something formed through action rather than assigned in advance. That idea isn’t abstract to me but direction.
+</p>
+
+<p>
+It’s why I build. Design and development become a way of thinking in practice: translating ideas into interfaces and  in doing so, refining both the work and myself. 
+</p>
           </div>
-        </section>
+        </section>t
         <section id="about" className="about-section">
           <div className="about-grid">
             <div className="about-content">
