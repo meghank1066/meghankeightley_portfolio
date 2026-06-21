@@ -395,7 +395,12 @@ It’s why I build. Design and development become a way of thinking in practice:
 
           <div className="caseStudiesGrid">
             {casestudies.map((study) => (
-              <Link key={study.slug} href={`/case-studies/${study.slug}`}>
+              // <Link key={study.slug} href={`/case-studies/${study.slug}`}>
+              <Link 
+  key={study.slug} 
+  href={`/case-studies/${study.slug}`}
+  className="caseStudyLinkWrapper"
+>
                 <div className="caseStudyCard">
                   <img
                     src={study.image}

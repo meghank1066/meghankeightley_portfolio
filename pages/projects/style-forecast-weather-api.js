@@ -47,7 +47,8 @@ export default function StyleForecastPage() {
   <a className="style-hero-link" href="https://github.com/meghank1066/StyleAssistantCA1_SOA_MeghanKeightley" target="_blank" rel="noopener">
     View My Code
   </a>
-</div>  </div>
+</div>  
+</div>
 
             <div className="styleForecastHeroRight">
 
