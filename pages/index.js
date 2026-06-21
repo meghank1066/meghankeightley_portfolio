@@ -209,23 +209,15 @@ export default function Home() {
         <section className="philosophySection">
           <div className="philosophyContent">
             <h2 className="philosophyTitle">
-              If you want a sense of self, make something. I make digital spaces where ideas take shape and are understood.
+            I make digital spaces where ideas take shape and are understood.
             </h2>
-            <p className="philosophySubtitle">
-              Identity is not something that is simply found, but something
-              continuously constructed through creation, decision and the quiet
-              repetition of making. Each act of design or development becomes a
-              trace of thought made visible translating what is internal into
-              something tangible, tested and real.
-            </p>
-            <br />
-           <p>
-Grounded in existentialist thinking, especially Sartre’s idea that “existence precedes essence,” I see identity as something formed through action rather than assigned in advance. That idea isn’t abstract to me but direction.
+           <p className="philosophySubtitle">
+  “If you want a sense of self, make something.” This is a principle I return to in my work. Identity is not something found but something built through creation decision and repetition. Each design and line of code becomes a trace of thought made visible turning what is internal into something tangible tested and real.
 </p>
-
-<p>
+    
+{/* <p>
 It’s why I build. Design and development become a way of thinking in practice: translating ideas into interfaces and  in doing so, refining both the work and myself. 
-</p>
+</p> */}
           </div>
         </section>t
         <section id="about" className="about-section">
