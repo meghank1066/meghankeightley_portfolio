@@ -1,0 +1,336 @@
+:root {
+  --resume-black: #050505;
+  --resume-charcoal: #060d1a;
+  --resume-grey: #a0aabf;
+  --resume-lightGrey: #e2e8f0;
+  --resume-white: #ffffff;
+  --resume-accent-blue: #ffd5e5; 
+}
+
+/* PAGE BACKGROUND REMAINING NAVY/DARK GRADIENT */
+/* --- COMPREHENSIVE RESUME PAGE ATMOSPHERE --- */
+.resumePage {
+  min-height: 100vh;
+  padding: 6rem 20%;
+  position: relative;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  z-index: 1; /* Establishes a localized stacking context for backdrops */
+
+  /* The core deep space gradient background layer */
+  background:
+    radial-gradient(
+      circle at 50% 30%,
+      rgba(191, 232, 227, 0.02),
+      transparent 50%
+    ),
+    linear-gradient(
+      180deg,
+      #060d1a 0%,    /* Rich Midnight Navy black */
+      #081726 35%,   /* Core Slate Navy */
+      #0c2336 70%,   /* Structural deep steel-blue */
+      #030713 100%   /* Matches your footer perfectly */
+    );
+}
+
+/* Layer 1: Mint and Upper Right Pink Ambient Blooms */
+.resumePage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    /* Crisp bright mint lighting bloom on the upper left */
+    radial-gradient(
+        circle at 15% 15%,
+        rgba(191, 232, 227, 0.16),
+        transparent 45%
+    ),
+    /* Pink glow tucked in behind the right side content (Sakura reflection tone) */
+    radial-gradient(
+        circle at 85% 20%,
+        rgba(255, 180, 220, 0.08),
+        transparent 35%
+    ),
+    /* Mid-page deep steel-blue anchor point */
+    radial-gradient(
+        circle at 50% 65%,
+        rgba(80, 180, 170, 0.08),
+        transparent 50%
+    );
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: -2; /* Keeps lighting behind text */
+}
+
+/* Layer 2: White Spotlighting & Lower Pink Secondary Glows */
+.resumePage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    /* Soft white spotlight accent directly behind header title positions */
+    radial-gradient(
+        circle at 35% 25%,
+        rgba(255, 255, 255, 0.04),
+        transparent 40%
+    ),
+    /* Secondary lower pink bloom layer mimicking tree reflections further down */
+    radial-gradient(
+        circle at 80% 75%,
+        rgba(255, 200, 220, 0.04),
+        transparent 45%
+    );
+  filter: blur(160px);
+  pointer-events: none;
+  z-index: -1; /* Layered just above the base layout */
+}
+/* STYLE HEADER BLOCK */
+.resumeHeaderSection {
+  margin-bottom: 4rem;
+}
+
+.resumeTopTag {
+  color: var(--resume-accent-blue);
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: block;
+  /* margin-bottom: 0.5rem; */
+  /* padding-top: 5%; */
+  margin-top: 4%;
+}
+
+.resumeMainTitle {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--resume-white);
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.03em;
+}
+
+.resumeContactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--resume-grey);
+}
+
+.resumeContactInfo a {
+  color: var(--resume-lightGrey);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  width: max-content;
+}
+
+.resumeLinksRow {
+  margin-top: 0.25rem;
+}
+
+/* STYLE STACKED SECTIONS WITH LINES */
+.resumeMeghanSection {
+  margin-bottom: 3.5rem;
+}
+
+.resumeMeghanSection h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--resume-white);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Sleek underline full width */
+}
+
+.resumeSectionContent {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+}
+
+.skillsGrid p {
+  margin-bottom: 0.5rem;
+}
+
+/* ROW LAYOUT FOR UNIVERSITIES/ROLES & DATES */
+.resumeItemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  gap: 1.5rem;
+}
+
+.resumeItemLeft h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--resume-white);
+  margin: 0;
+}
+
+.resumeSubText {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--resume-grey);
+  font-style: italic;
+  margin-top: 0.15rem;
+}
+
+.resumeItemRight {
+  font-size: 0.95rem;
+  color: var(--resume-grey);
+  white-space: nowrap;
+}
+
+/* CLEAN BULLET POINTS */
+.resumeBullets {
+  margin: 0.5rem 0 1.5rem 1.2rem;
+  padding: 0;
+}
+
+.resumeBullets li {
+  margin-bottom: 0.4rem;
+  color: #94a3b8;
+}
+
+/* NAV ADJUSTMENTS */
+.resumeNav {
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media(max-width: 768px) {
+  .resumePage {
+    padding: 4rem 1.5rem;
+  }
+  
+  .resumeItemRow {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .resumeItemRight {
+    margin-top: 0.1rem;
+    font-size: 0.85rem;
+  }
+}
+.resumeLinksRow {
+  display: flex;
+  flex-direction: row; /* Arranges links horizontally */
+  margin-top: 0.5rem;  /* Snaps it cleanly under your contact info */
+  gap: 1.5rem;         /* Clean, consistent spacing between links */
+}
+
+.resume-hero-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle, visible underline instead of invisible black */
+  transition: all 0.25s ease;
+}
+
+.resume-hero-link:hover {
+  color: var(--resume-white);
+  border-color: var(--resume-white);
+  opacity: 0.85;
+}
+/* FOOTER CONTAINER & WRAPPER */
+.resumeWrapper2,
+.resumeWrapper2 *,
+.resumeFooter,
+.resumeFooter * {
+  background-color: #030713 !important;  
+}
+
+.resumeFooter {
+  position: relative;
+  z-index: 101;
+  min-height: 300px;
+  width: 100%;
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(121, 216, 206, 0.12) !important;
+}
+
+/* FOOTER TYPOGRAPHY */
+.resumeFooter,
+.resumeFooter p,
+.resumeFooter span,
+.resumeFooter h1,
+.resumeFooter h2,
+.resumeFooter h3,
+.resumeFooter h4 {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* FOOTER LINKS */
+.resumeFooter a {
+  color: rgba(255, 255, 255, 0.65) !important;
+  transition: color 0.2s ease;
+}
+
+.resumeFooter a:hover {
+  color: #79d8ce !important; 
+}
+
+/* FLEXWRAPPER TO KEEP NAME AND BUTTON LINED UP INTERACTIVELY */
+.resumeTitleRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+}
+
+/* OVERRIDE MARGIN ON MARGIN-BOTTOM SO ROW CONTROLS LAYOUT */
+.resumeMainTitle {
+  margin: 0 !important;
+}
+
+/* THE BUTTON STRUCTURE WITH SUBTLE SAKURA GLOW HOVER TONE */
+.resumeDownloadBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--resume-grey);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.resumeDownloadBtn svg {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+/* HOVER: Brightens, pops upward slightly, shifts line coloring */
+.resumeDownloadBtn:hover {
+  color: var(--resume-white);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 180, 220, 0.4); /* subtle sakura pink border glow */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 180, 220, 0.1);
+}
+
+.resumeDownloadBtn:active {
+  transform: translateY(0);
+}
+
+/* MOBILE FALLBACK STYLING */
+@media(max-width: 768px) {
+  .resumeTitleRow {
+    gap: 1rem;
+  }
+  .resumeDownloadBtn svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}

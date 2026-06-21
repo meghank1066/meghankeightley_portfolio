@@ -374,6 +374,7 @@ html {
 footer {
   width: 100%;
   padding: 3rem 0;
+  /* background-color: #0E2030; */
 }
 
 .contactButton {
@@ -502,6 +503,7 @@ footer {
 .footer {
   width: 100%;
   padding: 3rem 1rem;
+  /* background-color: #0E2030; */
 }
 
 .footerContent {
@@ -509,7 +511,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  /* background-color: #0E2030; */
   gap: 1rem;
   text-align: center;
 }
@@ -554,4 +556,22 @@ footer {
 
 .themeToggle:hover img {
   transform: rotate(15deg) scale(1.1);
+}
+
+/* Target only the footer inside your index.js wrapper */
+.homeFooterWrapper,
+.homeFooterWrapper footer,
+.homeFooterWrapper .footer {
+  background-color: #0E2030 !important; /* Forces navy background */
+}
+
+/* Ensure footer text stays readable (white/semi-transparent white) */
+.homeFooterWrapper .footerText,
+.homeFooterWrapper footer p,
+.homeFooterWrapper footer span {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.homeFooterWrapper .footerGithub {
+  color: #ffffff !important;
 }

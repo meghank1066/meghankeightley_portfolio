@@ -113,5 +113,44 @@ const graphicdesign = [
   },
 ]
 
+const resume = {
+  slug: "resume-meghan-keightley",
+  title: "Meg's Resume",
+  description:
+    "UX/UI Designer and Frontend Developer specialising in creating user-centred digital experiences through research, design, and modern web technologies.",
+  pdf: "/resume/meg-resume.pdf",
+  sections: {
+    skills: [
+      "UX/UI Design",
+      "Frontend Development",
+      "React",
+      "Next.js",
+      "JavaScript",
+      "Figma",
+      "Prototyping",
+      "User Research"
+    ],
 
-export { projects, casestudies };
+    experience: [
+      {
+        role: "UX/UI Designer & Frontend Developer",
+        company: "Freelance / Personal Projects",
+        date: "2025 - Present",
+        description:
+          "Designed and developed responsive digital experiences, combining UX research, interface design, and frontend implementation."
+      }
+    ],
+
+    education: [
+      {
+        course: "MSc Computing / User Experience Design",
+        institution: "University",
+        date: "2025 - 2026"
+      }
+    ]
+  }
+};
+ 
+
+
+export { projects, casestudies, resume};

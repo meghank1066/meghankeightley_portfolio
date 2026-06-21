@@ -21,7 +21,7 @@ const Header = ({ className = "" }) => {
 
   return (
     <nav className={`navbar ${className}`}>
-      <a href={isHome ? "#home" : "/#home"}>Home</a>
+      {/* <a href={isHome ? "#home" : "/#home"}>Home</a> */}
 
       <a href={isHome ? "#about" : "/#about"}>
         About
@@ -41,7 +41,9 @@ const Header = ({ className = "" }) => {
       <a href={isHome ? "#contact" : "/#contact"}>
         Contact
       </a>
-
+     <a href="/resume/resume-meghan-keightley">
+  Resume
+</a>
  {/* {mounted && isMobile === false && (
   <button
     className="themeToggle"

@@ -498,7 +498,9 @@ export default function Home() {
           </footer>
         )}
         <h1 ref={textOne} className="hidden"></h1>
-        <Footer />
+        <div className="homeFooterWrapper">
+  <Footer />
+</div>
       </div>
     </div>
   );

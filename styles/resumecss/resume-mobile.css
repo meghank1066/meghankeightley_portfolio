@@ -1,0 +1,261 @@
+:root {
+  --resume-black: #050505;
+  --resume-charcoal: #0a0f1d;
+  --resume-grey: #a0aabf;
+  --resume-lightGrey: #e2e8f0;
+  --resume-white: #ffffff;
+  --resume-accent-blue: #ffd5e5; 
+}
+
+/* BASE PAGE LAYOUT & GRADIENT BACKGROUND */
+.resumePage {
+  min-height: 100vh;
+  padding: 6rem 20%; /* Large screen layout default padding */
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(30, 58, 138, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(255,255,255,0.02),
+      transparent 40%
+    ),
+    linear-gradient(
+      180deg,
+      #030712 0%,
+      #0b1329 50%,
+      #030712 100%
+    );
+  color: var(--resume-lightGrey);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* HEADER ELEMENTS */
+.resumeHeaderSection {
+  margin-bottom: 4rem;
+}
+
+.resumeTopTag {
+  color: var(--resume-accent-blue);
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: block;
+  margin-top: 4%;
+}
+
+.resumeMainTitle {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--resume-white);
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.03em;
+}
+
+.resumeContactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--resume-grey);
+}
+
+.resumeContactInfo a {
+  color: var(--resume-lightGrey);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  width: max-content;
+}
+
+/* HORIZONTAL LINKS PATTERN (NO DOT) */
+.resumeLinksRow {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.75rem;
+  gap: 1.5rem;
+}
+
+.resume-hero-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.25s ease;
+}
+
+.resume-hero-link:hover {
+  color: var(--resume-white);
+  border-color: var(--resume-white);
+  opacity: 1;
+}
+
+/* CONTENT BLOCKS */
+.resumeMeghanSection {
+  margin-bottom: 3.5rem;
+}
+
+.resumeMeghanSection h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--resume-white);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.resumeSectionContent {
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #cbd5e1;
+}
+
+.skillsGrid p {
+  margin-bottom: 0.75rem;
+}
+
+/* TIMELINE LAYOUT BLOCKS */
+.resumeItemRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  gap: 2rem;
+}
+
+.resumeItemLeft h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--resume-white);
+  margin: 0;
+}
+
+.resumeSubText {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--resume-grey);
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.resumeItemRight {
+  font-size: 0.95rem;
+  color: var(--resume-grey);
+  white-space: nowrap;
+}
+
+.resumeBullets {
+  margin: 0.5rem 0 1.75rem 1.2rem;
+  padding: 0;
+}
+
+.resumeBullets li {
+  margin-bottom: 0.5rem;
+  color: #94a3b8;
+}
+
+/* NAVBAR STRUCTURAL CLASS */
+.resumeNav {
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* GLOBAL FOOTER STRUCTURAL ARCHITECTURE */
+.resumeWrapper2,
+.resumeWrapper2 *,
+.resumeFooter,
+.resumeFooter * {
+  background-color: #030713 !important;  
+}
+
+.resumeFooter {
+  position: relative;
+  z-index: 101;
+  min-height: 300px;
+  width: 100%;
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(121, 216, 206, 0.12) !important;
+}
+
+.resumeFooter,
+.resumeFooter p,
+.resumeFooter span,
+.resumeFooter h1,
+.resumeFooter h2,
+.resumeFooter h3,
+.resumeFooter h4 {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.resumeFooter a {
+  color: rgba(255, 255, 255, 0.65) !important;
+  transition: color 0.2s ease;
+}
+
+.resumeFooter a:hover {
+  color: #79d8ce !important; 
+}
+
+/* ==========================================================================
+   MEDIA QUERIES FOR RESPONSIVE DESIGN
+   ========================================================================== */
+ 
+@media (max-width: 1200px) {
+  .resumePage {
+    padding: 5rem 12%;
+  }
+}
+ 
+@media (max-width: 992px) {
+  .resumePage {
+    padding: 5rem 8%;
+  }
+  .resumeMainTitle {
+    margin-bottom: 1rem;
+  }
+} 
+@media (max-width: 768px) {
+  .resumePage {
+    padding: 4rem 1.5rem;
+  }
+  
+  .resumeHeaderSection {
+    margin-bottom: 2.5rem;
+  }
+  
+  .resumeTopTag {
+    margin-top: 2%;
+  }
+  
+  .resumeItemRow {
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 1.25rem;
+  }
+  
+  .resumeItemRight {
+    margin-top: 0.15rem;
+    font-size: 0.85rem;
+  }
+
+  .resumeLinksRow {
+    gap: 1.25rem;
+    margin-top: 1rem;
+  }
+}
+ 
+@media (max-width: 480px) {
+  .resumeContactInfo a {
+    width: 100%;
+    word-break: break-all;  
+  }
+}
