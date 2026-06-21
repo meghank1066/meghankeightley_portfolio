@@ -198,10 +198,14 @@ html {
 
 /* CASE STUDIES */
 
-.caseStudiesSection {
-  padding: 6rem 10% 3rem;
-}
+/* .caseStudiesSection {
+  padding: 6rem 10% 3rem; 
+} */
 
+.caseStudiesSection {
+  padding: 2rem 10% 3rem;  
+  margin-top: -1.5; 
+}
 
 .caseStudiesHeading {
   font-size: clamp(2.8rem, 5vw, 4rem);
