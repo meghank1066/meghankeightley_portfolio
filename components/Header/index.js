@@ -27,16 +27,16 @@ const Header = ({ className = "" }) => {
         About
       </a>
 
-      <a href={isHome ? "#projects" : "/#projects"}>
+      <a href={isHome ? "#case-studies" : "/#projects"}>
         Projects
       </a>
 
-      <a
+      {/* <a
         href={isHome ? "#case-studies" : "/#case-studies"}
         className="desktop-only"
       >
         Case Studies
-      </a>
+      </a> */}
 
       <a href={isHome ? "#contact" : "/#contact"}>
         Contact

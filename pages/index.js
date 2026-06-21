@@ -219,7 +219,7 @@ export default function Home() {
 It’s why I build. Design and development become a way of thinking in practice: translating ideas into interfaces and  in doing so, refining both the work and myself. 
 </p> */}
           </div>
-        </section>t
+        </section>
         <section id="about" className="about-section">
           <div className="about-grid">
             <div className="about-content">

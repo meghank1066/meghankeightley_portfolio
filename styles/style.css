@@ -1958,6 +1958,7 @@ canvas {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-top: auto;
 }
 
 .philosophyContent {
@@ -2002,4 +2003,17 @@ canvas {
   display: flex;
   gap: 1.5rem;
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+.philosophySection {
+  padding-top: 6rem;
+  padding-right: 8%;
+  padding-left: 8%;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: auto;
+}
 }
