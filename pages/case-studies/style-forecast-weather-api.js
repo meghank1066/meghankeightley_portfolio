@@ -65,7 +65,7 @@ export default function StyleForecastPage() {
 
               <div>
                 <h4>TEAM</h4>
-                <p>Meghan Keightley</p>
+                <p>Individual</p>
               </div>
 
               <div>
@@ -95,9 +95,12 @@ export default function StyleForecastPage() {
 
           <section className="styleForecastHeroMockup">
 
-            <div className="styleForecastPlaceholderImage">
-              STYLE FORECAST SCREENSHOT
-            </div>
+            <img 
+    className="nintendoplaceholderImage" 
+    src="/images/styleforecast-preview.png" 
+    alt="Nintendo Switch 2 UI Redesign Showcase"
+    style={{ width: "100%", height: "auto", display: "block" }} 
+  />
 
           </section>
 <section className="styleForecastOverviewSection">
@@ -109,11 +112,14 @@ export default function StyleForecastPage() {
   <div className="styleForecastSectionContent">
 
     <h2>
-      Bridging weather data and fashion discovery.
+     Problem-solving in daily life.
     </h2>
 
     <p>
-      Style Forecast was developed as an individual academic project
+      For an assignment, we were tasked 
+      with the job of creating 
+      a website which would help us solve a problem
+      we face in our daily lives. Style Forecast was developed as an individual academic project
       between October and November 2025. The goal was to combine
       real-time weather information with fashion recommendations to
       simplify outfit planning.

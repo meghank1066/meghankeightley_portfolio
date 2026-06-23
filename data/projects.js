@@ -71,20 +71,20 @@ const casestudies = [
     title: "Style Forecast – API",
     description:
       "A weather-powered application that integrates external APIs to provide personalised outfit recommendations based on local conditions and forecasts.",
-    image: "/projects/styleforecast.png",
+    image: "/images/styleforecast-preview.png",
     github: "https://github.com/...",
     tech: ["React", "Weather API", "JavaScript"]
   },
 
-  {
-    slug: "little-star-app",
-    title: "Little Star – Education App Design",
-    description:
-      "A user-centred UX/UI design project created in Figma, focused on improving communication, scheduling, and daily activity tracking for parents and childcare providers.",
-    image: "/projects/littlestaracademy.png",
-    github: "",
-    tech: ["Figma", "UX Research", "Prototyping"]
-  },
+  // {
+  //   slug: "little-star-app",
+  //   title: "Little Star – Education App Design",
+  //   description:
+  //     "A user-centred UX/UI design project created in Figma, focused on improving communication, scheduling, and daily activity tracking for parents and childcare providers.",
+  //   image: "/projects/littlestaracademy.png",
+  //   github: "",
+  //   tech: ["Figma", "UX Research", "Prototyping"]
+  // },
   
   {
     slug: "nintendo-switch-ui",
@@ -104,14 +104,14 @@ const casestudies = [
   //   image: "/images/penneys-cover.png"
   // },
 
-  // {
-  //   slug: "evelynn-coffee",
-  //   title: "Evelynn Coffee",
-  //   description:
-  //     "Creating a complete digital coffee experience, from brand identity to mobile ordering and loyalty rewards.",
-  //   category: "Brand & Product Design",
-  //   image: "/images/evelynn-cover.webp"
-  // },
+  {
+    slug: "evelynn-coffee",
+    title: "Evelynn Coffee",
+    description:
+      "Creating a complete digital coffee experience, from brand identity to mobile ordering and loyalty rewards.",
+    category: "Brand & Product Design",
+    image: "/images/evelynn-cover.webp"
+  },
 //    {
 //   "slug": "dr-martens-redesign",
 //   "title": "Dr. Martens E-Commerce",
