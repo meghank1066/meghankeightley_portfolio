@@ -76,6 +76,16 @@ const casestudies = [
     tech: ["React", "Weather API", "JavaScript"]
   },
 
+  {
+    slug: "glamour-touch-salon",
+    title: "Glamour Touch",
+    description:
+      "A nail and beauty salon's custom bookings for a website.",
+    image: "/images/styleforecast-preview.png",
+    github: "https://github.com/RathnamMeghana/Beauty_Cosmetics_Laravel",
+    tech: ["PHP", "Database Migrations", "SCSS"]
+  },
+
   // {
   //   slug: "little-star-app",
   //   title: "Little Star – Education App Design",
@@ -104,14 +114,14 @@ const casestudies = [
   //   image: "/images/penneys-cover.png"
   // },
 
-  {
-    slug: "evelynn-coffee",
-    title: "Evelynn Coffee",
-    description:
-      "Creating a complete digital coffee experience, from brand identity to mobile ordering and loyalty rewards.",
-    category: "Brand & Product Design",
-    image: "/images/evelynn-cover.webp"
-  },
+  // {
+  //   slug: "evelynn-coffee",
+  //   title: "Evelynn Coffee",
+  //   description:
+  //     "Creating a complete digital coffee experience, from brand identity to mobile ordering and loyalty rewards.",
+  //   category: "Brand & Product Design",
+  //   image: "/images/evelynn-cover.webp"
+  // },
 //    {
 //   "slug": "dr-martens-redesign",
 //   "title": "Dr. Martens E-Commerce",

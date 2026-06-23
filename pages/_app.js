@@ -18,6 +18,9 @@ import "../styles/case-studies-css/penneys.css";
 import "../styles/case-studies-css/penneys-mobile.css";
 import "../styles/resumecss/resume.css";
 import "../styles/resumecss/resume-mobile.css";
+import "../styles/case-studies-css/glamour-touch-salon.css";
+import "../styles/case-studies-css/glamour-touch-salon-mobile.css";
+import "../styles/resumecss/resume-mobile.css";
 import { ThemeProvider } from "next-themes";  
 
 

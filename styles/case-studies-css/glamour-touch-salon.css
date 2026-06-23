@@ -1,0 +1,737 @@
+:root {
+  --glamour-pink: #ff3f9a;
+  --glamour-pink-soft: #ff8fc7;
+  --glamour-pink-glow: #ffb6dc;
+
+  --glamour-blue: #9ee7ff;
+  --glamour-blue-soft: #c9f4ff;
+
+  --glamour-dark: #050816;
+  --glamour-navy: #081827;
+
+  --glamour-white: #ffffff;
+}
+
+
+/* PAGE */
+
+.glamourtouchPageShell {
+
+  min-height:100vh;
+
+  background:
+
+  radial-gradient(
+    circle at 20% 15%,
+    rgba(255,63,154,.18),
+    transparent 35%
+  ),
+
+  radial-gradient(
+    circle at 80% 20%,
+    rgba(158,231,255,.18),
+    transparent 35%
+  ),
+
+  linear-gradient(
+    180deg,
+    #050816 0%,
+    #081827 45%,
+    #0b2431 75%,
+    #050816 100%
+  );
+
+}
+
+
+
+
+.glamourtouchProjectPage {
+
+  padding:8rem 10%;
+
+  position:relative;
+
+  overflow:hidden;
+
+  color:white;
+
+}
+
+
+
+
+/* HERO */
+
+.glamourtouchProjectHero {
+
+
+display:flex;
+
+justify-content:space-between;
+
+gap:5rem;
+
+padding:4rem;
+
+
+background:
+
+rgba(10,18,30,.65);
+
+
+backdrop-filter:blur(40px);
+
+
+border-radius:40px;
+
+
+border:
+
+1px solid rgba(255,255,255,.12);
+
+
+box-shadow:
+
+0 25px 70px rgba(0,0,0,.45);
+
+
+position:relative;
+
+z-index:2;
+
+
+}
+
+
+
+
+.glamourtouchHeroLeft {
+
+max-width:650px;
+
+}
+
+
+
+
+.glamourtouchProjectTag {
+
+
+color:var(--glamour-blue);
+
+
+letter-spacing:4px;
+
+font-size:.8rem;
+
+font-weight:700;
+
+text-transform:uppercase;
+
+}
+
+
+
+
+.glamourtouchProjectTitle {
+
+
+font-size:clamp(4rem,8vw,7rem);
+
+line-height:.9;
+
+letter-spacing:-.06em;
+
+margin:1.5rem 0;
+
+
+background:
+
+linear-gradient(
+
+180deg,
+
+white 0%,
+
+#ffd6ea 45%,
+
+var(--glamour-pink) 100%
+
+);
+
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+
+text-shadow:
+
+0 0 40px rgba(255,63,154,.35);
+
+}
+
+
+
+
+.glamourtouchProjectDescription {
+
+
+font-size:1.15rem;
+
+line-height:1.8;
+
+max-width:580px;
+
+color:rgba(255,255,255,.78);
+
+}
+
+
+
+
+/* BUTTON */
+
+.glamourtouch-hero-link {
+
+
+display:inline-block;
+
+margin-top:2rem;
+
+padding:.9rem 2rem;
+
+
+background:
+
+linear-gradient(
+
+135deg,
+
+var(--glamour-pink),
+
+#ff5cad
+
+);
+
+
+color:white;
+
+font-weight:800;
+
+text-decoration:none;
+
+
+border-radius:50px;
+
+
+box-shadow:
+
+0 15px 40px rgba(255,63,154,.35);
+
+
+transition:.3s;
+
+}
+
+
+
+.glamourtouch-hero-link:hover {
+
+
+transform:translateY(-4px);
+
+
+box-shadow:
+
+0 20px 50px rgba(255,63,154,.55);
+
+
+}
+
+
+
+/* RIGHT DETAILS */
+
+
+.glamourtouchHeroRight {
+
+
+min-width:320px;
+
+
+display:flex;
+
+flex-direction:column;
+
+gap:2rem;
+
+
+}
+
+
+
+.glamourtouchHeroRight h4 {
+
+
+color:var(--glamour-pink-soft);
+
+letter-spacing:2px;
+
+font-size:.85rem;
+
+
+}
+
+
+
+.glamourtouchHeroRight p {
+
+
+color:white;
+
+line-height:1.6;
+
+}
+
+
+
+
+.glamourtouchLink {
+
+
+color:var(--glamour-blue);
+
+text-decoration:none;
+
+}
+
+
+
+
+
+/* MOCKUP */
+
+
+.glamourtouchHeroMockup {
+
+
+margin-top:5rem;
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+.glamourtouchPlaceholderImage {
+
+
+height:650px;
+
+
+border-radius:40px;
+
+
+background:
+
+rgba(5,8,22,.65);
+
+
+backdrop-filter:blur(35px);
+
+
+border:
+
+1px solid rgba(158,231,255,.15);
+
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+
+color:var(--glamour-blue-soft);
+
+
+font-size:2rem;
+
+letter-spacing:4px;
+
+
+box-shadow:
+
+0 30px 80px rgba(0,0,0,.45);
+
+
+}
+
+
+
+
+
+/* SECTIONS */
+
+
+.glamourtouchOverviewSection,
+.glamourtouchInsightSection,
+.glamourtouchDesignSection,
+.glamourtouchFeaturesSection,
+.glamourtouchOutcomeSection,
+.glamourtouchContributionSection {
+
+
+margin-top:3rem;
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+.glamourtouchSectionBackground {
+
+
+background:
+
+rgba(8,24,39,.65);
+
+
+backdrop-filter:blur(35px);
+
+
+border-radius:40px;
+
+
+padding:4rem;
+
+
+border:
+
+1px solid rgba(255,255,255,.1);
+
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.35);
+
+
+display:grid;
+
+
+grid-template-columns:180px 1fr;
+
+
+gap:4rem;
+
+
+}
+
+
+
+.glamourtouchSectionLabel {
+
+
+color:var(--glamour-blue);
+
+letter-spacing:3px;
+
+font-size:.85rem;
+
+text-transform:uppercase;
+
+
+}
+
+
+
+
+.glamourtouchSectionContent h2 {
+
+
+font-size:clamp(1.8rem,4vw,3rem);
+
+
+color:white;
+
+margin-bottom:2rem;
+
+
+}
+
+
+
+.glamourtouchSectionContent p {
+
+
+font-size:1.1rem;
+
+line-height:1.9;
+
+
+color:rgba(255,255,255,.75);
+
+
+margin-bottom:1.5rem;
+
+
+}
+
+
+
+
+
+/* QUOTE */
+
+
+.glamourtouchQuoteBlock {
+
+
+margin-top:2rem;
+
+
+padding:2rem;
+
+
+border-left:
+
+3px solid var(--glamour-pink);
+
+
+background:
+
+rgba(255,63,154,.08);
+
+
+border-radius:15px;
+
+
+font-style:italic;
+
+
+}
+
+
+
+
+
+/* IMAGES */
+
+
+.glamourtouchImageGrid {
+
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:2rem;
+
+margin-top:3rem;
+
+}
+
+
+
+.glamourtouchImageGrid img {
+
+
+width:100%;
+
+border-radius:25px;
+
+
+border:
+
+1px solid rgba(158,231,255,.2);
+
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.4);
+
+
+transition:.3s;
+
+
+}
+
+
+
+.glamourtouchImageGrid img:hover {
+
+transform:translateY(-6px);
+
+}
+
+
+
+
+
+/* NAV */
+
+
+.glamourtouchNav {
+
+
+backdrop-filter:blur(25px);
+
+
+border:
+
+1px solid rgba(255,255,255,.2);
+
+
+}
+
+
+
+.glamourtouchNav a {
+
+color:white;
+
+}
+
+
+
+.glamourtouchNav a:hover {
+
+color:var(--glamour-pink-soft);
+
+}
+
+
+
+
+
+/* FOOTER TRANSITION */
+
+
+.glamourtouchWrapper2 {
+
+
+background:
+
+linear-gradient(
+
+180deg,
+
+transparent,
+
+#050816
+
+);
+
+
+}
+
+
+
+.glamourtouchFooter {
+
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#081827,
+
+#050816
+
+)!important;
+
+
+border-top:
+
+1px solid rgba(255,63,154,.2);
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+.glamourtouchProjectHero {
+
+
+flex-direction:column;
+
+padding:2rem;
+
+
+}
+
+
+
+.glamourtouchSectionBackground {
+
+
+grid-template-columns:1fr;
+
+padding:2rem;
+
+}
+
+
+
+.glamourtouchImageGrid {
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.glamourtouchProjectPage {
+
+padding:6rem 5%;
+
+}
+
+
+}
+
+.glamourtouchWebsiteEmbed {
+
+  height:800px;
+
+  border-radius:40px;
+
+  overflow:hidden;
+
+  background:#050816;
+
+  border:1px solid rgba(255,255,255,.12);
+
+  box-shadow:
+  0 30px 80px rgba(0,0,0,.45);
+
+}
+
+
+.glamourtouchWebsiteEmbed iframe {
+
+  width:100%;
+
+  height:100%;
+
+  border:none;
+
+}
