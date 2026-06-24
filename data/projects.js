@@ -8,7 +8,7 @@ const projects = [
     title: "SPOREX – Mould Identification App",
     description:
       "A web application developed for the Asthma Society of Ireland to help users identify mould types, understand associated health risks, and access guidance on prevention and treatment.",
-    image: "/images/sporex_final.png",
+    image: "/images/sporex_display.png",
     github: "https://github.com/...",
     tech: ["React", "Node.js", "MongoDB"]
   },
@@ -70,7 +70,7 @@ const casestudies = [
     title: "Style Forecast – API",
     description:
       "A weather-powered application that integrates external APIs to provide personalised outfit recommendations based on local conditions and forecasts.",
-    image: "/images/styleforecast-preview.png",
+    image: "/images/lookbook-cover.png",
     github: "https://github.com/...",
     tech: ["React", "Weather API", "JavaScript"]
   },
@@ -80,7 +80,7 @@ const casestudies = [
     title: "Glamour Touch",
     description:
       "A nail and beauty salon's custom bookings for a website.",
-    image: "/images/styleforecast-preview.png",
+    image: "/images/glamour-touch-pic.png",
     github: "https://github.com/RathnamMeghana/Beauty_Cosmetics_Laravel",
     tech: ["PHP", "Database Migrations", "SCSS"]
   },
@@ -101,7 +101,7 @@ const casestudies = [
     description:
       "Reimagining navigation, discoverability, and accessibility across Nintendo's gaming ecosystem.",
     category: "Product Design",
-    image: "/images/nintendo-cover.jpg"
+    image: "/images/nintendo-switch-cover.png"
   },
 
   // {
