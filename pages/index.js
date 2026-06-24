@@ -364,7 +364,7 @@ It’s why I build. Design and development become a way of thinking in practice:
             </div>
           </div>
         </section>
-        <section id="projects" className="projectsSection">
+        {/* <section id="projects" className="projectsSection">
           {/* <h1 className="projectsHeading">Featured Projects</h1> */}
           {/* <h2 class="sectionTitle">My Projects</h2> */}
           {/* <p class="sectionDesc">
@@ -375,7 +375,7 @@ It’s why I build. Design and development become a way of thinking in practice:
             engaging.
           </p> */}
 
-          <div className="projectsList">
+          {/* <div className="projectsList">
             {projects.map((project) => (
               <Link key={project.slug} href={`/projects/${project.slug}`}>
                 <a className="projectRow">
@@ -387,9 +387,64 @@ It’s why I build. Design and development become a way of thinking in practice:
                   <span className="projectArrow">→</span>
                 </a>
               </Link>
-            ))}
+            ))} */}
+          {/* </div> */}
+        {/* </section> */} 
+        <section id="projects" className="projectsSection">
+
+  <div className="projectsList">
+
+    {projects.map((project) => (
+
+      <Link key={project.slug} href={`/projects/${project.slug}`}>
+        <a className="projectCard">
+
+          <div className="projectInfo">
+
+            <span className="projectCategory">
+              {project.category}
+            </span>
+
+            <h2>
+              {project.title}
+            </h2>
+
+            <h3>
+              {project.type}
+            </h3>
+
+            <p>
+              {project.description}
+            </p>
+
+
+            <button className="caseButton">
+              <span></span>
+              view project
+            </button>
+
           </div>
-        </section>
+
+
+          <div className="projectPreview">
+
+            <img 
+              src={project.image}
+              alt={project.title}
+            />
+
+          </div>
+
+
+        </a>
+
+      </Link>
+
+    ))}
+
+  </div>
+
+</section>
         <section id="case-studies" className="caseStudiesSection">
           <h2 className="caseStudiesHeading">Projects</h2>
 

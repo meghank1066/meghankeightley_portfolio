@@ -27,7 +27,7 @@ const Header = ({ className = "" }) => {
         About
       </a>
 
-      <a href={isHome ? "#case-studies" : "/#projects"}>
+      <a href={isHome ? "#projects" : "/#projects"}>
         Projects
       </a>
 

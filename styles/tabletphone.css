@@ -674,3 +674,39 @@ body {
   }
 
 }
+
+@media(max-width:768px){
+
+.projectCard {
+
+ flex-direction:column;
+ padding:2rem;
+
+ min-height:auto;
+
+ gap:3rem;
+
+}
+
+
+.projectInfo {
+
+ width:100%;
+
+}
+
+
+.projectInfo h2 {
+
+ font-size:2.5rem;
+
+}
+
+
+.projectPreview {
+
+ width:100%;
+
+}
+
+}

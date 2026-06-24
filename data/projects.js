@@ -3,25 +3,25 @@ import Link from "next/link";
 
 // College Projects
 const projects = [
-  // {
-  //   slug: "sporex-mould-identification",
-  //   title: "SPOREX – Mould Identification App",
-  //   description:
-  //     "A web application developed for the Asthma Society of Ireland to help users identify mould types, understand associated health risks, and access guidance on prevention and treatment.",
-  //   image: "/projects/sporex.png",
-  //   github: "https://github.com/...",
-  //   tech: ["React", "Node.js", "MongoDB"]
-  // },
+    {
+    slug: "velora-dublin-bike-app",
+    title: "Velora – Dublin Bike Mobile App",
+    description:
+      "A mobile cycling application designed to help Dublin commuters locate bike stations, plan routes, and access real-time cycling information.",
+    image: "/images/veloracover.png",
+    github: "https://github.com/...",
+    tech: ["Swift", "MapKit", "Firebase"]
+  },
 
-  // {
-  //   slug: "velora-dublin-bike-app",
-  //   title: "Velora – Dublin Bike Mobile App",
-  //   description:
-  //     "A mobile cycling application designed to help Dublin commuters locate bike stations, plan routes, and access real-time cycling information.",
-  //   image: "/projects/velora.png",
-  //   github: "https://github.com/...",
-  //   tech: ["Swift", "MapKit", "Firebase"]
-  // },
+  {
+    slug: "sporex-mould-identification",
+    title: "SPOREX – Mould Identification App",
+    description:
+      "A web application developed for the Asthma Society of Ireland to help users identify mould types, understand associated health risks, and access guidance on prevention and treatment.",
+    image: "/images/sporex_bg_plain2.png",
+    github: "https://github.com/...",
+    tech: ["React", "Node.js", "MongoDB"]
+  },
 
   // {
   //   slug: "style-forecast-weather-api",
@@ -46,25 +46,25 @@ const projects = [
 // case studies
 const casestudies = [
 
-   {
-    slug: "sporex-mould-identification",
-    title: "SPOREX – Mould Identification App",
-    description:
-      "A web application developed for the Asthma Society of Ireland to help users identify mould types, understand associated health risks, and access guidance on prevention and treatment.",
-    image: "/projects/sporex.png",
-    github: "https://github.com/...",
-    tech: ["React", "Node.js", "MongoDB"]
-  },
+  //  {
+  //   slug: "sporex-mould-identification",
+  //   title: "SPOREX – Mould Identification App",
+  //   description:
+  //     "A web application developed for the Asthma Society of Ireland to help users identify mould types, understand associated health risks, and access guidance on prevention and treatment.",
+  //   image: "/projects/sporex.png",
+  //   github: "https://github.com/...",
+  //   tech: ["React", "Node.js", "MongoDB"]
+  // },
 
-  {
-    slug: "velora-dublin-bike-app",
-    title: "Velora – Dublin Bike Mobile App",
-    description:
-      "A mobile cycling application designed to help Dublin commuters locate bike stations, plan routes, and access real-time cycling information.",
-    image: "/projects/velora.png",
-    github: "https://github.com/...",
-    tech: ["Swift", "MapKit", "Firebase"]
-  },
+  // {
+  //   slug: "velora-dublin-bike-app",
+  //   title: "Velora – Dublin Bike Mobile App",
+  //   description:
+  //     "A mobile cycling application designed to help Dublin commuters locate bike stations, plan routes, and access real-time cycling information.",
+  //   image: "/projects/velora.png",
+  //   github: "https://github.com/...",
+  //   tech: ["Swift", "MapKit", "Firebase"]
+  // },
 
   {
     slug: "style-forecast-weather-api",
