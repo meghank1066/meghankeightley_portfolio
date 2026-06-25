@@ -70,11 +70,27 @@ export default function VeloraPage() {
           </section>
 
           {/* MOCKUP SHOWCASE */}
-          <section className="veloraheroMockup">
-            <div className="veloraplaceholderImage">
-              VELORA APP SHOWCASE
-            </div>
-          </section>
+      <section className="veloraHeroContainer">
+  <div className="veloraHeroHeader">
+    <h2>Velora</h2>
+    <p className="veloraHeroYear">2026</p>
+  </div>
+
+  <div className="veloraHeroMockupWrapper">
+    {/* Floating App Icons */}
+    <div className="veloraAppIcons">
+      <img src="/images/velora/velora-app-icons.png" alt="Velora app icons" />
+    </div>
+
+    {/* Main Showcase Image Box */}
+    <div className="veloraMainShowcase">
+      <p className="veloraTagline">Designing a cozy mobile experience for your needs</p>
+      <div className="veloraImageWrapper">
+        <img src="/images/velora/velora-promo-pic.png" alt="Velora promo showcase" />
+      </div>
+    </div>
+  </div>
+</section>
 
           {/* 02 · DESIGN INSIGHT */}
           <section className="veloraInsightSection">
