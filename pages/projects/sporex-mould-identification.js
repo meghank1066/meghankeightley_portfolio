@@ -166,13 +166,23 @@ export default function SporexPage() {
       <p>
         The system extends beyond a standard mobile app by integrating real-time environmental data such as humidity, CO₂ levels and temperature, allowing users to understand not just what mould is present, but why it is forming.
       </p>
- 
-       <div className="sporexImagePlaceholder sporexLargeImage">
-  <img 
-    className="sitemapimg" 
-    src="/images/SiteMap.drawio.png" 
-    alt="Sitemap"
-  /> 
+
+           <div className="sporexInstaGrid">
+  <div className="sporexInstaCard">
+    <img src="/images/sporex-1.png" alt="sporex-1" />
+  </div>
+
+  <div className="sporexInstaCard">
+    <img src="/images/sporex-2.png" alt="sporex-2" />
+  </div>
+
+  <div className="sporexInstaCard">
+    <img src="/images/sporex-3.png" alt="sporex-3" />
+  </div>
+
+  <div className="sporexInstaCard">
+    <img src="/images/sporex-4.png" alt="sporex-4" />
+  </div>
 </div>
 
     </div>
@@ -536,6 +546,34 @@ export default function SporexPage() {
           <strong>System cohesion:</strong> Unified UI logic across AI detection, IoT data display and  community interaction features
         </li>
       </ul>
+      
+   {/* HERO BUILD IMAGE */}
+<div className="sporexImageHero">
+  <img
+    className="sporexHeroImg"
+    src="/images/sporex-built.png"
+    alt="sporex build overview"
+  />
+</div>
+
+{/* RELEASE IMAGE GRID */}
+<div className="sporexReleaseGrid">
+  <div className="sporexReleaseCard">
+    <img src="/images/release1.png" alt="release 1" />
+  </div>
+
+  <div className="sporexReleaseCard">
+    <img src="/images/release2.png" alt="release 2" />
+  </div>
+
+  <div className="sporexReleaseCard">
+    <img src="/images/release3.png" alt="release 3" />
+  </div>
+
+  <div className="sporexReleaseCard">
+    <img src="/images/sprint12eg.png" alt="sprint 12 example" />
+  </div>
+</div> 
 
       
   {/* <div className="sporexImagePlaceholder sporexTallImage">
@@ -587,18 +625,13 @@ export default function SporexPage() {
 
       <div className="sporexTestingImages">
         <img
-          src="/images/user-testing-1.png"
+          src="/images/sporex-user-testing.png"
           alt="User testing session observing image capture behaviour"
-        />
-
-        <img
-          src="/images/user-testing-2.png"
-          alt="Participants completing scenario-based testing on SPOREX app"
-        />
-      </div>
+        /> 
 
     </div>
   </div>
+    </div>
 </section>
 
 <section className="sporexPartnershipSection">
@@ -628,15 +661,12 @@ export default function SporexPage() {
       </p>
 
 
-        <div className="sporexImageGrid">
-         <div className="sporexImagePlaceholder">
-          <img
-                src="/images/asthmasporexposter.png"
-                alt="asthmaxsporex"
-                // className="about-photo"
-              /> 
-        </div>
-        </div>
+        <div className="sporexPartnershipImage">
+  <img
+    src="/images/asthmasporexposter.png"
+    alt="Asthma Society collaboration poster"
+  />
+</div>
 
 
 
@@ -658,16 +688,12 @@ export default function SporexPage() {
 
       </div>
 
-      <div className="sporexImageGrid">
-        <div className="sporexImagePlaceholder">
-          <img
-                src="/images/sporex_asthmacollab.png"
-                alt="sporex_asthmacollab.png"
-                // className="about-photo"
-              /> 
-        </div>
-
-      </div>
+     <div className="sporexCollabImage">
+  <img
+    src="/images/sporex_asthmacollab.png"
+    alt="Asthma collaboration visual"
+  />
+</div>
 
       <div className="sporexCollabSection">
 
@@ -773,6 +799,13 @@ export default function SporexPage() {
         The outcome reflects a full year of iteration, user testing, and mobile development  evolving from early concept exploration into a cohesive, user-centred system designed for real-world environmental awareness.
       </p>
 
+         <div className="sporexOutcomephoto">
+  <img
+    src="/images/sporex_promo_full.png"
+    alt="sporex Outcome photo"
+  />
+</div>
+
     </div>
   </div>
 </section>
@@ -801,8 +834,24 @@ export default function SporexPage() {
         I also led the majority of user testing sessions, designing scenarios that prompted realistic user behaviour, particularly around image capture for mould detection. By observing how users photographed and interacted with the scanning feature, I identified key points of user error and helped refine the experience to reduce mis-scans and improve overall reliability of results.
       </p>
 
-    </div>
+<div className="sporexContributionGrid">
+
+  <div className="sporexContributionCard">
+    <img
+      src="/images/sporex-meghan.png"
+      alt="My contribution highlight"
+    />
   </div>
+
+  <div className="sporexContributionCard">
+   <img src="/images/mycontribution.webp"
+      alt="My contribution highlight"
+    />
+  </div>
+
+</div>
+</div>
+</div>
 </section>
 
       </main>

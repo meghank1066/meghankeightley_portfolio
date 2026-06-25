@@ -873,3 +873,323 @@ border:
   display: block;
 }
 
+/* HERO IMAGE (slightly less wide, centered, clean focus) */
+.sporexImageHero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.sporexHeroImg {
+  width: 100%;
+  max-width: 920px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  transform: translateZ(0);
+}
+
+/* RELEASE GRID (wide images first class citizens) */
+.sporexReleaseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+  margin-bottom: 5%;
+}
+
+/* each card gets a cinematic frame */
+.sporexReleaseCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+  aspect-ratio: 16 / 10; /* key for wide-heavy images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* image behaviour */
+.sporexReleaseCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.sporexReleaseCard:hover img {
+  transform: scale(1.03);
+}
+
+/* responsive collapse */
+@media (max-width: 768px) {
+  .sporexReleaseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sporexHeroImg {
+    width: 92%;
+  }
+}
+
+.sporexTestingImages {
+  position: relative;
+  z-index: 999999; /* extremely high stacking priority */
+}
+
+.sporexTestingImages img {
+  position: relative;
+  z-index: 999999;
+  display: block;
+}
+
+.sporexTestingSection {
+  position: relative;
+  z-index: 2;
+}
+
+.sporexPartnershipImage {
+  width: 70%;
+  max-width: 900px;
+  margin: 2.5rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+
+  backdrop-filter: blur(20px);
+
+  overflow: hidden;
+}
+
+/* key rule: preserve aspect ratio, no cropping */
+.sporexPartnershipImage img {
+  width: 100%;
+  height: auto;
+
+  max-height: 700px; /* prevents insane tall overflow */
+
+  object-fit: contain;
+
+  display: block;
+
+  border-radius: 16px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.sporexCollabImage {
+  width: 100%;
+  max-width: 900px;
+  margin: 2.5rem auto;
+
+  display: flex;
+  justify-content: flex-start; /* KEY FIX */
+  align-items: center;
+
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+
+  backdrop-filter: blur(20px);
+
+  overflow: hidden;
+}
+
+/* image behaviour */
+.sporexCollabImage img {
+  width: 100%;
+  max-width: 95%; /* gives room to shift visually */
+  height: auto;
+  max-height: 650px;
+
+  object-fit: contain;
+
+  display: block;
+
+  border-radius: 16px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+
+  transform: translateX(-10px); /* now it actually shows */
+}
+
+.sporexContributionImage {
+  width: 70%;
+  max-width: 900px;
+  margin: 3rem auto;
+
+  display: flex;
+  justify-content: flex-start; /* KEY FIX */
+
+  align-items: center;
+
+  padding: 2.5rem;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 28px;
+
+  backdrop-filter: blur(25px);
+
+  overflow: hidden;
+}
+
+.sporexContributionImage img {
+  width: 100%;
+  max-width: 95%;
+  height: auto;
+  max-height: 700px;
+
+  object-fit: contain;
+
+  display: block;
+
+  border-radius: 18px;
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+
+  transform: translateX(-10px);
+}
+
+/* GRID WRAPPER */
+.sporexInstaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+
+  margin-top: 3rem;
+  max-width: 1000px;
+}
+
+/* 4:5 INSTAGRAM CARD */
+.sporexInstaCard {
+  position: relative;
+  width: 100%;
+
+  aspect-ratio: 4 / 5; /* KEY INSTAGRAM SHAPE */
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGE FIT RULES */
+.sporexInstaCard img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover; /* key for IG-style cropping */
+
+  transition: transform 0.4s ease;
+}
+
+/* hover polish */
+.sporexInstaCard:hover img {
+  transform: scale(1.03);
+}
+
+.sporexOutcomephoto {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 4rem auto;
+
+  position: relative;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+/* image behaviour */
+.sporexOutcomephoto img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: cover;
+
+  transform: scale(1.02); /* subtle cinematic fill */
+  transition: transform 0.5s ease;
+}
+
+/* optional polish */
+.sporexOutcomephoto:hover img {
+  transform: scale(1.05);
+}
+
+/* GRID WRAPPER */
+.sporexContributionGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 3rem auto;
+}
+
+.sporexContributionCard {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 4 / 5; /* IG-style tall balance */
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  backdrop-filter: blur(25px);
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sporexContributionCard img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.sporexContributionCard:hover img {
+  transform: scale(1.03);
+}

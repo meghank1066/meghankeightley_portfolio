@@ -200,3 +200,34 @@ box-shadow:
   0 0 30px rgba(0,200,83,0.08);
 }
 }
+
+@media (max-width: 768px) {
+  .sporexInstaGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sporexContributionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .sporexSectionBackground {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .sporexSectionLabel {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .sporexSectionContent p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
