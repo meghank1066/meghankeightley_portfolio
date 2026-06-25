@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import useMobileDevice from "../../hooks/useMobileDevice";
+import Link from "next/link";
 
 const Header = ({ className = "" }) => {
   const [mounted, setMounted] = useState(false);
@@ -41,9 +42,9 @@ const Header = ({ className = "" }) => {
       <a href={isHome ? "#contact" : "/#contact"}>
         Contact
       </a>
-     <a href="/resume/resume-meghan-keightley">
-  Resume
-</a>
+    <Link href="/resume/resume-meghan-keightley">
+ Resume
+</Link>
  {/* {mounted && isMobile === false && (
   <button
     className="themeToggle"

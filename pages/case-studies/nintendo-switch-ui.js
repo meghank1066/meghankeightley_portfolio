@@ -133,13 +133,13 @@ export default function NintendoPage() {
               <p>
         The original Nintendo Switch user interface is highly praised for its speed and minimalist utility, but its layout leaves 
         opportunities on the table when it comes to deep game organization, player stats and community features. As digital 
-        libraries expand, the software needs to scale gracefully without losing its responsive edge. In comparison to competitor consoles, it differs in excess content, which is why it works and also why it doesn't.
+        libraries expand, the software needs to scale gracefully without losing its responsive edge. In comparison to competitor consoles, it differs in excess content, which is why it works and also why it doesn&apos;t.
       </p>
       <p>
-        I started this independent case study to explore how the console's interface could evolve for the next generation. Rather than replacing 
-        Nintendo's signature brand charm, the goal was to streamline user flows across several core view states including a brand-new Library grid, 
+        I started this independent case study to explore how the console&apos;s interface could evolve for the next generation. Rather than replacing 
+        Nintendo&apos;s signature brand charm, the goal was to streamline user flows across several core view states including a brand-new Library grid, 
         custom user Collections, a predictive eShop discovery layout and an analytical profile dashboard. Below you can see my moodboard with collected images for inspiration 
-        for the Nintendo Switch 2's redesign.
+        for the Nintendo Switch 2&apos;s redesign.
       </p>
                 {/* <div className="nintendoQuoteBlock"> */}
              <div className="nintendoImageGrid"> 
@@ -167,7 +167,7 @@ export default function NintendoPage() {
   <div className="nintendoSectionContent">
 
   <h2>
-    My Approach: building on Nintendo's identity while creating a cleaner experience.
+    My Approach: building on Nintendo&apos;s identity while creating a cleaner experience.
   </h2>
 
   <p>
@@ -179,7 +179,7 @@ export default function NintendoPage() {
   </p>
 
   <p>
-    The visual direction was built around Nintendo's existing identity, using 
+    The visual direction was built around Nintendo&apos;s existing identity, using 
     familiar colours and playful elements while introducing a more structured 
     interface system. The design explored how light and dark environments could 
     work consistently, with strong contrast and clear visual feedback for users.
@@ -272,8 +272,8 @@ export default function NintendoPage() {
       <p>
         The main home dashboard focuses heavily on active momentum. The "Jump Back In" card features a suspended game state overlaying the 
         background image, giving players instant access with clear, glanceable contextual details like total runtime, achievement completion, 
-        and a primary launch action button. This is something nintendo switch's UI currently lacks, with other consoles integrating this, I felt
-        it's a strong design choice and provides a more personalised experience for the user. 
+        and a primary launch action button. This is something nintendo switch&apos;s UI currently lacks, with other consoles integrating this, I felt
+        it&apos;s a strong design choice and provides a more personalised experience for the user. 
       </p>
     <div className="nintendoImageGrid">
                   <img 
@@ -337,7 +337,7 @@ export default function NintendoPage() {
                 <p>
                   Selecting a game takes the user to a detailed dashboard. This screen houses core contextual actions like 
                   asset management, add-on expansion trackers, in-game premium currencies, and complete game profile information, 
-                  using rich, full-bleed wallpaper backdrops that match the game's theme.
+                  using rich, full-bleed wallpaper backdrops that match the game&apos;s theme.
                 </p>
                 <div className="nintendoImageGrid">
                   <img src="/images/switch2-game-focus-light.png" alt="Game Focus View - Light Mode" />
@@ -374,7 +374,7 @@ export default function NintendoPage() {
                 <p>
                   The My Profile space coordinates player data into a sleek control panel. This cleaner dashboard 
                   organizes user statistics, account credentials, avatar customizers and financial wallet logs 
-                  onto a balanced layout that looks modern and matches the console's overall aesthetic.
+                  onto a balanced layout that looks modern and matches the console&apos;s overall aesthetic.
                 </p>
                 <div className="nintendoImageGrid">
                   <img src="/images/switch2-profile-light.png" alt="My Profile View - Light Mode" />
@@ -398,7 +398,7 @@ export default function NintendoPage() {
         I developed the redesign through Figma by creating reusable components, 
         interface states and interactive prototypes to explore how the experience 
         could flow across different areas of the console. Rather than completely 
-        changing Nintendo's existing identity, my aim was to build on what already 
+        changing Nintendo&apos;s existing identity, my aim was to build on what already 
         works while introducing clearer navigation, improved organisatio and offer an even
         more personalised user experience.
       </p>

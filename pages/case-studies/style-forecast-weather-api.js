@@ -41,10 +41,10 @@ export default function StyleForecastPage() {
               </p>
 
 <div className="style-hero-links">
-  <a className="style-hero-link" href="https://artsy-dublin-website.vercel.app/" target="_blank" rel="noopener">
+  <a className="style-hero-link" href="https://artsy-dublin-website.vercel.app/" target="_blank" rel="noopener noreferrer">
     Visit Live Site
   </a>
-  <a className="style-hero-link" href="https://github.com/meghank1066/StyleAssistantCA1_SOA_MeghanKeightley" target="_blank" rel="noopener">
+  <a className="style-hero-link" href="https://github.com/meghank1066/StyleAssistantCA1_SOA_MeghanKeightley" target="_blank"  rel="noopener noreferrer">
     View My Code
   </a>
 </div>  
