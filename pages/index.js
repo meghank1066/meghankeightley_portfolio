@@ -10,7 +10,7 @@ import Head from "next/head";
 import Button from "../components/Button";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import Cursor from "../components/Cursor";
+// import Cursor from "../components/Cursor";
 import SakuraScene from "../components/SakuraScene";
 import BridgeScene from "../components/BridgeScene";
 import UnlockPortfolio from "../components/UnlockPortfolio";
@@ -123,7 +123,7 @@ export default function Home() {
       {isMobile === false && <SakuraScene />}
       {isMobile === false && <PetalScene />}
 
-      {data.showCursor && <Cursor />}
+      {/* {data.showCursor && <Cursor />} */}
       <Head>
         <title>{data.name}</title>
         <link
@@ -228,15 +228,15 @@ It’s why I build. Design and development become a way of thinking in practice:
       </span> */}
 
               <h1 className="about-content">
-                I&apos;m Meghan.
+                I'm Meghan.
                 <br></br>
-                I&apos;m a 22-year-old aspiring graduate software engineer
+                I'm a 22-year-old aspiring graduate software engineer
               </h1>
 
               <p>
                 I studied Software Engineering at Dundalk Institute of
-                Technology and hope to pursue a master&apos;s degree to further
-                specialise in the areas I&apos;m most passionate about. During my
+                Technology and hope to pursue a master's degree to further
+                specialise in the areas I'm most passionate about. During my
                 studies, I spent six months in Antwerp on Erasmus, where I
                 explored user experience design within virtual reality
                 environments. That experience sparked a particular interest in
@@ -245,8 +245,8 @@ It’s why I build. Design and development become a way of thinking in practice:
               </p>
 
               <p>
-                Beyond technology, I&apos;m a strong design enthusiast with interests
-                that extend far beyond software. I founded my college&apos;s first
+                Beyond technology, I'm a strong design enthusiast with interests
+                that extend far beyond software. I founded my college's first
                 Fashion Society, combining my love for creativity, community
                 building and design. Alongside my studies, I worked as a Sales
                 Assistant in Primark for three years, where I developed strong
@@ -256,7 +256,7 @@ It’s why I build. Design and development become a way of thinking in practice:
               <p>
                 In my free time, I enjoy cycling, travelling, content creation,
                 video editing, reading, cooking and staying active. I love
-                learning new things and I&apos;m always looking for opportunities to
+                learning new things and I'm always looking for opportunities to
                 combine creativity, design and technology in meaningful ways.
               </p>
             </div>
@@ -477,11 +477,11 @@ It’s why I build. Design and development become a way of thinking in practice:
         </section>
         <section id="contact" className="contactSection">
           <div className="contactContent">
-            <h2 className="contactHeading">Let&apos;s Work Together</h2>
+            <h2 className="contactHeading">Let's Work Together</h2>
 
             <p className="contactText">
               Interested in product design, UX research, or frontend
-              development? I&apos;d love to hear from you.
+              development? I'd love to hear from you.
             </p>
             <a
               href="mailto:megankeightley5@gmail.com"
