@@ -19,9 +19,7 @@
   min-height: 100vh;
   padding: 8rem 18%;
   position: relative;
-  overflow: hidden;
-  margin-top: -5%;
-  padding-top: -15%;
+  overflow: hidden; 
 
  background:
 
@@ -1304,4 +1302,204 @@ border:
 
   object-fit: contain;
 
+}
+
+
+/* ================================
+   WALKTHROUGH PAGE FIX
+================================ */
+
+.veloraprojectPage2 {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  padding: 6rem 18% 8rem;
+
+  background: transparent;
+  color: var(--velora-white);
+}
+
+
+/* keeps particles behind */
+.veloraprojectPage2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(191,232,227,0.12),
+      transparent 40%
+    ),
+
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(121,216,206,0.08),
+      transparent 35%
+    );
+
+  pointer-events:none;
+  z-index:0;
+}
+
+
+/* walkthrough section spacing */
+.veloraprojectPage2 .veloraInsightSection {
+
+  margin-top: 3rem;
+  padding-top: 0;
+
+  position: relative;
+  z-index:2;
+
+  border-top:none;
+}
+
+
+/* glass card */
+.veloraprojectPage2 .veloraSectionBackground {
+
+  width:100%;
+
+  padding:4rem;
+
+  display:grid;
+  grid-template-columns:180px minmax(0,1fr);
+
+  gap:4rem;
+
+  background:
+    rgba(15,24,34,0.55);
+
+  backdrop-filter:
+    blur(40px);
+
+  -webkit-backdrop-filter:
+    blur(40px);
+
+  border-radius:40px;
+
+  border:
+    1px solid rgba(121,216,206,0.08);
+
+}
+
+
+/* heading */
+.veloraprojectPage2 .veloraSectionContent h2 {
+
+  margin-top:0;
+
+  font-size:
+    clamp(2rem,4vw,3rem);
+
+}
+
+
+/* paragraph */
+.veloraprojectPage2 .veloraSectionContent p {
+
+  max-width:650px;
+
+  margin-bottom:2rem;
+
+}
+
+
+/* video wrapper */
+.veloraprojectPage2 .veloraVideoContainer {
+
+  margin-top:3rem;
+
+  border-radius:30px;
+
+}
+
+
+/* actual video */
+.veloraprojectPage2 video {
+
+  width:100%;
+
+  max-height:750px;
+
+  display:block;
+
+  object-fit:contain;
+
+  border-radius:30px;
+
+}
+
+
+/* footer gap fix */
+.veloraprojectPage2 + .veloraWrapper2 {
+
+  margin-top:0;
+
+}
+
+
+/* mobile */
+@media(max-width:992px){
+
+  .veloraprojectPage2 {
+
+    padding:
+      4rem 5%;
+  }
+
+
+  .veloraprojectPage2 .veloraSectionBackground {
+
+    grid-template-columns:1fr;
+
+    padding:2rem;
+
+    gap:2rem;
+
+  }
+
+}
+/* =========================
+   VELORA LOGO TILE
+========================= */
+
+.veloraImageRow {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+ 
+.veloraLogoSquare {
+  width: 260px;
+  height: 260px;
+
+  object-fit: contain;
+
+  display: block;
+
+  padding: 1rem;
+
+  border-radius: 32px;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(121,216,206,0.15);
+
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.veloraLogoSquare:hover {
+  transform: translateY(-8px);
+  border-color: var(--velora-teal);
 }

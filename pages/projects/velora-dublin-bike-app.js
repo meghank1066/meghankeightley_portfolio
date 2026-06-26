@@ -156,6 +156,21 @@ export default function VeloraPage() {
     </li>
   </ul> 
 
+<h3 className="h3text">Velora's Brand Identity</h3>
+
+<div className="veloraImageRow">
+  <img 
+    src="/images/velora/velora-logo.png" 
+    className="veloraLogoSquare"
+    alt="Velora logo"
+  />
+
+  <img 
+    src="/images/velora/bike-figure-app.png" 
+    className="veloraLogoSquare"
+    alt="Velora-logo-2"
+  />
+</div>
                 <div className="velora-color-row">
 
                   <div className="velora-swatch">

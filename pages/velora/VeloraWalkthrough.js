@@ -16,7 +16,7 @@ export default function VeloraWalkthrough() {
           <Header className="veloraNav" />
 
 
-        <main className="veloraprojectPage">
+        <main className="veloraprojectPage2">
 
           <section className="veloraInsightSection">
 
