@@ -5,15 +5,13 @@ import { useTheme } from "next-themes";
 
 const Cursor = () => {
   const theme = useTheme();
-  const [mount, setMount] = useState();
+const [mount, setMount] = useState(false);
 
-  const getCusomColor = () => {
-    if (theme.theme === "dark") {
-      return "#fff";
-    } else if (theme.theme === "light") {
-      return "#000";
-    }
-  };
+ const getCustomColor = () => {
+  if (theme.theme === "dark") return "#fff";
+  if (theme.theme === "light") return "#000";
+  return "#fff";
+};
 
   useEffect(() => {
     setMount(true);
