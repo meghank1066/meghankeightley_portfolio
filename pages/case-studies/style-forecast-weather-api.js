@@ -133,7 +133,7 @@ export default function StyleForecastPage() {
 
     <div className="styleForecastFeatureImage">
       <img
-        src="/images/styleforecast-home.png"
+        src="/images/styleforecast/style-forecast-hero.png"
         alt="Style Forecast Homepage"
       />
     </div>
