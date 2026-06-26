@@ -126,3 +126,126 @@
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+
+  /* =========================
+     HERO TEXT
+  ========================= */
+
+  .veloraHeroHeader h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+
+  .veloraHeroYear {
+    font-size: 0.9rem;
+  }
+
+  /* =========================
+     SECTION HEADINGS (02 & 03)
+  ========================= */
+
+  .veloraSectionContent h2 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .veloraSectionLabel {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+  }
+
+  /* =========================
+     PARAGRAPHS
+  ========================= */
+
+  .veloraSectionContent p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* =========================
+     LIST ITEMS (SECTION 3)
+  ========================= */
+
+  .veloraSectionContent ul li {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  /* =========================
+     HERO MOCKUP STACK FIX
+  ========================= */
+
+  .veloraHeroMockupWrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .veloraAppIcons {
+    position: relative;
+    top: auto;
+    transform: none;
+  }
+
+  /* =========================
+     IMAGE / BRAND ROW STACK
+  ========================= */
+
+  .veloraImageRow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .veloraLogoSquare {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* =========================
+     IFRAME FIX (FIGMA EMBED)
+  ========================= */
+
+  .veloraplaceholderImage {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* HERO TITLE */
+  .veloraHeroHeader h2 {
+    font-size: 1.9rem;
+  }
+
+  /* SECTION TITLE */
+  .veloraSectionContent h2 {
+    font-size: 1.4rem;
+  }
+
+  /* TEXT */
+  .veloraSectionContent p,
+  .veloraSectionContent ul li {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  /* LABEL */
+  .veloraSectionLabel {
+    font-size: 0.65rem;
+  }
+
+  /* FIGMA FRAME */
+  .veloraplaceholderImage {
+    height: 240px;
+  }
+
+  /* LOGOS */
+  .veloraLogoSquare {
+    width: 200px;
+    height: 200px;
+  }
+}
