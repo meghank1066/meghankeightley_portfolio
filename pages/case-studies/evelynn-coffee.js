@@ -33,7 +33,7 @@ export default function EvelynnPage() {
 
               <p className="evelynnprojectDescription">
                 A brand and digital experience concept for Evelynn Coffee,
-                inspired by the café&apos;s distinctive pink identity found in
+                inspired by the café's distinctive pink identity found in
                 Drogheda and Bryanstown. The project explores how branding,
                 mobile ordering, loyalty rewards, and customer engagement
                 can be unified into a seamless coffee experience.

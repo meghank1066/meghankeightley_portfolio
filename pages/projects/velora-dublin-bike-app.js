@@ -26,7 +26,7 @@ export default function VeloraPage() {
               <h1 className="veloraprojectTitle">VELORA</h1>
               <p className="veloraprojectDescription">
                 An iOS cycling companion designed to help users locate
-                nearby bike stations, plan journeys, and navigate Dublin&apos;s
+                nearby bike stations, plan journeys, and navigate Dublin's
                 public bike-sharing network through a clean and intuitive
                 mobile experience.
               </p>
