@@ -20,6 +20,8 @@
   padding: 8rem 18%;
   position: relative;
   overflow: hidden;
+  margin-top: -5%;
+  padding-top: -15%;
 
  background:
 
@@ -384,7 +386,41 @@ margin-bottom: 1.5rem;
    IMAGE GRID (VELORA)
 ========================= */
 
+/* =========================
+   FEATURE IMAGE GRID
+========================= */
+
 .veloraImageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+}
+
+.veloraImageGrid img {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(191, 232, 227, 0.12);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25);
+
+  transition: transform 0.3s ease;
+}
+
+.veloraImageGrid img:hover {
+  transform: translateY(-6px);
+}
+/* .veloraImageGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
@@ -410,7 +446,7 @@ margin-bottom: 1.5rem;
 
 .veloraImageGrid img:hover {
   transform: translateY(-4px);
-}
+} */
 
 /* =========================
    QUOTE BLOCK
@@ -750,7 +786,7 @@ margin-bottom: 1.5rem;
 
   box-sizing: border-box;
 
-  background: rgba(15, 24, 34, 0.55);
+  background: rgba(15, 24, 34, 0.86);
 
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
@@ -1111,6 +1147,8 @@ margin-bottom: 1.5rem;
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2.5rem;
+    backdrop-filter: blur(35px);
+-webkit-backdrop-filter: blur(35px);
   }
   
   .veloraSectionLabel {
@@ -1181,5 +1219,89 @@ border:
 
 1px solid rgba(255,255,255,.08);
 
+
+}
+
+.veloraFinalShowcase {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.veloraFinalShowcaseImage {
+  width: min(1000px, 95vw);
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+.veloraprojectPage {
+  position: relative;
+  z-index: 1;
+}
+
+.veloraSectionBackground {
+  position: relative;
+  z-index: 2;
+  
+}
+
+.veloraSectionBackground { 
+  backdrop-filter: blur(45px) saturate(120%);
+  -webkit-backdrop-filter: blur(45px) saturate(120%);
+}
+ 
+ .veloraVideoContainer {
+  width: 100%;
+  margin-top: 3rem;
+
+  border-radius: 40px;
+  overflow: hidden;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border: 1px solid rgba(121,216,206,0.08);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+}
+
+
+.veloraVideoContainer {
+  width: 100%;
+  margin-top: 3rem;
+
+  border-radius: 40px;
+  overflow: hidden;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border: 1px solid rgba(121,216,206,0.08);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+}
+
+
+.veloraVideoContainer video {
+
+  width: 100%;
+  display: block;
+
+  border-radius: 40px;
+
+  max-height: 800px;
+
+  object-fit: contain;
 
 }
