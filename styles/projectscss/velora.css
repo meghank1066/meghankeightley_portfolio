@@ -1,6 +1,7 @@
 :root {
   --velora-mint: #bfe8e3;
   --velora-teal: #79d8ce;
+  --velora-dark-teal: #15435A;
   --velora-dark: #081827;
   --velora-white: #ffffff;
 }
@@ -213,6 +214,8 @@ color: var(--velora-white);
   color: #bfe8e3;
 
   font-size: 2rem;
+  margin-top: 3.5rem;
+margin-bottom: 1.5rem;
 }
 
 /* navbar */
@@ -968,4 +971,215 @@ color: var(--velora-white);
   object-fit: contain;
    border-radius: 40px; 
   border: 1px solid rgba(121, 216, 206, 0.08); 
+}
+
+/* ==========================================================================
+   VELORA COLOR PALETTE MATRIX (.veloraDesignSection additions)
+   ========================================================================== */
+
+.velora-color-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.velora-swatch {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 220px;
+  background: rgba(7, 18, 35, 0.45);
+  border: 1px solid rgba(121, 216, 206, 0.12);
+  padding: 1.25rem;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.velora-swatch:hover {
+  transform: translateY(-4px);
+  border-color: var(--velora-teal);
+}
+
+.velora-swatch-block {
+  width: 100%;
+  height: 110px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.velora-swatch-hex {
+  font-family: "DM Mono", monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--velora-dark-teal);
+  margin-bottom: 0.25rem;
+}
+
+.velora-swatch-name {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.4;
+}
+
+
+/* ==========================================================================
+   ADDITIONAL TYPOGRAPHY & EXTRA CONTAINER ELEMENTS
+   ========================================================================== */
+
+/* Screencast custom video placeholder wrapper */
+.veloraScreencastContainer {
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(121, 216, 206, 0.15) !important;
+  transition: transform 0.4s ease;
+}
+
+.veloraScreencastContainer:hover {
+  transform: translateY(-4px);
+}
+
+/* Custom list items markers within the design approach section */
+.veloraSectionContent ul {
+  list-style: none; /* Strip standard dots to replace with custom clean layout styling */
+  padding-left: 0 !important; 
+}
+
+.veloraSectionContent li {
+  position: relative;
+  padding-left: 1.75rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.veloraSectionContent li strong {
+  color: var(--velora-teal);
+  font-weight: 600;
+}
+
+.veloraSectionContent li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--velora-teal);
+  font-weight: bold;
+}
+
+/* Sub-headings located inside the image grid blocks */
+.h3text {
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(191, 232, 227, 0.75);
+  margin-bottom: 1rem;
+  grid-column: span 2; /* Forces text title to cleanly occupy its row span inside the grid layout */
+}
+
+.h3text:not(:first-of-type) {
+  margin-top: 2.5rem;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT MATRIX BREAKPOINTS
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .veloraprojectPage {
+    padding: 6rem 8%;
+  }
+}
+
+@media (max-width: 992px) {
+  .veloraprojectHero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.5rem;
+  }
+  
+  .veloraSectionBackground,
+  .VeloraSectionBackground {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem;
+  }
+  
+  .veloraSectionLabel {
+    border-bottom: 1px solid rgba(121, 216, 206, 0.15);
+    padding-bottom: 0.75rem;
+    display: inline-block;
+    width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .veloraprojectPage {
+    padding: 4rem 4%;
+  }
+  
+  .veloraImageGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .h3text {
+    grid-column: span 1;
+  }
+  
+  .veloraHeroYear {
+    margin-bottom: 2.5rem;
+  }
+  
+  .veloraMainShowcase {
+    padding: 60px 20px 0px 20px;
+  }
+}
+
+
+.veloraplaceholderImage {
+
+
+height:650px;
+
+
+border-radius:40px;
+
+
+background:
+
+rgba(15,24,34,.55);
+
+
+backdrop-filter:blur(25px);
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+color:white;
+
+
+font-size:2rem;
+
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+
 }

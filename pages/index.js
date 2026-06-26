@@ -117,13 +117,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`relative ${data.showCursor ? "cursor-none" : ""}`}>
-      {/* <div className={`relative ${data.showCursor && "cursor-none"}`}> */}
+    <div className={`relative ${data.showCursor ? "cursor-none" : ""}`}> 
       {/* {isMobile === false && <UnlockPortfolio />} */}
       {isMobile === false && <SakuraScene />}
       {isMobile === false && <PetalScene />}
-
-      {/* {data.showCursor && <Cursor />} */}
+ 
       <Head>
         <title>{data.name}</title>
         <link
@@ -132,9 +130,7 @@ export default function Home() {
         />
       </Head>
       <div>
-        <Header
-          // handleWorkScroll={handleWorkScroll}
-          // handleAboutScroll={handleAboutScroll}
+        <Header 
           scrollToSection={scrollToSection}
         />
         <section id="home" className="hero-section">
@@ -364,81 +360,51 @@ It’s why I build. Design and development become a way of thinking in practice:
             </div>
           </div>
         </section>
-        {/* <section id="projects" className="projectsSection">
-          {/* <h1 className="projectsHeading">Featured Projects</h1> */}
-          {/* <h2 class="sectionTitle">My Projects</h2> */}
-          {/* <p class="sectionDesc">
-            These projects represent both my academic journey and personal
-            curiosity. Whether building apps, designing interfaces, or
-            developing websites, I enjoy bringing ideas to life through
-            technology and creating experiences that are both functional and
-            engaging.
-          </p> */}
-
-          {/* <div className="projectsList">
-            {projects.map((project) => (
-              <Link key={project.slug} href={`/projects/${project.slug}`}>
-                <a className="projectRow">
-                  <div className="projectInfo">
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                  </div>
-
-                  <span className="projectArrow">→</span>
-                </a>
-              </Link>
-            ))} */}
-          {/* </div> */}
-        {/* </section> */} 
+  
         <section id="projects" className="projectsSection">
 
   <div className="projectsList">
 
     {projects.map((project) => (
 
-      <Link key={project.slug} href={`/projects/${project.slug}`}>
-        <a className="projectCard">
+     <Link
+  key={project.slug}
+  href={`/projects/${project.slug}`}
+  className="projectCard"
+>
+  <div className="projectInfo">
 
-          <div className="projectInfo">
+    <span className="projectCategory">
+      {project.category}
+    </span>
 
-            <span className="projectCategory">
-              {project.category}
-            </span>
+    <h2>
+      {project.title}
+    </h2>
 
-            <h2>
-              {project.title}
-            </h2>
+    <h3>
+      {project.type}
+    </h3>
 
-            <h3>
-              {project.type}
-            </h3>
+    <p>
+      {project.description}
+    </p>
 
-            <p>
-              {project.description}
-            </p>
+    <button className="caseButton">
+      <span></span>
+      view project
+    </button>
 
+  </div>
 
-            <button className="caseButton">
-              <span></span>
-              view project
-            </button>
+  <div className="projectPreview">
+    <img 
+      src={project.image}
+      alt={project.title}
+    />
+  </div>
 
-          </div>
-
-
-          <div className="projectPreview">
-
-            <img 
-              src={project.image}
-              alt={project.title}
-            />
-
-          </div>
-
-
-        </a>
-
-      </Link>
+</Link>
 
     ))}
 

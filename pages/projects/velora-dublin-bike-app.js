@@ -84,7 +84,7 @@ export default function VeloraPage() {
 
     {/* Main Showcase Image Box */}
     <div className="veloraMainShowcase">
-      <p className="veloraTagline">Designing a cozy mobile experience for your needs</p>
+      {/* <p className="veloraTagline">Made with Dublin Bikes Decaux API</p> */}
       <div className="veloraImageWrapper">
         <img src="/images/velora/velora-promo-pic.png" alt="Velora promo showcase" />
       </div>
@@ -92,112 +92,198 @@ export default function VeloraPage() {
   </div>
 </section>
 
-          {/* 02 · DESIGN INSIGHT */}
-          <section className="veloraInsightSection">
+      <section className="veloraInsightSection">
             <div className="veloraSectionBackground"> 
-              <div className="veloraSectionLabel">02 · DESIGN INSIGHT</div>
+              <div className="veloraSectionLabel">02 · DESIGN & DEVELOPMENT INSIGHT</div>
               <div className="veloraSectionContent">
-                <h2>Navigation should feel instinctive, not computational.</h2>
+                <h2>Optimization isn't just a visual preference—it's a critical hardware requirement.</h2>
                 <p>
-                  Most transport apps overload users with raw map data, turning
-                  simple decisions into cognitive tasks. The insight behind Velora
-                  was that cyclists don’t want “information” — they want certainty.
+                  Connecting directly to live data streams poses a hidden threat to mobile apps: raw API loops can trigger severe memory leaks and CPU spikes. Early iterations of Velora caused hardware development crashes because parsing unthrottled JSON coordinate payloads overwhelmed the rendering thread. 
                 </p>
                 <p>
-                  This led to a design direction focused on progressive disclosure:
-                  showing only what’s needed at the exact moment it’s needed.
+                  The design evolved systematically to protect device performance. By engineering MapKit clustering, the app throttles engine demands—combining dense city nodes cleanly into single group pins when zoomed out. This background optimization keeps frame rates liquid smooth while providing instant, glanceable bike counts right when a user stands on a street corner.
                 </p>
-                <div className="veloraQuoteBlock">
-                  <p>“Good navigation disappears — it leaves only direction.”</p>
-                </div>
+                
+                <h3 className="h3text"> Initial Architecture & Wireframes </h3>
+                    <iframe
+               className="veloraplaceholderImage" 
+  style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+  // width="800"
+  // height="450"
+  width="100%"
+  height="500"
+  src="https://embed.figma.com/proto/olJpR1vAzTurDPIVpO1s0M/Velora-Bike-App?node-id=906-2618&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=906%3A2504&embed-host=share"
+  allowFullScreen
+></iframe>
+
+                {/* <div className="veloraImageGrid"> 
+
+                  <h3 className="h3text"> Aesthetic Moodboard </h3>
+                  <img 
+                    src="/images/velora-inspiration-board.png" 
+                    alt="Inspiration board tracking color choices and calming styles" 
+                  />
+                </div> */}
               </div>
             </div>
           </section>
 
-          {/* 03 · DESIGN APPROACH */}
+          {/* SECTION 3: STRATEGIC APPROACH */}
           <section className="veloraDesignSection">
-            <div className="veloraSectionBackground"> {/* Added missing wrapper */}
-              <div className="veloraSectionLabel">03 · DESIGN APPROACH</div>
+            <div className="veloraSectionBackground"> 
+              <div className="veloraSectionLabel">03 · DESIGN & TECHNICAL APPROACH</div>
+
               <div className="veloraSectionContent">
-                <h2>Minimal interface, maximal clarity.</h2>
+                <h2>
+                  Building empathy through visual pacing and custom UI overlays.
+                </h2>
+
                 <p>
-                  The UI was intentionally reduced to essential interaction points,
-                  prioritising readability and speed over visual density.
+                  Instead of utilizing highly aggressive, over-saturated environment colors, Velora speaks through a custom pastel palette. This approach links the software directly to the fresh, low-impact nature of cycling, calming eye strain during bright outdoor use or rushed commutes.
                 </p>
+
+                <p>
+                  On a technical level, the layout relies heavily on isolated state management patterns, using custom side overlays and dynamic map drawers to prevent layout shifts while keeping standard navigation systems uninterrupted.
+                </p>
+
                 <ul>
-                  <li>Map-first layout with reduced UI interference</li>
-                  <li>Station availability shown through simple visual states</li>
-                  <li>One-tap journey planning flow</li>
+                  <li>
+                    <strong>Strategic Accents:</strong> Using an intentional baby blue hue reserved strictly for critical call-to-action milestones to guide navigation without visual fatigue.
+                  </li>
+                  <li>
+                    <strong>Map Overlays:</strong> A slide-out RightSideView panel containing isolated map toggles and a fluid search system interacting directly with live filtered nodes.
+                  </li>
+                  <li>
+                    <strong>Thread Safety & Concurrency:</strong> Handling live background network fetching safely to guarantee notifications fire perfectly even when the application is suspended.
+                  </li>
                 </ul>
+
+                <div className="velora-color-row">
+
+                  <div className="velora-swatch">
+                    <div 
+                      className="velora-swatch-block" 
+                      style={{background:"#BDE0FE"}}
+                    ></div>
+                    <span className="velora-swatch-hex">#BDE0FE</span>
+                    <span className="velora-swatch-name">Baby Blue / CTA Accent</span>
+                  </div>
+
+                  <div className="velora-swatch">
+                    <div 
+                      className="velora-swatch-block" 
+                      style={{background:"#15435A"}}
+                    ></div>
+                    <span className="velora-swatch-hex">#15435A</span>
+                    <span className="velora-swatch-name">Dark Teal / Dark Mode Accent</span>
+                  </div>
+
+                  <div className="velora-swatch">
+                    <div 
+                      className="velora-swatch-block" 
+                      style={{background:"#F8F9FA", border:"1px solid #ddd"}}
+                    ></div>
+                    <span className="velora-swatch-hex">#F8F9FA</span>
+                    <span className="velora-swatch-name">Surface Canvas / Low-Strain Base</span>
+                  </div>
+
+                </div>
+
+             
               </div>
             </div>
           </section>
 
-          {/* 04 · KEY FEATURES */}
+          {/* SECTION 4: KEY FEATURES */}
+          {/* FEATURE A: MARKER CLUSTERING */}
           <section className="veloraFeaturesSection">
-            <div className="veloraSectionBackground"> {/* Added missing wrapper */}
+            <div className="veloraSectionBackground"> 
               <div className="veloraSectionLabel">04 · KEY FEATURES</div>
               <div className="veloraSectionContent">
-                <h2>Designed for real-time movement.</h2>
+                <h2> Live Map &amp; Marker Clustering </h2>
                 <p>
-                  Velora enables users to locate nearby stations, check bike
-                  availability, and plan routes in real time with minimal friction.
+                  To handle the dense network of Dublin bike stations gracefully, Velora relies on an advanced MapKit clustering engine. Nearby stations smoothly consolidate into single numeric tokens upon zooming out, reducing rendering weight on the processor and preventing high UI clutter for the user.
                 </p>
                 <div className="veloraImageGrid">
-                  <div className="veloraImagePlaceholder">MAP VIEW</div>
-                  <div className="veloraImagePlaceholder">STATION DETAILS</div>
+                  <img src="/images/velora/velora-map.png" alt="Map Layer with Station Clustering" />
+                  <img src="/images/velora/velora-map2.png" alt="Detailed Map View showing individual pins" />
+                </div>a/
+              </div>
+            </div>
+          </section>
+
+          {/* FEATURE B: SWIPE TO UNLOCK */}
+          <section className="veloraFeaturesSection">
+            <div className="veloraSectionBackground"> 
+              <div className="veloraSectionLabel">04 · KEY FEATURES</div>
+              <div className="veloraSectionContent">
+                <h2> Tactile Gesture Mechanics </h2>
+                <p>
+                  Moving past generic, error-prone tap buttons, starting a journey uses a custom-coded Swipe-to-Unlock gesture layout. This interaction adds an intentional, professional feel to the transaction while staying safely isolated away from standard native iOS back-swipe navigation behaviors.
+                </p>
+                <div className="veloraImageGrid">
+                  <img src="/images/velora/velora-gesture-start.png" alt="Swipe to unlock interface state" />
+                  <img src="/images/velora/velora-trips-journey.png" alt="Active journey timer view" />
                 </div>
               </div>
             </div>
           </section>
 
-          {/* 05 · DESIGN & DEVELOPMENT */}
-          <section className="veloraDevelopmentSection">
+          {/* FEATURE C: PROXIMITY SORTING */}
+          <section className="veloraFeaturesSection">
             <div className="veloraSectionBackground"> 
-              <div className="veloraSectionLabel">05 · DESIGN & DEVELOPMENT</div>
+              <div className="veloraSectionLabel">04 · KEY FEATURES</div>
               <div className="veloraSectionContent">
-                <h2>Built natively for performance and responsiveness.</h2>
+                <h2> Dynamic Proximity Sorting </h2>
                 <p>
-                  The application was developed in Swift using Xcode, with Figma
-                  used for interface prototyping and interaction mapping. The focus
-                  was on maintaining smooth performance during map interactions and
-                  real-time updates.
+                  Instead of presenting locations alphabetically, the SearchView constantly tracks real-time CoreLocation user positions. It calculates local distance parameters on the fly, reorganizing the entire feed so that the closest functional stations always float directly to the top of the user's view list.
                 </p>
+                <div className="veloraImageGrid">
+                  <img src="/images/velora/velora-list.png" alt="Station search sorted by proximity" />
+                  <img src="/images/velora/savedstations.png" alt="Favorites view filter state" />
+                </div>
               </div>
             </div>
           </section>
 
-          {/* 06 · OUTCOME */}
+          {/* FEATURE D: ENVIRONMENTAL IMPACT TRACKER */}
+          <section className="veloraFeaturesSection">
+            <div className="veloraSectionBackground"> 
+              <div className="veloraSectionLabel">04 · KEY FEATURES</div>
+              <div className="veloraSectionContent">
+                <h2> Gamified Sustainability Profiles </h2>
+                <p>
+                  The My Profile space integrates data persistence loops that save trip history after the app closes. It takes raw journey completion parameters and transforms them into an automated environmental dashboard, updating personal offsets and tracking carbon-saving accomplishments natively.
+                </p>
+                <div className="veloraImageGrid">
+                  <img src="/images/velora/environmental-fix.png" alt="User Profile Sustainability Dashboard" />
+                  <img src="/images/velora/velora-notifications.png" alt="Local trip completion notifications" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* SECTION 5: OUTCOME */}
           <section className="veloraOutcomeSection">
-            <div className="veloraSectionBackground">
-              <div className="veloraSectionLabel">06 · OUTCOME</div>
-              <div className="veloraSectionContent">
-                <h2>A streamlined cycling companion for urban mobility.</h2>
-                <p>
-                  The final application provides users with a lightweight, focused
-                  experience for navigating Dublin’s bike-sharing system, reducing
-                  decision time and improving journey confidence.
-                </p>
-              </div>
-            </div>
-          </section>
+            <div className="veloraSectionBackground"> 
+              <div className="veloraSectionLabel">05 · PERSISTENCE & OUTCOME</div>
 
-          {/* 07 · MY CONTRIBUTION */}
-          <section className="veloraContributionSection">
-            <div className="veloraSectionBackground"> {/* Fixed sporex typo */}
-              <div className="veloraSectionLabel">07 · MY CONTRIBUTION</div>
               <div className="veloraSectionContent">
-                <h2>End-to-end ownership from concept to implementation.</h2>
+                <h2>
+                  From baseline data architecture to an all-inclusive iOS product.
+                </h2>
+
                 <p>
-                  I led the UX research, interface design, and full Swift
-                  implementation of the application. This included structuring
-                  navigation logic, designing mobile-first interaction flows, and
-                  integrating real-time data into a usable interface.
+                  Developing Velora as a solo engineer was a comprehensive masterclass in handling full-cycle iOS life cycles. Moving from initial design concept mapping to building complex background logic required shifting deep dependencies safely, organizing threads carefully, and fine-tuning state synchronization parameters.
                 </p>
+
                 <p>
-                  A key challenge was balancing map complexity with usability while
-                  maintaining fast, responsive interactions on mobile devices.
-                </p>
+                  Ultimately, the project bridges the gap between clean structural architecture and empathetic interface patterns—delivering a beautiful, high-utility service that solves a real everyday urban problem effortlessly.
+                </p> 
+                
+                <div className="veloraImageGrid">
+                  <img src="/images/velora-final-mockup.jpg" alt="Final polished Velora app presentation screen" />
+                </div>  
               </div>
             </div>
           </section>
