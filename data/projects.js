@@ -78,8 +78,8 @@ const casestudies = [
   {
     slug: "glamour-touch-salon",
     title: "Glamour Touch",
-    description:
-      "A nail and beauty salon's custom bookings for a website.",
+   description:
+  "A modern beauty salon booking system designed to elevate the client experience, allowing effortless appointment scheduling, service browsing, and streamlined management for salon staff through a clean, structured web application.",
     image: "/images/glamour-touch-pic.png",
     github: "https://github.com/RathnamMeghana/Beauty_Cosmetics_Laravel",
     tech: ["PHP", "Database Migrations", "SCSS"]
