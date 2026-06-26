@@ -4,10 +4,12 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  // 🔥 CRITICAL DEBUG MODE
   swcMinify: false,
-  compiler: {
-    removeConsole: false,
-  },
+
+  // disable compression that hides real errors
+  productionBrowserSourceMaps: true,
 };
 
 module.exports = nextConfig;
