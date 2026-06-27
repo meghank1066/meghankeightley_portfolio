@@ -336,13 +336,7 @@ export default function SporexPage() {
         </div> */}
 
       </div>
-
-      {/* QUOTE BLOCK */}
-      {/* <div className="styleForecastQuoteBlock">
-        <p>
-          “The goal wasn’t to display more data as it was to make the right data immediately understandable.”
-        </p>
-      </div> */}
+ 
 
       {/* VISUAL DESIGN ASSETS GRID */}
       <div className="sporexAssetGrid">

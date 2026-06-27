@@ -18,7 +18,7 @@
 .glamourtouchPageShell {
 
   min-height:100vh;
-
+  padding: 8rem 12%;
   background:
 
   radial-gradient(
@@ -734,4 +734,285 @@ padding:6rem 5%;
 
   border:none;
 
+}
+
+ .glamourtouchFeatureBlock {
+
+  margin-top:3rem;
+
+  padding:2.5rem;
+
+  border-radius:25px;
+
+  background:rgba(255,255,255,.03);
+
+  border:1px solid rgba(255,255,255,.08);
+
+  backdrop-filter:blur(25px);
+
+  transition:.3s;
+
+  max-width:1100px;
+
+}
+
+.glamourtouchFeatureBlock:hover {
+
+  transform:translateY(-6px);
+
+  border:1px solid rgba(255,63,154,.25);
+
+  box-shadow:0 25px 60px rgba(255,63,154,.08);
+
+}
+
+.glamourtouchFeatureBlock h3 {
+
+  font-size:1.4rem;
+
+  margin-bottom:1rem;
+
+  color:white;
+
+}
+
+.glamourtouchFeatureBlock p {
+
+  color:rgba(255,255,255,.75);
+
+  line-height:1.8;
+
+  max-width:75ch;
+
+}
+
+
+
+/* IMAGE GRID - FIXED ALIGNMENT */
+
+.glamourtouchImageGrid {
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:2rem;
+
+  margin-top:2.5rem;
+
+  max-width:1100px;
+
+}
+
+
+
+/* SMALL IMAGE PLACEHOLDERS */
+
+.glamourtouchImagePlaceholder {
+
+  height:260px;
+
+  border-radius:25px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  background:rgba(255,255,255,.03);
+
+  border:1px solid rgba(158,231,255,.15);
+
+  color:rgba(255,255,255,.6);
+
+  font-size:1rem;
+
+  transition:.3s;
+
+}
+
+.glamourtouchImagePlaceholder:hover {
+
+  transform:translateY(-6px);
+
+  border:1px solid rgba(255,63,154,.25);
+
+}
+
+
+
+/* BIG "NINTENDO STYLE" IMAGE BLOCKS */
+
+.nintendoImageGrid {
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:3rem;
+
+  margin-top:4rem;
+
+  max-width:1100px;
+
+}
+
+
+
+.nintendoplaceholderImage {
+
+  height:520px;
+
+  border-radius:35px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  font-size:1.8rem;
+
+  letter-spacing:2px;
+
+  color:var(--glamour-blue-soft);
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,63,154,.15), transparent 50%),
+    radial-gradient(circle at 80% 40%, rgba(158,231,255,.12), transparent 55%),
+    rgba(5,8,22,.65);
+
+  border:1px solid rgba(255,255,255,.1);
+
+  backdrop-filter:blur(30px);
+
+  box-shadow:0 35px 90px rgba(0,0,0,.5);
+
+  transition:.35s;
+
+}
+
+.nintendoplaceholderImage:hover {
+
+  transform:translateY(-10px) scale(1.01);
+
+  box-shadow:0 45px 120px rgba(255,63,154,.15);
+
+}
+
+
+
+/* SECTION SPACING (keeps consistency inside 18% padding layout) */
+
+.glamourtouchOverviewSection,
+.glamourtouchInsightSection,
+.glamourtouchDesignSection,
+.glamourtouchFeaturesSection,
+.glamourtouchOutcomeSection {
+
+  margin-top:5rem;
+
+}
+
+
+
+/* OUTCOME TITLE GRADIENT */
+
+.glamourtouchOutcomeSection .glamourtouchSectionContent h2 {
+
+  font-size:clamp(2rem,4vw,3.5rem);
+
+  background:linear-gradient(180deg, white, var(--glamour-pink));
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+
+}
+
+
+/* =========================
+   GLAMOUR TOUCH HERO WRAPPER
+========================= */
+
+.glamourtouchHeroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* wrapper equivalent to veloraHeroMockupWrapper */
+.glamourtouchHeroMockupWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 20px;
+}
+
+/* =========================
+   MAIN GLASS SHOWCASE BOX
+========================= */
+
+.glamourtouchMainShowcase {
+  background: rgba(15, 24, 34, 0.55);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+  border: 1px solid rgba(121, 216, 206, 0.08);
+
+  padding: 80px 40px;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+
+  transition: transform 0.4s ease;
+}
+
+.glamourtouchMainShowcase:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================
+   IMAGE WRAPPER (IMPORTANT FIX)
+========================= */
+
+.glamourtouchImageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   IMAGE (clean content model)
+========================= */
+
+.glamourtouchImage {
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+
+  border-radius: 40px;
+
+  border: 1px solid rgba(121, 216, 206, 0.08);
+}
+
+.glamourtouchPlaceholderImage {
+  width: 100%;
+  height: auto;  
+  max-height: 650px;
+  object-fit: cover; 
+  border-radius: 40px;
+  box-shadow: 0 30px 80px rgba(0,0,0,.45);
 }
