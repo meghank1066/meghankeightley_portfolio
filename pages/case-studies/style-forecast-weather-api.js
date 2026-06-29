@@ -97,7 +97,7 @@ export default function StyleForecastPage() {
 
             <img 
     className="styleForecastplaceholderImage" 
-    src="/images/styleforecast-preview.png" 
+    src="/images/styleforecast/lookbook-cover2.png" 
     alt="styleForecast Switch 2 UI Redesign Showcase"
     style={{ width: "100%", height: "auto", display: "block" }} 
   />
@@ -205,6 +205,21 @@ export default function StyleForecastPage() {
   <p>
     The idea for Style Forecast came from that gap between data and interpretation, taking structured weather information and turning it into something closer to how people already think about clothing choices.
   </p>
+
+        <div className="glamourtouchImageGrid">
+    {/* Added brandboard-card class to isolate this tall image */}
+    <div className="glamourtouchImageWrapper brandboard-card">
+      <img className="glamourtouchImage" src="/images/styleforecast/brandboardsf.png" alt="Brand Identity" />
+    </div>
+
+    <div className="glamourtouchImageWrapper">
+      <img className="glamourtouchImage" src="/images/styleforecast/sf-logo.png" alt="Logo" />
+    </div>
+
+    <div className="glamourtouchImageWrapper">
+      <img className="glamourtouchImage" src="/images/styleforecast/sf-promo2.png" alt="Website" />
+    </div>
+</div>
 
 
   </div>
@@ -355,7 +370,7 @@ export default function StyleForecastPage() {
   </div>
 
 </section>
-
+{/* 
 <section className="styleForecastEdgeCasesSection">
 
   <div className="styleForecastSectionLabel">
@@ -416,12 +431,12 @@ export default function StyleForecastPage() {
   </div>
   
 
-</section>
+</section> */}
 
 <section className="styleForecastDesignDecisionsSection">
 
   <div className="styleForecastSectionLabel">
-    08 · DESIGN DECISIONS I DIDN’T MAKE
+    07 · DESIGN DECISIONS I DIDN’T MAKE
   </div>
 
   <div className="styleForecastSectionContent">
@@ -499,7 +514,7 @@ export default function StyleForecastPage() {
 <section className="styleForecastOutcomeSection">
 
   <div className="styleForecastSectionLabel">
-    09 · OUTCOME
+    08 · OUTCOME
   </div>
 
   <div className="styleForecastSectionContent">
@@ -514,10 +529,23 @@ export default function StyleForecastPage() {
       The project successfully demonstrated API integration, responsive design and  user-focused fashion discovery within a single web application. In the future I hope to develop on this project and expand it into something more accessible for people to use, perhaps an app in IOS or Android.
     </p>
 
-    <div className="styleForecastImageGrid">
-      <img src="/images/styleforecast-lookbook.png" alt="Lookbook" />
-      <img src="/images/styleforecast-saved.png" alt="Saved Items" />
-    </div>
+    <div className="styleForecastVideoGrid">
+
+                  <video
+                    controls
+                    controlsList="nodownload"
+                    preload="metadata"
+                  >
+                    <source
+                      src="/images/styleforecast/styleforecast-walkthrough.mp4"
+                      type="video/mp4"
+                    />
+
+                    Your browser does not support video.
+                  </video>
+
+                </div>
+
 
   </div>
 
@@ -526,7 +554,7 @@ export default function StyleForecastPage() {
 <section className="styleForecastImpactSection">
 
   <div className="styleForecastSectionLabel">
-    10 · PROJECT IMPACT
+    09 · PROJECT IMPACT
   </div>
 
   <div className="styleForecastSectionContent">
