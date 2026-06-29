@@ -525,7 +525,7 @@ font-style:italic;
 
 /* IMAGES */
 
-
+/* 
 .glamourtouchImageGrid {
 
 
@@ -537,11 +537,11 @@ gap:2rem;
 
 margin-top:3rem;
 
-}
+} */
 
 
 
-.glamourtouchImageGrid img {
+/* .glamourtouchImageGrid2 img {
 
 
 width:100%;
@@ -570,7 +570,7 @@ transition:.3s;
 
 transform:translateY(-6px);
 
-}
+} */
 
 
 
@@ -691,12 +691,12 @@ padding:2rem;
 
 
 
-.glamourtouchImageGrid {
+/* .glamourtouchImageGrid {
 
 grid-template-columns:1fr;
 
 }
-
+ */
 
 
 .glamourtouchProjectPage {
@@ -790,7 +790,7 @@ padding:6rem 5%;
 
 /* IMAGE GRID - FIXED ALIGNMENT */
 
-.glamourtouchImageGrid {
+/* .glamourtouchImageGrid {
 
   display:grid;
 
@@ -802,7 +802,7 @@ padding:6rem 5%;
 
   max-width:1100px;
 
-}
+} */
 
 
 
@@ -842,9 +842,9 @@ padding:6rem 5%;
 
 
 
-/* BIG "NINTENDO STYLE" IMAGE BLOCKS */
+/* BIG "glamourtouch STYLE" IMAGE BLOCKS */
 
-.nintendoImageGrid {
+/* .glamourtouchImageGrid {
 
   display:flex;
 
@@ -856,11 +856,11 @@ padding:6rem 5%;
 
   max-width:1100px;
 
-}
+} */
 
 
 
-.nintendoplaceholderImage {
+.glamourtouchplaceholderImage {
 
   height:520px;
 
@@ -893,7 +893,7 @@ padding:6rem 5%;
 
 }
 
-.nintendoplaceholderImage:hover {
+.glamourtouchplaceholderImage:hover {
 
   transform:translateY(-10px) scale(1.01);
 
@@ -1015,4 +1015,245 @@ padding:6rem 5%;
   object-fit: cover; 
   border-radius: 40px;
   box-shadow: 0 30px 80px rgba(0,0,0,.45);
+}
+
+
+
+/* ── glamourtouch Color Swatches ── */
+
+.glamourtouch-color-row {
+  display: grid;
+  /* Forces exactly 2 columns of equal width */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem;
+  margin: 2rem 0;
+  max-width: 500px; /* Optional: keeps the grid cards neatly sized rather than stretching infinitely */
+}
+
+.glamourtouch-swatch {
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:.4rem;
+
+}
+
+
+.glamourtouch-swatch-block {
+
+  width:80px;
+
+  height:80px;
+
+  border-radius:12px;
+
+}
+
+
+.glamourtouch-swatch-hex {
+
+  font-family:'DM Mono', monospace;
+
+  font-size:.75rem;
+
+  font-weight:500;
+
+  color:white;
+
+}
+
+
+.glamourtouch-swatch-name {
+
+  font-family:'DM Mono', monospace;
+
+  font-size:.65rem;
+
+  color:rgba(255,255,255,.55);
+
+}
+
+.glamourtouch-swatch-name {
+
+  font-family:'DM Mono', monospace;
+
+  font-size:.65rem;
+
+  color:rgba(255,255,255,.55);
+
+  transition:all .25s ease;
+
+  cursor:default;
+
+}
+
+
+.glamourtouch-swatch:hover .glamourtouch-swatch-name {
+
+  color:white;
+
+  transform:translateY(-3px);
+
+  letter-spacing:.5px;
+
+}
+ 
+.glamourtouchplaceholderImage {
+  height: auto;  
+  background: none !important; 
+  border: none !important; 
+  box-shadow: none !important; 
+  backdrop-filter: none !important;
+}
+ 
+.glamourtouchImage {
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 25px;  
+  border: none !important; 
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); 
+}
+
+/* ==========================================
+   DESIGN APPROACH CARDS GRID (STACKED)
+   ========================================== */
+
+.glamourtouchDesignGrid {
+  display: grid;
+  /* Forces cards into a single column so they sit under each other */
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  width: 100%;
+  max-width: 800px; /* Limits width so the stacked lines don't get too wide to read */
+}
+
+/* Individual Card Styling */
+.glamourtouchDesignCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  
+  padding: 2rem;
+  border-radius: 20px;
+  
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), 
+              border-color 0.35s ease, 
+              box-shadow 0.35s ease;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Card Content Typography */
+.glamourtouchDesignCard h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.glamourtouchDesignCard p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+ 
+.glamourtouchDesignCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 63, 154, 0.3);  
+  box-shadow: 0 15px 30px rgba(255, 63, 154, 0.06);
+}
+
+.glamourtouchImageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+
+.glamourtouchImage {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
+}
+
+ 
+.glamourtouchImage--small {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ==========================================
+   FIXED FEATURE IMAGE STACK
+   ========================================== */
+
+.glamourtouchFeatureImageStack {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;  
+  margin-top: 2rem;
+  width: 100%;
+}
+ 
+.glamourtouchFeatureImageStack .glamourtouchImagePlaceholder {
+  height: auto; 
+  min-height: 300px; 
+  padding: 1.5rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(158, 231, 255, 0.1);
+  overflow: hidden;  
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.featureImageItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.glamourtouchFeatureImageStack img {
+  width: 100%;
+  max-width: 900px;     
+  height: auto;
+  object-fit: contain;  
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease;
+}
+
+/* ==========================================
+   HOVER EFFECTS
+   ========================================== */
+ 
+.glamourtouchFeatureImageStack .glamourtouchImagePlaceholder:hover {
+  border-color: rgba(255, 63, 154, 0.25);
+} 
+.glamourtouchFeatureImageStack .glamourtouchImagePlaceholder:hover img {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 25px 55px rgba(255, 63, 154, 0.15);  
 }

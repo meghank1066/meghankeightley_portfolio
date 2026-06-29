@@ -42,7 +42,7 @@ export default function GlamourtouchPage() {
               <div className="glamourtouch-hero-links">
   <a
     className="glamourtouch-hero-link"
-    href="YOUR_LIVE_SITE_URL"
+    href="https://www.glamtouchnails.site/"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -162,41 +162,45 @@ export default function GlamourtouchPage() {
 
 
 <section className="glamourtouchInsightSection">
- <div className="glamourtouchSectionBackground"> 
-  <div className="glamourtouchSectionLabel">
-    02 · DESIGN INSIGHT
+  <div className="glamourtouchSectionBackground"> 
+    <div className="glamourtouchSectionLabel">02 · DESIGN INSIGHT</div>
+
+    <div className="glamourtouchSectionContent">
+      <h2>Designing a luxury salon experience beyond just bookings.</h2>
+
+      <p>
+        The visual identity for Glamour Touch was designed around the idea that a
+        beauty service should feel personal, creative and expressive. The interface
+        combines a minimal black and white foundation with a bright pink accent
+        colour, creating a balance between elegance and the playful creativity
+        associated with nail design.
+      </p>
+
+      <p>
+        The design was inspired by high-end beauty brands, where the experience
+        extends beyond scheduling an appointment. Customers can explore the salon,
+        browse nail inspiration through the gallery, manage their details and
+        experiment with personalised nail designs through an interactive canvas
+        feature before booking.
+      </p>
+
+      {/* FIXED IMAGE GRID AND CLASSES */}
+      <div className="glamourtouchImageGrid">
+        <div className="glamourtouchImageWrapper">
+          <img className="glamourtouchImage" src="/images/glamourtouch/Glamour-Touch-Brand-Identity.png" alt="Brand Identity" />
+        </div>
+
+        <div className="glamourtouchImageWrapper">
+          <img className="glamourtouchImage" src="/images/glamourtouch/GlamourTouch-Logo.png" alt="Logo" />
+        </div>
+
+        <div className="glamourtouchImageWrapper">
+          <img className="glamourtouchImage" src="/images/glamourtouch/glamour-website.png" alt="Website" />
+        </div>
+      </div>
+
+    </div> 
   </div>
-
-  <div className="glamourtouchSectionContent">
-
-<div className="glamourtouchSectionContent">
-
-<h2>
-  Designing a luxury salon experience beyond just bookings.
-</h2>
-
-<p>
-  The visual identity for Glamour Touch was designed around the idea that a
-  beauty service should feel personal, creative and expressive. The interface
-  combines a minimal black and white foundation with a bright pink accent
-  colour, creating a balance between elegance and the playful creativity
-  associated with nail design.
-</p>
-
-<p>
-  The design was inspired by high-end beauty brands, where the experience
-  extends beyond scheduling an appointment. Customers can explore the salon,
-  browse nail inspiration through the gallery, manage their details and
-  experiment with personalised nail designs through an interactive canvas
-  feature before booking.
-</p>
-
-
-    </div>
-
-</div> 
-  </div>
-
 </section>
 
 
@@ -223,6 +227,72 @@ export default function GlamourtouchPage() {
 <li>Secure login and logout functionality</li>
 <li>Responsive interface designed around usability</li>
 </ul>
+
+  <div className="glamourtouch-color-row">
+
+    <div className="glamourtouch-swatch">
+      <div 
+        className="glamourtouch-swatch-block" 
+        style={{background:"#000000"}}
+      ></div>
+
+      <span className="glamourtouch-swatch-hex">
+       #000000
+      </span>
+
+      <span className="glamourtouch-swatch-name">
+       Surface & Text
+      </span>
+    </div>
+
+
+    <div className="glamourtouch-swatch">
+      <div 
+        className="glamourtouch-swatch-block" 
+        style={{background:"#FF4081"}}
+      ></div>
+
+      <span className="glamourtouch-swatch-hex">
+        #FF4081
+      </span>
+
+      <span className="glamourtouch-swatch-name">
+        Primary Accent / Buttons
+      </span>
+    </div>
+
+
+    <div className="glamourtouch-swatch">
+      <div 
+        className="glamourtouch-swatch-block" 
+        style={{background:"#A4DEF0", border:"1px solid #ddd"}}
+      ></div>
+
+      <span className="glamourtouch-swatch-hex">
+        #A4DEF0
+      </span>
+
+      <span className="glamourtouch-swatch-name">
+      Base Background & Aesthetics
+      </span>
+    </div>
+
+    <div className="glamourtouch-swatch">
+      <div 
+        className="glamourtouch-swatch-block" 
+        style={{background:"#FFFFFF", border:"1px solid #ddd"}}
+      ></div>
+
+      <span className="glamourtouch-swatch-hex">
+        #FFFFFF
+      </span>
+
+      <span className="glamourtouch-swatch-name">
+      Default Design & Aesthetics
+      </span>
+    </div>
+
+  </div>
  
 {/* GRID: DESIGN PRINCIPLES */}
 <div className="glamourtouchDesignGrid">
@@ -230,28 +300,29 @@ export default function GlamourtouchPage() {
   <div className="glamourtouchDesignCard">
     <h3>Service-first experience</h3>
     <p>
-      The platform is structured around effortless booking, allowing customers to
-      browse treatments, view pricing, and secure appointments in just a few steps.
+      Effortless booking platform allowing customers to browse treatments, 
+      view pricing and secure appointments in a few steps.
     </p>
   </div>
 
   <div className="glamourtouchDesignCard">
-    <h3>Beauty → interaction</h3>
+    <h3>Beauty & interaction</h3>
     <p>
-      The experience goes beyond booking, offering an engaging way to explore nail
-      styles and inspiration before visiting the salon, making the journey more personal.
+      An engaging gallery space to explore nail styles and visual 
+      inspiration before visiting the salon.
     </p>
   </div>
 
   <div className="glamourtouchDesignCard">
     <h3>Luxury brand identity</h3>
     <p>
-      A refined visual system built with elegant typography, soft spacing, and
-      bold imagery to reflect the modern, high-end feel of a beauty salon brand.
+      A refined visual system with elegant typography and clean layouts 
+      to reflect a high-end beauty salon brand.
     </p>
   </div>
 
 </div>
+
   </div>
 </div>
 </section>
@@ -268,7 +339,7 @@ export default function GlamourtouchPage() {
     <div className="glamourtouchSectionContent">
 
       <h2>
-        From browsing to booking — a seamless beauty experience designed around the user.
+        Simplifying the salon experience from the first click to the final booking.
       </h2>
 
       <p>
@@ -279,53 +350,45 @@ export default function GlamourtouchPage() {
         We combined functional system design with a creative layer, allowing users not only to book appointments but also to explore nail inspiration and interact with a digital nail art canvas before their visit.
       </p>
 
+  
       {/* FEATURE 1 */}
-      <div className="glamourtouchFeatureBlock">
-
-        <h3>User Authentication System</h3>
-
-        <p>
-          We implemented a secure login and registration system that allows users to create accounts, manage their profiles, and access personalised booking history and preferences.
-        </p>
-
-        <div className="glamourtouchImageGrid">
-          <div className="glamourtouchImagePlaceholder">
-            Login / Register UI
-          </div>
-          <div className="glamourtouchImagePlaceholder">
-            User Profile Dashboard
-          </div>
-        </div>
-
-      </div>
-
-      {/* FEATURE 2 */}
       <div className="glamourtouchFeatureBlock">
 
         <h3>Appointment Booking System</h3>
 
         <p>
-          We built a fully integrated booking flow where users can select services, choose staff, and schedule appointments in real time, while admins manage availability and bookings through the backend system.
+          We built a fully integrated booking flow where users can select services, choose staff and schedule appointments in real time, while admins manage availability and bookings through the backend system.
         </p>
-
-        <div className="glamourtouchImageGrid">
+<div className="glamourtouchFeatureImageStack">  
            <div className="glamourtouchImagePlaceholder"> 
+            <div className="featureImageItem">
         <img src="/images/glamourtouch/appt-not-logged-in.png" /> 
           </div>
+          </div>
           <div className="glamourtouchImagePlaceholder"> 
+             <div className="featureImageItem"> 
         <img src="/images/glamourtouch/appointment-service.png" /> 
           </div>
+          </div>
           <div className="glamourtouchImagePlaceholder">
+             <div className="featureImageItem"> 
           <img src="/images/glamourtouch/appt-organise.png" /> 
           </div>
+          </div>
           <div className="glamourtouchImagePlaceholder">
+             <div className="featureImageItem"> 
          <img src="/images/glamourtouch/calender.png" /> 
           </div>
-          <div className="glamourtouchImagePlaceholder">
-          <img src="/images/glamourtouch/update-appt.png" /> 
           </div>
           <div className="glamourtouchImagePlaceholder">
+             <div className="featureImageItem"> 
+          <img src="/images/glamourtouch/update-appt.png" /> 
+          </div>
+          </div>
+          <div className="glamourtouchImagePlaceholder">
+             <div className="featureImageItem"> 
           <img src="/images/glamourtouch/appt-cancelled.png" /> 
+          </div>
           </div>
         </div>
 
@@ -334,37 +397,20 @@ export default function GlamourtouchPage() {
       {/* FEATURE 3 */}
       <div className="glamourtouchFeatureBlock">
 
-        <h3>Admin Management Dashboard</h3>
-
-        <p>
-          We designed an admin dashboard that allows efficient management of appointments, services, staff schedules, and customer data, all from a centralised interface.
-        </p>
-
-        <div className="glamourtouchImageGrid">
-          <div className="glamourtouchImagePlaceholder">
-             <img src="/images/glamourtouch/login-page.png" /> 
-          </div>
-          <div className="glamourtouchImagePlaceholder">
-             <img src="/images/glamourtouch/appointments-done.png" /> 
-          </div>
-        </div>
-
-      </div>
-
-      {/* FEATURE 4 */}
-      <div className="glamourtouchFeatureBlock">
-
         <h3>Nail Art Design Canvas</h3>
 
         <p>
           We created an interactive nail design canvas that lets users experiment with nail art styles visually before their appointment, adding a creative and personalised layer to the booking experience.
         </p>
 
-        <div className="glamourtouchImageGrid">
+      <div className="glamourtouchFeatureImageStack">
           <div className="glamourtouchImagePlaceholder">
+             <div className="featureImageItem"> 
              <img src="/images/glamourtouch/create-page.png" /> 
           </div>
+          </div>
           <div className="glamourtouchImagePlaceholder">
+             <div className="featureImageItem"> 
              <img src="/images/glamourtouch/creations-gallery.png" /> 
           </div>
         </div>
@@ -374,7 +420,7 @@ export default function GlamourtouchPage() {
     </div>
 
   </div>
-
+</div>
 </section>
 
 
@@ -402,22 +448,7 @@ export default function GlamourtouchPage() {
         and salon owners, ensuring users can securely access relevant features.
       </p>
 
-      {/* LARGE IMAGE BLOCKS */}
-      <div className="nintendoImageGrid">
-
-        <div className="nintendoplaceholderImage">
-        <img src="/images/glamourtouch/Glamour-Touch-Brand-Identity.png" />
-        </div>
-
-        <div className="nintendoplaceholderImage">
-         <img src="/images/glamourtouch/GlamourTouch-Logo.png" />
-        </div>
-
-        <div className="nintendoplaceholderImage">
-         <img src="/images/glamourtouch/glamour-website.png" />
-        </div>
-
-      </div>
+    
 
     </div>
 
@@ -447,13 +478,13 @@ export default function GlamourtouchPage() {
       </p>
 
       <p>
-        Glamour Touch combines business functionality with creativity — giving users
+        Glamour Touch combines business functionality with creativity giving users
         a smooth booking journey while providing owners with full control over
         services, scheduling and customer management.
       </p>
 
       {/* BIG OUTCOME VISUALS */}
-      <div className="nintendoImageGrid">
+      {/* <div className="glamourtouchImageGrid">
 
         <div className="nintendoplaceholderImage">
          <img src="/images/glamourtouch/homepage.png" alt="Homepage" />
@@ -465,7 +496,7 @@ export default function GlamourtouchPage() {
         </div>
  
 
-      </div>
+      </div> */}
 
       {/* FEATURE BREAKDOWN INSIDE OUTCOME */}
       <h3 className="h3text">Key Delivered Features</h3>
@@ -514,7 +545,7 @@ export default function GlamourtouchPage() {
 
   <p>
     I was primarily responsible for the frontend implementation, database migrations,
-    appointment system structure, and the development of the interactive nail design
+    appointment system structure and the development of the interactive nail design
     canvas feature.
   </p>
 

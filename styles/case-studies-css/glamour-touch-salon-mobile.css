@@ -1,0 +1,27 @@
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+ 
+@media (max-width: 1024px) {
+  .glamourtouchDesignGrid { 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .glamourtouchDesignGrid { 
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  
+  .glamourtouchDesignCard {
+    padding: 2rem; 
+  }
+  
+  .glamourtouchDesignCard h3 {
+    font-size: 1.25rem;
+  }
+}
