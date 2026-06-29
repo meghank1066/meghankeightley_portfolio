@@ -416,14 +416,14 @@ export default function SporexPage() {
           Users can capture or upload an image to identify mould type. The system returns a classification result with confidence scoring and visual indicators designed for quick interpretation.
         </p>
 
-        <div className="sporexImageGrid">
+        {/* <div className="sporexImageGrid">
           <div className="sporexImagePlaceholder">
             Detection Screen (Camera / Upload)
           </div>
           <div className="sporexImagePlaceholder">
             Classification Result + Risk Output
           </div>
-        </div>
+        </div> */}
 
       </div>
 
@@ -436,14 +436,14 @@ export default function SporexPage() {
           Each mould type is mapped to a structured risk profile explaining potential respiratory impacts, severity levels and at-risk groups in a simplified, non-clinical format.
         </p>
 
-        <div className="sporexImageGrid">
+        {/* <div className="sporexImageGrid">
           <div className="sporexImagePlaceholder">
             Risk Level Breakdown UI
           </div>
           <div className="sporexImagePlaceholder">
             Symptom / Impact Overview
           </div>
-        </div>
+        </div> */}
 
       </div>
 
@@ -456,14 +456,14 @@ export default function SporexPage() {
           Instead of static advice pages, prevention guidance is structured as step-based actions  making it easier for users to follow remediation instructions in real-world scenarios.
         </p>
 
-        <div className="sporexImageGrid">
+        {/* <div className="sporexImageGrid">
           <div className="sporexImagePlaceholder">
             Step-by-step Cleanup Guide
           </div>
           <div className="sporexImagePlaceholder">
             Prevention Recommendations UI
           </div>
-        </div>
+        </div> */}
 
       </div>
 
@@ -476,14 +476,14 @@ export default function SporexPage() {
           The system also integrates contextual environmental information, helping users understand how humidity, ventilation and indoor conditions contribute to mould formation.
         </p>
 
-        <div className="sporexImageGrid">
+        {/* <div className="sporexImageGrid">
           <div className="sporexImagePlaceholder">
             Air Quality / Environment Metrics
           </div>
           <div className="sporexImagePlaceholder">
             Condition Indicators Dashboard
           </div>
-        </div>
+        </div> */}
 
       </div>
 
