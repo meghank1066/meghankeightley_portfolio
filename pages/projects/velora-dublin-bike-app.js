@@ -82,10 +82,11 @@ export default function VeloraPage() {
 
   <div className="veloraHeroMockupWrapper">
     {/* Floating App Icons */}
+     {isMobile === false && ( 
     <div className="veloraAppIcons">
       <img src="/images/velora/velora-app-icons.png" alt="Velora app icons" />
     </div>
-
+     )}
     {/* Main Showcase Image Box */}
     <div className="veloraMainShowcase">
       {/* <p className="veloraTagline">Made with Dublin Bikes Decaux API</p> */}
