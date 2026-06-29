@@ -38,7 +38,7 @@ export default function GlamourtouchPage() {
   appointments, accounts, services, staff information and creative nail
   designs through an interactive digital experience.
 </p>
-
+{/* 
               <div className="glamourtouch-hero-links">
   <a
     className="glamourtouch-hero-link"
@@ -48,7 +48,16 @@ export default function GlamourtouchPage() {
   >
     View Website
   </a>
-  </div>
+  </div> */}
+
+  <div className="style-hero-links">
+  <a className="style-hero-link" href="https://glamourtouchsalon.up.railway.app/" target="_blank" rel="noopener noreferrer">
+    Visit Live Site
+  </a>
+  <a className="style-hero-link" href="https://github.com/meghank1066/Cosmetic_Client_Website.git" target="_blank"  rel="noopener noreferrer">
+    View My Code
+  </a>
+</div>  
 
             </div>
 

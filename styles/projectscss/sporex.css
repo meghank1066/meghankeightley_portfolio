@@ -921,10 +921,14 @@ border:
 .sporexPartnershipImage {
   width: 70%;
   max-width: 900px;
-  margin: 2.5rem auto;
+  /* CHANGE: Changed 'auto' to '0' to align it to the left */
+  margin: 2.5rem 0; 
 
   display: flex;
-  justify-content: center;
+  /* OPTIONAL: This aligns the content *inside* the box to the left. 
+     Keep it as 'center' if you want the image centered inside the 70% width box,
+     or change to 'flex-start' if you want the image glued to the left edge inside. */
+  justify-content: flex-start; 
   align-items: center;
 
   padding: 2rem;
@@ -943,7 +947,7 @@ border:
   width: 100%;
   height: auto;
 
-  max-height: 700px; /* prevents insane tall overflow */
+  max-height: 500px; 
 
   object-fit: contain;
 
@@ -953,14 +957,13 @@ border:
 
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
 }
-
 .sporexCollabImage {
   width: 100%;
   max-width: 900px;
-  margin: 2.5rem auto;
+  margin: 2.5rem auto; 
 
   display: flex;
-  justify-content: flex-start; /* KEY FIX */
+  justify-content: center;
   align-items: center;
 
   padding: 2rem;
@@ -970,28 +973,22 @@ border:
   border-radius: 24px;
 
   backdrop-filter: blur(20px);
-
   overflow: hidden;
 }
 
 /* image behaviour */
 .sporexCollabImage img {
-  width: 100%;
-  max-width: 95%; /* gives room to shift visually */
+  width: 100%; 
   height: auto;
   max-height: 650px;
 
   object-fit: contain;
-
   display: block;
 
   border-radius: 16px;
-
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-
-  transform: translateX(-10px); /* now it actually shows */
+ 
 }
-
 .sporexContributionImage {
   width: 70%;
   max-width: 900px;

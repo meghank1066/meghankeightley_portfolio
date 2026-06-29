@@ -179,20 +179,6 @@
   margin-top: 5rem;
 }
 
-.styleForecastOverviewSection,
-.styleForecastFeaturesSection,
-.styleForecastDevelopmentSection,
-.styleForecastOutcomeSection {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 4rem;
-
-  margin-top: 10rem;
-  padding-top: 4rem;
-
-  border-top: 1px solid rgba(255,255,255,0.08);
-
-}
 
 .styleForecastSectionLabel {
   color: rgba(255,255,255,0.4);
@@ -236,23 +222,7 @@
   margin-bottom: 1rem;
 }
 
-/* 
-.styleForecastFeatureImage img {
-  width: 100%;
-  max-width: 1000px;
-
-  display: block;
-
-  border-radius: 24px;
-
-  border: 1px solid rgba(255,255,255,0.08);
-
-  box-shadow:
-    0 25px 60px rgba(0,0,0,0.35);
-
-  object-fit: cover;
-} */
-
+ 
 .styleForecastImageGrid img {
   width: 100%;
   aspect-ratio: 16 / 10;
@@ -344,23 +314,6 @@
   min-width: 0;
 }
 
-.styleForecastOverviewSection,
-.styleForecastFeaturesSection,
-.styleForecastDevelopmentSection,
-.styleForecastOutcomeSection,
-.styleForecastProblemSection,
-.styleForecastInsightSection,
-.styleForecastDesignSection,
-.styleForecastContributionSection {
-  display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 4rem;
-
-  margin-top: 10rem;
-  padding-top: 4rem;
-
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
 
 .styleForecastQuoteBlock {
   margin-top: 2rem;
@@ -399,3 +352,173 @@
   margin-top: 1rem;
 }
 
+
+.styleForecastOverviewSection,
+.styleForecastProblemSection,
+.styleForecastInsightSection,
+.styleForecastDesignSection,
+.styleForecastFeaturesSection,
+.styleForecastDevelopmentSection,
+.styleForecastEdgeCasesSection,
+.styleForecastDesignDecisionsSection,
+.styleForecastOutcomeSection,
+.styleForecastImpactSection,
+.styleForecastContributionSection {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 4rem;
+
+  margin-top: 10rem;
+  padding-top: 4rem;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.styleForecastSectionBackground {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 4rem;
+}
+
+.styleForecastSectionBackground {
+  display: contents;
+}
+
+.styleForecastScopeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+  padding-bottom: 5%;
+}
+
+.scopeColumn,
+.impactColumn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.scopeColumn:hover,
+.impactColumn:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.scopeColumn h4,
+.impactColumn h4 {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 1.5rem;
+}
+
+.scopeColumn ul,
+.impactColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.scopeColumn li,
+.impactColumn li {
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+
+  transition: all 0.25s ease;
+}
+
+.scopeColumn li:hover,
+.impactColumn li:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateX(4px);
+}
+
+.scopeColumn {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.scopeColumn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.06),
+    transparent 60%
+  );
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.styleForecastImpactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.impactCard {
+  padding: 2rem;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(20px);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.impactCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.impactCard h4 {
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  margin-bottom: 0.8rem;
+}
+
+.impactCard p {
+  font-size: 1rem;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  margin: 0;
+}
+
+.styleForecastSectionContent h3
+{
+  font-size: 1.2rem;
+  padding-bottom: 2%;
+    padding-top: 1%;
+    
+}
