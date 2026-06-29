@@ -611,10 +611,6 @@ color:var(--glamour-pink-soft);
 
 
 
-
-/* FOOTER TRANSITION */
-
-
 .glamourtouchWrapper2 {
 
 
@@ -635,28 +631,6 @@ transparent,
 
 
 
-.glamourtouchFooter {
-
-
-background:
-
-linear-gradient(
-
-180deg,
-
-#081827,
-
-#050816
-
-)!important;
-
-
-border-top:
-
-1px solid rgba(255,63,154,.2);
-
-
-}
 
 
 
@@ -1256,4 +1230,52 @@ padding:6rem 5%;
 .glamourtouchFeatureImageStack .glamourtouchImagePlaceholder:hover img {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 25px 55px rgba(255, 63, 154, 0.15);  
+}
+
+
+
+
+
+.glamourtouchWrapper2 .glamourtouchFooter {
+  position:relative;
+  z-index:101;
+
+  background:#050816 !important;
+
+  background-image:none !important;
+
+  border-top:1px solid rgba(255,63,154,.2);
+
+  padding:4rem 2rem;
+}
+
+
+.glamourtouchWrapper2 .glamourtouchFooter * {
+  color:rgba(255,255,255,.85) !important;
+}
+
+/* GLAMOUR TOUCH FOOTER OVERRIDE */
+
+.glamourtouchWrapper2 {
+
+  background:#050816 !important;
+
+}
+
+
+.glamourtouchWrapper2 footer {
+
+  background:#050816 !important;
+
+  /* border-top:1px solid rgba(255,63,154,.2) !important; */
+
+  padding:4rem 2rem !important;
+
+}
+
+
+.glamourtouchWrapper2 footer * {
+
+  color:rgba(255,255,255,.85) !important;
+
 }

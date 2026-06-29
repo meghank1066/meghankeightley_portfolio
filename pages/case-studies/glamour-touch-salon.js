@@ -104,7 +104,7 @@ export default function GlamourtouchPage() {
               <div className="glamourtouchWebsiteEmbed">
 
     <iframe
-      src="https://clientsite01-production.up.railway.app"
+      src="https://glamourtouchsalon.up.railway.app/"
       title="Glamour Touch Website Preview"
       loading="lazy"
     />
@@ -582,9 +582,9 @@ export default function GlamourtouchPage() {
 
         </main>
 </div>
-        <div className="glamourtouchWrapper2">
-          <Footer className="glamourtouchFooter" />
-        </div>
+<div className="glamourtouchWrapper2">
+  <Footer className="glamourtouchFooter" />
+</div>
 
       
     </>

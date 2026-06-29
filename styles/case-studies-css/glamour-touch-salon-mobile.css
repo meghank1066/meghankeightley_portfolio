@@ -422,3 +422,37 @@
     object-fit: contain; /* Keeps everything fully legible */
   }
 }
+
+@media(max-width:900px){
+
+  .glamourtouchWrapper2 {
+
+    background:#050816 !important;
+
+  }
+
+
+  .glamourtouchWrapper2 footer {
+
+    position:relative;
+
+    z-index:101;
+
+    background:#050816 !important;
+
+    background-image:none !important;
+
+    padding:3rem 1.5rem !important;
+
+    border-top:1px solid rgba(255,63,154,.2) !important;
+
+  }
+
+
+  .glamourtouchWrapper2 footer * {
+
+    color:rgba(255,255,255,.85) !important;
+
+  }
+
+}
