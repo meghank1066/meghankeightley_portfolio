@@ -547,3 +547,57 @@
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
   outline: none;     
 }
+
+.styleForecastStandaloneImageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.styleForecastStandaloneImage {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .styleForecastStandaloneImageWrapper {
+    margin-top: 1.5rem;
+  }
+  .styleForecastStandaloneImage {
+    max-width: 100%;
+  }
+}
+
+/* Change from a 2-column grid to a single vertical stack */
+.styleForecastImageGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;                /* Generous spacing between stacked showcase elements */
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1000px;        /* Limits expansion on giant monitors */
+  min-width: 0;
+}
+
+/* Fix properties causing the crop and size limitations */
+.styleForecastImageGrid img {
+  width: 100%;
+  height: auto;             /* Let the height adjust naturally based on real image files */
+  aspect-ratio: auto;       /* Removes the forced 16:10 box cutting off your shots */
+  object-fit: contain;      /* Ensures the absolute full interface file displays cleanly */
+  display: block;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.styleForecastImageGrid img:hover {
+  transform: translateY(-4px);
+}

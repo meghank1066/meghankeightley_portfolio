@@ -41,9 +41,12 @@ export default function StyleForecastPage() {
               </p>
 
 <div className="style-hero-links">
-  <a className="style-hero-link" href="https://artsy-dublin-website.vercel.app/" target="_blank" rel="noopener noreferrer">
-   Walkthrough
-  </a>
+   <a 
+  className="velora-hero-link" 
+  href="/styleforecast/styleForecastWalkthrough"
+>
+  Video Walkthrough
+</a>
   <a className="style-hero-link" href="https://github.com/meghank1066/StyleAssistantCA1_SOA_MeghanKeightley" target="_blank"  rel="noopener noreferrer">
     View My Code
   </a>
@@ -281,7 +284,13 @@ export default function StyleForecastPage() {
 
     {/* <div className="styleForecastImageGrid"> */}
       {/* <img src="/images/styleforecast/style-forecast-hero.png" alt="Search Experience" /> */}
-      <img src="/images/styleforecast/results-styleforecast.png" alt="Weather Results" />
+     <div className="styleForecastStandaloneImageWrapper">
+      <img 
+        src="/images/styleforecast/results-styleforecast.png" 
+        alt="Weather Results" 
+        className="styleForecastStandaloneImage"
+      />
+    </div>
     {/* </div> */}
 
   </div>
@@ -308,9 +317,15 @@ export default function StyleForecastPage() {
         The filtering system dynamically updates results based on API data, helping users quickly narrow down outfits that match both weather conditions and individual taste.
       </p>
  
-        <img src="/images/styleforecast/filter-search.png" alt="Filtering System" /> 
+      <div className="styleForecastStandaloneImageWrapper">
+        <img 
+          src="/images/styleforecast/filter-search.png" 
+          alt="Filtering System" 
+          className="styleForecastStandaloneImage"
+        />
  
 
+    </div>
     </div>
   </div>
 </section>
