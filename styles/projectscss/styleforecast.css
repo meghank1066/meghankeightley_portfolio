@@ -572,25 +572,23 @@
   .styleForecastStandaloneImage {
     max-width: 100%;
   }
-}
+} 
 
-/* Change from a 2-column grid to a single vertical stack */
 .styleForecastImageGrid {
   display: flex;
   flex-direction: column;
-  gap: 3rem;                /* Generous spacing between stacked showcase elements */
+  gap: 3rem;  
   margin-top: 3rem;
   width: 100%;
-  max-width: 1000px;        /* Limits expansion on giant monitors */
+  max-width: 1000px; 
   min-width: 0;
 }
-
-/* Fix properties causing the crop and size limitations */
+ 
 .styleForecastImageGrid img {
   width: 100%;
-  height: auto;             /* Let the height adjust naturally based on real image files */
-  aspect-ratio: auto;       /* Removes the forced 16:10 box cutting off your shots */
-  object-fit: contain;      /* Ensures the absolute full interface file displays cleanly */
+  height: auto; 
+  aspect-ratio: auto; 
+  object-fit: contain; 
   display: block;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);

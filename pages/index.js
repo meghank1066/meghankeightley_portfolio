@@ -201,21 +201,23 @@ export default function Home() {
               </span>
             </div>
           </div>
-        )}{" "}
+        )}{" "} {!isMobile && ( 
         <section className="philosophySection">
           <div className="philosophyContent">
             <h2 className="philosophyTitle">
             I make digital spaces where ideas take shape and are understood.
             </h2>
+             
            <p className="philosophySubtitle">
   “If you want a sense of self, make something.” This is a principle I return to in my work. Identity is not something found but something built through creation decision and repetition. Each design and line of code becomes a trace of thought made visible turning what is internal into something tangible tested and real.
 </p>
-    
+             
 {/* <p>
 It’s why I build. Design and development become a way of thinking in practice: translating ideas into interfaces and  in doing so, refining both the work and myself. 
 </p> */}
           </div>
         </section>
+         ) }
         <section id="about" className="about-section">
           <div className="about-grid">
             <div className="about-content">
@@ -464,7 +466,7 @@ It’s why I build. Design and development become a way of thinking in practice:
             </div>
           )}
         </section>
-        {isMobile && (
+        {/* {isMobile && (
           <footer className="mobileFooter">
             <div className="mobileFooterContent">
               <p className="mobileFooterText">
@@ -503,7 +505,7 @@ It’s why I build. Design and development become a way of thinking in practice:
               </a>
             </div>
           </footer>
-        )}
+        )} */}
         <h1 ref={textOne} className="hidden"></h1>
         <div className="homeFooterWrapper">
   <Footer />
