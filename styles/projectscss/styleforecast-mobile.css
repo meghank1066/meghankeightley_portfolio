@@ -1,0 +1,220 @@
+:root {
+  --styleForecast-black: #050505;
+  --styleForecast-charcoal: #111111;
+  --styleForecast-grey: #888888;
+  --styleForecast-lightGrey: #cfcfcf;
+  --styleForecast-white: #ffffff; 
+  --sporex-green: #00c853;
+  --sporex-green-soft: rgba(0, 200, 83, 0.12);
+}
+
+/* =========================
+   BASE STYLES (UNCHANGED)
+========================= */
+
+.styleForecastProjectHero {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem;
+  padding: 4rem;
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 40px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
+.styleForecastHeroLeft {
+  flex: 1;
+  max-width: 650px;
+}
+
+.styleForecastProjectPage {
+  min-height: 100vh;
+  padding: 8rem 18%;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.03), transparent 35%),
+    radial-gradient(circle at 80% 40%, rgba(255,255,255,0.04), transparent 40%),
+    linear-gradient(180deg, #000000 0%, #050505 40%, #090909 100%);
+  color: var(--styleForecast-white);
+}
+
+/* ... (all your existing styles remain exactly as-is above/below) ... */
+
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+
+@media (max-width: 1024px) {
+
+  .styleForecastProjectPage {
+    padding: 6rem 10%;
+  }
+
+  .styleForecastProjectHero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .styleForecastHeroRight {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .styleForecastPlaceholderImage {
+    height: 500px;
+  }
+
+  .styleForecastOverviewSection,
+  .styleForecastProblemSection,
+  .styleForecastInsightSection,
+  .styleForecastDesignSection,
+  .styleForecastFeaturesSection,
+  .styleForecastDevelopmentSection,
+  .styleForecastEdgeCasesSection,
+  .styleForecastDesignDecisionsSection,
+  .styleForecastOutcomeSection,
+  .styleForecastImpactSection,
+  .styleForecastContributionSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 6rem;
+  }
+
+  .styleForecastScopeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .styleForecastImpactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .styleForecastImageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .styleForecastVideoGrid {
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+}
+
+/* =========================
+   MOBILE (<= 768px iPhone/tablet small)
+========================= */
+
+@media (max-width: 768px) {
+
+  .styleForecastProjectPage {
+    padding: 4rem 1.5rem;
+  }
+
+  .styleForecastProjectHero {
+    padding: 2rem;
+    border-radius: 24px;
+  }
+
+  .styleForecastProjectTitle {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .styleForecastProjectDescription {
+    font-size: 1rem;
+  }
+
+  .styleForecastPlaceholderImage {
+    height: 380px;
+    border-radius: 24px;
+  }
+
+  .styleForecastSectionLabel {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+
+  .styleForecastSectionContent h2 {
+    font-size: 1.4rem;
+  }
+
+  .styleForecastSectionContent p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .styleForecastScopeGrid,
+  .styleForecastImpactGrid {
+    gap: 1rem;
+  }
+
+  .scopeColumn,
+  .impactColumn,
+  .impactCard {
+    padding: 1.25rem;
+  }
+
+  .style-hero-links {
+    gap: 0.75rem;
+  }
+
+  .style-hero-link {
+    font-size: 0.7rem;
+  }
+
+  .styleForecastVideoGrid video {
+    max-height: 60vh;
+  }
+}
+
+/* =========================
+   SMALL PHONES (<= 480px)
+========================= */
+
+@media (max-width: 480px) {
+
+  .styleForecastProjectPage {
+    padding: 3rem 1rem;
+  }
+
+  .styleForecastProjectHero {
+    padding: 1.5rem;
+  }
+
+  .styleForecastProjectTitle {
+    font-size: 2.2rem;
+  }
+
+  .styleForecastProjectDescription {
+    font-size: 0.95rem;
+  }
+
+  .styleForecastPlaceholderImage {
+    height: 280px;
+  }
+
+  .styleForecastSectionContent h2 {
+    font-size: 1.2rem;
+  }
+
+  .styleForecastSectionContent p {
+    font-size: 0.95rem;
+  }
+
+  .scopeColumn li,
+  .impactColumn li {
+    font-size: 0.85rem;
+  }
+
+  .impactCard p {
+    font-size: 0.9rem;
+  }
+
+  .styleForecastVideoGrid video {
+    max-height: 50vh;
+  }
+}
