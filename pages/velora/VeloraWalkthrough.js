@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import VeloraNodes from "../../components/VeloraNodes";
 import useMobileDevice from "../../hooks/useMobileDevice";
 
+
 export default function VeloraWalkthrough() {
   const isMobile = useMobileDevice();
 
