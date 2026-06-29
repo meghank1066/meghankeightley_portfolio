@@ -279,10 +279,10 @@ export default function StyleForecastPage() {
       Instead of treating weather as standalone information, it is immediately processed into outfit direction, giving users an instant sense of what to wear based on current conditions.
     </p>
 
-    <div className="styleForecastImageGrid">
-      <img src="/images/styleforecast/style-forecast-hero.png" alt="Search Experience" />
+    {/* <div className="styleForecastImageGrid"> */}
+      {/* <img src="/images/styleforecast/style-forecast-hero.png" alt="Search Experience" /> */}
       <img src="/images/styleforecast/results-styleforecast.png" alt="Weather Results" />
-    </div>
+    {/* </div> */}
 
   </div>
 </section>
@@ -307,11 +307,9 @@ export default function StyleForecastPage() {
       <p>
         The filtering system dynamically updates results based on API data, helping users quickly narrow down outfits that match both weather conditions and individual taste.
       </p>
-
-      <div className="styleForecastImageGrid">
-        <img src="/images/styleforecast-filters.png" alt="Filtering System" />
-        <img src="/images/styleforecast-products.png" alt="Filtered Product Results" />
-      </div>
+ 
+        <img src="/images/styleforecast/filter-search.png" alt="Filtering System" /> 
+ 
 
     </div>
   </div>
@@ -363,8 +361,9 @@ export default function StyleForecastPage() {
     </p>
 
     <div className="styleForecastImageGrid">
-      <img src="/images/styleforecast-products.png" alt="Product Recommendations" />
-      <img src="/images/styleforecast-filters.png" alt="Filtering System" />
+    
+        <img src="/images/styleforecast/data-being-fetched.png" alt="Fetching Services" />
+      <img src="/images/styleforecast/seasonal-sort.png" alt="Filtering System" />
     </div>
 
   </div>
