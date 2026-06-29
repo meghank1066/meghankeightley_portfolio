@@ -249,3 +249,33 @@
     height: 200px;
   }
 }
+
+@media (max-width: 768px) {
+  .veloraprojectPage {
+    padding: 1rem 4vw;  
+  }
+ 
+  .veloraprojectHero,
+  .veloraHeroContainer,
+  .veloraInsightSection, 
+  .veloraDesignSection, 
+  .veloraFeaturesSection, 
+  .veloraOutcomeSection {
+    padding: 2rem 0;   
+    margin: 0;
+  }
+
+  .veloraplaceholderImage {
+    height: 280px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .veloraprojectPage {
+    padding: 1.5rem 1rem;
+  }
+  
+  .veloraplaceholderImage {
+    height: 200px;
+  }
+}
