@@ -14,7 +14,7 @@ export default function VeloraPage() {
         <div className="veloraWrapper">
           <Header className="veloraNav" />
         </div>
-
+{/* hello */}
         <main className="veloraprojectPage">
 
           {/* HERO SECTION */}
