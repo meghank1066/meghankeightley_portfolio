@@ -42,7 +42,7 @@ export default function GlamourtouchPage() {
               <div className="glamourtouch-hero-links">
   <a
     className="glamourtouch-hero-link"
-    href="https://www.glamtouchnails.site/"
+    href="https://glamourtouchsalon.up.railway.app/"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -185,7 +185,7 @@ export default function GlamourtouchPage() {
       </p>
 
       {/* FIXED IMAGE GRID AND CLASSES */}
-      <div className="glamourtouchImageGrid">
+      {/* <div className="glamourtouchImageGrid">
         <div className="glamourtouchImageWrapper">
           <img className="glamourtouchImage" src="/images/glamourtouch/Glamour-Touch-Brand-Identity.png" alt="Brand Identity" />
         </div>
@@ -197,7 +197,22 @@ export default function GlamourtouchPage() {
         <div className="glamourtouchImageWrapper">
           <img className="glamourtouchImage" src="/images/glamourtouch/glamour-website.png" alt="Website" />
         </div>
-      </div>
+      </div> */}
+
+      <div className="glamourtouchImageGrid">
+    {/* Added brandboard-card class to isolate this tall image */}
+    <div className="glamourtouchImageWrapper brandboard-card">
+      <img className="glamourtouchImage" src="/images/glamourtouch/Glamour-Touch-Brand-Identity.png" alt="Brand Identity" />
+    </div>
+
+    <div className="glamourtouchImageWrapper">
+      <img className="glamourtouchImage" src="/images/glamourtouch/GlamourTouch-Logo.png" alt="Logo" />
+    </div>
+
+    <div className="glamourtouchImageWrapper">
+      <img className="glamourtouchImage" src="/images/glamourtouch/glamour-website.png" alt="Website" />
+    </div>
+</div>
 
     </div> 
   </div>

@@ -25,3 +25,400 @@
     font-size: 1.25rem;
   }
 }
+
+:root {
+  --glamour-pink: #ff3f9a;
+  --glamour-pink-soft: #ff8fc7;
+  --glamour-pink-glow: #ffb6dc;
+
+  --glamour-blue: #9ee7ff;
+  --glamour-blue-soft: #c9f4ff;
+
+  --glamour-dark: #050816;
+  --glamour-navy: #081827;
+
+  --glamour-white: #ffffff;
+}
+
+/* PAGE */
+
+.glamourtouchPageShell {
+  min-height:100vh;
+  padding: 8rem 12%;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255,63,154,.18), transparent 35%),
+    radial-gradient(circle at 80% 20%, rgba(158,231,255,.18), transparent 35%),
+    linear-gradient(180deg, #050816 0%, #081827 45%, #0b2431 75%, #050816 100%);
+}
+
+.glamourtouchProjectPage {
+  padding:8rem 10%;
+  position:relative;
+  overflow:hidden;
+  color:white;
+}
+
+/* HERO */
+
+.glamourtouchProjectHero {
+  display:flex;
+  justify-content:space-between;
+  gap:5rem;
+  padding:4rem;
+  background:rgba(10,18,30,.65);
+  backdrop-filter:blur(40px);
+  border-radius:40px;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 25px 70px rgba(0,0,0,.45);
+  position:relative;
+  z-index:2;
+}
+
+.glamourtouchHeroLeft { max-width:650px; }
+
+.glamourtouchProjectTag {
+  color:var(--glamour-blue);
+  letter-spacing:4px;
+  font-size:.8rem;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
+.glamourtouchProjectTitle {
+  font-size:clamp(4rem,8vw,7rem);
+  line-height:.9;
+  letter-spacing:-.06em;
+  margin:1.5rem 0;
+  background:linear-gradient(180deg, white 0%, #ffd6ea 45%, var(--glamour-pink) 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 0 40px rgba(255,63,154,.35);
+}
+
+.glamourtouchProjectDescription {
+  font-size:1.15rem;
+  line-height:1.8;
+  max-width:580px;
+  color:rgba(255,255,255,.78);
+}
+
+/* BUTTON */
+
+.glamourtouch-hero-link {
+  display:inline-block;
+  margin-top:2rem;
+  padding:.9rem 2rem;
+  background:linear-gradient(135deg, var(--glamour-pink), #ff5cad);
+  color:white;
+  font-weight:800;
+  text-decoration:none;
+  border-radius:50px;
+  box-shadow:0 15px 40px rgba(255,63,154,.35);
+  transition:.3s;
+}
+
+.glamourtouch-hero-link:hover {
+  transform:translateY(-4px);
+  box-shadow:0 20px 50px rgba(255,63,154,.55);
+}
+
+/* RIGHT */
+
+.glamourtouchHeroRight {
+  min-width:320px;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+}
+
+/* MOCKUP */
+
+.glamourtouchHeroMockup {
+  margin-top:5rem;
+  position:relative;
+  z-index:2;
+}
+
+.glamourtouchPlaceholderImage {
+  height:650px;
+  border-radius:40px;
+  background:rgba(5,8,22,.65);
+  backdrop-filter:blur(35px);
+  border:1px solid rgba(158,231,255,.15);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--glamour-blue-soft);
+  font-size:2rem;
+  letter-spacing:4px;
+  box-shadow:0 30px 80px rgba(0,0,0,.45);
+}
+
+/* SECTIONS */
+
+.glamourtouchOverviewSection,
+.glamourtouchInsightSection,
+.glamourtouchDesignSection,
+.glamourtouchFeaturesSection,
+.glamourtouchOutcomeSection,
+.glamourtouchContributionSection {
+  margin-top:5rem;
+  position:relative;
+  z-index:2;
+}
+
+.glamourtouchSectionBackground {
+  background:rgba(8,24,39,.65);
+  backdrop-filter:blur(35px);
+  border-radius:40px;
+  padding:4rem;
+  border:1px solid rgba(255,255,255,.1);
+  box-shadow:0 25px 60px rgba(0,0,0,.35);
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:4rem;
+}
+
+/* IMAGES */
+
+.glamourtouchImageGrid {
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:2rem;
+  margin-top:2.5rem;
+  width:100%;
+}
+
+.glamourtouchImage {
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:18px;
+  box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+/* FEATURE STACK */
+
+.glamourtouchFeatureImageStack {
+  display:flex;
+  flex-direction:column;
+  gap:2.5rem;
+  margin-top:2rem;
+  width:100%;
+}
+
+/* DESIGN GRID */
+
+.glamourtouchDesignGrid {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1.5rem;
+  margin-top:3.5rem;
+  width:100%;
+  max-width:800px;
+}
+
+/* WEBSITE EMBED */
+
+.glamourtouchWebsiteEmbed {
+  height:800px;
+  border-radius:40px;
+  overflow:hidden;
+  background:#050816;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 30px 80px rgba(0,0,0,.45);
+}
+
+.glamourtouchWebsiteEmbed iframe {
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+/* =========================
+   MOBILE / TABLET BREAKPOINTS
+========================= */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+  .glamourtouchPageShell {
+    padding: 6rem 5%;
+  }
+
+  .glamourtouchProjectPage {
+    padding: 5rem 5%;
+  }
+
+  .glamourtouchProjectHero {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .glamourtouchHeroRight {
+    min-width: unset;
+  }
+
+  .glamourtouchSectionBackground {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .glamourtouchImageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .glamourtouchPlaceholderImage {
+    height: 420px;
+    font-size: 1.4rem;
+  }
+
+  .glamourtouchWebsiteEmbed {
+    height: 520px;
+  }
+}
+
+/* LARGE MOBILE */
+@media (max-width: 768px) {
+
+  .glamourtouchProjectTitle {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .glamourtouchProjectDescription {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .glamourtouchSectionBackground {
+    padding: 1.5rem;
+  }
+
+  .glamourtouchImage {
+    height: 220px;
+  }
+
+  .glamourtouchDesignGrid {
+    max-width: 100%;
+  }
+
+  .glamourtouchWebsiteEmbed {
+    height: 450px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 600px) {
+
+  .glamourtouchProjectHero {
+    padding: 1.5rem;
+    border-radius: 25px;
+  }
+
+  .glamourtouchProjectTitle {
+    font-size: 2.4rem;
+    line-height: 1.05;
+  }
+
+  .glamourtouch-hero-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .glamourtouchSectionBackground {
+    border-radius: 25px;
+    padding: 1.2rem;
+    gap: 2rem;
+  }
+
+  .glamourtouchImageGrid {
+    gap: 1rem;
+  }
+
+  .glamourtouchImage {
+    height: 200px;
+  }
+
+  .glamourtouchPlaceholderImage {
+    height: 320px;
+    font-size: 1.1rem;
+  }
+
+  .glamourtouchWebsiteEmbed {
+    height: 380px;
+  }
+
+  .glamourtouchHeroMockup {
+    margin-top: 2.5rem;
+  }
+}
+
+/* ==========================================
+   FIX FOR SMALL IMAGES IN FEATURE SECTION
+   ========================================== */
+
+@media (max-width: 900px) {
+  /* Ensure the container stretches fully across the parent grid */
+  .glamourtouchFeatureImageStack {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns the inner image elements */
+  }
+
+  /* Target the placeholder wrappers if you're using them */
+  .glamourtouchFeatureImageStack .glamourtouchImagePlaceholder {
+    width: 100%;
+    min-height: auto; /* Allow height to adapt dynamically based on image content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0; /* Remove restrictive horizontal padding */
+  }
+
+  /* Force the images to scale up to the container's width */
+  .glamourtouchFeatureImageStack img,
+  .glamourtouchFeatureImageStack .glamourtouchImage {
+    width: 100% !important;
+    height: auto !important; /* Retain proper aspect ratio */
+    max-width: 100%; /* Keeps it from running off the screen edges */
+    object-fit: contain; /* Switch from cover if you want to see the whole screenshot */
+    border-radius: 20px; /* Aesthetic touch consistent with your theme */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Extra mobile optimization to give the images maximum layout room */
+  .glamourtouchFeatureImageStack .glamourtouchImagePlaceholder {
+    padding: 0.5rem 0;
+  }
+}
+
+/* ==========================================
+   BRANDBOARD - CUSTOM VERTICAL SCALING
+   ========================================== */
+
+/* Desktop & Standard Viewports */
+@media (min-width: 901px) {
+  /* Spans the long infographic across both columns for a structured layout */
+  .glamourtouchImageGrid .brandboard-card {
+    grid-column: span 2;
+  }
+
+  .glamourtouchImageGrid .brandboard-card .glamourtouchImage {
+    height: auto;
+    max-height: 750px; /* Provides the large vertical room the design needs */
+    object-fit: contain; /* Prevents text elements and swatches from being cropped */
+    background: rgba(255, 255, 255, 0.01);
+  }
+}
+
+/* Tablet & Mobile Viewports */
+@media (max-width: 900px) {
+  .glamourtouchImageGrid .brandboard-card .glamourtouchImage {
+    height: auto; /* Drops the strict 260px clipping restriction */
+    max-height: 520px; 
+    object-fit: contain; /* Keeps everything fully legible */
+  }
+}
