@@ -352,6 +352,7 @@ html {
       0.85
     );
   margin-bottom: 1.8rem;
+  align-self: flex-start;
 }
 
 .caseStudyLink {
@@ -1107,4 +1108,30 @@ footer {
 
   }
 
+}
+
+.caseStudyCard {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255, 220, 235, 0.12);
+  box-shadow: 0 0 0 1px rgba(255, 200, 220, 0.08);
+  transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+
+ 
+  display: flex;
+  flex-direction: column;
+  height: 100%;  
+}
+
+.caseStudyCard p {
+  margin: 0 0 14px;
+  line-height: 1.55;
+  font-size: 16px;
+  color: rgba(255, 255, 255, .68);
+  margin-bottom: 1.25rem;
+  max-width: 90%;
+   
+  flex-grow: 1; 
 }

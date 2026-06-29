@@ -70,7 +70,9 @@ const casestudies = [
     title: "Style Forecast – API",
     description:
       "A weather-powered application that integrates external APIs to provide personalised outfit recommendations based on local conditions and forecasts.",
-    image: "/images/lookbook-cover.png",
+    category: "Backend & API Integration",
+    tech: ["C#", ".NET", "REST APIs", "API Integration"],
+      image: "/images/lookbook-cover.png",
     github: "https://github.com/...",
     tech: ["React", "Weather API", "JavaScript"]
   },
@@ -80,7 +82,8 @@ const casestudies = [
     title: "Glamour Touch",
    description:
   "A modern beauty salon booking system designed to elevate the client experience, allowing effortless appointment scheduling and streamlined management for salon staff through a clean, structured web application.",
-    image: "/images/glamour-touch-pic.png",
+  category: "Full Stack Development",  
+  image: "/images/glamour-touch-pic.png",
     github: "https://github.com/RathnamMeghana/Beauty_Cosmetics_Laravel",
     tech: ["PHP", "Database Migrations", "SCSS"]
   },
