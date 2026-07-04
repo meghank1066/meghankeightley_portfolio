@@ -477,7 +477,7 @@ export default function SporexPage() {
         </p>
 
         {/* <div className="sporexImageGrid">
-          <div className="sporexImagePlaceholder">
+          <div className="ssporexImagePlaceholder">
             Air Quality / Environment Metrics
           </div>
           <div className="sporexImagePlaceholder">

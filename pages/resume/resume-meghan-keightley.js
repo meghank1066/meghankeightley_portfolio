@@ -170,13 +170,37 @@ export default function ResumePage() {
           </section>
 
           {/* INTERESTS & WORK */}
-          <section className="resumeMeghanSection">
+          {/* <section className="resumeMeghanSection">
             <h2>Leadership & Community Engagement</h2>
             <div className="resumeSectionContent">
               <p><strong>Leadership:</strong> Founder & Chairperson — DKIT Fashion Society. Orchestrated society architecture, brand direction and  financial resource logistics. Active Member of the Google Developer Student Club (GDSC) at DKIT.</p>
               <p><strong>Professional Development:</strong> 2+ Years of Customer Operations experience at Primark, cultivating client interaction techniques, rapid problem-solving and  time management skills within fast-paced target windows.</p>
             </div>
-          </section>
+          </section> */}
+          {/* EXPERIENCE & LEADERSHIP */}
+<section className="resumeMeghanSection">
+  <h2>Experience & Leadership</h2>
+
+  <div className="resumeSectionContent">
+
+    <p>
+      <strong>Retail Assistant — Primark</strong><br />
+      <em>Drogheda (2+ Years) · Dundalk (4 Months)</em><br />
+      Developed strong customer service, communication and  teamwork skills within a fast-paced retail environment. Regularly balanced customer assistance, stock replenishment, merchandising, cash handling and maintaining store presentation while adapting to changing operational demands. Consistently worked under pressure during peak trading periods, strengthening problem-solving, organisation and time management abilities while delivering a positive customer experience.
+    </p>
+<br />
+    <p>
+      <strong>Founder & Chairperson — DKIT Fashion Society</strong><br />
+      Founded and led the society, overseeing its vision, branding, event planning, budgeting committee coordination and day-to-day operations. Worked closely with the Sports and Societies Office and society members to establish an inclusive creative community, developing leadership, project management, communication and organisational skills.
+    </p>
+<br />
+    <p>
+      <strong>Clubs & Societies</strong><br />
+      Active member of the Google Developer Student Club (GDSC), Women in STEM Society and several university societies throughout my studies. Regularly participated in workshops, networking events and collaborative activities that supported both my technical development and engagement with the wider university community.
+    </p>
+<br />
+  </div>
+</section>
         </main>
 
         <div className="resumeWrapper2">
