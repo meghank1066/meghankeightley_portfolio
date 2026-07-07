@@ -174,13 +174,13 @@ export default function StyleForecastPage() {
   This project started from that gap: exploring how weather data could be reframed into something that directly supports outfit decisions overall reducing the mental step between “what’s it like outside?” and “what do I wear?”
 </p>
 
- <div>
+ {/* <div>
       <img
         src="/images/styleforecast/problem-space.png"
         alt="Style Forecast Homepage"
          className="about-photo"
       />
-    </div>
+    </div> */}
 
     </div>
  

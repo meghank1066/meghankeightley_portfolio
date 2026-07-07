@@ -65,7 +65,7 @@ const Resume = () => {
            <div className="mt-5 w-full">
  <h1 className="text-3xl font-bold w-full text-center">My CV</h1>
   <iframe
-    src="/Meghan_Keightley_CV_Main.pdf"
+    src="/cv/Meghan_Keightley_CV_Main.pdf"
     width="100%"
     height="600px"
     className="mt-3 border"

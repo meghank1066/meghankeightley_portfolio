@@ -1,0 +1,1694 @@
+:root {
+
+  --nexspace-purple: #7a66f1;
+  --nexspace-purple: #d8cfff;
+  --nexspace-dark-blue: #405692;
+  --nexspace-light-blue: #a0e0f4;
+
+  --nexspace-dark: #0b132b;
+  --nexspace-white: #ffffff;
+}
+
+@font-face {
+  font-family: 'Milkyway';
+  src: url('/fonts/Milkyway.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;  
+}
+
+
+.nexspaceprojectPage {
+  min-height: 100vh;
+  padding: 8rem 18%;
+  position: relative;
+  overflow: hidden; 
+
+ background:
+
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(191, 232, 227, 0.12),
+      transparent 40%
+    ),
+
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(120, 220, 210, 0.08),
+      transparent 35%
+    ),
+
+    radial-gradient(
+      circle at 50% 75%,
+      rgba(80, 180, 170, 0.10),
+      transparent 45%
+    ),
+
+    linear-gradient(
+      180deg,
+      #071223 0%,
+      #081b2d 40%,
+      #0b2431 75%,
+      #081827 100%
+    );
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  color: var(--nexspace-dark);
+}
+
+/* background decoration */
+
+.nexspaceprojectPage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(44, 143, 135, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 25%,
+      rgba(173, 80, 239, 0.4),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 50% 80%,
+      rgba(122,102,241,0.08),
+      transparent 40%
+    );
+
+  pointer-events: none;
+}
+
+.nexspaceprojectHero {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 4rem;
+   background: rgba(15, 24, 34, 0.55);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(191,232,227,.08);
+
+  border-radius: 40px;
+  box-shadow:
+    0 25px 50px rgba(37,64,74,0.08);
+}
+
+.nexspaceheroLeft {
+  max-width: 650px;
+}
+
+.nexspaceprojectTag { 
+  color: var(--nexspace-purple);
+  letter-spacing: 4px;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+/* .nexspaceprojectTitle {
+  font-size: clamp(4rem, 8vw, 7rem);
+font-family: 'Milkyway', sans-serif;
+  /* color: var(--nexspace-purple); */
+  /* line-height: 0.9;
+
+  margin: 1.5rem 0;
+
+  color: var(--nexspace-dark);
+
+  letter-spacing: -0.05em;
+  color: var(--nexspace-purple);
+  text-shadow:
+    0 0 20px rgba(191,232,227,.12);
+  letter-spacing: -0.05em;
+} */ 
+
+.nexspaceprojectTitle {
+  margin: 0;
+  line-height: 1;
+}
+
+.nexspaceTitleLogo {
+  display: block;
+  width: 420px;   /* adjust to taste */
+  max-width: 100%;
+  height: auto;
+  margin-left: -15px;
+}
+
+.nexspaceprojectDescription {
+  font-size: 1.2rem;
+
+  line-height: 1.8;
+
+  max-width: 550px;
+
+  color: var(--nexspace-white);
+}
+
+.nexspaceheroRight {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 28px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  color: var(--nexspace-white);
+}
+
+.nexspaceheroRight h4 {
+  margin-bottom: 0.5rem;
+
+  color: var(--nexspace-purple);
+
+  letter-spacing: 2px;
+
+  font-size: 0.85rem;
+}
+
+.nexspaceheroRight p {
+color: var(--nexspace-white);
+  line-height: 1.6;
+
+}
+
+.nexspaceLink a {
+  color: var(--nexspace-white);
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.nexspaceLink:hover {
+  text-decoration: underline;
+}
+
+/* mockup section */
+
+.nexspaceheroMockup {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 5rem;
+}
+
+.nexspaceplaceholderImage {
+  height: 650px;
+
+ background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+
+  border: 1px solid rgba(191,232,227,.08);
+ 
+
+  border-radius: 40px;
+ 
+
+  box-shadow:
+    0 25px 50px rgba(37,64,74,0.08);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #d8cfff;
+
+  font-size: 2rem;
+  margin-top: 3.5rem;
+margin-bottom: 1.5rem;
+}
+
+/* navbar */
+.nexspaceNav {
+  backdrop-filter: blur(24px);
+
+  color: #ffffff;
+
+  border: 1px solid rgba(
+    255,
+    255,
+    255,
+    0.25
+  );
+
+  box-shadow:
+    0 0 0 2px rgba(
+      121,
+      216,
+      206,
+      0.25
+    ),
+    0 0 40px rgba(
+      121,
+      216,
+      206,
+      0.08
+    );
+}
+
+.nexspaceNav a {
+  color: #ffffff;
+}
+
+.nexspaceNav a:hover {
+  color: var(--nexspace-purple);
+}
+
+.nexspaceNav a::after {
+  background: var(--nexspace-purple);
+}
+
+.nexspaceWrapper2 {
+  position: relative;
+  z-index: 100;
+
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    #081827 40%,
+    #081827 100%
+  );
+}
+
+.nexspaceFooter {
+  position: relative;
+  z-index: 101;
+}
+
+.nexspaceParticle {
+  z-index: 1;
+}
+
+.nexspacePageShell {
+  min-height: 100vh;
+
+  background:
+
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(191,232,227,.12),
+      transparent 40%
+    ),
+
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(121,216,206,.08),
+      transparent 35%
+    ),
+
+    radial-gradient(
+      circle at 50% 75%,
+      rgba(121,216,206,.10),
+      transparent 45%
+    ),
+
+    linear-gradient(
+      180deg,
+      #071223 0%,
+      #081b2d 40%,
+      #0b2431 75%,
+      #081827 100%
+    );
+}
+
+.nexspaceprojectPage {
+  background: none;
+}
+
+.nexspaceNodes {
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  opacity: 0.9;
+}
+
+.nexspaceNodes canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* =========================
+   SECTION SYSTEM (nexspace)
+========================= */
+
+/* left label column */
+.nexspaceSectionLabel {
+  color: rgba(191, 232, 227, 0.55);
+
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* right content column */
+.nexspaceSectionContent {
+  min-width: 0;
+}
+
+.nexspaceSectionContent h2 {
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  margin-bottom: 2rem;
+
+  color: var(--nexspace-purple);
+  letter-spacing: -0.02em;
+}
+
+.nexspaceSectionContent p {
+  max-width: 720px;
+
+  font-size: 1.1rem;
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  margin-bottom: 1.5rem;
+}
+
+.nexspaceSectionContent ul {
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nexspaceSectionContent li {
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   IMAGE GRID (nexspace)
+========================= */
+
+/* =========================
+   FEATURE IMAGE GRID
+========================= */
+
+.nexspaceImageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+}
+
+.nexspaceImageGrid img {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(191, 232, 227, 0.12);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25);
+
+  transition: transform 0.3s ease;
+}
+
+.nexspaceImageGrid img:hover {
+  transform: translateY(-6px);
+}
+/* .nexspaceImageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+
+  margin-top: 3rem;
+  max-width: 1000px;
+}
+
+.nexspaceImageGrid img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(191, 232, 227, 0.12);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+  transition: transform 0.3s ease;
+}
+
+.nexspaceImageGrid img:hover {
+  transform: translateY(-4px);
+} */
+
+/* =========================
+   QUOTE BLOCK
+========================= */
+
+.nexspaceQuoteBlock {
+  margin-top: 2rem;
+  padding: 2rem;
+
+  border-left: 2px solid rgba(121, 216, 206, 0.4);
+
+  background: rgba(15, 24, 34, 0.35);
+  backdrop-filter: blur(20px);
+
+  color: rgba(255, 255, 255, 0.8);
+
+  font-style: italic;
+}
+
+/* =========================
+   HERO LINKS (FIXED + CLEAN)
+========================= */
+
+.nexspace-hero-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+/* IMPORTANT: match StyleForecast link system but teal themed */
+.nexspace-hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+
+  padding-bottom: 0.25rem;
+
+  border-bottom: 1px solid rgba(121, 216, 206, 0.45);
+
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.nexspace-hero-link:hover {
+  color: var(--nexspace-purple);
+  border-bottom: 1px solid var(--nexspace-purple);
+  transform: translateY(-2px);
+}
+
+.nexspace-hero-link::after {
+  content: "↗";
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-left: 0.4rem;
+}
+
+/* =========================
+   MOCKUP FIX (CONSISTENCY)
+========================= */
+
+.nexspaceplaceholderImage {
+  transition: transform 0.4s ease;
+}
+
+.nexspaceplaceholderImage:hover {
+  transform: translateY(-6px);
+}
+
+.nexspaceSectionBackground {
+  position: relative;
+  z-index: 5;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+
+  /* Updated from green to your new teal accent */
+  border: 1px solid rgba(121, 216, 206, 0.08); 
+
+  padding: 4rem;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 4rem;
+}
+
+.nexspaceOverviewSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.nexspaceDevSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+
+
+
+.nexspaceDesignSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.nexspaceProblemSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.nexspaceInsightSection {
+  margin-top: 2rem;
+  z-index: 1;
+  padding-top: 4rem;
+}
+
+.nexspaceFeaturesSection {
+  margin-top: 2rem;
+  z-index: 1;
+  padding-top: 4rem;
+}
+
+.nexspaceDevelopmentSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+}
+
+.nexspacePartnershipSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.nexspaceContributionSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.nexspaceOutcomeSection {
+  margin-top: 2rem;
+  backdrop-filter: blur(40px);
+  padding-top: 4rem;
+  z-index: 1;
+}
+
+.nexspaceOverviewSection,
+.nexspaceDesignSection,
+.nexspaceProblemSection,
+.nexspaceInsightSection,
+.nexspaceFeaturesSection,
+.nexspaceDevelopmentSection,
+.nexspacePartnershipSection,
+.nexspaceContributionSection,
+.nexspaceOutcomeSection,
+.nexspaceFooter {
+  position: relative; /* Makes z-index valid */
+  z-index: 2;        /* Forces sections above the nodes/particles layer */
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.nexspaceSectionBackground,
+.nexspaceSectionBackground {
+  position: relative;
+  z-index: 5;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+
+  /* Updated from green to your new theme's teal accent (var(--nexspace-purple)) at 8% opacity */
+  border: 1px solid rgba(121, 216, 206, 0.08);
+
+  padding: 4rem;
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 4rem;
+}
+
+.nexspaceOverviewSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.nexspaceDesignSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.nexspaceProblemSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+}
+
+.nexspaceInsightSection {
+  margin-top: 2rem;
+  z-index: 1;
+  padding-top: 4rem;
+}
+
+.nexspaceFeaturesSection {
+  margin-top: 2rem;
+  z-index: 1;
+  padding-top: 4rem;
+}
+
+.nexspaceDevelopmentSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  z-index: 1;
+  backdrop-filter: blur(40px);
+}
+
+.nexspacePartnershipSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.nexspaceContributionSection {
+  margin-top: 2rem;
+  padding-top: 4rem;
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.nexspaceOutcomeSection {
+  margin-top: 2rem;
+  backdrop-filter: blur(40px);
+  padding-top: 4rem;
+  z-index: 1;
+}
+
+/* =========================
+   SECTION SYSTEM (nexspace)
+========================= */
+
+.nexspaceOverviewSection,
+.nexspaceFeaturesSection,
+.nexspaceDevelopmentSection,
+.nexspaceOutcomeSection,
+.nexspaceInsightSection,
+.nexspaceDesignSection,
+.nexspaceContributionSection,
+.nexspaceOverviewSection,
+.nexspaceFeaturesSection,
+.nexspaceDevelopmentSection,
+.nexspaceOutcomeSection,
+.nexspaceInsightSection,
+.nexspaceDesignSection,
+.nexspaceContributionSection {
+  /* Grid properties removed here so .nexspaceSectionBackground handles the layout */
+  margin-top: 10rem;
+  padding-top: 4rem;
+
+  border-top: 1px solid rgba(191, 232, 227, 0.10);
+
+  position: relative;
+  z-index: 2;
+}
+
+/* The actual layout master box */
+.nexspaceSectionBackground,
+.nexspaceSectionBackground {
+  position: relative;
+  z-index: 5;
+
+  background: rgba(15, 24, 34, 0.55);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+  border: 1px solid rgba(121, 216, 206, 0.08);
+
+  padding: 4rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+
+  /* This single layer seamlessly sets up your columns */
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 4rem;
+}
+
+
+/* PAGE WIDTH FIX */
+.nexspaceprojectPage {
+  min-height: 100vh;
+  padding: 8rem 18%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* SECTION WRAPPERS */
+.nexspaceOverviewSection,
+.nexspaceFeaturesSection,
+.nexspaceDevelopmentSection,
+.nexspaceOutcomeSection,
+.nexspaceInsightSection,
+.nexspaceDesignSection,
+.nexspaceContributionSection {
+
+  width: 100%;
+
+  margin-top: 10rem;
+  padding-top: 4rem;
+
+  border-top: 1px solid rgba(191, 232, 227, 0.10);
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* GLASS BACKGROUND FULL WIDTH */
+.nexspaceSectionBackground {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  background: rgba(15, 24, 34, 0.86);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border-radius: 40px;
+
+  border: 1px solid rgba(216,207,255,0.10);
+
+  padding: 4rem;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+
+  display:grid;
+
+  grid-template-columns: 180px minmax(0,1fr);
+
+  gap:4rem;
+}
+
+
+.nexspaceWrapper2 {
+  position: relative;
+  z-index: 100;
+
+
+  background-color: #081827 !important;
+}
+
+
+.nexspaceFooter {
+  position: relative;
+  z-index: 101;
+
+  background-color: #081827 !important;
+
+  border-top: 1px solid rgba(216,207,255,0.14) !important;
+
+  padding: 4rem 2rem;
+}
+
+
+/* footer text */
+.nexspaceFooter,
+.nexspaceFooter p,
+.nexspaceFooter span,
+.nexspaceFooter h1,
+.nexspaceFooter h2,
+.nexspaceFooter h3,
+.nexspaceFooter h4 {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+
+.nexspaceFooter a {
+  color: rgba(255,255,255,0.65) !important;
+}
+
+
+.nexspaceFooter a:hover {
+  color: var(--nexspace-purple) !important;
+}
+
+ 
+.nexspaceWrapper2,
+.nexspaceWrapper2 *,
+.nexspaceFooter,
+.nexspaceFooter * {
+  background-color: #0D2431 !important;
+}
+
+
+.nexspaceFooter {
+  min-height: 300px;
+  width: 100%;
+}
+
+.nexspaceplaceholderImage {
+  overflow: hidden;
+}
+
+.nexspaceplaceholderImage {
+  height: 950px;
+  border-radius: 40px;
+  overflow: hidden; /* 👈 critical fix */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(15, 24, 34, 0.55);
+  backdrop-filter: blur(40px);
+
+  border: 1px solid rgba(191,232,227,.08);
+  box-shadow: 0 25px 50px rgba(37,64,74,0.08);
+
+  transition: transform 0.4s ease;
+}
+
+.nexspaceplaceholderImage img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+/* Container Wrapper (Matches your page structure background) */
+.nexspaceHeroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Header Typography Fixes */
+.nexspaceHeroHeader h2 {
+  font-family: 'Milkyway', sans-serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: var(--nexspace-purple);
+  margin-bottom: 8px;
+  
+}
+
+ 
+
+.nexspaceHeroYear {
+  font-size: 1.1rem;
+  color: var(--nexspace-purple);
+  opacity: 0.8;
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+  letter-spacing: 2px;
+}
+
+/* Mockup Layout Wrapper */
+.nexspaceHeroMockupWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 20px;
+}
+
+/* Floating App Icons (Overlapping Perfectly) */
+.nexspaceAppIcons {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.nexspaceAppIcons:hover {
+  transform: translate(-50%, calc(-50% - 6px));
+}
+/* Header Typography Fixes */
+.nexspaceHeroYear {
+  font-size: 1.5rem; /* Increased from 1.1rem */
+  color: var(--nexspace-purple);
+  opacity: 0.9;
+  margin-top: 0;
+  margin-bottom: 4.5rem; /* Pushed down slightly more to give the bigger icons breathing room */
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+/* Floating App Icons */
+.nexspaceAppIcons img {
+  height: 250px; /* Increased from 65px to make them pop like the original reference */
+  width: auto;
+  display: block;
+
+}
+
+/* Glassmorphic Main Display Box (Matches original mockup background look) */
+.nexspaceMainShowcase { 
+  background: rgba(15, 24, 34, 0.55);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 40px; 
+  border: 1px solid rgba(121, 216, 206, 0.08); /* Soft subtle teal glass border */
+  padding: 80px 40px 0px 40px; /* Space for absolute header elements */
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.nexspaceMainShowcase:hover {
+  transform: translateY(-4px);
+}
+
+/* Tagline text below icons */
+.nexspaceTagline {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.15rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Image Container */
+.nexspaceImageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.nexspaceImageWrapper img {
+  width: 100%;
+  max-width: 950px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+   border-radius: 40px; 
+  border: 1px solid rgba(121, 216, 206, 0.08); 
+}
+
+/* ==========================================================================
+   nexspace COLOR PALETTE MATRIX (.nexspaceDesignSection additions)
+   ========================================================================== */
+
+.nexspace-color-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.nexspace-swatch {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 220px;
+  background: rgba(7, 18, 35, 0.45);
+  border: 1px solid rgba(121, 216, 206, 0.12);
+  padding: 1.25rem;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.nexspace-swatch:hover {
+  transform: translateY(-4px);
+  border-color: var(--nexspace-purple);
+}
+
+.nexspace-swatch-block {
+  width: 100%;
+  height: 110px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.nexspace-swatch-hex {
+  font-family: "DM Mono", monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--nexspace-purple);
+  margin-bottom: 0.25rem;
+}
+
+.nexspace-swatch-name {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.4;
+}
+
+
+/* ==========================================================================
+   ADDITIONAL TYPOGRAPHY & EXTRA CONTAINER ELEMENTS
+   ========================================================================== */
+
+/* Screencast custom video placeholder wrapper */
+.nexspaceScreencastContainer {
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(121, 216, 206, 0.15) !important;
+  transition: transform 0.4s ease;
+}
+
+.nexspaceScreencastContainer:hover {
+  transform: translateY(-4px);
+}
+
+/* Custom list items markers within the design approach section */
+.nexspaceSectionContent ul {
+  list-style: none; /* Strip standard dots to replace with custom clean layout styling */
+  padding-left: 0 !important; 
+}
+
+.nexspaceSectionContent li {
+  position: relative;
+  padding-left: 1.75rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nexspaceSectionContent li strong {
+  color: var(--nexspace-purple);
+  font-weight: 600;
+}
+
+.nexspaceSectionContent li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--nexspace-purple);
+  font-weight: bold;
+}
+
+/* Sub-headings located inside the image grid blocks */
+.h3text {
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(191, 232, 227, 0.75);
+  margin-bottom: 1rem;
+  grid-column: span 2; /* Forces text title to cleanly occupy its row span inside the grid layout */
+}
+
+.h3text:not(:first-of-type) {
+  margin-top: 2.5rem;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT MATRIX BREAKPOINTS
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+  .nexspaceprojectPage {
+    padding: 6rem 8%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nexspaceprojectHero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.5rem;
+  }
+  
+  .nexspaceSectionBackground,
+  .nexspaceSectionBackground {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem;
+    backdrop-filter: blur(35px);
+-webkit-backdrop-filter: blur(35px);
+  }
+  
+  .nexspaceSectionLabel {
+    border-bottom: 1px solid rgba(121, 216, 206, 0.15);
+    padding-bottom: 0.75rem;
+    display: inline-block;
+    width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .nexspaceprojectPage {
+    padding: 4rem 4%;
+  }
+  
+  .nexspaceImageGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .h3text {
+    grid-column: span 1;
+  }
+  
+  .nexspaceHeroYear {
+    margin-bottom: 2.5rem;
+  }
+  
+  .nexspaceMainShowcase {
+    padding: 60px 20px 0px 20px;
+  }
+}
+
+
+.nexspaceplaceholderImage {
+
+
+height:650px;
+
+
+border-radius:40px;
+
+
+background:
+
+rgba(15,24,34,.55);
+
+
+backdrop-filter:blur(25px);
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+color:white;
+
+
+font-size:2rem;
+
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+
+}
+
+.nexspaceFinalShowcase {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.nexspaceFinalShowcaseImage {
+  width: min(1000px, 95vw);
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+.nexspaceprojectPage {
+  position: relative;
+  z-index: 1;
+}
+
+.nexspaceSectionBackground {
+  position: relative;
+  z-index: 2;
+  
+}
+
+.nexspaceSectionBackground { 
+  backdrop-filter: blur(45px) saturate(120%);
+  -webkit-backdrop-filter: blur(45px) saturate(120%);
+}
+ 
+ .nexspaceVideoContainer {
+  width: 100%;
+  margin-top: 3rem;
+
+  border-radius: 40px;
+  overflow: hidden;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border: 1px solid rgba(216,207,255,0.10);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+}
+
+
+.nexspaceVideoContainer {
+  width: 100%;
+  margin-top: 3rem;
+
+  border-radius: 40px;
+  overflow: hidden;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+
+  border: 1px solid rgba(216,207,255,0.10);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+}
+
+
+.nexspaceVideoContainer video {
+
+  width: 100%;
+  display: block;
+
+  border-radius: 40px;
+
+  max-height: 800px;
+
+  object-fit: contain;
+
+}
+
+
+/* ================================
+   WALKTHROUGH PAGE FIX
+================================ */
+
+.nexspaceprojectPage2 {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  padding: 6rem 18% 8rem;
+
+  background: transparent;
+  color: var(--nexspace-white);
+}
+
+
+/* keeps particles behind */
+.nexspaceprojectPage2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(168,138,255,0.12),
+      transparent 40%
+    ),
+
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(216,207,255,0.10),
+      transparent 35%
+    );
+
+  pointer-events:none;
+  z-index:0;
+}
+
+
+/* walkthrough section spacing */
+.nexspaceprojectPage2 .nexspaceInsightSection {
+
+  margin-top: 3rem;
+  padding-top: 0;
+
+  position: relative;
+  z-index:2;
+
+  border-top:none;
+}
+
+
+/* glass card */
+.nexspaceprojectPage2 .nexspaceSectionBackground {
+
+  width:100%;
+
+  padding:4rem;
+
+  display:grid;
+  grid-template-columns:180px minmax(0,1fr);
+
+  gap:4rem;
+
+  background:
+    rgba(15,24,34,0.55);
+
+  backdrop-filter:
+    blur(40px);
+
+  -webkit-backdrop-filter:
+    blur(40px);
+
+  border-radius:40px;
+
+  border:
+    1px solid rgba(216,207,255,0.10);
+
+}
+
+
+/* heading */
+.nexspaceprojectPage2 .nexspaceSectionContent h2 {
+
+  margin-top:0;
+
+  font-size:
+    clamp(2rem,4vw,3rem);
+
+}
+
+
+/* paragraph */
+.nexspaceprojectPage2 .nexspaceSectionContent p {
+
+  max-width:650px;
+
+  margin-bottom:2rem;
+
+}
+
+
+/* video wrapper */
+.nexspaceprojectPage2 .nexspaceVideoContainer {
+
+  margin-top:3rem;
+
+  border-radius:30px;
+
+}
+
+
+/* actual video */
+.nexspaceprojectPage2 video {
+
+  width:100%;
+
+  max-height:750px;
+
+  display:block;
+
+  object-fit:contain;
+
+  border-radius:30px;
+
+}
+
+
+/* footer gap fix */
+.nexspaceprojectPage2 + .nexspaceWrapper2 {
+
+  margin-top:0;
+
+}
+
+
+/* mobile */
+@media(max-width:992px){
+
+  .nexspaceprojectPage2 {
+
+    padding:
+      4rem 5%;
+  }
+
+
+  .nexspaceprojectPage2 .nexspaceSectionBackground {
+
+    grid-template-columns:1fr;
+
+    padding:2rem;
+
+    gap:2rem;
+
+  }
+
+}
+/* =========================
+   nexspace LOGO TILE
+========================= */
+
+.nexspaceImageRow {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+ 
+.nexspaceLogoSquare {
+  width: 260px;
+  height: 260px;
+
+  object-fit: contain;
+
+  display: block;
+
+  padding: 1rem;
+
+  border-radius: 32px;
+
+  background: rgba(15, 24, 34, 0.55);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(216,207,255,0.18);
+
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.nexspaceLogoSquare:hover {
+  transform: translateY(-8px);
+  border-color: var(--nexspace-purple);
+}
+
+.nexspaceHeroMockupWrapper {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.nexspaceImageWrapper img,
+.nexspaceSceneImage img,
+.nexspacePartnershipImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+
+.nexspaceSceneBlock,
+.nexspaceFeatureBlock,
+.nexspaceCollabSection,
+.nexspaceFeatureHighlight {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nexspaceOutcomephoto {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  margin-top: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nexspaceOutcomephoto iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Image Grid Components */
+.nexspaceInstaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.nexspaceInstaCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Branding Logos Row */
+.nexspaceImageRow {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.nexspaceLogoSquare {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Color Brand Swatches Grid */
+.nexspace-color-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.nexspace-swatch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nexspace-swatch-block {
+  width: 100%;
+  height: 100px;
+  border-radius: 6px;
+}
+
+.nexspace-swatch-hex {
+  font-family: monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.nexspace-swatch-name {
+  font-size: 0.8rem;
+  color: #d8cfff;
+  line-height: 1.4;
+}
+
+/* Image Grid Components */
+.nexspaceInstaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.nexspaceInstaCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Branding Logos Row */
+.nexspaceImageRow {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.nexspaceLogoSquare {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Color Brand Swatches Grid */
+.nexspace-color-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.nexspace-swatch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nexspace-swatch-block {
+  width: 100%;
+  height: 100px;
+  border-radius: 6px;
+}
+
+.nexspace-swatch-hex {
+  font-family: monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.nexspace-swatch-name {
+  font-size: 0.8rem;
+  color: #d8cfff;
+  line-height: 1.4;
+}

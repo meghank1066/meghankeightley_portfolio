@@ -1,0 +1,834 @@
+/* =========================================================
+   NEXSPACE RESPONSIVE OVERRIDES
+   iPhone + iPad Optimisation
+========================================================= */
+
+
+/* Large tablets + smaller laptops */
+@media (max-width: 1200px) {
+
+  .nexspaceprojectPage,
+  .nexspaceprojectPage2 {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+
+  .nexspaceprojectHero {
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+
+  .nexspaceSectionBackground {
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+
+  .nexspaceImageWrapper img {
+    max-width: 100%;
+  }
+
+
+  .nexspaceAppIcons img {
+    height: 180px;
+  }
+
+
+  .nexspaceTitleLogo {
+    width: 330px;
+  }
+
+}
+
+
+
+/* =========================================================
+   iPad Portrait + Smaller Tablets
+========================================================= */
+
+@media (max-width: 992px) {
+
+
+  .nexspaceprojectPage,
+  .nexspaceprojectPage2 {
+
+    padding:
+      5rem 5% 6rem;
+
+  }
+
+
+
+  .nexspaceprojectHero {
+
+    flex-direction: column;
+
+    padding: 2.5rem;
+
+    border-radius: 32px;
+
+    gap: 3rem;
+
+  }
+
+
+
+  .nexspaceheroLeft {
+
+    max-width: 100%;
+
+  }
+
+
+
+  .nexspaceTitleLogo {
+
+    width: 300px;
+
+    margin-left: 0;
+
+  }
+
+
+
+  .nexspaceprojectDescription {
+
+    font-size: 1.05rem;
+
+    line-height: 1.7;
+
+  }
+
+
+
+  .nexspaceheroRight {
+
+    width:100%;
+
+    min-width:0;
+
+  }
+
+
+
+  .nexspaceSectionBackground {
+
+    grid-template-columns:1fr;
+
+    padding:2.5rem;
+
+    gap:2rem;
+
+    border-radius:32px;
+
+  }
+
+
+
+  .nexspaceSectionLabel {
+
+    width:auto;
+
+    padding-bottom:1rem;
+
+  }
+
+
+
+  .nexspaceSectionContent h2 {
+
+    font-size:2rem;
+
+  }
+
+
+
+  .nexspaceSectionContent p {
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+  }
+
+
+
+  .nexspaceImageGrid {
+
+    grid-template-columns:1fr;
+
+  }
+
+
+
+  .nexspaceMainShowcase {
+
+    padding:
+      60px 25px 20px;
+
+    border-radius:30px;
+
+  }
+
+
+
+  .nexspaceAppIcons img {
+
+    height:150px;
+
+  }
+
+
+
+  .nexspaceHeroYear {
+
+    font-size:1.2rem;
+
+    margin-bottom:3rem;
+
+  }
+
+
+
+  .nexspaceImageWrapper {
+
+    padding-bottom:5%;
+
+  }
+
+
+
+  .nexspaceImageWrapper img {
+
+    border-radius:25px;
+
+  }
+
+
+
+  .nexspaceVideoContainer,
+  .nexspaceVideoContainer video {
+
+    border-radius:25px;
+
+  }
+
+
+
+  .nexspaceplaceholderImage {
+
+    height:550px;
+
+    border-radius:30px;
+
+  }
+
+
+
+}
+
+
+
+/* =========================================================
+   iPhone Landscape + Small Tablets
+========================================================= */
+
+@media (max-width: 768px) {
+
+
+
+  .nexspaceprojectPage,
+  .nexspaceprojectPage2 {
+
+    padding:
+      4rem 4% 5rem;
+
+  }
+
+
+
+  .nexspaceprojectHero {
+
+    padding:2rem;
+
+    border-radius:25px;
+
+  }
+
+
+
+  .nexspaceTitleLogo {
+
+    width:240px;
+
+  }
+
+
+
+  .nexspaceprojectTag {
+
+    font-size:.7rem;
+
+    letter-spacing:3px;
+
+  }
+
+
+
+  .nexspaceprojectDescription {
+
+    font-size:.95rem;
+
+  }
+
+
+
+  .nexspaceSectionBackground {
+
+    padding:2rem;
+
+    border-radius:25px;
+
+  }
+
+
+
+  .nexspaceOverviewSection,
+  .nexspaceFeaturesSection,
+  .nexspaceDevelopmentSection,
+  .nexspaceOutcomeSection,
+  .nexspaceInsightSection,
+  .nexspaceDesignSection,
+  .nexspaceContributionSection {
+
+    margin-top:5rem;
+
+    padding-top:2rem;
+
+  }
+
+
+
+  .nexspaceSectionContent h2 {
+
+    font-size:1.6rem;
+
+    margin-bottom:1.5rem;
+
+  }
+
+
+
+  .nexspaceSectionContent p {
+
+    font-size:.95rem;
+
+  }
+
+
+
+  .nexspaceQuoteBlock {
+
+    padding:1.5rem;
+
+  }
+
+
+
+  .nexspaceImageGrid {
+
+    gap:1rem;
+
+  }
+
+
+
+  .nexspace-color-row {
+
+    grid-template-columns:1fr;
+
+  }
+
+
+
+  .nexspace-swatch {
+
+    min-width:0;
+
+  }
+
+
+
+  .nexspaceLogoSquare {
+
+    width:120px;
+
+    height:120px;
+
+  }
+
+
+
+  .nexspaceImageRow {
+
+    gap:1rem;
+
+  }
+
+
+
+  .nexspaceFinalShowcaseImage {
+
+    width:100%;
+
+    border-radius:18px;
+
+  }
+
+
+
+  .nexspaceVideoContainer {
+
+    margin-top:2rem;
+
+  }
+
+
+
+  .nexspaceVideoContainer video {
+
+    max-height:none;
+
+  }
+
+
+
+}
+
+
+
+/* =========================================================
+   iPhone Specific
+========================================================= */
+
+@media (max-width: 480px) {
+
+
+
+  .nexspaceprojectPage,
+  .nexspaceprojectPage2 {
+
+    padding:
+      3rem 1rem 4rem;
+
+  }
+
+
+
+  .nexspaceprojectHero {
+
+    padding:1.5rem;
+
+    border-radius:22px;
+
+  }
+
+
+
+  .nexspaceTitleLogo {
+
+    width:190px;
+
+  }
+
+
+
+  .nexspaceHeroHeader h2 {
+
+    font-size:2.5rem;
+
+  }
+
+
+
+  .nexspaceHeroYear {
+
+    font-size:1rem;
+
+    letter-spacing:2px;
+
+  }
+
+
+
+  .nexspaceMainShowcase {
+
+    padding:
+      45px 15px 15px;
+
+    border-radius:22px;
+
+  }
+
+
+
+  .nexspaceAppIcons img {
+
+    height:100px;
+
+  }
+
+
+
+  .nexspaceTagline {
+
+    font-size:.95rem;
+
+    margin-bottom:25px;
+
+  }
+
+
+
+  .nexspaceSectionBackground {
+
+    padding:1.5rem;
+
+    border-radius:22px;
+
+  }
+
+
+
+  .nexspaceSectionContent li {
+
+    padding-left:1.3rem;
+
+  }
+
+
+
+  .nexspaceplaceholderImage {
+
+    height:350px;
+
+    font-size:1.2rem;
+
+    border-radius:22px;
+
+  }
+
+
+
+  .nexspaceOutcomephoto {
+
+    border-radius:20px;
+
+  }
+
+
+
+  .nexspaceFooter {
+
+    padding:3rem 1rem;
+
+  }
+
+
+
+}
+
+
+
+/* =========================================================
+   Prevent iOS Horizontal Overflow
+========================================================= */
+
+.nexspaceprojectPage,
+.nexspaceprojectPage2,
+.nexspaceSectionBackground,
+.nexspaceMainShowcase,
+.nexspaceVideoContainer,
+.nexspaceImageWrapper,
+.nexspaceHeroMockupWrapper {
+
+  max-width:100%;
+
+  overflow-x:hidden;
+
+}
+
+
+
+img,
+video,
+iframe {
+
+  max-width:100%;
+
+  height:auto;
+
+}
+
+
+
+/* iOS Safari glass fix */
+
+@supports (-webkit-touch-callout:none) {
+
+
+  .nexspaceSectionBackground,
+  .nexspaceMainShowcase,
+  .nexspaceprojectHero {
+
+    -webkit-backdrop-filter:
+      blur(35px);
+
+  }
+
+
+}
+
+/* =========================================================
+   NEXSPACE WALKTHROUGH RESPONSIVE FIXES
+========================================================= */
+
+
+/* Desktop default improvements */
+.nexspaceprojectPage2 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.nexspaceprojectPage2 .nexspaceSectionBackground {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.nexspaceVideoContainer {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.nexspaceVideoContainer video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+
+/* =========================================================
+   TABLETS / IPAD
+========================================================= */
+
+@media (max-width: 992px) {
+
+
+  .nexspaceprojectPage2 {
+
+    padding:
+      5rem 5% 6rem;
+
+  }
+
+
+  .nexspaceprojectPage2 .nexspaceSectionBackground {
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    padding: 2.5rem;
+
+    border-radius: 32px;
+
+  }
+
+
+  .nexspaceprojectPage2 .nexspaceSectionLabel {
+
+    width: fit-content;
+
+    padding-bottom: 1rem;
+
+    border-bottom:
+      1px solid rgba(121,216,206,.15);
+
+  }
+
+
+  .nexspaceprojectPage2 .nexspaceSectionContent h2 {
+
+    font-size:
+      clamp(1.8rem, 5vw, 2.5rem);
+
+    line-height: 1.2;
+
+  }
+
+
+  .nexspaceprojectPage2 .nexspaceSectionContent p {
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+  }
+
+
+  .nexspaceVideoContainer {
+
+    margin-top: 2rem;
+
+    border-radius: 25px;
+
+  }
+
+
+  .nexspaceVideoContainer video {
+
+    border-radius: 25px;
+
+  }
+
+
+}
+
+
+
+
+/* =========================================================
+   MOBILE IPHONE
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+  .nexspaceprojectPage2 {
+
+    padding:
+      3rem 1rem 4rem;
+
+  }
+
+
+
+  .nexspaceprojectPage2 .nexspaceSectionBackground {
+
+    padding: 1.5rem;
+
+    border-radius: 22px;
+
+    gap: 1.5rem;
+
+  }
+
+
+
+  .nexspaceprojectPage2 .nexspaceSectionLabel {
+
+    font-size: .7rem;
+
+    letter-spacing: 2px;
+
+  }
+
+
+
+  .nexspaceprojectPage2 .nexspaceSectionContent h2 {
+
+    font-size: 1.6rem;
+
+    margin-bottom: 1rem;
+
+  }
+
+
+
+  .nexspaceprojectPage2 .nexspaceSectionContent p {
+
+    font-size: .95rem;
+
+    line-height: 1.6;
+
+  }
+
+
+
+  .nexspaceVideoContainer {
+
+    margin-top: 1.5rem;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+  }
+
+
+
+  .nexspaceVideoContainer video {
+
+    width:100%;
+
+    height:auto;
+
+    border-radius:18px;
+
+  }
+
+
+
+  .nexspaceFooter {
+
+    padding:
+      3rem 1rem;
+
+  }
+
+
+}
+
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 390px) {
+
+
+  .nexspaceprojectPage2 {
+
+    padding-left: .75rem;
+
+    padding-right: .75rem;
+
+  }
+
+
+
+  .nexspaceprojectPage2 .nexspaceSectionBackground {
+
+    padding:1.25rem;
+
+  }
+
+
+
+  .nexspaceprojectPage2 .nexspaceSectionContent h2 {
+
+    font-size:1.4rem;
+
+  }
+
+
+
+}

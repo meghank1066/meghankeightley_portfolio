@@ -731,7 +731,7 @@ export default function SporexPage() {
 
 </section>
 
-<section className="sporexOutcomeSection">
+{/* <section className="sporexOutcomeSection">
   <div className="sporexSectionBackground">
 
     <div className="sporexSectionLabel">
@@ -767,7 +767,7 @@ export default function SporexPage() {
     </div>
 
   </div>
-</section>
+</section> */}
 
 <section className="sporexOutcomeSection">
   <div className="sporexSectionBackground">
