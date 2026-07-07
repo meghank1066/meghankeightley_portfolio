@@ -11,7 +11,14 @@ const projects = [
     image: "/images/sporex_display.png",
     github: "https://github.com/...",
     tech: ["React", "Node.js", "MongoDB"]
-  },
+  },  {
+  slug: "nexspace-vr",
+  title: "NexSpace VR",
+  description:
+    "An immersive virtual reality experience built for Meta Quest using Unity and C#. Worked as a C# Developer, Creative Director and Asset Manager, implementing interactive features, directing the project's creative vision and managing the integration and optimisation of 3D assets across the application.",
+   image: "/images/nexspace/nexspace-cover2.png",
+  category: "Virtual Reality"
+},
   {
     slug: "velora-dublin-bike-app",
     title: "Velora – Dublin Bike Mobile App",
@@ -20,16 +27,9 @@ const projects = [
     image: "/images/velora_final.png",
     github: "https://github.com/...",
     tech: ["Swift", "MapKit", "Firebase"]
-  },
+  }
 
-  {
-  slug: "nexspace-vr",
-  title: "NexSpace VR",
-  description:
-    "An immersive virtual reality experience built for Meta Quest using Unity and C#. Worked as a C# Developer, Creative Director and Asset Manager, implementing interactive features, directing the project's creative vision and managing the integration and optimisation of 3D assets across the application.",
-   image: "/images/nexspace/nexspace-cover2.png",
-  category: "Virtual Reality"
-},
+
   // {
   //   slug: "style-forecast-weather-api",
   //   title: "Style Forecast – API",
