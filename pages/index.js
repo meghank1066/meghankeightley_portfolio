@@ -364,7 +364,7 @@ It’s why I build. Design and development become a way of thinking in practice:
         </section>
   
         <section id="projects" className="projectsSection">
-
+<h2 className="caseStudiesHeading">Featured Projects</h2>
   <div className="projectsList">
 
     {projects.map((project) => (

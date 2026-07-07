@@ -49,7 +49,8 @@ export default function nexspacePage() {
   href="/nexspace/NexspaceWalkthrough"
 >
   Video Walkthrough
-</a>         </div>
+</a>
+         </div>
             </div>
 
          <div className="nexspaceheroRight">
@@ -871,16 +872,16 @@ export default function nexspacePage() {
         I also led the majority of user testing sessions, designing scenarios that prompted realistic user behaviour, particularly around image capture for mould detection. By observing how users photographed and interacted with the scanning feature, I identified key points of user error and helped refine the experience to reduce mis-scans and improve overall reliability of results.
       </p>
 
-      <div className="nexspaceContributionGrid">
+      <div className="sporexContributionGrid">
 
-  <div className="nexspaceContributionCard">
+  <div className="sporexContributionCard">
     <img
       src="/images/nexspace/meinlab.png"
       alt="My contribution highlight"
     />
   </div>
 
-  <div className="nexspaceContributionCard">
+  <div className="sporexContributionCard">
    <img src="/images/nexspace/working.jpg"
       alt="My contribution highlight"
     />
