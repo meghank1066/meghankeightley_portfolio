@@ -44,9 +44,9 @@ export default function nexspacePage() {
                 <a className="nexspace-hero-link" href="https://github.com/meghank1066/NexSpaceVR-HDRP.git" target="_blank" rel="noopener noreferrer">
                   View The Code
                 </a>
-  <a 
+<a 
   className="nexspace-hero-link" 
-  href="/nexspace/NexspaceWalkthrough"
+  href="/nexspace/nexspaceWalkthrough"
 >
   Video Walkthrough
 </a>
