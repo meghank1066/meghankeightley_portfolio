@@ -22,6 +22,7 @@ const Header = ({ className = "" }) => {
 
   return (
     <nav className={`navbar ${className}`}>
+      
       {/* <a href={isHome ? "#home" : "/#home"}>Home</a> */}
 
       <a href={isHome ? "#about" : "/#about"}>

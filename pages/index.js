@@ -123,15 +123,18 @@ export default function Home() {
       {isMobile === false && <PetalScene />}
  
       <Head>
-        <title>{data.name}</title>
+        <title>{data.name}</title> 
+        <link rel="icon" type="image/png" href="/images/portfoliologorm.png" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
+       
       </Head>
       <div>
         <Header 
           scrollToSection={scrollToSection}
+          logoSrc="/images/portfoliologodm.png"
         />
         <section id="home" className="hero-section">
           <div className="hero-text">
