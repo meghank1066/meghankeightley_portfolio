@@ -29,26 +29,6 @@ const projects = [
     tech: ["Swift", "MapKit", "Firebase"]
   }
 
-
-  // {
-  //   slug: "style-forecast-weather-api",
-  //   title: "Style Forecast – API",
-  //   description:
-  //     "A weather-powered application that integrates external APIs to provide personalised outfit recommendations based on local conditions and forecasts.",
-  //   image: "/projects/styleforecast.png",
-  //   github: "https://github.com/...",
-  //   tech: ["React", "Weather API", "JavaScript"]
-  // },
-
-  // {
-  //   slug: "little-star-app",
-  //   title: "Little Star – Education App Design",
-  //   description:
-  //     "A user-centred UX/UI design project created in Figma, focused on improving communication, scheduling and daily activity tracking for parents and childcare providers.",
-  //   image: "/projects/littlestaracademy.png",
-  //   github: "",
-  //   tech: ["Figma", "UX Research", "Prototyping"]
-  // }
 ];
 // case studies
 const casestudies = [
