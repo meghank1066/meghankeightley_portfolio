@@ -34,6 +34,7 @@ const App = ({ Component, pageProps }) => {
   enableSystem={false}
 >
   <Component {...pageProps} />
+  <Analytics />
 </ThemeProvider>
   );
 };
