@@ -124,7 +124,7 @@ export default function Home() {
  
       <Head>
         <title>{data.name}</title> 
-        <link rel="icon" type="image/png" href="/images/portfoliologorm2.png" />
+        <link rel="icon" type="image/png" href="/images/portfolio-logo.png" />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
