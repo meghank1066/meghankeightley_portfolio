@@ -19,8 +19,8 @@ import MoonScene from "../components/MoonScene";
 import useMobileDevice from "../hooks/useMobileDevice";
 // Local Data
 import data from "../data/portfolio.json";
-import { projects, casestudies } from "../data/projectsretail";
-import skillsData from "../data/skillsretail.json";
+import { projects, casestudies } from "../data/projects";
+import skillsData from "../data/skills.json";
 
 export default function Home() {
   // Ref
@@ -41,13 +41,13 @@ export default function Home() {
 
   // Handle Button Click
   const buttonNames = [
-  "All",
-  "Customer Experience",
-  "Retail",
-  "Working Style",
-  "Fashion & Creativity",
-  "Retail Operations",
-];
+    "All",
+    "Frontend",
+    "Backend",
+    "Tools",
+    "Design",
+    "Testing",
+  ];
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);
   };
@@ -88,37 +88,33 @@ export default function Home() {
     scale3d(1,1,1)
   `;
   };
+  const renderSkillIcons = (skills) => {
+    return skills.map((skill) => (
+      <div key={skill.name} className="skillIcon">
+        <i className={skill.icon}></i>
+        {skill.name}
+      </div>
+    ));
+  };
+  const renderAllSkills = () => {
+    const allSkills = [
+      ...skillsData.frontend,
+      ...skillsData.backend,
+      ...skillsData.tools,
+    ];
 
-const renderSkillIcons = (skills) => {
-  return skills.map((skill) => (
-    <div key={skill.name} className="skillIcon">
-      {skill.icon && <i className={skill.icon}></i>}
-      {skill.name}
-    </div>
-  ));
-};
+    return renderSkillIcons(allSkills);
+  };
 
-const renderAllSkills = () => {
-  const allSkills = [
-    ...skillsData.customerService,
-    ...skillsData.retail,
-    ...skillsData.teamwork,
-    ...skillsData.fashion,
-    ...skillsData.tools,
-  ];
+  console.log("isMobile:", isMobile);
 
-  return renderSkillIcons(allSkills);
-};
-
-console.log("isMobile:", isMobile);
-
-useIsomorphicLayoutEffect(() => {
-  stagger(
-    [textOne.current, textTwo.current, textThree.current, textFour.current],
-    { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-    { y: 0, x: 0, transform: "scale(1)" },
-  );
-}, []);
+  useIsomorphicLayoutEffect(() => {
+    stagger(
+      [textOne.current, textTwo.current, textThree.current, textFour.current],
+      { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
+      { y: 0, x: 0, transform: "scale(1)" },
+    );
+  }, []);
 
   return (
     <div className={`relative ${data.showCursor ? "cursor-none" : ""}`}> 
@@ -148,21 +144,21 @@ useIsomorphicLayoutEffect(() => {
               Keightley
             </h1>
 
-            <p>Retail Sales Associate</p>
+            <p>Software Engineer</p>
             <div className="socialButtons">
-              <a href="/cv/MeghanKeightley_UrbanOutfittersCV.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/cv/MeghanKeightley_CV.pdf" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/3589/3589055.png"
                   alt="CV"
                 />
               </a>
-{/* 
+
               <a href="https://github.com/meghank1066" target="_blank" rel="noopener noreferrer">
                 <img
                   src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png"
                   alt="GitHub"
                 />
-              </a> */}
+              </a>
 
               <a
                 href="https://www.linkedin.com/in/meghan-k-01265a2b9/"
@@ -210,20 +206,19 @@ useIsomorphicLayoutEffect(() => {
           </div>
         )}{" "} {!isMobile && ( 
         <section className="philosophySection">
-         <div className="philosophyContent">
-  <h2 className="philosophyTitle">
-    I believe fashion is a way of expressing who you are before you say a word.
-  </h2>
-
-  <p className="philosophySubtitle">
-    “If you want a sense of self, make something.” This is a principle I
-    return to in both fashion and creative work. I love how clothing, styling
-    and visual details can transform how someone feels and help them express
-    their individuality. I’m drawn to fashion retail because it brings
-    creativity, people and self-expression together, creating spaces where
-    customers can discover something that feels uniquely them.
-  </p>
-</div>
+          <div className="philosophyContent">
+            <h2 className="philosophyTitle">
+            I make digital spaces where ideas take shape and are understood.
+            </h2>
+             
+           <p className="philosophySubtitle">
+  “If you want a sense of self, make something.” This is a principle I return to in my work. Identity is not something found but something built through creation decision and repetition. Each design and line of code becomes a trace of thought made visible turning what is internal into something tangible tested and real.
+</p>
+             
+{/* <p>
+It’s why I build. Design and development become a way of thinking in practice: translating ideas into interfaces and  in doing so, refining both the work and myself. 
+</p> */}
+          </div>
         </section>
          ) }
         <section id="about" className="about-section">
@@ -236,36 +231,36 @@ useIsomorphicLayoutEffect(() => {
               <h1 className="about-content">
                 I'm Meghan.
                 <br></br>
-               I'm a 22-year-old creative and fashion enthusiast with a passion for style, culture and self-expression.
+                I'm a 22-year-old aspiring graduate software engineer
               </h1>
-<p>
-  I have several years of experience in fashion retail, working across both
-  Penneys Drogheda and Primark Dundalk since 2023. Working in busy retail
-  environments has given me a strong understanding of customer service,
-  teamwork and the fast-paced nature of fashion retail. I enjoy helping
-  customers find pieces that suit their individual style while creating a
-  welcoming and positive experience in store.
-</p>
 
-<p>
-  Fashion and creativity have always been a major part of my interests.
-  During my time at Dundalk Institute of Technology, I founded the college's
-  first Fashion Society, bringing students together through fashion, trends,
-  creativity and community. I love discovering new styles, following fashion
-  culture and thinking about how clothing and visual presentation can help
-  people express their individuality.
-</p>
+              <p>
+                I studied Software Engineering at Dundalk Institute of
+                Technology and hope to pursue a master's degree to further
+                specialise in the areas I'm most passionate about. During my
+                studies, I spent six months in Antwerp on Erasmus, where I
+                explored user experience design within virtual reality
+                environments. That experience sparked a particular interest in
+                emerging technologies, especially haptic technology and how
+                users interact with digital worlds.
+              </p>
 
-<p>
-  Alongside fashion, I studied Software Engineering and have developed a
-  strong interest in design and digital experiences. My background has taught
-  me to approach creative problems from different perspectives, combining
-  attention to detail with an understanding of how people interact with
-  products, spaces and brands. In my free time, I enjoy travelling, content
-  creation, video editing, reading and exploring fashion and creative
-  inspiration.
-</p>
-</div>
+              <p>
+                Beyond technology, I'm a strong design enthusiast with interests
+                that extend far beyond software. I founded my college's first
+                Fashion Society, combining my love for creativity, community
+                building and design. Alongside my studies, I worked as a Sales
+                Assistant in Primark for three years, where I developed strong
+                communication and teamwork skills in a fast-paced environment.
+              </p>
+
+              <p>
+                In my free time, I enjoy cycling, travelling, content creation,
+                video editing, reading, cooking and staying active. I love
+                learning new things and I'm always looking for opportunities to
+                combine creativity, design and technology in meaningful ways.
+              </p>
+            </div>
 
             {isMobile === false && (
               <div className="about-side">
@@ -280,101 +275,96 @@ useIsomorphicLayoutEffect(() => {
                     className="about-photo"
                   />
                 </div>
-<div className="education-item">
-  <div className="education-logo trinity-logo">
-    <img
-      src="/images/career/tcdlogo.png"
-      alt="Trinity College Dublin Logo"
-      className="education-logo penneys-logo"
-    />
-  </div>
 
-  <div className="education-details">
-    <h3>Trinity College Dublin</h3>
-    <p>MSc Interactive Digital Media</p>
-  </div>
+                <div className="education-card">
+                  <div className="education-header">
+                    {/* <span className="education-icon">🎓</span> */}
 
-  <span className="education-date">2026 — 2027</span>
-</div>
-        <div className="education-item">
-  <div className="education-logo penneys-logo">
-    <img
-      src="/images/career/penneys.png"
-      alt="Penneys Logo"
-      className="education-logo-img penneys-logo-img"
-    />
-  </div>
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="education-icon"
+                      aria-hidden="true"
+                    >
+                      <path d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z" />
 
-  <div className="education-details">
-    <h3>Penneys Drogheda</h3>
-    <p>Permanent Sales Assistant</p>
-  </div>
+                      <path d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5" />
+                    </svg>
 
-  <span className="education-date">2023 — 2025</span>
-</div>
+                    <h2>work &amp; education</h2>
+                  </div>
 
-<div className="education-item">
-  <div className="education-logo penneys-logo">
-    <img
-      src="/images/career/penneys.png"
-      alt="Penneys Logo"
-      className="education-logo-img penneys-logo-img"
-    />
-  </div>
+                  <div className="education-item">
+                    <div className="education-logo">
+                      <img
+                        src="/models/dkit.jpg"
+                        alt="DKIT Logo"
+                        className="education-logo-img"
+                      />
+                    </div>
 
-  <div className="education-details">
-    <h3>Penneys Dundalk</h3>
-    <p>Seasonal Sales Assistant</p>
-  </div>
+                    <div className="education-details">
+                      <h3>Dundalk Institute of Technology</h3>
 
-  <span className="education-date">2026 — Present</span>
-</div>
-</div>
+                      <p>BSc (Hons) in Computing in Software Development</p>
+                    </div>
+
+                    <span className="education-date">2022 — 2026</span>
+                  </div>
+
+                  <div className="education-item">
+                    <div className="education-logo">
+                      <img
+                        src="/models/aphogeschool.png"
+                        alt="AP Logo"
+                        className="education-logo-img"
+                      />
+                    </div>
+
+                    <div className="education-details">
+                      <h3>AP University Antwerp</h3>
+
+                      <p>Erasmus Exchange Programme</p>
+                    </div>
+
+                    <span className="education-date">2025</span>
+                  </div>
+                </div>
+              </div>
             )}
           </div>
         </section>
         <div className="skillsColumn">
-  <h3 className="headingText">My skills</h3>
-  {isMobile === false && <BridgeScene />}
-</div>
-
-<section className="about-section">
-  <div className="skillsContent">
-    <div className="skillsButtonsContainer">
-      {buttonNames.map((buttonName) => (
-        <button
-          key={buttonName}
-          className={`${theme === "light" ? "light" : "dark"} ${
-            selectedButton === buttonName ? "selected" : ""
-          }`}
-          onClick={() => handleButtonClick(buttonName)}
-        >
-          {buttonName}
-        </button>
-      ))}
-    </div>
-
-    <div className="skillsIconsContainer">
-      {selectedButton === "All" && renderAllSkills()}
-
-      {selectedButton === "Customer Experience" &&
-        renderSkillIcons(skillsData.customerService)}
-
-      {selectedButton === "Retail" &&
-        renderSkillIcons(skillsData.retail)}
-
-      {selectedButton === "Working Style" &&
-        renderSkillIcons(skillsData.teamwork)}
-
-      {selectedButton === "Fashion & Creativity" &&
-        renderSkillIcons(skillsData.fashion)}
-
-      {selectedButton === "Retail Operations" &&
-        renderSkillIcons(skillsData.tools)}
-    </div>
-  </div>
-</section>
-     
+          {" "}
+          <h3 className="headingText">Technical skills</h3>
+          {isMobile === false && <BridgeScene />}
+        </div>
+        <section className="about-section">
+          <div className="skillsContent">
+            <div className="skillsButtonsContainer">
+              {buttonNames.map((buttonName) => (
+                <button
+                  key={buttonName}
+                  className={`${theme === "light" ? "light" : "dark"} ${selectedButton === buttonName ? "selected" : ""}`}
+                  onClick={() => handleButtonClick(buttonName)}
+                >
+                  {buttonName}
+                </button>
+              ))}
+            </div>
+            <div className="skillsIconsContainer">
+              {selectedButton === "All" && renderAllSkills()}
+              {selectedButton === "Frontend" &&
+                renderSkillIcons(skillsData.frontend)}
+              {selectedButton === "Backend" &&
+                renderSkillIcons(skillsData.backend)}
+              {selectedButton === "Tools" && renderSkillIcons(skillsData.tools)}
+              {selectedButton === "Testing" &&
+                renderSkillIcons(skillsData.testing)}
+              {selectedButton === "Design" &&
+                renderSkillIcons(skillsData.design)}
+            </div>
+          </div>
+        </section>
   
         <section id="projects" className="projectsSection">
 <h2 className="caseStudiesHeading">Featured Projects</h2>
@@ -426,7 +416,7 @@ useIsomorphicLayoutEffect(() => {
   </div>
 
 </section>
-        {/* <section id="case-studies" className="caseStudiesSection">
+        <section id="case-studies" className="caseStudiesSection">
           <h2 className="caseStudiesHeading">Projects</h2>
 
           <div className="caseStudiesGrid">
@@ -455,13 +445,14 @@ useIsomorphicLayoutEffect(() => {
               </Link>
             ))}
           </div>
-        </section> */}
+        </section>
         <section id="contact" className="contactSection">
           <div className="contactContent">
             <h2 className="contactHeading">Let's Work Together</h2>
 
             <p className="contactText">
-             Interested in fashion, retail and creating great customer experiences? I'd love to hear from you.
+              Interested in product design, UX research, or frontend
+              development? I'd love to hear from you.
             </p>
             <a
               href="mailto:megankeightley5@gmail.com"

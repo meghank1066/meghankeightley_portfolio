@@ -1,0 +1,693 @@
+/* =========================================================
+   DKIT FASHION SOCIETY (Scoped Slug Page Styles)
+   Navy + White Theme
+   ========================================================= */
+
+.fashionSocietyPageShell {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--fashion-navy, #041047);
+  background:
+    radial-gradient(
+      circle at 10% 15%,
+      rgba(4, 16, 71, 0.06),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 25%,
+      rgba(4, 16, 71, 0.05),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #041047 0%,
+      #0a1b63 25%,
+      #f8f9fd 65%,
+      #ffffff 100%
+    );
+}
+
+.fashionSocietyPageShell :root {
+  --fashion-navy: #041047;
+  --fashion-navy-light: #0a1b63;
+  --fashion-blue: #14276b;
+  --fashion-white: #ffffff;
+  --fashion-off-white: #f7f8fc;
+  --fashion-border: rgba(4, 16, 71, 0.12);
+  --fashion-muted: rgba(4, 16, 71, 0.65);
+}
+
+.fashionSocietyPageShell .fashionSocietyProjectPage {
+  min-height: 100vh;
+  padding: 8rem 18%;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyNav {
+  color: var(--fashion-navy, #041047);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(4, 16, 71, 0.12);
+  box-shadow: 0 10px 35px rgba(4, 16, 71, 0.06);
+}
+
+.fashionSocietyPageShell .fashionSocietyNav a {
+  color: var(--fashion-navy, #041047);
+}
+
+.fashionSocietyPageShell .fashionSocietyNav a:hover {
+  color: var(--fashion-blue, #14276b);
+}
+
+.fashionSocietyPageShell .fashionSocietyNav a::after {
+  background: var(--fashion-navy, #041047);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyProjectHero {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+
+  padding: 4rem;
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+
+  border: 1px solid var(--fashion-border, rgba(4, 16, 71, 0.12));
+  border-radius: 40px;
+
+  box-shadow: 0 25px 60px rgba(4, 16, 71, 0.08);
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroLeft {
+  max-width: 650px;
+}
+
+.fashionSocietyPageShell .fashionSocietyProjectTag {
+  color: var(--fashion-navy, #041047);
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.fashionSocietyPageShell .fashionSocietyProjectTitle {
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  line-height: 0.9;
+  margin: 1.5rem 0;
+
+  color: var(--fashion-navy, #041047);
+
+  letter-spacing: -0.05em;
+  font-weight: 700;
+}
+
+.fashionSocietyPageShell .fashionSocietyProjectDescription {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 570px;
+
+  color: rgba(4, 16, 71, 0.75);
+}
+
+
+/* =========================================================
+   HERO DETAILS
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyHeroRight {
+  min-width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  color: var(--fashion-navy, #041047);
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroRight h4 {
+  margin-bottom: 0.5rem;
+
+  color: var(--fashion-navy, #041047);
+
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroRight p {
+  color: rgba(4, 16, 71, 0.7);
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyHeroLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: var(--fashion-navy, #041047);
+  text-decoration: none;
+
+  padding-bottom: 0.25rem;
+
+  border-bottom: 1px solid rgba(4, 16, 71, 0.4);
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+
+  position: relative;
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroLink:hover {
+  color: var(--fashion-blue, #14276b);
+  border-bottom-color: var(--fashion-navy, #041047);
+  transform: translateY(-2px);
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroLink::after {
+  content: "↗";
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-left: 0.4rem;
+}
+
+
+/* =========================================================
+   HERO IMAGE / WEBSITE SHOWCASE
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyHeroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 70px 0 40px;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroHeader h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+  color: var(--fashion-navy, #041047);
+
+  margin-bottom: 8px;
+  letter-spacing: -0.04em;
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroYear {
+  font-size: 1.3rem;
+
+  color: var(--fashion-navy, #041047);
+
+  opacity: 0.65;
+
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.fashionSocietyPageShell .fashionSocietyHeroMockupWrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 1300px;
+
+  margin-top: 20px;
+}
+
+.fashionSocietyPageShell .fashionSocietyMainShowcase {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid var(--fashion-border, rgba(4, 16, 71, 0.12));
+  padding: 50px 40px 20px;
+  box-shadow: 0 20px 60px rgba(4, 16, 71, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.fashionSocietyPageShell .fashionSocietyMainShowcase:hover {
+  transform: translateY(-4px);
+}
+
+.fashionSocietyPageShell .fashionSocietyImageWrapper {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 2%;
+}
+
+.fashionSocietyPageShell .fashionSocietyImageWrapper img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 24px;
+  border: 1px solid rgba(4, 16, 71, 0.1);
+  box-shadow: 0 20px 50px rgba(4, 16, 71, 0.08);
+}
+
+.fashionSocietyPageShell .fashionSocietyWebsiteEmbed {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+
+/* =========================================================
+   SECTION SYSTEM
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyInsightSection,
+.fashionSocietyPageShell .fashionSocietyEventsSection,
+.fashionSocietyPageShell .fashionSocietyWebsiteSection,
+.fashionSocietyPageShell .fashionSocietyOutcomeSection {
+  width: 100%;
+
+  margin-top: 7rem;
+  padding-top: 3rem;
+
+  border-top: 1px solid rgba(4, 16, 71, 0.1);
+
+  position: relative;
+  z-index: 2;
+}
+
+.fashionSocietyPageShell .fashionSocietySectionBackground {
+  width: 100%;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.92) !important;
+
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+
+  border-radius: 40px;
+
+  border: 1px solid var(--fashion-border, rgba(4, 16, 71, 0.12));
+
+  padding: 4rem;
+
+  box-shadow: 0 25px 60px rgba(4, 16, 71, 0.07);
+
+  display: grid;
+
+  grid-template-columns: 180px minmax(0, 1fr);
+
+  gap: 4rem;
+}
+
+
+/* =========================================================
+   SECTION LABEL
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietySectionLabel {
+  color: rgba(4, 16, 71, 0.5) !important;
+
+  font-size: 0.8rem;
+
+  letter-spacing: 3px;
+
+  text-transform: uppercase;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SECTION CONTENT
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietySectionContent {
+  min-width: 0;
+}
+
+.fashionSocietyPageShell .fashionSocietySectionContent h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  color: var(--fashion-navy, #041047);
+
+  letter-spacing: -0.03em;
+
+  line-height: 1.15;
+}
+
+.fashionSocietyPageShell .fashionSocietySectionContent p {
+  max-width: 720px;
+
+  font-size: 1.1rem;
+
+  line-height: 1.9;
+
+  color: rgba(4, 16, 71, 0.75);
+
+  margin-bottom: 1.5rem;
+}
+
+
+/* =========================================================
+   EVENTS LIST
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietySectionContent ul {
+  list-style: none;
+
+  padding-left: 0;
+
+  margin-top: 2rem;
+}
+
+.fashionSocietyPageShell .fashionSocietySectionContent li {
+  position: relative;
+
+  padding-left: 1.75rem;
+
+  margin-bottom: 1.2rem;
+
+  line-height: 1.7;
+
+  color: rgba(4, 16, 71, 0.8);
+}
+
+.fashionSocietyPageShell .fashionSocietySectionContent li strong {
+  color: var(--fashion-navy, #041047);
+
+  font-weight: 700;
+}
+
+.fashionSocietyPageShell .fashionSocietySectionContent li::before {
+  content: "→";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  color: var(--fashion-navy, #041047);
+
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   WEBSITE IMAGE GRID
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyImageGrid {
+  width: 100%;
+
+  margin-top: 3rem;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 2rem;
+}
+
+.fashionSocietyPageShell .fashionSocietyImageGrid img {
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(4, 16, 71, 0.1);
+
+  box-shadow: 0 20px 50px rgba(4, 16, 71, 0.1);
+
+  transition: transform 0.3s ease;
+}
+
+.fashionSocietyPageShell .fashionSocietyImageGrid img:hover {
+  transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   EVENTS GALLERY - CENTERED, FULL HEIGHT, CLEAN BREAKOUT
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyEventsGallery {
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 60px auto 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 50px !important;
+}
+
+.fashionSocietyPageShell .fashionSocietyEventCard {
+  width: 100% !important;
+  max-width: 750px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.fashionSocietyPageShell .fashionSocietyEventCard img {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  border-radius: 16px !important;
+  box-shadow: 0 15px 40px rgba(4, 16, 71, 0.15) !important;
+  background-color: #ffffff;
+  padding: 8px;
+  border: 1px solid rgba(4, 16, 71, 0.12);
+}
+
+.fashionSocietyPageShell .fashionSocietyEventCard figcaption {
+  margin-top: 14px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--fashion-navy, #041047) !important;
+  text-align: center !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.fashionSocietyPageShell .fashionSocietyFooterWrapper {
+  position: relative;
+  z-index: 100;
+
+  background: var(--fashion-navy, #041047);
+}
+
+.fashionSocietyPageShell .fashionSocietyFooter {
+  position: relative;
+  z-index: 101;
+
+  background-color: var(--fashion-navy, #041047) !important;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+
+  padding: 4rem 2rem;
+}
+
+.fashionSocietyPageShell .fashionSocietyFooter,
+.fashionSocietyPageShell .fashionSocietyFooter p,
+.fashionSocietyPageShell .fashionSocietyFooter span,
+.fashionSocietyPageShell .fashionSocietyFooter h1,
+.fashionSocietyPageShell .fashionSocietyFooter h2,
+.fashionSocietyPageShell .fashionSocietyFooter h3,
+.fashionSocietyPageShell .fashionSocietyFooter h4 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.fashionSocietyPageShell .fashionSocietyFooter a {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.fashionSocietyPageShell .fashionSocietyFooter a:hover {
+  color: #ffffff !important;
+}
+
+.fashionSocietyPageShell .fashionSocietyFooterWrapper,
+.fashionSocietyPageShell .fashionSocietyFooterWrapper * {
+  background-color: var(--fashion-navy, #041047) !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .fashionSocietyPageShell .fashionSocietyProjectPage {
+    padding: 6rem 8%;
+  }
+}
+
+@media (max-width: 992px) {
+  .fashionSocietyPageShell .fashionSocietyProjectHero {
+    flex-direction: column;
+
+    gap: 3rem;
+
+    padding: 2.5rem;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyHeroRight {
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+  }
+
+  .fashionSocietyPageShell .fashionSocietySectionBackground {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    padding: 2.5rem;
+  }
+
+  .fashionSocietyPageShell .fashionSocietySectionLabel {
+    border-bottom: 1px solid rgba(4, 16, 71, 0.12);
+
+    padding-bottom: 0.75rem;
+
+    display: inline-block;
+
+    width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .fashionSocietyPageShell .fashionSocietyProjectPage {
+    padding: 4rem 4%;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyProjectHero {
+    padding: 2rem;
+
+    border-radius: 28px;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyProjectTitle {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+
+  .fashionSocietyPageShell .fashionSocietyProjectDescription {
+    font-size: 1rem;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyHeroRight {
+    grid-template-columns: 1fr;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyHeroContainer {
+    padding-top: 50px;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyMainShowcase {
+    padding: 25px 15px 10px;
+
+    border-radius: 28px;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyImageWrapper img {
+    border-radius: 18px;
+  }
+
+  .fashionSocietyPageShell .fashionSocietySectionBackground {
+    padding: 2rem;
+
+    border-radius: 28px;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyInsightSection,
+  .fashionSocietyPageShell .fashionSocietyEventsSection,
+  .fashionSocietyPageShell .fashionSocietyWebsiteSection,
+  .fashionSocietyPageShell .fashionSocietyOutcomeSection {
+    margin-top: 5rem;
+
+    padding-top: 2rem;
+  }
+
+  .fashionSocietyPageShell .fashionSocietySectionContent h2 {
+    font-size: 2rem;
+  }
+
+  .fashionSocietyPageShell .fashionSocietySectionContent p {
+    font-size: 1rem;
+
+    line-height: 1.8;
+  }
+
+  .fashionSocietyPageShell .fashionSocietyHeroYear {
+    margin-bottom: 2.5rem;
+  }
+}

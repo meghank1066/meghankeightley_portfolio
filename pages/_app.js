@@ -12,6 +12,7 @@ import "../styles/projectscss/styleforecast.css";
 import "../styles/projectscss/styleforecast-mobile.css";
 import "../styles/projectscss/nexspace.css";
 import "../styles/projectscss/nexspacemobile.css";
+import "../styles/projectscss/dkitfs.css";
 import "../styles/case-studies-css/nintendo.css";
 import "../styles/case-studies-css/nintendo-mobile.css";
 import "../styles/case-studies-css/evelynn.css";
@@ -22,6 +23,8 @@ import "../styles/resumecss/resume.css";
 import "../styles/case-studies-css/glamour-touch-salon.css";
 import "../styles/case-studies-css/glamour-touch-salon-mobile.css";
 import "../styles/resumecss/resume-mobile.css"; 
+
+
 import { ThemeProvider } from "next-themes";  
 import { Analytics } from "@vercel/analytics/next"
 

@@ -1,0 +1,116 @@
+{
+  "customerService": [
+    {
+      "name": "Customer Service",
+      "icon": ""
+    },
+    {
+      "name": "Customer Engagement",
+      "icon": ""
+    },
+    {
+      "name": "Product Knowledge",
+      "icon": ""
+    },
+    {
+      "name": "Customer Assistance",
+      "icon": ""
+    },
+    {
+      "name": "Handling Customer Queries",
+      "icon": ""
+    }
+  ],
+
+  "retail": [
+    {
+      "name": "Fashion Retail",
+      "icon": ""
+    },
+    {
+      "name": "Visual Merchandising",
+      "icon": ""
+    },
+    {
+      "name": "Stock Management",
+      "icon": ""
+    },
+    {
+      "name": "Replenishment",
+      "icon": ""
+    },
+    {
+      "name": "Till Operations",
+      "icon": ""
+    },
+    {
+      "name": "Fitting Rooms",
+      "icon": ""
+    }
+  ],
+
+  "teamwork": [
+    {
+      "name": "Teamwork",
+      "icon": ""
+    },
+    {
+      "name": "Communication",
+      "icon": ""
+    },
+    {
+      "name": "Time Management",
+      "icon": ""
+    },
+    {
+      "name": "Working Under Pressure",
+      "icon": ""
+    },
+    {
+      "name": "Problem Solving",
+      "icon": ""
+    }
+  ],
+
+  "fashion": [
+    {
+      "name": "Fashion Trends",
+      "icon": ""
+    },
+    {
+      "name": "Styling",
+      "icon": ""
+    },
+    {
+      "name": "Visual Presentation",
+      "icon": ""
+    },
+    {
+      "name": "Fashion & Culture",
+      "icon": ""
+    },
+    {
+      "name": "Creative Direction",
+      "icon": ""
+    }
+  ],
+
+  "tools": [
+    {
+      "name": "POS Systems",
+      "icon": ""
+    },
+    {
+      "name": "Card & Cash Handling",
+      "icon": ""
+    },
+    {
+      "name": "Stock Systems",
+      "icon": ""
+    },
+    {
+      "name": "Online Orders",
+      "icon": ""
+    }
+  ]
+}
