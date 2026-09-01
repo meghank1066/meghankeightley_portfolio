@@ -189,7 +189,8 @@ useIsomorphicLayoutEffect(() => {
           <div className="mobile-photo-section">
             <div className="photo-wrapper">
               <img
-                src="/images/headshot1.webp"
+                // src="/images/headshot1.webp"
+                src="/images/headshot2.png"
                 alt="Meghan"
                 className="about-photo"
               />
