@@ -7,11 +7,10 @@ const projects = [
     title: "DKIT Fashion Society",
     description:
       "Founded and led DKIT's first Fashion Society, creating a community centred around fashion, creativity and self-expression. Organised events and activities that brought students together while building the society's identity and presence within the college.",
-    image: "/images/career/dkit-fashion-society.png",
+    image: "/images/dkitfs/logonavy.jpg",
     category: "Fashion & Community",
   },
 ];
-
 // Case Studies
 const casestudies = [];
 
