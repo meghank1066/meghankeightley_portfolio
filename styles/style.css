@@ -1362,7 +1362,7 @@ canvas {
         1.4fr 0.8fr;
         color: white;
     gap: 8rem;
-    max-width: 1400px;
+    max-width: 2800px;
     margin: 0 auto;
 }
 
@@ -1456,7 +1456,7 @@ canvas {
 .education-card{
     margin-top: 40px; /* space below photo */
     padding: 40px;
-    width: 350px;
+    width: 400px;
     border-radius: 32px;
 
     background:

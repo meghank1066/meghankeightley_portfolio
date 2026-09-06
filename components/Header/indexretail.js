@@ -43,9 +43,9 @@ const Header = ({ className = "" }) => {
       <a href={isHome ? "#contact" : "/#contact"}>
         Contact
       </a>
-    <Link href="/resume/resume-meghan-keightley">
+    {/* <Link href="/resume/resume-meghan-keightley">
  Resume
-</Link>
+</Link> */}
  {/* {mounted && isMobile === false && (
   <button
     className="themeToggle"

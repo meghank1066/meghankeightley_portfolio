@@ -88,36 +88,72 @@
   ],
 
 
-  "design": [
-   {
-  "name": "Figma",
-  "icon": "devicon-figma-plain colored"
-},
-    {
-  "name": "Canva",
-  "icon": ""
-},
-    {
-      "name": "Adobe After Effects",
-      "icon": "adobe-aftereffects-original colored"
-    },
-    {
-      "name": "Adobe Illustrator",
-      "icon": "adobe-illustrator-original colored"
-    },
-    {
-      "name": "Blender",
-      "icon": "blender-original colored"
-    },
-     {
-  "name": "Prototyping",
-  "icon": ""
-},
+ "design": [
   {
-  "name": "Wireframing",
-  "icon": ""
-}
-  ],
+    "name": "Figma",
+    "icon": "devicon-figma-plain colored"
+  },
+  {
+    "name": "UX Research",
+    "icon": ""
+  },
+  {
+    "name": "User Personas",
+    "icon": ""
+  },
+  {
+    "name": "User Flows",
+    "icon": ""
+  },
+  {
+    "name": "Information Architecture",
+    "icon": ""
+  },
+  {
+    "name": "Wireframing",
+    "icon": ""
+  },
+  {
+    "name": "Prototyping",
+    "icon": ""
+  },
+  {
+    "name": "Usability Testing",
+    "icon": ""
+  },
+  {
+    "name": "User-Centred Design",
+    "icon": ""
+  },
+  {
+    "name": "Design Thinking",
+    "icon": ""
+  },
+  {
+    "name": "Interaction Design",
+    "icon": ""
+  },
+  {
+    "name": "UI Design",
+    "icon": ""
+  },
+  {
+    "name": "Canva",
+    "icon": ""
+  },
+  {
+    "name": "Adobe After Effects",
+    "icon": "adobe-aftereffects-original colored"
+  },
+  {
+    "name": "Adobe Illustrator",
+    "icon": "adobe-illustrator-original colored"
+  },
+  {
+    "name": "Blender",
+    "icon": "blender-original colored"
+  }
+],
   "tools": [
     {
       "name": "GitHub",
@@ -136,4 +172,6 @@
       "icon": "devicon-vmware-plain colored"
     }
   ]
+
+  
 }

@@ -12,7 +12,7 @@ export default function ResumePage() {
         <main className="resumePage">
           {/* HEADER SECTION */}
           <header className="resumeHeaderSection">
-            <span className="resumeTopTag">Software Engineer · UI/UX Designer</span>
+            <span className="resumeTopTag"> Product Designer · UX/UI Designer · Software Engineer </span>
             
             {/* Added container row to snap button nicely right next to your name */}
             <div className="resumeTitleRow">
@@ -47,9 +47,24 @@ export default function ResumePage() {
               <span>Dublin, Ireland</span>
 
               <div className="resumeLinksRow">
-                <a className="resume-hero-link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-                <a className="resume-hero-link" href="#" target="_blank" rel="noreferrer">GitHub</a>
-              </div>
+  <a
+    className="resume-hero-link"
+    href="https://www.linkedin.com/in/meghankeightley/"
+    target="_blank"
+    rel="noreferrer"
+  >
+    LinkedIn
+  </a>
+
+  <a
+    className="resume-hero-link"
+    href="https://github.com/meghank1066"
+    target="_blank"
+    rel="noreferrer"
+  >
+    GitHub
+  </a>
+</div>
             </div>
           </header>
 
@@ -57,114 +72,284 @@ export default function ResumePage() {
           <section className="resumeMeghanSection">
             <h2>Profile</h2>
             <div className="resumeMeghanContent">
-              <p>
-                First-Class (2.1) Software Development graduate combining a core computer science foundation with a specialisation in frontend interfaces and user-centered digital systems. 
-                Proven capability in driving agile, international team projects and engineering cross-platform applications from research to production. Currently seeking a graduate opportunity or advanced MSc research program focusing on the intersection of Interactive Media, UX Design and  Creative Computing.
-              </p>
+              <p> Product Designer and Software Development graduate currently pursuing an
+      MSc in Interactive Digital Media at Trinity College Dublin. I combine
+      user-centred design, interaction design and frontend development to create
+      intuitive, accessible and technically feasible digital products. My
+      experience spans UX research, user journeys, wireframing, prototyping,
+      visual design and React development, allowing me to bridge the gap between
+      product design and implementation.</p>
             </div>
           </section>
 
           {/* TECHNICAL SKILLS */}
-          <section className="resumeMeghanSection">
-            <h2>Technical Skills</h2>
-            <div className="resumeSectionContent skillsGrid">
-              <p><strong>Languages:</strong> JavaScript (ES6+), TypeScript, Swift, Kotlin, Java, Python, C#, C++, SQL</p>
-              <p><strong>Frameworks & Web Architecture:</strong> React, Next.js, ASP.NET Core, Node.js, RESTful APIs, Entity Framework, Docker</p>
-              <p><strong>Frontend & UI/UX Design:</strong> HTML5, CSS3/SCSS, Tailwind CSS, SwiftUI, UIKit, Wireframing, High-Fidelity Prototyping, Usability Testing, User Journeys, WCAG Accessibility</p>
-              <p><strong>Design & Creative Media:</strong> Figma, Figma AI, Blender (3D Modeling), Adobe Illustrator, After Effects, Creative Cloud</p>
-              <p><strong>Engineering Practices:</strong> Agile/Scrum Methodologies, Git/Version Control, CI/CD pipelines, System Architecture, Test-Driven Development</p>
-            </div>
-          </section>
+         <section className="resumeMeghanSection">
+  <h2>Skills</h2>
+
+  <div className="resumeSectionContent skillsGrid">
+
+    <p>
+      <strong>Product Design & UX:</strong>{" "}
+      User-Centred Design, Design Thinking, UX Research, User Personas,
+      User Journeys, User Flows, Information Architecture, Wireframing,
+      Interaction Design, Prototyping, Usability Testing, Accessibility,
+      WCAG Principles, Responsive Design, Design Systems
+    </p>
+
+    <p>
+      <strong>Design Tools:</strong>{" "}
+      Figma, FigJam, Figma AI, Adobe Illustrator, Adobe After Effects,
+      Adobe Creative Cloud, Blender
+    </p>
+
+    <p>
+      <strong>Frontend Development:</strong>{" "}
+      React, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3/SCSS,
+      Tailwind CSS, SwiftUI, UIKit
+    </p>
+
+    <p>
+      <strong>Backend & APIs:</strong>{" "}
+      Node.js, ASP.NET Core, REST APIs, Entity Framework, SQL, MongoDB
+    </p>
+
+    <p>
+      <strong>Engineering & Collaboration:</strong>{" "}
+      Git, Agile/Scrum, CI/CD, Test-Driven Development, System Architecture,
+      Cross-Functional Collaboration
+    </p>
+
+    <p>
+      <strong>Programming:</strong>{" "}
+      Python, C#, Java, Kotlin, Swift, C++, SQL
+    </p>
+
+  </div>
+</section>
 
           {/* EDUCATION */}
           <section className="resumeMeghanSection">
-            <h2>Education</h2>
-            <div className="resumeSectionContent">
-              <div className="resumeItemRow">
-                <div className="resumeItemLeft">
-                  <h3>BSc (Hons) in Computing in Software Development (Level 8)</h3>
-                  <span className="resumeSubText">Dundalk Institute of Technology — Awarded 2.1 Honours</span>
-                </div>
-                <div className="resumeItemRight">2022 — 2026</div>
-              </div>
-            </div>
-          </section>
+  <h2>Education</h2>
+
+  <div className="resumeSectionContent">
+
+    <div className="resumeItemRow">
+      <div className="resumeItemLeft">
+        <h3>MSc Interactive Digital Media</h3>
+        <span className="resumeSubText">
+          Trinity College Dublin — 1:1 Expected 
+        </span>
+      </div>
+
+      <div className="resumeItemRight">
+        2026 — 2027
+      </div>
+    </div>
+
+    <div className="resumeItemRow">
+      <div className="resumeItemLeft">
+        <h3>BSc (Hons) Computing in Software Development</h3>
+        <span className="resumeSubText">
+          Dundalk Institute of Technology — 2.1 Honours
+        </span>
+      </div>
+
+      <div className="resumeItemRight">
+        2022 — 2026
+      </div>
+    </div>
+
+  </div>
+</section>
 
           {/* EXPERIENCE */}
           <section className="resumeMeghanSection">
-            <h2>Selected Experience</h2>
+            <h2>Experience</h2>
             <div className="resumeSectionContent">
               
               <div className="resumeItemRow">
-                <div className="resumeItemLeft">
-                  <h3>Immersive Virtual Reality Experience Developer</h3>
-                  <span className="resumeSubText">Unity Game Developer & Designer | 6-Month International Erasmus Semester — Antwerp, Belgium</span>
-                </div>
-                <div className="resumeItemRight">Jan 2025 — June 2025</div>
-              </div>
-              <ul className="resumeBullets">
-                <li>Engineered a collaborative virtual reality simulation in Unity using C# for the Meta Quest 3, leveraging the High Definition Render Pipeline (HDRP) for hyper-realistic visual environments.</li>
-                <li>Introduced UX design frameworks, establishing user journey maps, spatial layout patterns and  immersive interactive mechanics tailored for spatial computing.</li>
-                <li>Sourced, optimized and  programmatically integrated 3D visual assets to balance high-fidelity environmental storytelling with real-time performance constraints.</li>
-                <li>Collaborated within a multidisciplinary, international cross-functional team, serving as the core bridge translating technical execution workflows into accessible creative goals for design stakeholders.</li>
-              </ul>
+  <div className="resumeItemLeft">
+    <h3>Immersive Experience Designer & Developer</h3>
+    <span className="resumeSubText">
+      NexSpace VR Project · Erasmus+ · Antwerp, Belgium
+    </span>
+  </div>
 
-              <div className="resumeItemRow">
-                <div className="resumeItemLeft">
-                  <h3>Full-Stack Developer</h3>
-                  <span className="resumeSubText">e.COAL Project | Erasmus+ Intensive Development Programme — Lens, France</span>
-                </div>
-                <div className="resumeItemRight">Feb 2024</div>
-              </div>
-              <ul className="resumeBullets">
-                <li>Selected to represent institutional engineering capabilities in an international, intensive fast-track development sprint building an interactive, media-rich web application.</li>
-                <li>Architected responsive, mobile-first frontend interfaces using React, ensuring high-fidelity visual translation and integration with a Laravel/Node.js RESTful API backend.</li>
-              </ul>
+  <div className="resumeItemRight">
+    Jan 2025 — Jun 2025
+  </div>
+</div>
+
+<ul className="resumeBullets">
+  <li>
+    Designed and developed an immersive VR experience for Meta Quest 3,
+    combining interaction design, spatial UX and Unity development using C#.
+  </li>
+
+  <li>
+    Mapped user journeys and designed spatial interaction patterns to create
+    intuitive experiences within a 3D environment.
+  </li>
+
+  <li>
+    Translated user and design requirements into interactive prototypes and
+    functional experiences while balancing usability, visual fidelity and
+    real-time technical constraints.
+  </li>
+
+  <li>
+    Collaborated within an international multidisciplinary team, bridging
+    design and technical requirements and communicating implementation
+    decisions to creative and technical stakeholders.
+  </li>
+</ul>
+
+          <div className="resumeItemRow">
+  <div className="resumeItemLeft">
+    <h3>Frontend Developer & UI Designer</h3>
+    <span className="resumeSubText">
+      e.COAL Project · Erasmus+ Intensive Development Programme · Lens, France
+    </span>
+  </div>
+
+  <div className="resumeItemRight">
+    Feb 2024
+  </div>
+</div>
+
+<ul className="resumeBullets">
+  <li>
+    Selected to represent DkIT in an international multidisciplinary development
+    sprint focused on building an interactive, media-rich web application.
+  </li>
+
+  <li>
+    Designed and implemented responsive, mobile-first interfaces using React,
+    translating product requirements and visual concepts into reusable frontend
+    components.
+  </li>
+
+  <li>
+    Collaborated with an international team to integrate frontend experiences
+    with REST APIs while balancing visual design, usability and technical
+    constraints.
+  </li>
+</ul>
 
             </div>
           </section>
 
           {/* PROJECTS */}
           <section className="resumeMeghanSection">
-            <h2>Engineering & Design Projects</h2>
+            <h2>Product Design & SRE Projects</h2>
             <div className="resumeSectionContent">
 
               <div className="resumeItemRow">
-                <div className="resumeItemLeft">
-                  <h3>AI Mould Detection Mobile Platform ("SPOREX")</h3>
-                  <span className="resumeSubText">Scrum Project Manager & Lead Frontend UI/UX Designer — Capstone Group Thesis</span>
-                </div>
-                <div className="resumeItemRight">2026</div>
-              </div>
-              <ul className="resumeBullets">
-                <li>Co-engineered a computer-vision native application using Java/Kotlin in Android Studio that leverages cloud-based AI image recognition models to process and diagnose environmental hazards.</li>
-                <li>Designed the entire application design ecosystem from user persona mapping and wireframing up to intuitive, high-fidelity responsive component trees.</li>
-                <li>Managed core Agile/Scrum milestones, directing development velocity while balancing smooth asynchronous API parsing between frontend components and backend microservices.</li>
-              </ul>
+  <div className="resumeItemLeft">
+    <h3>SPOREX — AI Mould Detection Platform</h3>
+    <span className="resumeSubText">
+      Product Designer · Scrum Project Manager · Lead UI/UX Designer
+    </span>
+  </div>
+
+  <div className="resumeItemRight">
+    2026
+  </div>
+</div>
+
+<ul className="resumeBullets">
+  <li>
+    Led the UX/UI design of a mobile application using user personas,
+    user journeys, wireframes and high-fidelity interface design to simplify
+    an AI-assisted mould detection workflow.
+  </li>
+
+  <li>
+    Translated complex computer-vision functionality into a clear,
+    user-friendly experience, considering information hierarchy,
+    accessibility and interaction patterns.
+  </li>
+
+  <li>
+    Managed Agile/Scrum planning and coordinated design and development
+    activities across the project team.
+  </li>
+
+  <li>
+    Collaborated closely with developers to ensure design decisions were
+    technically feasible and consistently implemented across the application.
+  </li>
+</ul>
 
               <div className="resumeItemRow">
-                <div className="resumeItemLeft">
-                  <h3>Dublin Bikes iOS UI/UX Redesign</h3>
-                  <span className="resumeSubText">Swift, SwiftUI/UIKit, Core Data, Open-Data REST API (Individual Project)</span>
-                </div>
-                <div className="resumeItemRight">Independent</div>
-              </div>
-              <ul className="resumeBullets">
-                <li>Conducted standalone usability research to isolate navigation pain points within public transport systems, translating findings into a fully customized, responsive iOS tracking architecture.</li>
-                <li>Integrated external open data REST APIs to stream real-time availability updates, leveraging Core Data subsystems to provide instantaneous local caching for an optimal, lag-free user experience.</li>
-              </ul>
+  <div className="resumeItemLeft">
+    <h3>Dublin Bikes — Mobile UX Redesign</h3>
+    <span className="resumeSubText">
+      UX Research · Interaction Design · SwiftUI · REST API
+    </span>
+  </div>
 
-              <div className="resumeItemRow">
-                <div className="resumeItemLeft">
-                  <h3>Context-Aware Style Recommendation Engine</h3>
-                  <span className="resumeSubText">SQL, Entity Framework, External API Integration (Backend Project)</span>
-                </div>
-                <div className="resumeItemRight">Independent</div>
-              </div>
-              <ul className="resumeBullets">
-                <li>Built a scalable backend system that models multi-source relational schemas using SQL and Entity Framework to ingest weather parameters and deliver tailored product filtering.</li>
-                <li>Programmed custom filtering logic to map real-time API integrations into structured application payloads.</li>
-              </ul>
+  <div className="resumeItemRight">
+    Independent
+  </div>
+</div>
+
+<ul className="resumeBullets">
+  <li>
+    Investigated usability and navigation challenges within bike-sharing
+    applications and translated findings into redesigned user flows and
+    interface patterns.
+  </li>
+
+  <li>
+    Designed and developed a responsive iOS experience using SwiftUI,
+    focusing on information hierarchy, accessibility and efficient access
+    to real-time bike availability.
+  </li>
+
+  <li>
+    Integrated an open-data REST API and local data caching to support a
+    responsive experience while working within real-world technical
+    constraints.
+  </li>
+</ul>
+
+            <div className="resumeItemRow">
+  <div className="resumeItemLeft">
+    <h3>Foodio — Voice-First Food Ordering Experience</h3>
+    <span className="resumeSubText">
+      Product Design · UX/UI · Interaction Design · React
+    </span>
+  </div>
+
+  <div className="resumeItemRight">
+    2026
+  </div>
+</div>
+
+<ul className="resumeBullets">
+  <li>
+    Designed a voice-first food ordering experience exploring how
+    conversational interaction could reduce friction within traditional
+    food delivery journeys.
+  </li>
+
+  <li>
+    Applied user-centred design principles to map the ordering journey,
+    identify interaction points and structure the experience around
+    conversational input and visual confirmation.
+  </li>
+
+  <li>
+    Designed and developed an interactive React prototype to test the
+    product concept in a realistic digital environment.
+  </li>
+
+  <li>
+    Considered accessibility, cognitive load, information architecture and
+    interaction feedback when designing the experience.
+  </li>
+</ul>
 
             </div>
           </section>
@@ -184,15 +369,21 @@ export default function ResumePage() {
   <div className="resumeSectionContent">
 
     <p>
-      <strong>Retail Assistant — Primark</strong><br />
-      <em>Drogheda (2+ Years) · Dundalk (4 Months)</em><br />
-      Developed strong customer service, communication and  teamwork skills within a fast-paced retail environment. Regularly balanced customer assistance, stock replenishment, merchandising, cash handling and maintaining store presentation while adapting to changing operational demands. Consistently worked under pressure during peak trading periods, strengthening problem-solving, organisation and time management abilities while delivering a positive customer experience.
-    </p>
+  <strong>Retail Assistant — Primark</strong><br />
+  <em>Drogheda · 2+ Years </em><br />
+  Delivered customer-focused service within a high-volume retail environment,
+  developing strong communication, teamwork, problem-solving and
+  time-management skills while adapting to changing customer and operational
+  needs.
+</p>
 <br />
-    <p>
-      <strong>Founder & Chairperson — DKIT Fashion Society</strong><br />
-      Founded and led the society, overseeing its vision, branding, event planning, budgeting committee coordination and day-to-day operations. Worked closely with the Sports and Societies Office and society members to establish an inclusive creative community, developing leadership, project management, communication and organisational skills.
-    </p>
+   <p>
+  <strong>Founder & Chairperson — DkIT Fashion Society</strong><br />
+  Founded and led a student creative society, overseeing its brand direction,
+  event planning, budgeting, committee coordination and day-to-day operations.
+  Collaborated with university stakeholders and society members to establish
+  and grow an inclusive creative community.
+</p>
 <br />
     <p>
       <strong>Clubs & Societies</strong><br />
