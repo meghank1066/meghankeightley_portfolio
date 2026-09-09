@@ -93,7 +93,7 @@ const casestudies = [
   //     "Reimagining navigation, discoverability and accessibility across Nintendo's gaming ecosystem.",
   //   category: "Product Design",
   //   image: "/images/nintendo-switch-cover.png"
-  // },
+  // }, lol
 ]
 
 // case studies
