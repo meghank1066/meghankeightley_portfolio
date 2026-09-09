@@ -118,7 +118,7 @@ export default function Home() {
 
   return (
     <div className={`relative ${data.showCursor ? "cursor-none" : ""}`}> 
-      {/* {isMobile === false && <UnlockPortfolio />} */}
+      {isMobile === false && <UnlockPortfolio />}
       {isMobile === false && <SakuraScene />}
       {isMobile === false && <PetalScene />}
  
