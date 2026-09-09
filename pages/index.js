@@ -402,8 +402,8 @@ It’s why I build. Design and development become a way of thinking in practice:
   </div>
 
 </section>
-        {/* <section id="case-studies" className="caseStudiesSection"> */}
-          <h2 className="caseStudiesHeading">Projects</h2>
+        <section id="case-studies" className="caseStudiesSection">
+          {/* <h2 className="caseStudiesHeading">Projects</h2> */}
 
           <div className="caseStudiesGrid">
             {casestudies.map((study) => (
