@@ -350,38 +350,7 @@ It’s why I build. Design and development become a way of thinking in practice:
             )}
           </div>
         </section>
-        <div className="skillsColumn">
-          {" "}
-          <h3 className="headingText">Technical skills</h3>
-          {isMobile === false && <BridgeScene />}
-        </div>
-        <section className="about-section">
-          <div className="skillsContent">
-            <div className="skillsButtonsContainer">
-              {buttonNames.map((buttonName) => (
-                <button
-                  key={buttonName}
-                  className={`${theme === "light" ? "light" : "dark"} ${selectedButton === buttonName ? "selected" : ""}`}
-                  onClick={() => handleButtonClick(buttonName)}
-                >
-                  {buttonName}
-                </button>
-              ))}
-            </div>
-            <div className="skillsIconsContainer">
-              {selectedButton === "All" && renderAllSkills()}
-              {selectedButton === "Frontend" &&
-                renderSkillIcons(skillsData.frontend)}
-              {selectedButton === "Backend" &&
-                renderSkillIcons(skillsData.backend)}
-              {selectedButton === "Tools" && renderSkillIcons(skillsData.tools)}
-              {selectedButton === "Testing" &&
-                renderSkillIcons(skillsData.testing)}
-              {selectedButton === "Design" &&
-                renderSkillIcons(skillsData.design)}
-            </div>
-          </div>
-        </section>
+      
   
         <section id="projects" className="projectsSection">
 <h2 className="caseStudiesHeading">Featured Projects</h2>
@@ -461,6 +430,37 @@ It’s why I build. Design and development become a way of thinking in practice:
                 </div>
               </Link>
             ))}
+          </div>
+        </section>  <div className="skillsColumn">
+          {" "}
+          <h3 className="headingText">Technical skills</h3>
+          {isMobile === false && <BridgeScene />}
+        </div>
+        <section className="about-section">
+          <div className="skillsContent">
+            <div className="skillsButtonsContainer">
+              {buttonNames.map((buttonName) => (
+                <button
+                  key={buttonName}
+                  className={`${theme === "light" ? "light" : "dark"} ${selectedButton === buttonName ? "selected" : ""}`}
+                  onClick={() => handleButtonClick(buttonName)}
+                >
+                  {buttonName}
+                </button>
+              ))}
+            </div>
+            <div className="skillsIconsContainer">
+              {selectedButton === "All" && renderAllSkills()}
+              {selectedButton === "Frontend" &&
+                renderSkillIcons(skillsData.frontend)}
+              {selectedButton === "Backend" &&
+                renderSkillIcons(skillsData.backend)}
+              {selectedButton === "Tools" && renderSkillIcons(skillsData.tools)}
+              {selectedButton === "Testing" &&
+                renderSkillIcons(skillsData.testing)}
+              {selectedButton === "Design" &&
+                renderSkillIcons(skillsData.design)}
+            </div>
           </div>
         </section>
         <section id="contact" className="contactSection">

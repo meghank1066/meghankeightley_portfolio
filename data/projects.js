@@ -53,28 +53,28 @@ const casestudies = [
   //   tech: ["Swift", "MapKit", "Firebase"]
   // },
 
-  {
-    slug: "style-forecast-weather-api",
-    title: "Style Forecast – API",
-    description:
-      "A weather-powered application that integrates external APIs to provide personalised outfit recommendations based on local conditions and forecasts.",
-    category: "Backend & API Integration",
-    tech: ["C#", ".NET", "REST APIs", "API Integration"],
-      image: "/images/lookbook-cover.png",
-    github: "https://github.com/...",
-    tech: ["React", "Weather API", "JavaScript"]
-  },
+  // {
+  //   slug: "style-forecast-weather-api",
+  //   title: "Style Forecast – API",
+  //   description:
+  //     "A weather-powered application that integrates external APIs to provide personalised outfit recommendations based on local conditions and forecasts.",
+  //   category: "Backend & API Integration",
+  //   tech: ["C#", ".NET", "REST APIs", "API Integration"],
+  //     image: "/images/lookbook-cover.png",
+  //   github: "https://github.com/...",
+  //   tech: ["React", "Weather API", "JavaScript"]
+  // },
 
-  {
-    slug: "glamour-touch-salon",
-    title: "Glamour Touch",
-   description:
-  "A modern beauty salon booking system designed to elevate the client experience, allowing effortless appointment scheduling and streamlined management for salon staff through a clean, structured web application.",
-  category: "Full Stack Development",  
-  image: "/images/glamour-touch-pic.png",
-    github: "https://github.com/RathnamMeghana/Beauty_Cosmetics_Laravel",
-    tech: ["PHP", "Database Migrations", "SCSS"]
-  },
+  // {
+  //   slug: "glamour-touch-salon",
+  //   title: "Glamour Touch",
+  //  description:
+  // "A modern beauty salon booking system designed to elevate the client experience, allowing effortless appointment scheduling and streamlined management for salon staff through a clean, structured web application.",
+  // category: "Full Stack Development",  
+  // image: "/images/glamour-touch-pic.png",
+  //   github: "https://github.com/RathnamMeghana/Beauty_Cosmetics_Laravel",
+  //   tech: ["PHP", "Database Migrations", "SCSS"]
+  // },
 
   // {
   //   slug: "little-star-app",
@@ -86,14 +86,14 @@ const casestudies = [
   //   tech: ["Figma", "UX Research", "Prototyping"]
   // },
   
-  {
-    slug: "nintendo-switch-ui",
-    title: "Nintendo Switch Experience",
-    description:
-      "Reimagining navigation, discoverability and accessibility across Nintendo's gaming ecosystem.",
-    category: "Product Design",
-    image: "/images/nintendo-switch-cover.png"
-  },
+  // {
+  //   slug: "nintendo-switch-ui",
+  //   title: "Nintendo Switch Experience",
+  //   description:
+  //     "Reimagining navigation, discoverability and accessibility across Nintendo's gaming ecosystem.",
+  //   category: "Product Design",
+  //   image: "/images/nintendo-switch-cover.png"
+  // },
 ]
 
 // case studies
