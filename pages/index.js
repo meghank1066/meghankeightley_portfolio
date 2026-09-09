@@ -237,8 +237,8 @@ It’s why I build. Design and development become a way of thinking in practice:
               <p>
                 I studied Software Engineering at Dundalk Institute of
                 Technology and I am currently pursuing a MSc in Interactive Digital Media at Trinity College Dublin. 
-                My goal is to combine my skills in software development and design to create innovative and user-friendly digital experiences. I am particularly interested in the intersection of technology and design, and I aim to
-                During my undergraduate studies, I spent six months in Antwerp on Erasmus, where I
+                My goal is to combine my skills in software development and design to create innovative and user-friendly digital experiences. I am particularly interested in the intersection of technology and design.
+                During my undergraduate studies, I spent six months in Antwerp where I
                 explored user experience design within virtual reality
                 environments. That experience sparked a particular interest in
                 emerging technologies, especially haptic technology and how
@@ -246,12 +246,12 @@ It’s why I build. Design and development become a way of thinking in practice:
               </p>
 
               <p>
-                Beyond technology, I'm a strong design enthusiast with interests
+                {/* Beyond technology, I'm a strong design enthusiast with interests
                 that extend far beyond software. I founded my college's first
                 Fashion Society, combining my love for creativity, community
                 building and design. Alongside my studies, I worked as a Sales
                 Assistant in Primark for three years, where I developed strong
-                communication and teamwork skills in a fast-paced environment.
+                communication and teamwork skills in a fast-paced environment. */}
               </p>
 
               <p>
