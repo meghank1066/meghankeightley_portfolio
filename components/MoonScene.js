@@ -351,8 +351,8 @@ export default function MoonScene() {
         moon.position.set(0, 0, 0);
         moon.scale.set(4.5, 4.5, 4.5);
         
-        targetRotationY = moon.rotation.y;
-        targetRotationX = moon.rotation.x;
+        // targetRotationY = moon.rotation.y;
+        // targetRotationX = moon.rotation.x;
 
         console.log("Moon loaded");
         scene.add(moon);
@@ -425,24 +425,33 @@ export default function MoonScene() {
     /* ---------- Animation ---------- */
 
     function animate() {
-      requestAnimationFrame(animate);
+  requestAnimationFrame(animate);
 
-      if (moon) {
-        const baseSpeed = isHovering ? 0.012 : 0.002;
-        targetRotationY += baseSpeed;
+  if (moon) {
+    // Normal slow rotation
+    const rotationSpeed = isHovering ? 0.025 : 0.002;
 
-        moon.rotation.y += (targetRotationY - moon.rotation.y) * 0.08;
-        moon.rotation.x += (targetRotationX - moon.rotation.x) * 0.08;
+    // Automatically rotate the moon
+    moon.rotation.y += rotationSpeed;
 
-        const targetScale = isHovering ? 5.5 : 4.5;
-        moon.scale.lerp(
-          new THREE.Vector3(targetScale, targetScale, targetScale),
-          0.08
-        );
-      }
+    // Smoothly return toward the drag rotation
+    moon.rotation.x += (targetRotationX - moon.rotation.x) * 0.08;
 
-      renderer.render(scene, camera);
-    }
+    // Hover = slightly bigger
+    const targetScale = isHovering ? 5.5 : 4.5;
+
+    moon.scale.lerp(
+      new THREE.Vector3(
+        targetScale,
+        targetScale,
+        targetScale
+      ),
+      0.08
+    );
+  }
+
+  renderer.render(scene, camera);
+}
 
     animate();
 
