@@ -27,6 +27,14 @@ const projects = [
     image: "/images/velora_final.png",
     github: "https://github.com/...",
     tech: ["Swift", "MapKit", "Firebase"]
+  },
+  {
+    slug: "dkit-fashion-society",
+    title: "DKIT Fashion Society",
+    description:
+      "Founded and led DKIT's first Fashion Society, creating a community centred around fashion, creativity and self-expression. Organised events and activities that brought students together while building the society's identity and presence within the college.",
+    image: "/images/dkitfs/dkitfs-cover-new.png",
+    category: "Fashion & Community",
   }
 
 ];
